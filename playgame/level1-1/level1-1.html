@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資安遊戲闖關網站</title>
     <script src="./source.js"></script>
+    <script src="https://example.cdn/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
 
 </head>
@@ -13,20 +15,20 @@
     
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL1-1</h1>
-        <div id="menubar" style="text-align: center";> <a href="playgame.html" class="menu_exit">退出</a> </div>
+        <div id="menubar" style="text-align: center";> <a href="../playgame.html" class="menu_exit">退出</a> </div>
     </div>
 
     <hr>
 
     <!--下一關按鈕-->
     <div style="text-align: center;">
-        <a id="next_btn" class="next_no" style="display: none;" href="" >下一關</a> 
+        <a id="next_btn" style="display: none;" href="" >下一關</a> 
     </div>
     <br>
 
     <!--遊戲輸入框內容-->
     <div id="input-bar" style="text-align: center;">
-        <input id="input1" type="text" value="Enter..." onfocus="this.value=''">
+        <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
         <button id="btn1" type="button" onclick="myFunction()">送出</button>
     </div>
 
