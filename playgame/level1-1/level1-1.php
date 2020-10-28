@@ -12,27 +12,23 @@
 </head>
 <body a link="blue" vlink="red">
     <div class="instructions">
-        <h1 style="text-align: center;">LEVEL1-2</h1>
+        <h1 style="text-align: center;">LEVEL1-1</h1>
         <div id="menubar" style="text-align: center";> <a href="../playgame.html" class="menu_exit">退出</a> </div>
     </div>
     <hr>
 
-    <!--下一關按鈕-->
     <div style="text-align: center;">
         <a id="next_btn" style="display: none;" href="" >下一關</a> 
     </div>
     <br>
 
-    <!--遊戲輸入框內容-->
-    <div id="input-bar" style="text-align: center;">
-        <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
-        <button id="btn1" type="button" onclick="myFunction()" onkeypress="myFunction()">送出</button>
-    </div>
-
     <div style="text-align: center;">
-        <div>
-            <p id="demo"></p>
-        </div>
+        <p><b>Please injection alert() and pass this level!</b></p>
+        <?php
+            ini_set("display_errors", 0);
+            $str = $_GET["name"];
+            echo "<h2 align=center>Welcome".$str."</h2>";
+        ?>
     </div>
 
 
