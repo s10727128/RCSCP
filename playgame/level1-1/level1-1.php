@@ -32,7 +32,7 @@
         ?>
 
     <div style="text-align: center;">
-        <a href="">提示</a>
+        <a href="">提示(要設置3個提示)</a>
     </div>
 
 
