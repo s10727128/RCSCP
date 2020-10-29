@@ -22,14 +22,21 @@
             <a id="next_btn" style="display: none;" href="" >下一關</a> 
         </div>
         <br>
+        <div style="text-align: center; font-size: 5;">
+            <p><b>這個關卡是一個很經典的XSS漏洞，屬於Reflected XSS (反射型)，是由網頁後端直接嵌入由前端使用者所傳送過來的內容造成的。</b></p>
+            <p><b>請嘗試在網頁注入一個 alert() ，即可即可過關!</b></p>
+        </div>
+
 
         <div style="text-align: center;">
-            <p><b>Please injection alert() and pass this level!</b></p>
             <?php
                 ini_set("display_errors", 0);
                 $str = $_GET["name"];
-                echo "<h2 align=center>Welcome".$str."</h2>";
             ?>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="">提示</a>
         </div>
     </from>
 
