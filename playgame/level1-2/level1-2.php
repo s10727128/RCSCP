@@ -24,16 +24,35 @@
     <br>
 
     <!--遊戲輸入框內容-->
-    <div id="input-bar" style="text-align: center;">
-        <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
-        <button id="btn1" type="button" onclick="myFunction()" onkeypress="myFunction()">送出</button>
-    </div>
+    <?php
+        //ini_set("display_errors", 0);
+        $str = $_GET["name"];
+    ?>
 
-    <div style="text-align: center;">
-        <div>
-            <p id="demo"></p>
+
+
+
+
+
+
+    <form action="levlel1-2.php" method="GET">
+        <div id="input-bar" style="text-align: center;">
+            <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
+            <input type="submit" onclick="myFunction()" onkeypress="myFunction()" value="送出">
         </div>
-    </div>
+        
+        <div style="text-align: center;">
+            <div>
+                <p id="demo"></p>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
 
 
 </body>
