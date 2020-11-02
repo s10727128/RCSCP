@@ -24,9 +24,10 @@
     <br>
 
     <!--遊戲輸入框內容-->
+    <input ></input>
     <?php
-        //ini_set("display_errors", 0);
-        $str = $_GET["name"];
+        $ans = $_GET[input1];
+        echo "Your answer is: $ans";
     ?>
 
 
@@ -35,7 +36,9 @@
 
 
 
-    <form action="levlel1-2.php" method="GET">
+
+
+    <!--<form action="" method="GET">
         <div id="input-bar" style="text-align: center;">
             <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
             <input type="submit" onclick="myFunction()" onkeypress="myFunction()" value="送出">
@@ -46,14 +49,8 @@
                 <p id="demo"></p>
             </div>
         </div>
-    </form>
 
-
-
-
-
-
-
+    </form>-->
 
 </body>
 </html>

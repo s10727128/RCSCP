@@ -30,8 +30,8 @@
         <div style="text-align: center;">
             <?php
                 ini_set("display_errors", 0);
-                $str = $_GET["name"];
-                echo "Your answer is: $str";
+                $ans = $_GET["name"];
+                echo "Your answer is: $ans";
             ?>
         </div>
 

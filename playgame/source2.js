@@ -2,6 +2,7 @@
 function myFunction(){
    var x = document.getElementById("input1").value;
    document.getElementById("demo").innerHTML = "Your answer is: " + x;
+   document.getElementById("input1").value = x;
 }
 
 var originalAlert = window.alert;
