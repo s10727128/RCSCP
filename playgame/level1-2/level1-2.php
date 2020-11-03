@@ -24,16 +24,19 @@
     <br>
 
     <!--遊戲輸入框內容-->
-    <input ></input>
-    <?php
-        $ans = $_GET[input1];
-        echo "Your answer is: $ans";
-    ?>
-
-
-
-
-
+    <div style="text-align: center;">
+        <?php
+            ini_set("display_errors", 0);
+            $ans = $_GET["input"];
+            echo '
+            <form action=level1-2.php method=GET>
+            <input name=input1 value="'.$ans.'">
+            <input type=submit name=submit value="搜索"/>
+            </form><br>'
+            ."Your answer is: ".htmlspecialchars($ans);
+     
+        ?>
+    </div>
 
 
 
