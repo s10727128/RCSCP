@@ -35,10 +35,49 @@
             </form><br>';
 
             echo "Your answer is: ".htmlspecialchars($ans);
-            
-     
         ?>
     </div>
+    <br>
+
+    <div style="text-align: center;">
+            <button type="button" id="hintList">提示</button>
+            <div style="list-style: none; ">
+                <li id="hint1"><b></b></li>
+                <li id="hint2"></li>
+                <li id="hint3"></li>
+                <li id="hint4"></li>
+            </div>
+        </div>
+    </form>
+
+    
+    <script>
+        let x = 0;
+        $("#hintList").click(function(){
+            x ++;
+            switch(x){
+                case 1:
+                    $("#hint1").text("1. 執行一個<script>");
+                    break;
+
+                case 2:
+                    $("#hint2").text("2. 哇...<script>行不通，試試看輸入其他東西");
+                    break;
+
+                case 3:
+                    $("#hint3").text("3. 按右鍵打開網頁原始碼，或是按下F12");
+                    break;
+
+                case 4:
+                $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
+                break;
+
+                default:
+                    break;
+            }
+        });
+    </script>
+
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 var originalAlert = window.alert;
-/* Override window.alert*/
+
 window.alert = function(){
    originalAlert("Congratuation! You sucessed!\n" + x + "\nYou can go to next part.");
    document.getElementById("next_btn").style.display = "block";

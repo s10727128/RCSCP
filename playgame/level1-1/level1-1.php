@@ -37,9 +37,9 @@
 
         <br>
         <div style="text-align: center;">
-            <button id="hintList">0/3 提示</button>
-            <div style="list-style: none;">
-                <li id="hint1"></li>
+            <button type="button" id="hintList">提示</button>
+            <div style="list-style: none; ">
+                <li id="hint1"><b></b></li>
                 <li id="hint2"></li>
                 <li id="hint3"></li>
             </div>
@@ -47,5 +47,28 @@
     </form>
 
     
+    <script>
+        let x = 0;
+        $("#hintList").click(function(){
+            x ++;
+            switch(x){
+                case 1:
+                    $("#hint1").text("1. 執行一個<script>");
+                    break;
+
+                case 2:
+                    $("#hint2").text("2. 在<script>裡加入alert()");
+                    break;
+
+                case 3:
+                    $("#hint3").text("3. 別再點了!!!動手試試，就會知道結果了!!!");
+                    break;
+
+                default:
+                    break;
+            }
+        });
+    </script>
+
 </body>
 </html>
