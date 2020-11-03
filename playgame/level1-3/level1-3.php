@@ -13,30 +13,12 @@
 <body a link="blue" vlink="red">
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL1-3</h1>
-        <div id="menubar" style="text-align: center";> <a href="../playgame.html" class="menu_exit">退出</a> </div>
+        <!--下一關按鈕-->
+        <div id="menubar" style="text-align: center";> <a href="../../Teamproject/index.html" class="menu_exit">退出</a> </div>
     </div>
     <hr>
 
     <div style="text-align: center;">
-        <b>Welcome to LEVEL1-3!!!</b>
-    </div>
-
-
-    <!--****************************************************************-->
-    <div class="instructions">
-        <h1 style="text-align: center;">LEVEL1-2</h1>
-        <div id="menubar" style="text-align: center";> <a href="../playgame.html" class="menu_exit">退出</a> </div>
-    </div>
-    <hr>
-
-    <!--下一關按鈕-->
-    <div style="text-align: center;">
-        <a id="next_btn" style="display: none;" href="" >下一關</a> 
-    </div>
-    <br>
-
-    <!--遊戲輸入框內容-->
-
     <form action="" method="GET">
         <div id="input-bar" style="text-align: center;">
             <input id="input1" type="text" name="input1" value="Enter..." onfocus="this.value=''">
@@ -49,13 +31,9 @@
             </div>
         </div>
 
-        </form>
+    </form>
     
-    
-    
-    
-    
-    
-    
+    </div>
+
 </body>
 </html>
