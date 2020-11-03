@@ -33,7 +33,7 @@
             <input type=submit name=submit value="搜尋"/>
             </form><br>';
             
-            echo "Your answer is: ".$ans;
+            echo "Your answer is: ".htmlspecialchars($ans);
         ?>
     </div>
     <br>

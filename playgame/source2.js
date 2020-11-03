@@ -5,4 +5,3 @@ window.alert = function(){
    document.getElementById("next_btn").style.display = "block";
    $( "#next_btn" ).attr("href","../level1-3/level1-3.php?name=test");
 }
-
