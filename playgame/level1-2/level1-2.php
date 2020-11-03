@@ -27,14 +27,13 @@
     <div style="text-align: center;">
         <?php
             ini_set("display_errors", 0);
-            $ans = $_GET["input1"];
-            echo '
-            <form action=level1-2.php method=GET>
-            <input name=input1 value="'.$ans.'">
-            <input type=submit name=search value="搜尋"/>
+            $ans = $_GET["input"];
+            echo '<form action=level1-2.php method=GET>
+            <input name=input value="'.$ans.'">
+            <input type=submit name=submit value="搜尋"/>
             </form><br>';
-
-            echo "Your answer is: ".htmlspecialchars($ans);
+            
+            echo "Your answer is: ".$ans;
         ?>
     </div>
     <br>
@@ -52,10 +51,10 @@
 
     
     <script>
-        let x = 0;
+        let j = 0;
         $("#hintList").click(function(){
-            x ++;
-            switch(x){
+            j ++;
+            switch(j){
                 case 1:
                     $("#hint1").text("1. 執行一個<script>");
                     break;
