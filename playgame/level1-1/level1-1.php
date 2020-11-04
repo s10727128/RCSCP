@@ -38,11 +38,13 @@
         <br>
         <div style="text-align: center;">
             <button type="button" id="hintList">提示</button>
+            <!--<button type="button" id="writeup">writeup</button>-->
             <div style="list-style: none; ">
                 <li id="hint1"><b></b></li>
                 <li id="hint2"></li>
                 <li id="hint3"></li>
             </div>
+            
         </div>
     </form>
 
