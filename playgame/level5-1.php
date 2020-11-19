@@ -32,7 +32,7 @@
             ini_set("display_errors",0);
             $ans = $_GET["input"];
             if($ans == 123456789){
-                echo '<input type="button" onclick="alert("Congratuation! You sucessed!")"/>';
+                echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
             echo '<form action=level5-1.php =GET>
             <input name=input value"'.$ans.'"/>
