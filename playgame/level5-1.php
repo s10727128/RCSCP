@@ -28,15 +28,18 @@
         <a href="../downloadfile/level5.hex" download><b>Download</b></a>
     </form>
         <br>
-
-        <!--<?php
+        <?php
             ini_set("display_errors",0);
             $ans = $_GET["input"];
             echo '<form action=level5-1.php =GET>
-            <input name=input value"'.$ans.'"
+            <input name=input value"'.$ans.'"/>
             <input type=submit name=submit value="搜尋"/>
             </form><br>';
-        ?>-->
+        ?>
+
+        <?php
+            
+        ?>
 
 
     </div>
