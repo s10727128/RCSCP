@@ -18,7 +18,7 @@
     <hr>
 
     <div style="text-align: center;">
-        <a id="next_btn" style="display: none;" href="" >下一關</a> 
+        <a id="next_btn" style="display: none;" href="#" >下一關</a> 
     </div>
     <br>
 
