@@ -25,13 +25,13 @@
     <div style="text-align: center;">
     <form action="../downloadfile/level5.hex" method="GET">
         下載點:
-        <a href="../downloadfile/level5.hex" download><b>Download</b></a>
+        <a href="../downloadfile/level5-1.txt" download><b>Download</b></a>
     </form>
         <br>
         <?php
             ini_set("display_errors",0);
             $ans = $_GET["input"];
-            if($ans == 123456789){
+            if($ans == 135000){
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
             echo '<form action=level5-1.php =GET>
@@ -39,13 +39,26 @@
             <input type=submit name=submit value="搜尋"/>
             </form><br>';
         ?>
-
-        <?php
-            
-        ?>
-
-
     </div>
+
+    <div style="text-align: center;">
+            <button type="button" id="hintList">提示</button>
+            <div style="list-style: none; ">
+                <li id="hint1"><b></b></li>
+            </div>
+        </div>
+
+        <script>
+        let j = 0;
+        $("#hintList").click(function(){
+            j ++;
+            switch(j){
+                case 1:
+                    $("#hint1").text("1. 摩斯密碼");
+                    break;
+            }
+        });
+    </script>
     
     
 </body>
