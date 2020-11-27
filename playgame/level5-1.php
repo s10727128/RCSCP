@@ -36,7 +36,7 @@
             }
             echo '<form action=level5-1.php =GET>
             <input name=input value"'.$ans.'"/>
-            <input type=submit name=submit value="搜尋"/>
+            <input type=submit name=submit value="送出"/>
             </form><br>';
         ?>
     </div>
