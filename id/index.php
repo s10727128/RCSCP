@@ -13,7 +13,7 @@ if(mysqli_num_rows($result) > 0)
 		$access=$row["Access"];
 	}
 	echo "歡迎.$name".'<br>';
-	echo '<a href="account.php">個人資料</a><br>';
+	echo '<a href="account/profile.php">個人資料</a><br>';
 	echo '<a href="logout.php">登出</a><br>';
 	if($access==1)
 	{
