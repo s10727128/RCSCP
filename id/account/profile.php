@@ -21,5 +21,5 @@ echo $name;
 echo '<br>';
 echo "分數:";
 echo $score.'<br>';
-echo '<a href="ChangePassword.php">更換密碼</a>';
+echo '<a href="ChangePassword.html">更換密碼</a>';
 ?>
