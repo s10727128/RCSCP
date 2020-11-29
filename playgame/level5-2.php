@@ -12,7 +12,7 @@
 
 <body a link="blue" vlink="red">
     <div class="instructions">
-        <h1 style="text-align: center;">LEVEL5-1</h1>
+        <h1 style="text-align: center;">LEVEL5-2</h1>
         <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.html" class="menu_exit">退出</a> </div>
     </div>
     <hr>
@@ -23,9 +23,9 @@
     <br>
 
     <div style="text-align: center;">
-    <form action="../downloadfile/level5.hex" method="GET">
+    <form action="../downloadfile/Eat.rar" method="GET">
         下載點:
-        <a href="../downloadfile/level5-1.txt" download><b>Download</b></a>
+        <a href=../downloadfile/Eat.rar download><b>Download</b></a>
     </form>
         <br>
         <?php
@@ -34,7 +34,7 @@
             if($ans == "Flag{Answer_is_135000}"){
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
-            echo '<form action=level5-1.php =GET>
+            echo '<form action=level5-2.php =GET>
             <input name=input value"'.$ans.'"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
@@ -42,9 +42,14 @@
     </div>
 
     <div style="text-align: center;">
+        <p>請吃到100顆蘋果，並拿到解答Flag。</p>
+    </div>
+    <div style="text-align: center;">
             <button type="button" id="hintList">提示</button>
             <div style="list-style: none; ">
                 <li id="hint1"><b></b></li>
+                <li id="hint2"><b></b></li>
+                <li id="hint3"><b></b></li>
             </div>
         </div>
 
@@ -54,8 +59,15 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1. 摩斯密碼");
+                    $("#hint1").text("1. 解答長這樣=> Flag{This_is_a_flag}");
                     break;
+                case 2:
+                    $("#hint2").text("2. 建議使用工具jd-gui");
+                    break;
+                case 3:
+                    $("#hint3").text("3. 動手試試看吧~!");
+                    break;
+
             }
         });
     </script>
