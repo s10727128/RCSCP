@@ -23,9 +23,9 @@
     <br>
 
     <div style="text-align: center;">
-    <form action="../downloadfile/Eat.rar" method="GET">
+    <form action="../downloadfile/SnakeGmae2.rar" method="GET">
         下載點:
-        <a href=../downloadfile/Eat.rar download><b>Download</b></a>
+        <a href="../downloadfile/SnakeGmae2.rar" download><b>Download</b></a>
     </form>
         <br>
         <?php
@@ -59,13 +59,13 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1. 解答長這樣=> Flag{This_is_a_flag}");
+                    $("#hint1").text("1. 解答長這樣=> Flag{This_is_a_flag}。");
                     break;
                 case 2:
-                    $("#hint2").text("2. 建議使用工具jd-gui");
+                    $("#hint2").text("2. 建議使用工具jd-gui。");
                     break;
                 case 3:
-                    $("#hint3").text("3. 動手試試看吧~!");
+                    $("#hint3").text("3. 將下載好的檔案丟入jd-gui，查看裡面程式碼。");
                     break;
 
             }

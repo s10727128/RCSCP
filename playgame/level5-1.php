@@ -23,7 +23,7 @@
     <br>
 
     <div style="text-align: center;">
-    <form action="../downloadfile/level5.hex" method="GET">
+    <form action="../downloadfile/level5-1.txt" method="GET">
         下載點:
         <a href="../downloadfile/level5-1.txt" download><b>Download</b></a>
     </form>
@@ -31,7 +31,7 @@
         <?php
             ini_set("display_errors",0);
             $ans = $_GET["input"];
-            if($ans == "Flag{Answer_is_135000}"){
+            if($ans == "13500"){
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
             echo '<form action=level5-1.php =GET>
@@ -54,7 +54,7 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1. 摩斯密碼");
+                    $("#hint1").text("1. 摩斯密碼(輸入密碼就ok)");
                     break;
             }
         });
