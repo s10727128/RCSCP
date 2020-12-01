@@ -18,7 +18,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {   
-    exit("錯誤執行");
+    exit("錯誤執行"); 
 }
 
 ?>
