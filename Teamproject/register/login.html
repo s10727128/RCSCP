@@ -7,18 +7,18 @@
 <body>    
     <h2>Login Page</h2><br>    
     <div class="login">    
-    <form id="login" method="get" action="login.php">    
+    <form id="login" method="post" action="login.php">    
         <label><b>User Name     
         </b>    
         </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username"  required="required">    
+        <input type="varchar" name="Username" id="Uname" placeholder="Username"  required="required">    
         <br><br>    
         <label><b>Password     
         </b>    
         </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Password"  required="required">    
+        <input type="password" name="Password" id="Pass" placeholder="Password"  required="required">    
         <br><br>    
-        <input type="button" name="log" id="log" value="Log In Here">       
+        <input type="submit" name="submit" id="log" value="log in here">       
         <br><br>    
         <input type="checkbox" id="check">    
         <span>Remember me</span>    
