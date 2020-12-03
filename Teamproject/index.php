@@ -12,9 +12,7 @@
 
 <body>
 
-<?php
-  echo "A";
-?>
+
     <ul class="drop-down-menu-1">
         <!--第一個按鈕
       <li><a href="../Teamproject/description/description.html">網頁介紹</a>
@@ -90,11 +88,7 @@
   <ul class="drop-down-menu-2">
    <!--第五個按鈕--> 
    <li><a href="register/login.html" >註冊/登入</a>
-    <ul>
-      <li><a href="#">個人資料</a>
-        
-      </li>
-    </ul>
+   
     
    </li>
      <!--第六個按鈕--> 
