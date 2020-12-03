@@ -23,8 +23,8 @@ if(mysqli_num_rows($result) > 0)
 		$_SESSION['id'] = $id;
 		$_SESSION['Username'] = $name;
 	}
-	echo("登入成功");
-	header("Location: index.php");
+	echo("登入成功,5秒後自動返回主介面");
+    echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.html>';
 }
 else
 {

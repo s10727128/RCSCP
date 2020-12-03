@@ -12,6 +12,7 @@ if(mysqli_num_rows($result) > 0)
 	{
 		$name=$row["Username"];
 		$score=$row["Score"];
+		$access=$row["Access"];
 	}
 }
 
@@ -21,5 +22,9 @@ echo $name;
 echo '<br>';
 echo "分數:";
 echo $score.'<br>';
-echo '<a href="ChangePassword.html">更換密碼</a>';
+echo '<a href="ChangePassword.html">更換密碼</a><br>';
+if($access==1)
+{
+	echo '<a href="access.php">資料表</a><br>';
+}
 ?>

@@ -24,8 +24,8 @@ else{
     die('錯誤:' .mysqli_error());//如果sql執行失敗輸出錯誤
     }
     else{
-    echo "註冊成功";//成功輸出註冊成功
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+    echo "註冊成功,5秒後自動返回主介面";//成功輸出註冊成功
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=../index.html>';
     }
     }
 ?>
