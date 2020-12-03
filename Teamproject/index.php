@@ -1,14 +1,20 @@
+<?php
+  header("Content-type: index.css"); 
+?>
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="index.css">
+  <head>
 <meta charset="utf-8">
+<link rel="stylesheet" a href ="index.css">
+<link rel="icon" href="../bird.jpg">
 <title>專題首頁</title>
 </head>
 
 <body>
-    
 
+<?php
+  echo "A";
+?>
     <ul class="drop-down-menu-1">
         <!--第一個按鈕
       <li><a href="../Teamproject/description/description.html">網頁介紹</a>
@@ -83,7 +89,13 @@
 
   <ul class="drop-down-menu-2">
    <!--第五個按鈕--> 
-   <li><a href="register/login.html" onclick="">註冊/登入</a>
+   <li><a href="register/login.html" >註冊/登入</a>
+    <ul>
+      <li><a href="#">個人資料</a>
+        
+      </li>
+    </ul>
+    
    </li>
      <!--第六個按鈕--> 
    <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題回報</a>
@@ -106,7 +118,7 @@
         </div>
         
         <div id="h1">
-          <h1>123</h1>
+          <h1>123</h1> 
         </div>
       
 </body>
