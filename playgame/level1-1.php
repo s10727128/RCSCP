@@ -14,7 +14,7 @@
     <form action="" method="GET">
         <div class="instructions">
             <h1 style="text-align: center;">LEVEL1-1</h1>
-            <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.html" class="menu_exit">退出</a> </div>
+            <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">退出</a> </div>
         </div>
         <hr>
 

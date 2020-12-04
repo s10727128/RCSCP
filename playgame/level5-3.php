@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資安遊戲闖關網站</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="source1.js"></script>
+    <script src="source.js"></script>
 </head>
 
 <body a link="blue" vlink="red">
     <div class="instructions">
-        <h1 style="text-align: center;"><LEVEL5-3></LEVEL5-3></h1>
-        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.html" class="menu_exit">退出</a> </div>
+        <h1 style="text-align: center;">LEVEL5-3</h1>
+        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">退出</a> </div>
     </div>
     <hr>
 
@@ -34,7 +34,7 @@
             if($ans == "AIOcfjw0793!BQopcbe97504"){
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
-            echo '<form action=level5-2.php =GET>
+            echo '<form action=level5-3.php =GET>
             <input name=input value"'.$ans.'"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
@@ -42,7 +42,7 @@
     </div>
 
     <div style="text-align: center;">
-        <p></p>
+        <p>請幫我拿解開檔案，謝謝!</p>
     </div>
     <div style="text-align: center;">
             <button type="button" id="hintList">提示</button>
@@ -59,7 +59,13 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1");
+                    $("#hint1").text("1.zip偽加密");
+                    break;
+                case 2:
+                    $("#hint2").text("2.Base64 code");
+                    break;
+                case 3:
+                    $("#hint3").text("3.Hex code");
                     break;
 
             }
