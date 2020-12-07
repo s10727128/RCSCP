@@ -16,7 +16,6 @@ if(mysqli_num_rows($result) > 0)
 	}
 }
 
-
 echo "名稱:";
 echo $name;
 echo '<br>';

@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資安遊戲闖關網站</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="source1.js"></script>
+    <script src="source.js"></script>
 </head>
 
 <body a link="blue" vlink="red">
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL5-2</h1>
-        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.html" class="menu_exit">退出</a> </div>
+        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">退出</a> </div>
     </div>
     <hr>
 
