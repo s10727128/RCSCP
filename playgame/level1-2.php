@@ -45,6 +45,7 @@
                 <li id="hint2"></li>
                 <li id="hint3"></li>
                 <li id="hint4"></li>
+                <li id="hint5"></li>
             </div>
         </div>
     </form>
@@ -69,6 +70,10 @@
 
                 case 4:
                 $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
+                break;
+
+                case 5:
+                $("#hint5").text("5. \"\>\<script\>alert\(\)\</script\>，利用\">讓Value裡為完整的函式");
                 break;
 
                 default:
