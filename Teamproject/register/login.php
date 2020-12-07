@@ -24,7 +24,7 @@ if(mysqli_num_rows($result) > 0)
 		$_SESSION['Username'] = $name;
 	}
 	echo("登入成功,5秒後自動返回主介面");
-    echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.php>';
 }
 else
 {

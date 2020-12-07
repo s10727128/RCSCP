@@ -96,6 +96,7 @@
    </li>
   </ul>
 
+<br>
 <hr>
 <!--簡介-->
 <div id="description">

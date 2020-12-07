@@ -100,26 +100,24 @@ ul { /* 取消ul預設的內縮及樣式 */
 
 ul.drop-down-menu-1 {
   border: #ccc 1px solid;
- 
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
-  margin-top: 50px;
+  top:45px;
   text-align: center;
   resize: both;
   width: auto;
-  position: fixed;
+  position: absolute;
 }
 /*右上選單*/
 ul.drop-down-menu-2 {
   border: #ccc 1px solid;
- 
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
-
-  text-align: right;
-  resize: both;
-  width: auto;
-  position: fixed;
+  top:-5px;
+  margin-top: 50px;
+  left: 30cm; 
+  text-align: center;
+  position: absolute;
  
 }
 
