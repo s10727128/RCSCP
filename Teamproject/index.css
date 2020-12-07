@@ -107,6 +107,7 @@ ul.drop-down-menu-1 {
   resize: both;
   width: auto;
   position: absolute;
+ 
 }
 /*右上選單*/
 ul.drop-down-menu-2 {
@@ -142,16 +143,36 @@ ul.drop-down-menu-1 a {
   padding: 0 50px;
   text-decoration: none;
   line-height: 50px;
+  
+  transition: 1s;
+  
+}
 
-}
 ul.drop-down-menu-1 a:hover { /* 滑鼠滑入按鈕變色*/
-  background-color: #fff;
-  color: #84c754;
+  background-color: rgba(129, 36, 36, 0.671);
+ border-radius: 50%;
 }
-ul.drop-down-menu-1 li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
-  background-color: black;
+
+/*ul.drop-down-menu-1 li:hover > a {  滑鼠移入次選單上層按鈕保持變色
+  transition: all 2s;
+  background-color: red;
   color: #fff;
+  position: relative; 
 }
+*/
+/* 新hover測試*/
+
+/*
+.mh1 {
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.5);
+	transition: all 0.5s linear;
+	}
+
+*/
+
+
+
 
 ul.drop-down-menu-1 ul {
   border: #ccc 1px solid;
@@ -164,7 +185,7 @@ ul.drop-down-menu-1 ul {
 }
 
 ul.drop-down-menu-1 ul li {
-  border: #ccc 1px solid;
+  border: #ccc 0.5px solid;
 }
 
 ul.drop-down-menu-1 ul li:last-child {
