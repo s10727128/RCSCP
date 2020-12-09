@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" a href ="index.css">
 <link rel="icon" href="../bird.jpg">
-<title>專題首頁</title>
+<title>ThinGame</title>
 </head>
 
 <body>
@@ -81,7 +81,7 @@
   </ul>
 
   <div id="top">
-    <h1 style="font-size: 30px;">Welcome to Homepage<br><Br>資安遊戲間</h1>
+    <h1 style="font-size: 30px;">Welcome To Gameground<br></h1>
   
   </div>
 
