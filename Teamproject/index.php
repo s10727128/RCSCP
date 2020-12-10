@@ -1,5 +1,9 @@
 <?php
   header("Content-type: index.css"); 
+  require_once('register/connect.php');
+  $name='';
+  session_start();
+  $id = @$_SESSION['id']; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,56 +23,56 @@
       </li>-->
 
         <!--第二個按鈕-->       
-      <li><a href="#">各大關卡</a>
+      <li><a href="#">LEVEL</a>
           <ul>
               <li><a href="#">XSS</a>
                         <ul>
-                          <li><a href="../playgame/level1-1.php?name=test">第一小關</a>
+                          <li><a href="../playgame/level1-1.php?name=test">Level 1</a>
                           </li>
-                          <li><a href="../playgame/level1-2.php?name=test">第二小關</a>
+                          <li><a href="../playgame/level1-2.php?name=test">Level 2</a>
                           </li>
-                          <li><a href="../playgame/level1-3.php?name=test">第三小關</a>
+                          <li><a href="../playgame/level1-3.php?name=test">Level 3</a>
                           </li>
                         </ul>
               </li>
               <li><a href="#">CSRF</a>
                     <ul>
-                      <li><a href="#">第一小關</a>
+                      <li><a href="#">Level 1</a>
                       </li>
-                      <li><a href="#">第二小關</a>
+                      <li><a href="#">Level 2</a>
                       </li>
-                      <li><a href="#">第三小關</a>
+                      <li><a href="#">Level 3</a>
                       </li>
                     </ul>
               </li>
               <li><a href="#">SQL Injection</a>
                     <ul>
-                      <li><a href="#">第一小關</a>
+                      <li><a href="#">Level 1</a>
                       </li>
-                      <li><a href="#">第二小關</a>
+                      <li><a href="#">Level 2</a>
                       </li>
-                      <li><a href="#">第三小關</a>
+                      <li><a href="#">Level 3</a>
                       </li>
                     </ul>
               </li>
               <li><a href="#">DDOS</a>
                     <ul>
-                      <li><a href="#">第一小關</a>
+                      <li><a href="#">Level 1</a>
                       </li>
-                      <li><a href="#">第二小關</a>
+                      <li><a href="#">Level 2</a>
                       </li>
-                      <li><a href="#">第三小關</a>
+                      <li><a href="#">Level 3</a>
                       </li>
                     </ul>
               </li>
-              <li><a href="#">密碼破解</a>
+              <li><a href="#">MISC</a>
                 <ul>
                  
-                      <li><a href="../playgame/level5-1.php">第一小關</a>
+                      <li><a href="../playgame/level5-1.php">Morse Code</a>
                       </li>
-                      <li><a href="../playgame/level5-2.php">第二小關</a>
+                      <li><a href="../playgame/level5-2.php">Reverse Engineering</a>
                       </li>
-                      <li><a href="#">第三小關</a>
+                      <li><a href="#">Stego</a>
                       </li>
                    
               </ul>
@@ -76,8 +80,8 @@
           </ul>
       </li>
         <!--第四個按鈕--> 
-      <li><a href="register/account/profile.php">個人資料</a>
-      </li>
+      <!--<li><a href="register/account/profile.php">個人資料</a>
+      </li>-->
   </ul>
 
   <div id="top">
@@ -85,14 +89,36 @@
   
   </div>
 
+  
   <ul class="drop-down-menu-2">
    <!--第五個按鈕--> 
-   <li><a href="register/login.html" >註冊/登入</a>
+   <?php
+   $sql = "SELECT * FROM user WHERE ID='$id'";
+   $result=mysqli_query($connect,$sql);
+   if(mysqli_num_rows($result) > 0)
+{
+	while($row = mysqli_fetch_assoc($result))
+	{
+		$name=$row["Username"];
+		$access=$row["Access"];
+	}
+  echo '<li><a href="index.php">Welcome! '.$name; //下拉選單開頭:名稱
+	echo '<ul><li><a href="register/account/profile.php">Profile</a>'; //下拉選單2:個人資料
+  echo '<li><a href="register/logout.php">Logout</a>'; //下拉選單3:登出 
+  echo '</ul>';
+  echo '</li>';
+}
+else
+  {   
+    echo '<li><a href="register/login.html">Login</a></li>';
+  }
+
+   ?>
    
     
    </li>
      <!--第六個按鈕--> 
-   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題回報</a>
+   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">Bug Report</a>
    </li>
   </ul>
 
@@ -113,7 +139,7 @@
         </div>
         
         <div id="h1">
-          <h1>123</h1> 
+          <h1>add introduction</h1> 
         </div>
       
 </body>
