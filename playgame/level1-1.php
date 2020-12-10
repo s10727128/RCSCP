@@ -1,5 +1,5 @@
 <?php
-  header("Content-type: level1-1.css"); 
+  header("Content-type: playgame1.css"); 
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 
 
 </head>
-<body a link="blue" vlink="red">
+<body a link="blue" vlink="red" background-color="red">
     <form action="" method="GET">
         <div class="instructions">
             <h1 style="text-align: center;">LEVEL1-1</h1>

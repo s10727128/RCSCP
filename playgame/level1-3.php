@@ -1,3 +1,6 @@
+<?php
+  header("Content-type: playgame1.css"); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
