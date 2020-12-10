@@ -1,12 +1,9 @@
-<?php
-  header("Content-type: playgame5.css"); 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" a href ="playgame5.css">
     <link rel="shortcut icon" href="/bird.jpg">
-    <link rel="stylesheet" href="../Teamproject/game.css">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資安遊戲闖關網站</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
