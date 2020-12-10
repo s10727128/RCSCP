@@ -149,7 +149,7 @@ ul.drop-down-menu-1 a {
 }
 
 ul.drop-down-menu-1 a:hover { /* 滑鼠滑入按鈕變色*/
-  background-color: rgba(129, 36, 36, 0.671);
+  background-color:gray;
  border-radius: 50%;
 }
 
