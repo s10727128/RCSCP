@@ -15,12 +15,12 @@
     <form action="" method="GET">
         <div class="instructions">
             <h1>LEVEL1-1</h1>
-            <div id="menubar" > <a href="../Teamproject/index.php" class="menu_exit">退出</a> </div>
+            <div id="menubar" > <a href="../Teamproject/index.php" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
         <div>
-            <a id="next_btn" style="display: none;" href="" >下一關</a> 
+            <a id="next_btn" style="display: none;" href="" >Next</a> 
         </div>
         <br>    
         <div">
@@ -38,7 +38,7 @@
 
         <br>
         <div>
-            <button type="button" id="hintList">提示</button>
+            <button type="button" id="hintList">Hint</button>
             <!--<button type="button" id="writeup">writeup</button>-->
             <div style="list-style: none; ">
                 <li id="hint1"><b></b></li>

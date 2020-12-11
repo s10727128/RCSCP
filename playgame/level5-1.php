@@ -13,12 +13,12 @@
 <body a link="blue" vlink="red">
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL5-1</h1>
-        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">退出</a> </div>
+        <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">EXIT</a> </div>
     </div>
     <hr>
 
     <div style="text-align: center;">
-        <a id="next_btn" style="display: none;" href="" >下一關</a> 
+        <a id="next_btn" style="display: none;" href="" >Next</a> 
     </div>
     <br>
 
@@ -43,7 +43,7 @@
     </div>
 
     <div style="text-align: center;">
-            <button type="button" id="hintList">提示</button>
+            <button type="button" id="hintList">Hint</button>
             <div style="list-style: none; ">
                 <li id="hint1"><b></b></li>
             </div>

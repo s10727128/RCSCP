@@ -11,7 +11,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" a href ="index.css">
 <link rel="icon" href="../bird.jpg">
-<title>ThinGame</title>
+<title>TIK Gammer</title>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
                       </li>
                       <li><a href="../playgame/level5-2.php">Reverse Engineering</a>
                       </li>
-                      <li><a href="#">Stego</a>
+                      <li><a href="../playgame/level5-3.php">Stego</a>
                       </li>
                    
               </ul>
