@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>資安遊戲闖關網站</title>
-    <script src="source.js"></script>
+    <script src="source3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -23,27 +23,21 @@
         <a id="next_btn" style="display: none;" href="" >Next</a> 
     </div>
 
+    <div style="text-align: center;">
+        <div id="header">
+            <h1>Chat Room</h1>
+        </div>
 
-    <div id="header">
-        <div>Chat Room</div>
-        <form action="?" id="clear-form">
-            <input class="clear" type="submit" value="Clear all posts">
-        </form>
+        <textarea id="dome"></textarea><br>
+        <input type="button" value="Send" onclick="saveStorge('dome');">
+        <input type="button" value="Clear" onclick="clearStorge('dome');">
+        <p id="msg"></p>
+        
+
+
+    
+
     </div>
-
-    <div id="post-container"></div>
-
-    <table class="message">
-        <tr>
-          <td class="message-container">
-            <form action="?" id="">
-              <textarea id="" name="" rows="3" cols="20"></textarea>
-              <input class="share" type="submit" value="send">
-            </form>
-          </td>
-        </tr>
-    </table>
-
 
 
 
