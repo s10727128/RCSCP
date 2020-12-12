@@ -9,12 +9,33 @@ body {
 }
 */
 
+.spinner::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;;
+  top:50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -3px;
+  border-radius: 50%;
+  border:3px solid transparent;
+  border-top-color: white;
+  border-bottom-color: white;
+  animation: spinner 0.7s ease infinite;
+
+}
+@keyframes spinner{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
 #top {
   color: #84c754;
-
   text-align:center;
-
-  
   line-height: 20px;
   padding:30px;
   /*
@@ -22,9 +43,8 @@ body {
   */
   resize:both;
   float: none;
- 
-  
 }
+  
 
 #main {
   padding: 10px;

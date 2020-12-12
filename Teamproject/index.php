@@ -16,13 +16,26 @@
 
 <body>
 
+    <div class="spinner"></div>
+    <script>
+      $(document).ready(function(){
+        
+          Sectimeout(function(){
+            $('body').addclass('spinner')
+          })
+      })
+    </script>
+  
+  <script>
+  $(window).load(function() {
+    $('#spinner').hide();
+  });
+</script>
+   
 
-    <ul class="drop-down-menu-1">
-        <!--第一個按鈕
-      <li><a href="../Teamproject/description/description.html">網頁介紹</a>
-      </li>-->
 
-        <!--第二個按鈕-->       
+<div class="main">
+    <ul class="drop-down-menu-1">     
       <li><a href="#">LEVEL</a>
           <ul>
               <li><a href="#">XSS</a>
@@ -67,22 +80,17 @@
               </li>
               <li><a href="#">MISC</a>
                 <ul>
-                 
                       <li><a href="../playgame/level5-1.php">Morse Code</a>
                       </li>
                       <li><a href="../playgame/level5-2.php">Reverse Engineering</a>
                       </li>
                       <li><a href="../playgame/level5-3.php">Stego</a>
                       </li>
-                   
               </ul>
               </li>
           </ul>
       </li>
-        <!--第四個按鈕--> 
-      <!--<li><a href="register/account/profile.php">個人資料</a>
-      </li>-->
-  </ul>
+    </ul>
 
   <div id="top">
     <h1 style="font-size: 30px;">Welcome To Gameground<br></h1>
@@ -125,22 +133,14 @@ else
 <br>
 <hr>
 <!--簡介-->
-<div id="description">
-  <P>
-    
-  </P>
-
-</div>
-
-    
-         <div id="h3">
+        <div id="h3">
           <h3>大綱</h3>
           <p>網站簡介 ☆可以打一些東西</p>
         </div>
         
         <div id="h1">
           <h1>add introduction</h1> 
-        </div>
-      
+         </div>
+</div>
 </body>
 </html>
