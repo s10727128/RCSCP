@@ -16,21 +16,22 @@
 
 <body>
 
-    <div class="spinner"></div>
-    <script>
-      $(document).ready(function(){
-        
-          Sectimeout(function(){
-            $('body').addclass('spinner')
-          })
-      })
-    </script>
-  
-  <script>
+<div class="spinner"></div>
+
+<script>
+    $(document).ready(function(){
+      
+        Sectimeout(function(){
+          $('body').addclass('spinner')
+        })
+    })
+</script>
+<script>
   $(window).load(function() {
-    $('#spinner').hide();
+    $('#spinner').
   });
 </script>
+
    
 
 
