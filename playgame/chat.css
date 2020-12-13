@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: darkblue;
+}
+
+.message_box{
+    width: 500px;
+    min-width :390px;
+    height: 600px;
+    background: #ffffff;
+    padding: 25px;  
+    margin: 20px auto;
+    box-shadow: 0 3px #0ccc;
+}

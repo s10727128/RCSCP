@@ -16,21 +16,22 @@
 
 <body>
 
-    <div class="spinner"></div>
-    <script>
-      $(document).ready(function(){
-        
-          Sectimeout(function(){
-            $('body').addclass('spinner')
-          })
-      })
-    </script>
-  
-  <script>
+<div class="spinner"></div>
+
+<script>
+    $(document).ready(function(){
+      
+        Sectimeout(function(){
+          $('body').addclass('spinner')
+        })
+    })
+</script>
+<script>
   $(window).load(function() {
-    $('#spinner').hide();
+    $('#spinner').
   });
 </script>
+
    
 
 
@@ -107,10 +108,11 @@
 {
 	while($row = mysqli_fetch_assoc($result))
 	{
+    $nickname=$row["Nickname"];
 		$name=$row["Username"];
 		$access=$row["Access"];
 	}
-  echo '<li><a href="index.php">Welcome! '.$name; //下拉選單開頭:名稱
+  echo '<li><a href="index.php">Welcome! '.$nickname; //下拉選單開頭:暱稱
 	echo '<ul><li><a href="register/account/profile.php">Profile</a>'; //下拉選單2:個人資料
   echo '<li><a href="register/logout.php">Logout</a>'; //下拉選單3:登出 
   echo '</ul>';
