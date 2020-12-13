@@ -11,12 +11,13 @@
 <meta charset="utf-8">
 <link rel="stylesheet" a href ="index.css">
 <link rel="icon" href="../bird.jpg">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>TIK Gammer</title>
 </head>
 
 <body>
 
-<div class="spinner"></div>
+<div class="spinner" style="display: none;"></div>
 
 <script>
     $(document).ready(function(){
