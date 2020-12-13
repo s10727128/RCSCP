@@ -10,17 +10,23 @@ if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_assoc($result))
 	{
-		$name=$row["Username"];
+		$nickname=$row["Nickname"];
 		$score=$row["Score"];
+		$email=$row["Email"];
+		$age=$row["Age"];
 		$access=$row["Access"];
 	}
 }
 
-echo "名稱:";
-echo $name;
-echo '<br>';
+echo "暱稱:";
+echo $nickname.'<br>';
+echo "信箱:";
+echo $email.'<br>';
+echo "年齡:";
+echo $age.'<br>';
 echo "分數:";
 echo $score.'<br>';
+echo '<a href="EditProfile.php">更改個人資料</a><br>';
 echo '<a href="ChangePassword.html">更換密碼</a><br>';
 if($access==1)
 {
