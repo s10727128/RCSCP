@@ -1,3 +1,11 @@
+<DOCTYPE html>
+	<html>
+		
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" a href ="login.css">
+</head>
+<body>
 <?PHP
 header("Content-Type: text/html; charset=utf8");
 if(!isset($_POST["submit"])){
@@ -32,3 +40,5 @@ else
 }
 
 ?>
+</body>
+</html>
