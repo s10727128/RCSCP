@@ -7,6 +7,13 @@ body{
 }
 a{
     text-decoration: none;
+    color:blue;
+}
+.word2{
+  color:red;
+}
+.instructions{
+  color: #233516;
 }
 
 .button {
