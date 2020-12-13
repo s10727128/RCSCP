@@ -37,15 +37,15 @@
         </div>
 
         <br>
-        <div>
-            <button type="button" id="hintList">Hint</button>
-            <!--<button type="button" id="writeup">writeup</button>-->
-            <div style="list-style: none; ">
-                <li id="hint1"><b></b></li>
-                <li id="hint2"></li>
-                <li id="hint3"></li>
-            </div>
-            
+        <div >
+                <button type="button" id="hintList" class="button">Hint</button>
+                  <!--<button type="button" id="writeup">writeup</button>-->
+                  <div style="list-style: none; ">
+
+                  <li id="hint1"></li>
+                  <li id="hint2"></li>
+                  <li id="hint3"></li>
+                  </div>
         </div>
     </form>
 
