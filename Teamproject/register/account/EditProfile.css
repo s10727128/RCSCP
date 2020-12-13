@@ -11,3 +11,10 @@ body{
     height: 300px;
     margin: -150px 0 0 -300px;
 }
+a{
+    text-decoration: none;
+    color:blue;
+}
+a:hover{
+  color:purple;
+}

@@ -36,6 +36,8 @@ if(mysqli_num_rows($result) > 0)
   ?>
  </form>
 </div>
+
+<div id="menubar" > <a href="../account/profile.php" class="menu_exit">回去個人資料</a> </div>
  </body>
  </html>
  <?php
