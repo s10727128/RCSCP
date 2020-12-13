@@ -1,3 +1,4 @@
+
 <?php
 require_once('../connect.php');
 session_start();
@@ -19,6 +20,7 @@ if(mysqli_num_rows($result) > 0)
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<link rel="stylesheet" a href ="Editprofile.css">
 <body>
 
 <form action="EditProfile.php" method="post">
@@ -33,6 +35,7 @@ if(mysqli_num_rows($result) > 0)
    form;
   ?>
  </form>
+</div>
  </body>
  </html>
  <?php
@@ -47,3 +50,4 @@ require_once('../connect.php');
  header('Location: profile.php');
  }
  ?>
+

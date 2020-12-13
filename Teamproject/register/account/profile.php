@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" a href ="profile.css">
+	<body>
 <?php
 require_once('../connect.php');
 session_start();
@@ -33,3 +41,5 @@ if($access==1)
 	echo '<a href="access.php">資料表</a><br>';
 }
 ?>
+	</body>
+</html>
