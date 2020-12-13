@@ -41,7 +41,7 @@
 
     <div style="text-align: center;">
             <button type="button" id="hintList" class="button">Hint</button>
-            <div style="list-style: none; ">
+            <div class="word2" style="list-style: none; ">
                 <li id="hint1"><b></b></li>
                 <li id="hint2"></li>
                 <li id="hint3"></li>

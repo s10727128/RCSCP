@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" a href="ChangePasswordphp.css">
+</head>
+
+<body>
 <?php
 if(!isset($_POST['submit'])){
     exit("錯誤執行");
@@ -39,3 +47,5 @@ else{
     }
 } 
 ?>
+</body>
+</html>

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" a href ="profile.css">
+	<body>
 <?php
 require_once('../connect.php');
 session_start();
@@ -28,8 +36,13 @@ echo "分數:";
 echo $score.'<br>';
 echo '<a href="EditProfile.php">更改個人資料</a><br>';
 echo '<a href="ChangePassword.html">更換密碼</a><br>';
+
 if($access==1)
 {
 	echo '<a href="access.php">資料表</a><br>';
 }
 ?>
+
+<div id="menubar" > <a href="../../index.php" class="menu_exit">回到主頁</a> </div>
+	</body>
+</html>
