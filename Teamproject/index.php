@@ -40,7 +40,7 @@
     <ul class="drop-down-menu-1">     
       <li><a href="#">LEVEL</a>
           <ul>
-              <li><a href="#">XSS</a>
+              <li><a href="../playgame/gamepoint/level1.html">XSS</a>
               
                         <ul>
                           <li><a href="../playgame/level1-1.php?name=test">Level 1</a>
