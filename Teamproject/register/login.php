@@ -36,7 +36,8 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo("登入失敗,帳號或密碼錯誤");
+	echo("登入失敗,帳號或密碼錯誤,5秒後自動返回登入介面");
+	echo '<meta http-equiv=REFRESH CONTENT=5;url=login.html>';
 }
 
 ?>

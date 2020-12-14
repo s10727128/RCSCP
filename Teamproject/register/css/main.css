@@ -63,6 +63,12 @@ span{
     text-decoration: none;
     display: block;
 }
+#a1:hover{
+    color:purple;
+}
+#a2:hover{
+    color:purple;
+}
   #a2{  
   float: right;
   text-align: center;  
