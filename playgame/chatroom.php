@@ -22,8 +22,14 @@
         </div>
         
         <div class="chat-form">
+            <?php
+            ini_set("display_errors", 0);
+            $ans = $_GET["talk_box"];
+            echo '<form action=level1-2.php method=GET>
             <textarea class="talk_box" id="talkbox"></textarea>
-            <button id="chat-form-button" onclick="sendFunction()">Send</button>
+            <button id="chat-form-button">Send</button>;
+        ?>
+            
         </div>
     </div>
 

@@ -1,6 +1,6 @@
 var originalAlert = window.alert;
 //var messagelogs = document.getElementById("messagelogs");
-var talkbox = document.getElementsByName("talk_box").values;
+var talkbox = document.getElementsById("talkbox");
 var sendbtn = document.getElementById("chat-form-button");
 
 window.alert = function(){
@@ -11,7 +11,7 @@ window.alert = function(){
 
 function sendFunction(){
     var str = "";
-    str = '<div class="message"><div class="user-photo"><img src="../elephant.jpeg"></div>' + '<p class="message_chat">' + talkbox + '</p></div>';
+    str = '<div class="message"><div class="user-photo"><img src="../elephant.jpeg"></div><p class="message_chat">' + talkbox + '</p></div>';
     messagelogs.innerHTML = messagelogs.innerHTML + str;
 }
 
