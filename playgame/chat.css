@@ -91,7 +91,7 @@ body{
 }
 
 .chat-form button{
-    background:rgb(63, 63, 63);
+    background:rgb(0, 0, 0);
     padding: 15px;
     font-family: papyrus;
     font-size: 30px;
@@ -105,12 +105,12 @@ body{
 }
 
 .chat-form button:hover{
-    background: rgb(0, 0, 0);
+    background:#252525;
 
 }
 
 .chat-form button:active {
-  background-color: #333333;
+  background-color: black;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
