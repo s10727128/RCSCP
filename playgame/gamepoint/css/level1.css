@@ -1,4 +1,26 @@
 body{
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
 }
+h1{
+    text-align: center;
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+}
+
+.list{
+    border: #ccc 2px solid;
+    font-family:'audiowide',monospace;
+    font-size: 30px;
+    left:20%;
+    
+    padding:50px;
+    position: absolute;;
+    list-style:none;
+    width: auto;
+    resize:both;
+    display: block;
+}
+

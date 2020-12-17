@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Room</title>
-
+    <script src="chat.js"></script>
 
 </head>
 <body>
-    <div class="message_box">
-        <div class="message_logs">
+    <div class="message_box" id="messagebox">
+        <div class="message_logs" id="messagelogs">
             <div class="message">
                 <div class="user-photo"><img src="../elephant.jpeg"></div>
                 <p class="message_chat">What's up, Bro!</p>
@@ -20,9 +20,10 @@
                 <p class="message_chat">Haha</p>
             </div>
         </div>
+        
         <div class="chat-form">
-            <textarea></textarea>
-            <button>Send</button>
+            <textarea class="talk_box" id="talkbox"></textarea>
+            <button id="chat-form-button" onclick="sendFunction()">Send</button>
         </div>
     </div>
 
