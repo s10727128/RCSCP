@@ -42,14 +42,7 @@
           <ul>
               <li><a href="../playgame/gamepoint/level1.html">XSS</a>
               
-                        <ul>
-                          <li><a href="../playgame/level1-1.php?name=test">Level 1</a>
-                          </li>
-                          <li><a href="../playgame/level1-2.php?name=test">Level 2</a>
-                          </li>
-                          <li><a href="../playgame/level1-3.php?name=test">Level 3</a>
-                          </li>
-                        </ul>
+                        
               </li>
               <li><a href="#">CSRF</a>
                     <ul>
