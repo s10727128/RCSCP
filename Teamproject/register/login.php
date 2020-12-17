@@ -18,7 +18,7 @@ $name=$_POST['Username'];//post獲取表單裡的name
 $pwd=$_POST['Password'];//post獲取表單裡的password
 $password = MD5($pwd);
 
-$sql = "select * from user where Username = '".$name."' and Password='".$password."'";//檢測資料庫是否有對應的
+$sql = "SELECT * FROM user WHERE Username = '$name' and Password='$password'";//檢測資料庫是否有對應的
 
 $result=mysqli_query($connect,$sql);
 if(mysqli_num_rows($result) > 0)
