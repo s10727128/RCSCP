@@ -38,7 +38,7 @@
 
 <div class="main">
     <ul class="drop-down-menu-1">     
-      <li><a href="#">LEVEL</a>
+      <li><a href="#">關卡</a>
           <ul>
               <li><a href="../playgame/gamepoint/level1.html">XSS</a>
               
@@ -107,15 +107,15 @@
 		$name=$row["Username"];
 		$access=$row["Access"];
 	}
-  echo '<li><a href="index.php">Welcome! '.$nickname; //下拉選單開頭:暱稱
-	echo '<ul><li><a href="register/account/profile.php">Profile</a>'; //下拉選單2:個人資料
-  echo '<li><a href="register/logout.php">Logout</a>'; //下拉選單3:登出 
+  echo '<li><a href="index.php">歡迎! '.$nickname; //下拉選單開頭:暱稱
+	echo '<ul><li><a href="register/account/profile.php">個人資料</a>'; //下拉選單2:個人資料
+  echo '<li><a href="register/logout.php">登出</a>'; //下拉選單3:登出 
   echo '</ul>';
   echo '</li>';
 }
 else
   {   
-    echo '<li><a href="register/login.html">Login</a></li>';
+    echo '<li><a href="register/login.html">登入</a></li>';
   }
 
    ?>
@@ -123,7 +123,7 @@ else
     
    </li>
      <!--第六個按鈕--> 
-   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">Bug Report</a>
+   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題回報</a>
    </li>
   </ul>
 
