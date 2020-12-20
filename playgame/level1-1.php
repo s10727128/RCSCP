@@ -39,7 +39,6 @@
         <br>
         <div class="">
                 <button type="button" id="hintList" class="button">Hint</button>
-                  <!--<button type="button" id="writeup">writeup</button>-->
                   <div class="word2" style="list-style: none; ">
                 
                   <li id="hint1"></li>
