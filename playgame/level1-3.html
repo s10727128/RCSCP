@@ -46,15 +46,14 @@
 
 
     <br>
-    <div class="">
+    <div style="text-align: center;">
         <button type="button" id="hintList" class="button">Hint</button>
-            <div class="word2" style="list-style: none; "> 
-                <li id="hint1"></li>
-                <li id="hint2"></li>
-                <li id="hint3"></li>
-            </div>
+        <div class="word2" style="list-style: none; ">
+            <li id="hint1"></li>
+            <li id="hint2"></li>
+            <li id="hint3"></li>
+        </div>
     </div>
-    </form>
 
     <script>
         let x = 0;
@@ -62,15 +61,15 @@
             x ++;
             switch(x){
                 case 1:
-                    $("#hint1").text("1. 執行一個<script>");
+                    $("#hint1").text("1. 一般的<script>alert()</script>無法執行");
                     break;
 
                 case 2:
-                    $("#hint2").text("2. 在<script>裡加入alert()");
+                    $("#hint2").text("2. 試試看用<img>");
                     break;
 
                 case 3:
-                    $("#hint3").text("3. 別再點了!!!動手試試，就會知道結果了!!!");
+                    $("#hint3").text("3. \<img src=\"***.jpg\" onerror=\"alert()\"\>");
                     break;
 
                 default:

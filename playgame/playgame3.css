@@ -6,7 +6,25 @@
 }
 
 body{
-    background: black;
+    background-color: black;
+    font-family: 'audiowide',monospace;
+    font-size: 20px;
+    color: #84c754;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:blue;
+}
+a:hover{
+    color:purple;
+}
+.word2{
+    color:red;
+}
+.instructions{
+    color: #233516;
 }
 
 .header{

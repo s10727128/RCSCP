@@ -49,14 +49,13 @@
                 <li id="hint5"></li>
             </div>
         </div>
-    </form>
 
     
     <script>
-        let j = 0;
+        let x = 0;
         $("#hintList").click(function(){
-            j ++;
-            switch(j){
+            x ++;
+            switch(x){
                 case 1:
                     $("#hint1").text("1. 執行一個<script>");
                     break;
