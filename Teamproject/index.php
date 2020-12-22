@@ -15,7 +15,7 @@
 <title>TIK Gammer</title>
 </head>
 
-<body>
+<body background="https://media3.giphy.com/media/3ohhwNqFMnb7wZgNnq/giphy.gif">
 
 <div class="spinner" style="display: none;"></div>
 
