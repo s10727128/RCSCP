@@ -5,18 +5,20 @@ body {
   height: 100%;
   overflow: hidden;
   margin: 0;
+  padding:0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'audiowide',monospace;
+  background-color: #190431;
+  position: relative;
 }
 
 a{
     text-decoration: none;
-    color:white;
-    z-index: 1; /*顯示在最上層*/
-    padding: 100px;
+    color: #3ca09e;
     position: relative;
+    z-index: 2;
 }
 div[class*=box] {
   height: 25%;
@@ -24,12 +26,9 @@ div[class*=box] {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0; /*顯示在最上層*/
 }
 
-.box-1 { background-color: #FF6766; }
-.box-2 { background-color: #3C3C3C; }
-.box-3 { background-color: #66A182; }
-.box-4 { background-color: #403196; }
 
 .btn {
   line-height: 50px;
@@ -90,11 +89,179 @@ div[class*=box] {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
-/* 
-========================
-      BUTTON TWO
-========================
+/*
+  ================
+    button three
+  ================
 */
+ 
+
+  .btn-two{
+    color: rgba(255,255,255,1);
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: relative; 
+    overflow: hidden;
+    }
+    .btn-two span{
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    }
+    .btn-two:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    }
+    .btn-two:hover::before{
+    opacity: 1;
+    transform: skewX(-180deg)  scale(0.5,1);
+    }
+
+ 
+  
+  /* 
+  ========================
+        BUTTON THREE
+  ========================
+  */
+  .btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  
+    /*
+    =========bar========
+    */
+    ul{
+      position: absolute;;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0;
+      padding: 20px 0;
+      background-color: #fff;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      z-index: 2;
+    }
+    ul li{
+      list-style: none;
+      text-align: center;
+      display: block;
+      border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    ul li:last-child
+    {
+      border-right: none;
+    }
+    ul li a
+    {
+      text-decoration: none;
+      padding: 0 50px;
+      display: block;
+    }
+    ul li a .icon
+    {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0 auto 10px;
+    }
+    ul li a .icon .fa
+    {
+      width: 100%;
+      height: 100%;
+      line-height: 40px;
+      font-size: 34px;
+      transition: 0.5s;
+      color:#000;
+    }
+    ul li a .icon .fa:last-child
+    {
+      color: #a030d8;
+    }
+    ul li a:hover .icon .fa
+    {
+      transform: translateY(-100%);
+    }
+    ul li a .name
+    {
+      position: relative;
+      height: 20px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+    ul li a .name span
+    {
+      display: block;
+      position: relative;
+      color:#000;
+      font-size: 18px;
+      line-height: 20px;
+      transition: 0.5s;
+    }
+    ul li a .name span::before
+    {
+      content:attr(data-text);
+      position: absolute;
+      top:-100%;
+      width: 100%;
+      height: 100%;
+      color: #a030d8;
+    }
+    ul li a:hover .name span
+    {
+      transform: translateY(20px);
+    }
+   /* 
+========================
+      BUTTON four
+========================
+
 .btn-two {
     color: #FFF;
     transition: all 0.5s;
@@ -137,86 +304,9 @@ div[class*=box] {
     transform: rotate(45deg);
     background-color: rgba(255,255,255,0);
   }
-  
-  
-  /* 
-  ========================
-        BUTTON THREE
-  ========================
-  */
-  .btn-three {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-  }
-  .btn-three::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.1);
-    transition: all 0.3s;
-  }
-  .btn-three:hover::before {
-    opacity: 0 ;
-    transform: scale(0.5,0.5);
-  }
-  .btn-three::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.5);
-    transform: scale(1.2,1.2);
-  }
-  .btn-three:hover::after {
-    opacity: 1;
-    transform: scale(1,1);
-  }
-
-  /*
-  ================
-    EXIT
-  ================
   */
 
-  .btn-four{
-    color: rgba(255,255,255,1);
-    transition: all 0.5s;
-    border: 1px solid rgba(255,255,255,0.5);
-    position: relative; 
-    overflow: hidden;
-    }
-    .btn-four span{
-    z-index: 2; 
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;   
-    }
-    .btn-four:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.5);
-    transition: all 0.5s;
-    }
-    .btn-four:hover::before{
-    opacity: 1;
-    transform: skewX(-180deg)  scale(0.5,1);
-    }
-  
+ 
   /*
 h1{
     text-align: center;
@@ -276,6 +366,4 @@ a:hover{
     transform: scale(1.2);
     opacity: 1;
 }
-
-
 */
