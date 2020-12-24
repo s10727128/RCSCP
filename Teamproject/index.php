@@ -15,7 +15,7 @@
 <title>TIK Gammer</title>
 </head>
 
-<body background="https://media3.giphy.com/media/3ohhwNqFMnb7wZgNnq/giphy.gif">
+<body background="">
 
 <div class="spinner" style="display: none;"></div>
 
@@ -40,7 +40,7 @@
     <ul class="drop-down-menu-1">     
       <li><a href="#">關卡</a>
           <ul>
-              <li><a href="../playgame/gamepoint/level1.html">XSS</a>
+              <li><a href="../playgame/gamepoint/level1index.html">XSS</a>
               
                         
               </li>
@@ -123,21 +123,65 @@ else
     
    </li>
      <!--第六個按鈕--> 
-   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題回報</a>
+   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題</a>
    </li>
   </ul>
 
 <br>
 <hr>
 <!--簡介-->
-        <div id="h3">
-          <h3>大綱</h3>
-          <p>網站簡介 ☆可以打一些東西</p>
-        </div>
-        
-        <div id="h1">
-          <h1>add introduction</h1> 
-         </div>
 </div>
+ <!--bar-->  
+ <ul>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Trophy">Trophy</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Game">Game</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../Teamproject/index.php">
+                        <div class="icon">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Home">Home</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Login">Login</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="name"><span data-text="Contact">Contact</span></div>
+                    </a>
+                </li>
+            </ul>
+
+
+
+        
 </body>
 </html>

@@ -15,7 +15,7 @@
     <form action="" method="GET">
         <div class="instructions">
             <h1>LEVEL1-1</h1>
-            <div id="menubar" > <a href="gamepoint/level1.html" class="menu_exit">EXIT</a> </div>
+            <div id="menubar" > <a href="gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
