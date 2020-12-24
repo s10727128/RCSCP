@@ -1,15 +1,24 @@
+
+html,
 body {
-   font-family: "Lato",sans-serif;
-  line-height: 26px;
-  background-color: black;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'audiowide',monospace;
+  background-color: #000;
+  position: relative;
 }
 /*
 .container {
   xmin-width: 900px;
 }
 */
-
+/*
 .spinner::before {
   content: "";
   box-sizing: border-box;
@@ -32,7 +41,7 @@ body {
     transform: rotate(360deg);
   }
 }
-
+*/
 
 #top {
   color: #84c754;
@@ -87,39 +96,20 @@ a:hover {
 }
 
 
-#h3 {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  padding: 10px;
-  width: 320px;
-  position: absolute;
-  font-size: 60%;
-  font-family: Helvetica;
-  line-height: 20px;
-  position: relative;
-  text-align: center;
-}
 
-#h1{
-  color:#ffffff;
-  text-align: center;
-  position: relative;
-  border: 1px;
-  font-size: 80;
-}
+
 
 
 /*下拉式選單*/
 
 /*左上*/
-ul { /* 取消ul預設的內縮及樣式 */
+.main ul { /* 取消ul預設的內縮及樣式 */
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-ul.drop-down-menu-1 {
+.main ul.drop-down-menu-1 {
   border: #ccc 1px solid;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
@@ -131,7 +121,7 @@ ul.drop-down-menu-1 {
  
 }
 /*右上選單*/
-ul.drop-down-menu-2 {
+main ul.drop-down-menu-2 {
   border: #ccc 1px solid;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
@@ -143,21 +133,21 @@ ul.drop-down-menu-2 {
  
 }
 
-ul.drop-down-menu-1 li {
+.main ul.drop-down-menu-1 li {
   position: relative;
   white-space: nowrap;
   border-right: #ccc 1px solid;
 }
 
-ul.drop-down-menu-1 > li:last-child {
+.main ul.drop-down-menu-1 > li:last-child {
   border-right: none;
 }
 
-ul.drop-down-menu-1 > li {
+.main ul.drop-down-menu-1 > li {
  float: left; /* 只有第一層是靠左對齊*/
 }
 
-ul.drop-down-menu-1 a {
+.main ul.drop-down-menu-1 a {
   background-color: black;
   color: #84c754;
   display: block;
@@ -169,7 +159,7 @@ ul.drop-down-menu-1 a {
   
 }
 
-ul.drop-down-menu-1 a:hover { /* 滑鼠滑入按鈕變色*/
+.main ul.drop-down-menu-1 a:hover { /* 滑鼠滑入按鈕變色*/
   background-color:gray;
  border-radius: 50%;
 }
@@ -195,7 +185,7 @@ ul.drop-down-menu-1 a:hover { /* 滑鼠滑入按鈕變色*/
 
 
 
-ul.drop-down-menu-1 ul {
+.main ul.drop-down-menu-1 ul {
   border: #ccc 1px solid;
   position: absolute;
   z-index: 100;
@@ -205,44 +195,47 @@ ul.drop-down-menu-1 ul {
   
 }
 
-ul.drop-down-menu-1 ul li {
+.main ul.drop-down-menu-1 ul li {
   border: #ccc 0.5px solid;
 }
 
-ul.drop-down-menu-1 ul li:last-child {
+.main ul.drop-down-menu-1 ul li:last-child {
   border-bottom: none;
 }
 
-ul.drop-down-menu-1 ul ul { /*第三層以後的選單出現位置與第二層不同*/
+.main ul.drop-down-menu-1 ul ul { /*第三層以後的選單出現位置與第二層不同*/
   z-index: 999;
   top: 10px;
   left: 90%;
 }
 
-ul.drop-down-menu-1 ul { /*隱藏次選單*/
+.main ul.drop-down-menu-1 ul { /*隱藏次選單*/
   display: none;
 }
 
-ul.drop-down-menu-1 li:hover > ul { /* 滑鼠滑入展開次選單*/
+.main ul.drop-down-menu-1 li:hover > ul { /* 滑鼠滑入展開次選單*/
   display: block;
 }
 
-
-ul.drop-down-menu-2 li {
+/*
+===================
+    ul second
+===================
+.main ul.drop-down-menu-2 li {
   
   white-space: nowrap;
   border-right: #ccc 1px solid;
 }
 
-ul.drop-down-menu-2 > li:last-child {
+.main ul.drop-down-menu-2 > li:last-child {
   border-right: none;
 } 
 
-ul.drop-down-menu-2 > li {
- float: left; /* 只有第一層是靠左對齊*/
+.main ul.drop-down-menu-2 > li {
+ float: left;  只有第一層是靠左對齊
 }
 
-ul.drop-down-menu-2 a {
+main ul.drop-down-menu-2 a {
   background-color: black;
   color: #84c754;
   display: block;
@@ -251,16 +244,16 @@ ul.drop-down-menu-2 a {
   line-height: 50px;
 
 }
-ul.drop-down-menu-2 a:hover { /* 滑鼠滑入按鈕變色*/
+main ul.drop-down-menu-2 a:hover { /* 滑鼠滑入按鈕變色
   background-color: #fff;
   color: #84c754;
 }
-ul.drop-down-menu-2 li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+main ul.drop-down-menu-2 li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*
   background-color: black;
   color: #fff;
 }
 
-ul.drop-down-menu-2 ul {
+main ul.drop-down-menu-2 ul {
   border: #ccc 1px solid;
   position: absolute;
   z-index: 100;
@@ -270,32 +263,32 @@ ul.drop-down-menu-2 ul {
   
 }
 
-ul.drop-down-menu-2 ul li {
+main ul.drop-down-menu-2 ul li {
   border: #ccc 1px solid;
 }
 
-ul.drop-down-menu-2 ul li:last-child {
+main ul.drop-down-menu-2 ul li:last-child {
   border-bottom: none;
 }
 
-ul.drop-down-menu-2 ul ul { /*第三層以後的選單出現位置與第二層不同*/
+main ul.drop-down-menu-2 ul ul { /*第三層以後的選單出現位置與第二層不同*
   z-index: 999;
   top: 10px;
   left: 90%;
 }
 
-ul.drop-down-menu-2 ul { /*隱藏次選單*/
+main l.drop-down-menu-2 ul { /*隱藏次選單*
   display: none;
 }
 
-ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
+main ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*
   display: block;
 }
-
+*/
     /*
     =========bar========
     */
-    ul{
+ .bar ul{
       position: absolute;;
       top: 90%;
       left: 50%;
@@ -308,23 +301,23 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       box-shadow: 0 10px 30px rgba(0,0,0,.3);
       z-index: 2;
     }
-    ul li{
+   .bar ul li{
       list-style: none;
       text-align: center;
       display: block;
       border-right: 1px solid rgba(0,0,0,0.2);
     }
-    ul li:last-child
+    .bar  ul li:last-child
     {
       border-right: none;
     }
-    ul li a
+    .bar  ul li a
     {
       text-decoration: none;
       padding: 0 50px;
       display: block;
     }
-    ul li a .icon
+    .bar  ul li a .icon
     {
       width: 40px;
       height: 40px;
@@ -332,7 +325,7 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       overflow: hidden;
       margin: 0 auto 10px;
     }
-    ul li a .icon .fa
+    .bar  ul li a .icon .fa
     {
       width: 100%;
       height: 100%;
@@ -341,15 +334,15 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       transition: 0.5s;
       color:#000;
     }
-    ul li a .icon .fa:last-child
+    .bar  ul li a .icon .fa:last-child
     {
       color: #a030d8;
     }
-    ul li a:hover .icon .fa
+    .bar  ul li a:hover .icon .fa
     {
       transform: translateY(-100%);
     }
-    ul li a .name
+    .bar  ul li a .name
     {
       position: relative;
       height: 20px;
@@ -357,7 +350,7 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       display: block;
       overflow: hidden;
     }
-    ul li a .name span
+    .bar  ul li a .name span
     {
       display: block;
       position: relative;
@@ -366,7 +359,7 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       line-height: 20px;
       transition: 0.5s;
     }
-    ul li a .name span::before
+    .bar  ul li a .name span::before
     {
       content:attr(data-text);
       position: absolute;
@@ -375,7 +368,7 @@ ul.drop-down-menu-2 li:hover > ul { /* 滑鼠滑入展開次選單*/
       height: 100%;
       color: #a030d8;
     }
-    ul li a:hover .name span
+    .bar  ul li a:hover .name span
     {
       transform: translateY(20px);
     }

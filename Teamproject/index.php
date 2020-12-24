@@ -10,13 +10,18 @@
   <head>
 <meta charset="utf-8">
 <link rel="stylesheet" a href ="index.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  >
 <link rel="icon" href="../bird.jpg">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>TIK Gammer</title>
 </head>
 
-<body background="">
+<body>
 
+<!--
+  =================
+      spinner
+  =================
 <div class="spinner" style="display: none;"></div>
 
 <script>
@@ -33,16 +38,17 @@
   });
 </script>
 
-   
+-->
 
 
+  ============
+    ul選單
+  ============
 <div class="main">
     <ul class="drop-down-menu-1">     
       <li><a href="#">關卡</a>
           <ul>
-              <li><a href="../playgame/gamepoint/level1index.html">XSS</a>
-              
-                        
+              <li><a href="../playgame/gamepoint/level1index.html">XSS</a>       
               </li>
               <li><a href="#">CSRF</a>
                     <ul>
@@ -86,53 +92,43 @@
               </li>
           </ul>
       </li>
+      <?php
+          $sql = "SELECT * FROM user WHERE ID='$id'";
+          $result=mysqli_query($connect,$sql);
+          if(mysqli_num_rows($result) > 0)
+      {
+	        while($row = mysqli_fetch_assoc($result))
+	    {
+          $nickname=$row["Nickname"];
+	      	$name=$row["Username"];
+	      	$access=$row["Access"];
+    	}
+          echo '<li><a href="index.php">歡迎! '.$nickname; //下拉選單開頭:暱稱
+        	echo '<ul><li><a href="register/account/profile.php">個人資料</a>'; //下拉選單2:個人資料
+          echo '<li><a href="register/logout.php">登出</a>'; //下拉選單3:登出 
+          echo '</ul>';
+          echo '</li>';
+      }
+        else
+      {   
+          echo '<li><a href="register/login.html">登入</a></li>';
+      }
+      ?>
     </ul>
 
+</div>
   <div id="top">
     <h1 style="font-size: 30px;">Welcome To Gameground<br></h1>
-  
   </div>
 
   
-  <ul class="drop-down-menu-2">
-   <!--第五個按鈕--> 
-   <?php
-   $sql = "SELECT * FROM user WHERE ID='$id'";
-   $result=mysqli_query($connect,$sql);
-   if(mysqli_num_rows($result) > 0)
-{
-	while($row = mysqli_fetch_assoc($result))
-	{
-    $nickname=$row["Nickname"];
-		$name=$row["Username"];
-		$access=$row["Access"];
-	}
-  echo '<li><a href="index.php">歡迎! '.$nickname; //下拉選單開頭:暱稱
-	echo '<ul><li><a href="register/account/profile.php">個人資料</a>'; //下拉選單2:個人資料
-  echo '<li><a href="register/logout.php">登出</a>'; //下拉選單3:登出 
-  echo '</ul>';
-  echo '</li>';
-}
-else
-  {   
-    echo '<li><a href="register/login.html">登入</a></li>';
-  }
-
-   ?>
    
-    
-   </li>
-     <!--第六個按鈕--> 
-   <li><a href="https://forms.gle/YM4LhPU2JtQGR8F78">問題</a>
-   </li>
-  </ul>
-
-<br>
-<hr>
-<!--簡介-->
-</div>
+   
+  
+   
  <!--bar-->  
- <ul>
+        <div class="bar">
+            <ul>
                 <li>
                     <a href="#">
                         <div class="icon">
@@ -170,7 +166,7 @@ else
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
                         <div class="icon">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -179,8 +175,7 @@ else
                     </a>
                 </li>
             </ul>
-
-
+    </div>
 
         
 </body>
