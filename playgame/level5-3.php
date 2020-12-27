@@ -59,13 +59,13 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1.zip偽加密");
+                    $("#hint1").text("1.這是一個zip偽加密的檔案");
                     break;
                 case 2:
-                    $("#hint2").text("2.Base64 code");
+                    $("#hint2").text("2.內容經由Base64 code加密過");
                     break;
                 case 3:
-                    $("#hint3").text("3.Hex code");
+                    $("#hint3").text("3.內容經由Hex code加密過");
                     break;
 
             }

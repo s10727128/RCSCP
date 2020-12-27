@@ -37,15 +37,14 @@
         </div>
 
         <br>
-        <div class="">
-            <button type="button" id="hintList" class="button">Hint</button>
-                <div class="word2" style="list-style: none; ">
-                
-                    <li id="hint1"></li>
-                    <li id="hint2"></li>
-                    <li id="hint3"></li>
-                </div>
-        </div>
+        <button type="button" id="hintList" class="button">Hint</button>
+            <div class="word2" style="list-style: none; ">
+            
+                <li id="hint1"></li>
+                <li id="hint2"></li>
+                <li id="hint3"></li>
+                <li id="hint4"></li>
+            </div>
     </form>
 
     
@@ -63,8 +62,12 @@
                     break;
 
                 case 3:
-                    $("#hint3").text("3. 別再點了!!!動手試試，就會知道結果了!!!");
+                    $("#hint3").text("3. 不知道輸入在哪嗎?仔細觀察網址");
                     break;
+
+                case 4:
+                $("#hint4").text("4. 將neam=test，改成name\=\<script\>alert\(\)\<\/script\>");
+                break;
 
                 default:
                     break;

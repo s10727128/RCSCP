@@ -52,9 +52,9 @@
               </li>
               <li><a href="#">CSRF</a>
                     <ul>
-                      <li><a href="#">Level 1</a>
+                      <li><a href="../playgame/level2-1-1.php">Level 1</a>
                       </li>
-                      <li><a href="#">Level 2</a>
+                      <li><a href="../playgame/level2-2-1.php">Level 2</a>
                       </li>
                       <li><a href="#">Level 3</a>
                       </li>
@@ -72,7 +72,7 @@
               </li>
               <li><a href="#">DDOS</a>
                     <ul>
-                      <li><a href="#">Level 1</a>
+                      <li><a href="">Level 1</a>
                       </li>
                       <li><a href="#">Level 2</a>
                       </li>

@@ -31,7 +31,6 @@ a:hover{
   }
   
   .button:before {
-    content:'';
     z-index:1;
     position:absolute;
     display:block;
@@ -53,7 +52,6 @@ a:hover{
   }
   
   .button:after {
-    content:'Hint!';
     text-align:center;
     line-height:40px;
     font-size:18px;

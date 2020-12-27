@@ -43,10 +43,12 @@
 
     <div style="text-align: center;">
             <button type="button" id="hintList">Hint</button>
-            <div style="list-style: none; ">
+            <div class="word2" style="list-style: none; ">
                 <li id="hint1"><b></b></li>
-                <li id="hint2"><b></b></li>
-                <li id="hint3"><b></b></li>
+                <li id="hint2"></li>
+                <li id="hint3"></li>
+                <li id="hint4"></li>
+                <li id="hint5"></li>
             </div>
         </div>
 

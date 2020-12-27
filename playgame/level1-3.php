@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="/bird.jpg">
-    <link rel="stylesheet" href="playgame3.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>資安遊戲闖關網站</title>
-    <script src="source3.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/bird.jpg">
+<link rel="stylesheet" href="playgame3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資安遊戲闖關網站</title>
+<script src="source3.js"></script>
+<script src="source3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -49,10 +50,10 @@
     <div style="text-align: center;">
         <button type="button" id="hintList" class="button">Hint</button>
         <div class="word2" style="list-style: none; ">
-            <li id="hint1"></li>
-            <li id="hint2"></li>
-            <li id="hint3"></li>
-        </div>
+                <li id="hint1"><b></b></li>
+                <li id="hint2"></li>
+                <li id="hint3"></li>
+            </div>
     </div>
 
     <script>

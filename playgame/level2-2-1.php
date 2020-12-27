@@ -13,7 +13,7 @@
 </head>
 <body a link="blue" vlink="red">
     <div class="instructions">
-        <h1 style="text-align: center;">LEVEL1-2</h1>
+        <h1 style="text-align: center;">LEVEL2-2</h1>
         <div id="menubar" style="text-align: center";> <a href="gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
     </div>
     <hr>
@@ -33,7 +33,9 @@
             <input name=input value="'.$ans.'">
             <input type=submit name=submit value="搜尋"/>
             </form><br>';
-            
+
+            echo "你現在是一位駭客，請利用網站XSS漏洞，將搜尋的按鈕連結導向\"level2-2-2.php\"這個網址。";
+            echo '<br>';
             echo "Your answer is: ".htmlspecialchars($ans);
         ?>
     </div>
@@ -45,8 +47,6 @@
                 <li id="hint1"><b></b></li>
                 <li id="hint2"></li>
                 <li id="hint3"></li>
-                <li id="hint4"></li>
-                <li id="hint5"></li>
             </div>
         </div>
 
@@ -57,24 +57,16 @@
             x ++;
             switch(x){
                 case 1:
-                    $("#hint1").text("1. 執行一個<script>");
+                    $("#hint1").text("1.");
                     break;
 
                 case 2:
-                    $("#hint2").text("2. 哇...<script>行不通，試試看輸入其他東西");
+                    $("#hint2").text("2.");
                     break;
 
                 case 3:
-                    $("#hint3").text("3. 按右鍵打開網頁原始碼，或是按下F12");
+                    $("#hint3").text("3.");
                     break;
-
-                case 4:
-                $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
-                break;
-
-                case 5:
-                $("#hint5").text("5. \"\>\<script\>alert\(\)\</script\>，利用\">讓Value裡為完整的函式");
-                break;
 
                 default:
                     break;
