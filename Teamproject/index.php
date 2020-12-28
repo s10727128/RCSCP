@@ -148,7 +148,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../../Teamproject/index.php">
+                    <a href="../Teamproject/index.php">
                         <div class="icon">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <i class="fa fa-home" aria-hidden="true"></i>

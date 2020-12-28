@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://swctf.hackersir.org/challenges -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SWCTF 0x7e4</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://swctf.hackersir.org/themes/core/static/img/favicon.ico?d=14ce8271" type="image/x-icon">
+	<link rel="stylesheet" href="./SWCTF 0x7e4_files/fonts.min.css">
+	<link rel="stylesheet" href="./SWCTF 0x7e4_files/main.min.css">
+	<link rel="stylesheet" href="./SWCTF 0x7e4_files/core.min.css">
+	
+	<link rel="stylesheet" href="./SWCTF 0x7e4_files/challenge-board.min.css">
+
+
+	
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "",
+			'csrfNonce': "3600fcb0ae2276deca431d69073b5b5d75de6a707574388ffb25adb878d3dc4b",
+			'userMode': "users",
+			'userId': 70,
+			'start': 1608825600,
+			'end': 1609430400,
+			'theme_settings': null
+		}
+	</script>
+	<style>
+  @keyframes rainbow-bg{0%{background:#e91e63}10%{background:#673ab7}20%{background:#3f51b5}30%{background:#00bcd4}40%{background:#009688}50%{background:#4caf50}60%{background:#8bc34a}70%{background:#ffc107}80%{background:#ff9800}90%{background:#ff5722}100%{background:#e91e63}}
+  @keyframes rainbow-border{0%{border-color:#f44336}10%{border-color:#673ab7}20%{border-color:#3f51b5}30%{border-color:#00bcd4}40%{border-color:#009688}50%{border-color:#4caf50}60%{border-color:#8bc34a}70%{border-color:#ffc107}80%{border-color:#ff9800}90%{border-color:#ff5722}100%{border-color:#e91e63}}
+  .jumbotron {animation: rainbow-bg 20s infinite ease-in-out, rainbow-border 20s infinite ease-in-out;}
+</style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="" class="" style="">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="">
+    <div class="container">
+        <a href="https://swctf.hackersir.org/" class="navbar-brand">
+            
+                SWCTF 0x7e4
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#base-navbars" aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="base-navbars">
+            <ul class="navbar-nav mr-auto">
+                
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/users">Users</a>
+                    </li>
+                    
+                
+
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/scoreboard">Scoreboard</a>
+                    </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://swctf.hackersir.org/challenges">Challenges</a>
+                </li>
+            </ul>
+
+            <hr class="d-sm-flex d-md-flex d-lg-none">
+
+            <ul class="navbar-nav ml-md-auto d-block d-sm-flex d-md-flex">
+                
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/notifications">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Notifications">
+                                <i class="fas fa-bell d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-bell pr-1"></i>
+                                <span class="badge badge-pill badge-danger badge-notification"></span>
+                                Notifications
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/user">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Profile">
+                                <i class="fas fa-user-circle d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-user-circle pr-1"></i>Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/settings">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Settings">
+                                <i class="fas fa-cogs d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-cogs pr-1"></i>Settings
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://swctf.hackersir.org/logout">
+                            <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Logout">
+                                <i class="fas fa-sign-out-alt d-none d-md-block d-lg-none"></i>
+                            </span>
+                            <span class="d-sm-block d-md-none d-lg-block">
+                                <i class="fas fa-sign-out-alt pr-1"></i><span class="d-lg-none">Logout</span>
+                            </span>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+	<main role="main">
+		
+<div class="jumbotron">
+	<div class="container">
+		<h1>Challenges</h1>
+	</div>
+</div>
+
+<div class="modal fade" id="challenge-window" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;"><div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">×</span>
+			</button>
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" href="https://swctf.hackersir.org/challenges#challenge">Challenge</a>
+				</li>
+				
+					<li class="nav-item">
+						<a class="nav-link challenge-solves" href="https://swctf.hackersir.org/challenges#solves">
+							
+								0 Solves
+							
+						</a>
+					</li>
+				
+			</ul>
+			<div role="tabpanel">
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade show active" id="challenge">
+						<h2 class="challenge-name text-center pt-3">
+							Historic Site Tour
+						</h2>
+						<h3 class="challenge-value text-center">
+							500
+						</h3>
+
+						<div class="challenge-tags text-center">
+							
+								
+							
+						</div>
+
+						<span class="challenge-desc">
+    <p>還記得曾經說過要介紹家鄉的古蹟給你，但一直沒機會，不如就用這次機會讓你自己走一遭吧！我把他們的座標給你，期待你把這些重要的古蹟找出來！（若是英文則皆為小寫）<br><br>
+提示1: <mark>flag 是小寫英文串連而成</mark><br>
+提示2: <mark>flag 中無空白</mark></p>
+
+</span>
+
+						<div class="challenge-hints hint-row row">
+							
+						</div>
+
+						<div class="row challenge-files text-center pb-3">
+							
+								<div class="col-md-4 col-sm-4 col-xs-12 file-button-wrapper d-block">
+									<a class="btn btn-info btn-file mb-1 d-inline-block px-2 w-100 text-truncate" href="https://swctf.hackersir.org/files/086e1671e54731a541e09162d5f9a6d4/Historic_Site_Tour.jpg?token=eyJ1c2VyX2lkIjo3MCwidGVhbV9pZCI6bnVsbCwiZmlsZV9pZCI6MzJ9.X-k_bg.NgJZLwRSDZHY4IYtkg0yvGRCSyc">
+										<i class="fas fa-download"></i>
+										<small>
+											
+											
+											
+											
+												Historic_Site_Tour.jpg
+											
+										</small>
+									</a>
+								</div>
+							
+						</div>
+
+						
+
+						<div class="row submit-row">
+							<div class="col-md-9 form-group">
+								
+    <input id="challenge-id" class="challenge-id" type="hidden" value="57">
+    <input id="challenge-input" class="challenge-input form-control" type="text" name="answer" placeholder="Flag">
+
+							</div>
+							<div class="col-md-3 form-group key-submit">
+								
+    <button id="challenge-submit" class="challenge-submit btn btn-md btn-outline-secondary float-right" type="submit">
+        Submit
+    </button>
+
+							</div>
+						</div>
+
+						<div class="row notification-row">
+							<div class="col-md-12">
+								<div id="result-notification" class="alert alert-dismissable text-center w-100" role="alert" style="display: none;">
+									<strong id="result-message"></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="solves">
+						<div class="row">
+							<div class="col-md-12">
+								<table class="table table-striped text-center">
+									<thead>
+									<tr>
+										<td><b>Name</b>
+										</td>
+										<td><b>Date</b>
+										</td>
+									</tr>
+									</thead>
+									<tbody id="challenge-solves-names">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+
+
+</div>
+		</div>
+	</div>
+
+	<div id="challenges-board"><div id="2004858350-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>靜宜 - Crypto</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="630905386" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="42"><p>NOKIA 3310</p><span>275</span></button></div><div id="1790309170" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="55"><p>A letter</p><span>308</span></button></div><div id="76529" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="58"><p>MOS</p><span>392</span></button></div><div id="580711035" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="39"><p>Let’s Dance</p><span>415</span></button></div><div id="2023391710" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="43"><p>Prison life</p><span>435</span></button></div><div id="-455871008" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="45"><p>天雨粟 鬼夜哭</p><span>495</span></button></div><div id="-1841670832" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="57"><p>Historic Site Tour</p><span>500</span></button></div></div></div></div><div id="798157771-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>中科 - Web</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="92668751" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="38"><p>admin</p><span>500</span></button></div></div></div></div><div id="-18532919-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>逢甲 - Misc</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-117121499" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="16"><p>GIForever</p><span>200</span></button></div><div id="1000100764" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="21"><p>耗子尾汁</p><span>200</span></button></div><div id="-786737193" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="20"><p>What Does the Wolf Say</p><span>392</span></button></div><div id="1255430361" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="17"><p>Loseless Flowers</p><span>435</span></button></div><div id="794268879" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="19"><p>Special RAR</p><span>452</span></button></div><div id="-552037048" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="18"><p>Real Google</p><span>500</span></button></div></div></div></div><div id="-908050850-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>逢甲 - Crypto</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="1982630012" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2 solved-challenge" value="5"><i class="fas fa-check corner-button-check"></i><p>Base-X</p><span>200</span></button></div><div id="2385904" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="9"><p>N=pq</p><span>200</span></button></div><div id="1385826353" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="10"><p>左右分不清</p><span>200</span></button></div><div id="1331988316" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="7"><p>Base-XX</p><span>488</span></button></div></div></div></div><div id="1967569125-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>逢甲 - Reverse</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-1117131254" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="13"><p>Popping Meow</p><span>200</span></button></div><div id="-1100215428" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="14"><p>Python2Exe</p><span>367</span></button></div><div id="-347748115" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="11"><p>babyCPP</p><span>435</span></button></div><div id="695864715" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="12"><p>C Minor</p><span>467</span></button></div></div></div></div><div id="-1027206315-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>中科 - Misc</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="11794737" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="32"><p>матрёшка_1</p><span>200</span></button></div><div id="11794738" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="33"><p>матрёшка_2</p><span>200</span></button></div><div id="1059781216" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="30"><p>disseminate</p><span>435</span></button></div></div></div></div><div id="169631705-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>中科 - Reverse</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="1216985755" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="36"><p>password</p><span>367</span></button></div><div id="3154628" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="34"><p>func</p><span>392</span></button></div></div></div></div><div id="-1709354663-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>靜宜 - Misc</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="79369" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="59"><p>PNG</p><span>367</span></button></div></div></div></div><div id="-1994793657-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>靜宜 - Web</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="1772411" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="52"><p>🐘</p><span>200</span></button></div><div id="71602" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="54"><p>Git</p><span>200</span></button></div><div id="-1500160755" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="48"><p>Advanced SQL Injection</p><span>239</span></button></div><div id="-882940550" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="51"><p>My first SQL Injection</p><span>367</span></button></div></div></div></div><div id="2073441109-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>靜宜 - Reverse</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-919111657" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2 solved-challenge" value="47"><i class="fas fa-check corner-button-check"></i><p>easy reverse</p><span>200</span></button></div></div></div></div><div id="419424490-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>中科 - Crypto</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="3059181" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="29"><p>code</p><span>200</span></button></div></div></div></div><div id="1384884951-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>逢甲 - Web</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="2024076992" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2 solved-challenge" value="23"><i class="fas fa-check corner-button-check"></i><p>CoolMD</p><span>200</span></button></div><div id="1027539362" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2 solved-challenge" value="24"><i class="fas fa-check corner-button-check"></i><p>Evil Robots</p><span>200</span></button></div><div id="1122365165" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="25"><p>Google It Yourself</p><span>200</span></button></div><div id="2071315656" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2 solved-challenge" value="26"><i class="fas fa-check corner-button-check"></i><p>Notifications</p><span>200</span></button></div><div id="796842400" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="27"><p>Stupid Session</p><span>200</span></button></div><div id="1706489629" class="col-md-3 d-inline-block"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="28"><p>Stupid Session Revenge</p><span>200</span></button></div></div></div></div></div>
+</div>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container text-center">
+			<a href="https://ctfd.io/" class="text-secondary">
+				<small class="text-muted">Powered by CTFd</small>
+			</a>
+		</div>
+	</footer>
+
+	<script defer="" src="./SWCTF 0x7e4_files/vendor.bundle.min.js.下載"></script>
+	<script defer="" src="./SWCTF 0x7e4_files/core.min.js.下載"></script>
+	<script defer="" src="./SWCTF 0x7e4_files/helpers.min.js.下載"></script>
+
+	
+	<script defer="" src="./SWCTF 0x7e4_files/challenges.min.js.下載"></script>
+
+
+	
+
+
+	
+
+	
+
+</body></html>
