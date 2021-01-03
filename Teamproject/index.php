@@ -8,42 +8,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-<meta charset="utf-8">
-<link rel="stylesheet" a href ="index.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  >
-<link rel="icon" href="../bird.jpg">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<title>TIK Gammer</title>
-</head>
+  <title>TIK Gammer</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  >
+  <link rel="icon" href="../bird.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href ="css/index.css" rel="stylesheet"  type="text/css">
 
+
+</head>
+ 
 <body>
 
 <!--
   =================
       spinner
   =================
-<div class="spinner" style="display: none;"></div>
-
-<script>
-    $(document).ready(function(){
-      
-        Sectimeout(function(){
-          $('body').addclass('spinner')
-        })
-    })
-</script>
-<script>
-  $(window).load(function() {
-    $('#spinner').
-  });
-</script>
-
 -->
 
-
+<!--
   ============
-    ul選單
+  ul選單
   ============
+-->
 <div class="main">
     <ul class="drop-down-menu-1">     
       <li><a href="#">關卡</a>
@@ -121,11 +109,6 @@
     <h1 style="font-size: 30px;">Welcome To Gameground<br></h1>
   </div>
 
-  
-   
-   
-  
-   
  <!--bar-->  
         <div class="bar">
             <ul>
@@ -178,5 +161,9 @@
     </div>
 
         
+    <!--javascript-->
+    <script src="js/test.js">
+     
+    </script>
 </body>
 </html>

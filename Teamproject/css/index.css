@@ -1,4 +1,5 @@
 
+
 html,
 body {
   width: 100%;
@@ -12,37 +13,7 @@ body {
   font-family: 'audiowide',monospace;
   background-color: #000;
   position: relative;
-}
-/*
-.container {
-  xmin-width: 900px;
-}
-*/
-/*
-.spinner::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;;
-  top:50%;
-  left: 50%;
-  height: 60px;
-  width: 60px;
-  margin-top: -30px;
-  margin-left: -3px;
-  border-radius: 50%;
-  border:3px solid transparent;
-  border-top-color: white;
-  border-bottom-color: white;
-  animation: spinner 0.7s ease infinite;
-
-}
-@keyframes spinner{
-  to{
-    transform: rotate(360deg);
-  }
-}
-*/
-
+} 
 #top {
   color: #84c754;
   text-align:center;
