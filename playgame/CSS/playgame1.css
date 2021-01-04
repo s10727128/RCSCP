@@ -248,7 +248,7 @@ transform: translateY(4px);
 .hint{
   background-color: black;
   font-family: 'audiowide',monospace;
-  font-size: 20px;
+  font-size:medium;
   color: #000000;
-  text-align: center;
+  text-align:justify;
 }

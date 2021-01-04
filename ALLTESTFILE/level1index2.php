@@ -18,7 +18,7 @@
         <form action="" method="GET">
         <div class="instructions">
             <h1>LEVEL1-1</h1>
-            <div id="menubar" > <a href="gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
+            <div id="menubar" > <a href="../playgame/gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
@@ -40,7 +40,7 @@
 
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
             提示
         </button>
 
@@ -57,13 +57,12 @@
                                 </div>
                         <div class="modal-body">
                             <div class="container-fluid">
-                            <p>1.&nbsp;執行一個\< script \><br>2.&nbsp;在\< script \>裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name \= \< script\>alert\(\)\<\/ script \></p>
+                            <p>1.&nbsp;執行一個< script ><br>2.&nbsp;在< script >裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=< script >alert()</ script ></p>
                                 
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
                         </div>
                     </div>
                 </div>
