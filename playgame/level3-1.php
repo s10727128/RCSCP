@@ -23,10 +23,10 @@
         </div>
         <br>    
         <div">
-            <p><b>你發現了某個網站中的SQL資料庫系統沒有針對SQL injection做保護</b></p>
+            <!-- <p><b>你發現了某個網站中的SQL資料庫系統沒有針對SQL injection做保護</b></p>
             <p><b>而你想嘗試去破解這個網頁的登入驗證,並窺視使用者的資料</b></p>
             <p><b>聰明的你應該知道該怎麼做吧?</b></p>
-            <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p>
+            <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p> -->
         </div>
 
         <div>
@@ -38,16 +38,13 @@
 
         <br><br>
         <div class="login"> 
-        <link rel="stylesheet" a href ="../Teamproject/register/css/main.css">
+        <!-- <link rel="stylesheet" a href ="../Teamproject/register/css/main.css"> -->
         <form id="login" method="post" action="../Teamproject/register/login.php">    
         <label><b>用戶名稱    
         </b>    
         </label>    
-        <input type="varchar" name="Username" id="Uname" placeholder="Username"  required="required">    
+        <input type="varchar" name="Username" id="Uname" placeholder="名稱"  required="required">    
         <br><br>    
-        <label><b>用戶密碼 
-        </b>    
-        </label>    
         <input type="password" name="Password" id="Pass" placeholder="Password"  required="required">    
         <br><br>    
         <input type="submit" name="submit" id="log" value="登入">       
