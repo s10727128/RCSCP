@@ -46,8 +46,10 @@
                       exit();
                   }
                   else
-                  {
+                  {   
+                      echo '<div class="word2">';
                       echo '<br>'."通關密碼不正確,請繼續加油!";
+                      echo '</div>';
                   }
                 }
             ?>
@@ -93,7 +95,9 @@
     }
     else
     {
-	echo "注入失敗".'<br>';
+    echo '<div class="word2">';
+    echo "注入失敗".'<br>';
+    echo '</div>';
     }
     }
     }
