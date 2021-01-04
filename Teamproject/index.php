@@ -122,13 +122,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../Teamproject/html/gameset.html">
                         <div class="icon">
                             <i class="fa fa-gamepad" aria-hidden="true"></i>
                             <i class="fa fa-gamepad" aria-hidden="true"></i>
-                            <ul class="barup">
-                              <li id="barup1">a</li>
-                            </ul>
+                            
                         </div>
                         <div class="name"><span data-text="Game">Game</span></div>
                     </a>
@@ -142,6 +140,7 @@
                         <div class="name"><span data-text="Home">Home</span></div>
                     </a>
                 </li>
+                <!-- 遊戲
                 <li>
                     <a href="register/login.html">
                         <div class="icon">
@@ -151,6 +150,7 @@
                         <div class="name"><span data-text="Login">Login</span></div>
                     </a>
                 </li>
+                -->
                 <li>
                     <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
                         <div class="icon">
