@@ -257,3 +257,11 @@ color:#84c754;
 text-decoration: none;
 display: block;
 }  
+
+.hint{
+    background-color: black;
+    font-family: 'audiowide',monospace;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
