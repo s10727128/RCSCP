@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" a href ="playgame1.css">
-    <link rel="shortcut icon" href="/bird.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>資安遊戲闖關網站</title>
+    <title>Tik Game</title>
+    <link rel="stylesheet" a href ="../CSS/playgame1.css">
+    <link rel="shortcut icon" href="/photo/bird.jpg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="source1.js"></script>
+    <script src="../JavaScript/source1.js"></script>
 
 
 </head>
@@ -15,7 +15,7 @@
     <form action="" method="GET">
         <div class="instructions">
             <h1>LEVEL1-1</h1>
-            <div id="menubar" > <a href="gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
+            <div id="menubar" > <a href="../../Teamproject/index.php" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
