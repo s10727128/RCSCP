@@ -41,69 +41,34 @@
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-          提示
+            提示
         </button>
-        
+
         <!-- Modal -->
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                        <div class="modal-header">
-                                <h5 class="modal-title">提示</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+        <div class="hint">
+            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">提示</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                            <p>1.&nbsp;執行一個\< script \><br>2.&nbsp;在\< script \>裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name \= \< script\>alert\(\)\<\/ script \></p>
+                                
                             </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            1. 執行一個\< script \>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <script>
-            $('#exampleModal').on('show.bs.modal', event => {
-                var button = $(event.relatedTarget);
-                var modal = $(this);
-                // Use above variables to manipulate the DOM
-                
-            });
-        </script>
-
-
-    
-    <script>
-        let x = 0;
-        $("#hintList").click(function(){
-            x ++;
-            switch(x){
-                case 1:
-                    $("#hint1").text("1. 執行一個<script>");
-                    break;
-
-                case 2:
-                    $("#hint2").text("2. 在<script>裡加入alert()");
-                    break;
-
-                case 3:
-                    $("#hint3").text("3. 不知道輸入在哪嗎?仔細觀察網址");
-                    break;
-
-                case 4:
-                $("#hint4").text("4. 將neam=test，改成name\=\<script\>alert\(\)\<\/script\>");
-                break;
-
-                default:
-                    break;
-            }
-        });
-    </script>
 
 </body>
 
