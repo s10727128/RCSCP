@@ -1,0 +1,94 @@
+body{
+  background-color: floralwhite;
+}
+.jpg{
+  background-size: cover;
+  width: auto;
+}
+    /*
+    =========bar========
+    */
+ .bar ul{
+      position: fixed;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      margin: 0;
+      padding: 15px 0;
+      background-color: #fff;
+      display: flex;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      z-index: 2;
+    }
+   .bar ul li{
+      list-style: none;
+      text-align: center;
+      display: block;
+      border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    .bar  ul li:last-child
+    {
+      border-right: none;
+    }
+    .bar  ul li a
+    {
+      text-decoration: none;
+      padding: 0 50px;
+      display: block;
+    }
+    .bar  ul li a .icon
+    {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0 auto 10px;
+    }
+    .bar  ul li a .icon .fa
+    {
+      width: 100%;
+      height: 100%;
+      line-height: 40px;
+      font-size: 34px;
+      transition: 0.5s;
+      color:#000;
+    }
+    .bar  ul li a .icon .fa:last-child
+    {
+      color: #a030d8;
+    }
+    .bar  ul li a:hover .icon .fa
+    {
+      transform: translateY(-100%);
+    }
+    .bar  ul li a .name
+    {
+      position: relative;
+      height: 20px;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+    .bar  ul li a .name span
+    {
+      display: block;
+      position: relative;
+      color:#000;
+      font-size: 18px;
+      line-height: 20px;
+      transition: 0.5s;
+    }
+    .bar  ul li a .name span::before
+    {
+      content:attr(data-text);
+      position: absolute;
+      top:-100%;
+      width: 100%;
+      height: 100%;
+      color: #a030d8;
+    }
+    .bar  ul li a:hover .name span
+    {
+      transform: translateY(20px);
+    }
