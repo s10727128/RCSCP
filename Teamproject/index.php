@@ -143,7 +143,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="register/login.html">
                         <div class="icon">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <i class="fa fa-user" aria-hidden="true"></i>
