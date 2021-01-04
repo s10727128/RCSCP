@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="shortcut icon" href="/bird.jpg">
-<link rel="stylesheet" href="playgame3.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>資安遊戲闖關網站</title>
-<script src="source3.js"></script>
+<title>Tik Game</title>
+<link rel="shortcut icon" href="/bird.jpg">
+<link rel="stylesheet" href="../CSS/playgame3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../JavaScript/source3.js"></script>
 
 
 </head>
 <body a link="blue" vlink="red">
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL1-3</h1>
-        <div id="menubar" style="text-align: center";> <a href="gamepoint/level1index.html" class="menu_exit">Exit</a> </div>
+        <div id="menubar" style="text-align: center";> <a href="../../Teamproject/index.php" class="menu_exit">Exit</a> </div>
     </div>
     <br>
     <hr>
@@ -29,11 +29,11 @@
 
         <div class="message_logs" id="messagelogs">
             <div class="message">
-                <div class="user-photo"><img src="../elephant.jpeg"></div>
+                <div class="user-photo"><img src="../../photo/elephant.jpeg"></div>
                 <p class="message_chat">What's up, Bro!</p>
             </div>
             <div class="message">
-                <div class="user-photo"><img src="../elephant.jpeg"></div>
+                <div class="user-photo"><img src="../../photo/elephant.jpeg"></div>
                 <p class="message_chat">Haha</p>
             </div>
         </div>
