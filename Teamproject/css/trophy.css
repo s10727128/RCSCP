@@ -1,0 +1,12 @@
+body{
+    
+}
+
+.exit{
+    position: fixed;
+    left: 48.9%;
+}
+
+.exit :hover{
+    text-decoration: none;
+}

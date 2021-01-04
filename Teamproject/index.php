@@ -113,7 +113,7 @@
         <div class="bar">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="../Teamproject/html/trophy.html">
                         <div class="icon">
                             <i class="fa fa-trophy" aria-hidden="true"></i>
                             <i class="fa fa-trophy" aria-hidden="true"></i>
@@ -126,6 +126,9 @@
                         <div class="icon">
                             <i class="fa fa-gamepad" aria-hidden="true"></i>
                             <i class="fa fa-gamepad" aria-hidden="true"></i>
+                            <ul class="barup">
+                              <li id="barup1">a</li>
+                            </ul>
                         </div>
                         <div class="name"><span data-text="Game">Game</span></div>
                     </a>
