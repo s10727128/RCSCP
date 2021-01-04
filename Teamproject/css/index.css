@@ -67,10 +67,6 @@ a:hover {
 }
 
 
-
-
-
-
 /*下拉式選單*/
 
 /*左上*/
@@ -168,7 +164,7 @@ a:hover {
       left: 50%;
       transform: translate(-50%,-50%);
       margin: 0;
-      padding: 20px 0;
+      padding: 15px 0;
       background-color: #fff;
       display: flex;
       border-radius: 10px;
