@@ -68,9 +68,9 @@
                       </li>
                     </ul>
               </li>
-              <li><a href="#">MISC</a>
+              <li><a href="../playgame/gamepoint/level5index.html">MISC</a>
                 <ul>
-                      <li><a href="../playgame/level5-1.php">Morse Code</a>
+                      <li><a href="../MISC/level5-1.php">Morse Code</a>
                       </li>
                       <li><a href="../playgame/level5-2.php">Reverse Engineering</a>
                       </li>
@@ -132,7 +132,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../Teamproject/index.php">
+                    <a href="test1/index.html">
                         <div class="icon">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <i class="fa fa-home" aria-hidden="true"></i>

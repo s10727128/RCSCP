@@ -2,8 +2,12 @@ body{
   background-color: floralwhite;
 }
 .jpg{
-  background-size: cover;
-  width: auto;
+  position: relative;
+  top: 0px;
+  bottom: 50px;
+  right: 0px;
+  left: 0px;
+  width: 20%; 
 }
     /*
     =========bar========
