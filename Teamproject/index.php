@@ -118,7 +118,7 @@
                             <i class="fa fa-trophy" aria-hidden="true"></i>
                             <i class="fa fa-trophy" aria-hidden="true"></i>
                         </div>
-                        <div class="name"><span data-text="Trophy">Trophy</span></div>
+                        <div class="name"><span data-text="Trophy">積分榜</span></div>
                     </a>
                 </li>
                 <li>
@@ -128,7 +128,7 @@
                             <i class="fa fa-gamepad" aria-hidden="true"></i>
                             
                         </div>
-                        <div class="name"><span data-text="Game">Game</span></div>
+                        <div class="name"><span data-text="Game">遊戲</span></div>
                     </a>
                 </li>
                 <li>
@@ -137,7 +137,7 @@
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <i class="fa fa-home" aria-hidden="true"></i>
                         </div>
-                        <div class="name"><span data-text="Home">Home</span></div>
+                        <div class="name"><span data-text="Home">首頁</span></div>
                     </a>
                 </li>
                 <!-- 遊戲
@@ -157,7 +157,7 @@
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <div class="name"><span data-text="Contact">Contact</span></div>
+                        <div class="name"><span data-text="Contact">問題回報</span></div>
                     </a>
                 </li>
             </ul>
