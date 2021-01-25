@@ -23,6 +23,27 @@
                   <th scope="col">分數</th>
                 </tr>
               </thead>
+              <?php
+              require_once('../register/connect.php');
+              $sql="SELECT Username,Score FROM user ORDER BY Score DESC";
+              $i=1;
+              $result=mysqli_query($connect,$sql);
+                if(mysqli_num_rows($result) > 0)
+                {
+	              while($row = mysqli_fetch_assoc($result))
+	              {
+                $name=$row["Username"];
+                $score=$row["Score"];
+                echo '<tr>';
+                echo '<td>'.  $i.'</td>';
+                echo '<td>' . $name. '</td>';
+                echo '<td>' . $score . '</td>';
+                $i++;
+                echo '</tr>';
+                }
+                echo "</table>"; 
+                }
+              ?>
               <tbody>
                 <tr>
                   <th scope="row">1</th>

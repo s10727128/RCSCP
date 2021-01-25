@@ -102,7 +102,7 @@
         <div class="bar">
             <ul>
                 <li>
-                    <a href="../Teamproject/html/trophy.html">
+                    <a href="../Teamproject/html/trophy.php">
                         <div class="icon">
                             <i class="fa fa-trophy" aria-hidden="true"></i>
                             <i class="fa fa-trophy" aria-hidden="true"></i>
