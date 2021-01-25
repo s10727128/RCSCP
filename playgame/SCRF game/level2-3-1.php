@@ -14,7 +14,7 @@
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL2-1</h1>
         <div id="menubar" style="text-align: center";> <a href="../Teamproject/index.php" class="menu_exit">EXIT</a> </div>
-    </div>
+    </div>  
     <hr>
 
     <div style="text-align: center;">
@@ -22,11 +22,13 @@
     </div>
     <br>
 
+    因為良心發現，開始轉行從駭客變黑客
+    
+
     <div style="text-align: center;">
-    <form action="../downloadfile/stego.zip" method="GET">
         下載點:
-        <a href="level2-1-2.php" download><b>Download</b></a>
-    </form>
+        <a href="level2-1-2.php"><b>Download</b></a>
+        <br>
         <br>
         <?php
             ini_set("display_errors",0);
@@ -34,7 +36,7 @@
             if($ans == "Ap459djC!486?@2tgp"){
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
-            echo '<form action=level5-3.php =GET>
+            echo '<form action=level2-3-1.php ="GET">
             <input name=input value"'.$ans.'"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
@@ -58,13 +60,13 @@
             j ++;
             switch(j){
                 case 1:
-                    $("#hint1").text("1.zip偽加密");
+                    $("#hint1").text("1.");
                     break;
                 case 2:
-                    $("#hint2").text("2.Base64 code");
+                    $("#hint2").text("2.");
                     break;
                 case 3:
-                    $("#hint3").text("3.Hex code");
+                    $("#hint3").text("3.");
                     break;
 
             }

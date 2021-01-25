@@ -23,6 +23,7 @@
     </div>
     <br>
 
+
     <!--遊戲輸入框內容-->
     <div style="text-align: center;">
         <?php
@@ -30,7 +31,7 @@
             $ans = $_GET["input"];
             echo '<form action=level1-2.php method=GET>
             <input name=input value="'.$ans.'">
-            <input type=submit name=submit value="搜尋"/>
+            <input type="submit" name="submit" value="搜尋"/>
             </form><br>';
 
             echo "你現在是一位駭客，請利用網站XSS漏洞，將搜尋的按鈕連結導向\"level2-2-2.php\"這個網址。";
