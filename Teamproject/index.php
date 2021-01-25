@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="../bird.jpg">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href ="css/index.css" rel="stylesheet"  type="text/css">
+  <link href ="css/index.css    " rel="stylesheet"  type="text/css">
 
 
 </head>
