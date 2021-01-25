@@ -44,23 +44,7 @@
                 echo "</table>"; 
                 }
               ?>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>曹</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>昌</td>
-                  <td>70</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td >111</td>
-                  <td >12</td>
-                </tr>
-              </tbody>
+        
             </table>
             <button class="exit"><a href="../test1/index.html">exit</a></button>
       </div>
