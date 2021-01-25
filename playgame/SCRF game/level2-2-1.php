@@ -29,9 +29,9 @@
         <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
-            echo '<form action=level1-2.php method=GET>
-            <input name=input value="'.$ans.'">
-            <input type="submit" name="submit" value="搜尋"/>
+            echo '<form action=level2-2-1.php method=GET>
+            <input name="input" value="'.$ans.'">
+            <input type="submit" name="search" value="搜尋"/>
             </form><br>';
 
             echo "你現在是一位駭客，請利用網站XSS漏洞，將搜尋的按鈕連結導向\"level2-2-2.php\"這個網址。";
