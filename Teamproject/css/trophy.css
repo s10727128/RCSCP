@@ -10,3 +10,7 @@ body{
 .exit :hover{
     text-decoration: none;
 }
+caption {
+    text-align: center;
+    caption-side: top;
+    }

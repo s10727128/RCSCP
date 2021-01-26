@@ -1,4 +1,6 @@
 body{
+  padding: 0px;
+  margin: 0px;
   background-color: floralwhite;
 }
 .carousel-item {
@@ -22,6 +24,32 @@ body{
 .game{
   margin-top: 5%;
   text-align: center;
+}
+
+.testbox1{
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   height: 400px;
+   width: 1200px;
+   background: #000;
+   box-shadow: 0 25px 30px rgba(0,  0, 0, 5);
+   display: flex;
+}
+.content{
+  width: 50%;
+  height: 100%;
+  background: #000;
+  box-sizing: border-box;
+}
+.imagebox{
+  width: calc(50%+50px);
+  height: 100%;
+  background: #f00;
+  box-sizing: border-box;
+  border-left: 100px solid #000;
+  border-bottom: 400px solid transparent;
 }
 
     /*

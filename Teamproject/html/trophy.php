@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="../css/trophy.css" type="text/css">
   </head>
   <body>
+
       <div class="container">
 
         <!--改php-->
           <table class="table table-striped table-bordered table-condensed table-hover" >
-              <caption style="text-align: center;">排行榜</caption>
+          <caption style="text-align: center;">排行榜</caption>
               <thead>
                 <tr>
                   <th scope="col">名次</th>
