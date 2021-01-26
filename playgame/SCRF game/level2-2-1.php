@@ -24,17 +24,18 @@
     <br>
 
 
+    <!-- <input type="submit" name="search" href="level2-2-2.php"> -->
     <!--遊戲輸入框內容-->
     <div style="text-align: center;">
         <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
-            echo '<form action=level2-2-1.php method=GET>
+            echo '<form action="" method=GET>
             <input name="input" value="'.$ans.'">
-            <input type="submit" name="search" value="搜尋"/>
+            <input type=submit name=submit value="搜尋">
             </form><br>';
 
-            echo "你現在是一位駭客，請利用網站XSS漏洞，將搜尋的按鈕連結導向\"level2-2-2.php\"這個網址。";
+            echo "你現在是一位駭客，請利用網站XSS漏洞，將注入連結導向\"level2-2-2.php\"這個網址，使其他人受害。";
             echo '<br>';
             echo "Your answer is: ".htmlspecialchars($ans);
         ?>
@@ -42,7 +43,7 @@
     <br>
 
     <div style="text-align: center;">
-            <button type="button" id="hintList" class="button">Hint</button>
+            <button type="button" id="hintList" class="button">提示</button>
             <div class="word2" style="list-style: none; ">
                 <li id="hint1"><b></b></li>
                 <li id="hint2"></li>
