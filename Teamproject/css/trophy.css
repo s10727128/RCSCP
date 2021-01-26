@@ -1,6 +1,4 @@
-body{
-    
-}
+
 
 .exit{
     position: fixed;
@@ -11,6 +9,11 @@ body{
     text-decoration: none;
 }
 caption {
+    top: 100px;
     text-align: center;
     caption-side: top;
     }
+
+.test{
+    margin-top: 5%;
+}

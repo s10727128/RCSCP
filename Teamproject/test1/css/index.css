@@ -44,7 +44,7 @@ body{
   box-sizing: border-box;
 }
 .imagebox{
-  width: calc(50%+50px);
+  width: calc(50% + 50px);
   height: 100%;
   background: #f00;
   box-sizing: border-box;
