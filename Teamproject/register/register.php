@@ -51,7 +51,7 @@ if(isset($_POST['register'])){
         $result=mysqli_query($connect,$sql);//執行sql
         
         if (!$result){
-        die('錯誤:' .mysqli_error());//如果sql執行失敗輸出錯誤
+        die();//如果sql執行失敗輸出錯誤
         }
         else{
             $_SESSION['Username'] = $name;
