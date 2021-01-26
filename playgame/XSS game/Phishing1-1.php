@@ -30,12 +30,17 @@
         <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
+            if($ans == "U_Are_Very_Strong_2021"){
+                echo '<script>alert("Congratuation! You sucessed!")</script>';
+                
+            }
+
             echo '<form action="" method=GET>
             <input name="input" value="'.$ans.'">
             <input type=submit name=submit value="搜尋">
             </form><br>';
 
-            echo "你現在是一位駭客，請利用網站XSS漏洞，將注入連結導向\"level2-2-2.php\"這個網址，使其他人受害。";
+            echo "你現在是一位駭客，請利用網站XSS漏洞，將注入連結導向\"Phishing1-2.php\"這個網址，取得密碼。";
             echo '<br>';
             echo "Your answer is: ".htmlspecialchars($ans);
         ?>

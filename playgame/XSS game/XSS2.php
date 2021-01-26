@@ -7,7 +7,7 @@
 <link rel="stylesheet" a href ="../CSS/playgame1.css">
 <link rel="shortcut icon" href="/bird.jpg">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../JavaScript/source2.js"></script>
+<script src="../JavaScript/XSS2.js"></script>
 
 
 </head>
