@@ -38,7 +38,7 @@
               <a class="nav-link js-scroll-trigger" href="#photo">相片</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="register/register.php">註冊</a>
+              <a class="nav-link js-scroll-trigger" href="../../Teamproject/register/register.php">註冊</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../../Teamproject/register/login.html">登入</a>
@@ -62,17 +62,34 @@
       <?php
       require_once('../register/connect.php');
       $sql = "SELECT Username,Score FROM user ORDER BY Score DESC";
+      $rank=array();
       $i = 1;
+      $r=0;
       $result = mysqli_query($connect, $sql);
       if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
+        while ($row = mysqli_fetch_array($result)) {
           $name = $row["Username"];
           $score = $row["Score"];
+          $rank[$r]=$row["Score"];
+          if($r==0){
+          }
+          else{
+          if($rank[$r]==$rank[$r-1])
+          {
+            $i=$i;
+          }
+          else{
+            $i++;
+          }
+        }
+        
+          
           echo '<tr>';
-          echo '<td>' .  $i . '</td>';
+          echo '<td>' . $i . '</td>';
           echo '<td>' . $name . '</td>';
           echo '<td>' . $score . '</td>';
-          $i++;
+          //$i++;
+          $r++;
           echo '</tr>';
         }
         echo "</table>";

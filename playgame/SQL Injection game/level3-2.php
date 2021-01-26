@@ -70,12 +70,12 @@
     
     <?php
     echo "<table>";
-    echo "<tr><td>名稱</td>"."<td>分數</td></tr>";
+    echo "<tr><td>名稱</td>"."<td>分數</td></tr>";  
     if(isset($_POST["search_button"])){
     require_once('level3connect.php');//連結資料庫
     $key=$_POST['search'];//post獲取表單裡的search
-    $sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
-    //$sql = "SELECT * FROM sqli_select WHERE name='$key' --union SELECT * FROM sqli_select";
+    //$sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
+    $sql = "SELECT * FROM sqli_select WHERE name='$key'";
         $result=mysqli_query($connect,$sql);
         if (!$result){
             echo "錯誤";
