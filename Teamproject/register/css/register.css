@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: floralwhite;
+    background-color: #87CEEB;
   }
 a{
     text-decoration: none;
@@ -18,17 +18,15 @@ h1{
     margin-bottom: 20px;
 }
 .registerbox{  
-    width: 400px;  
+    width: 500px;  
+    text-align: center; 
     overflow: hidden;  
     margin: auto;  
     padding: 40px;   
     border-radius: 15px ;  
     border: 1px solid black;
-    text-align: center; 
+    background-color: floralwhite;
 }  
-.Uname{
-    text-align: left;
-}
 /*.Uname ::-webkit-input-placeholder {
      color: red;
      font-size: 20px;
