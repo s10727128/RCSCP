@@ -10,27 +10,23 @@
 </head>
 
 <body>
-    <h1><b>
-         註冊介面
-
-    </b>
-   </h1>
 <div class="registerbox">
 
 <form action="register.php" method="post">
-  使用者暱稱:
+
   <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required">
   <br><br>
-  使用者帳號:
+
   <input type="varchar" name="Username" placeholder="帳號" id="Uname" required="required">
   <br><br>
-  使用者密碼:
+
   <input type="varchar" name="Password" placeholder="密碼" id="Uname" required="required">
   <br><br>
-  密碼確認    :
+
   <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" required="required">
   <br><br>
-  <input type="submit" name="register" value="註冊">
+  <input type="submit" name="register" class="fadeIn fourth" value="註冊">
+  
  </form>
 </div>
  </body>
@@ -50,13 +46,13 @@ if(isset($_POST['register'])){
     $result=mysqli_query($connect,$sql);
     if (mysqli_num_rows($result)>0)
     {
-        echo '帳號重複';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=register.html>';	
+        echo '<h3 class="testerror">帳號重複</h3>';
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=register.php>';	
     }
     else if($pwd!=$pwd2)
     {
         echo '輸入密碼不一致,請重新輸入';
-        echo '<meta http-equiv=REFRESH CONTENT=2;url=register.html>';	
+        echo '<meta http-equiv=REFRESH CONTENT=2;url=register.php>';	
     }
     else{
         $sql="insert into user(Username,Password,Nickname) values ('$name','$password','$nickname')";//向資料庫插入表單傳來的值的sql
@@ -68,7 +64,7 @@ if(isset($_POST['register'])){
         }
         else{
             $_SESSION['Username'] = $name;
-        echo "註冊成功,5秒後自動返回主介面";//成功輸出註冊成功
+        echo "<p style>註冊成功,5秒後自動返回主介面</p>";//成功輸出註冊成功
         echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.php>';
         }
         }
