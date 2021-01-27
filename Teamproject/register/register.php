@@ -5,11 +5,18 @@
   <?php
     include_once('../header.php');
     ?>
-        <link rel="stylesheet" a href ="css/register.css">  
+      
+      <link rel="stylesheet" a href ="css/register.css">  
 </head>
 
 <body>
-<h1>註冊介面</h1>
+    <h1><b>
+         註冊介面
+
+    </b>
+   </h1>
+<div class="registerbox">
+
 <form action="register.php" method="post">
   使用者暱稱:
   <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required">
@@ -20,12 +27,12 @@
   使用者密碼:
   <input type="varchar" name="Password" placeholder="密碼" id="Uname" required="required">
   <br><br>
-  使用者密碼確認:
+  密碼確認    :
   <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" required="required">
   <br><br>
   <input type="submit" name="register" value="註冊">
-  <button type="button" ><a href="login.html">上一頁</a></button>
  </form>
+</div>
  </body>
  </html>
 
