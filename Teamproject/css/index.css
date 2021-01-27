@@ -21,10 +21,6 @@ body{
 .bg-indigo { background: indigo; }
 .text-cyan { color: #35bdff; }
 
-.game{
-  margin-top: 5%;
-  text-align: center;
-}
 
 .testbox1{
    position: relative;
@@ -50,6 +46,16 @@ body{
   box-sizing: border-box;
   border-left: 100px solid #000;
   border-bottom: 400px solid transparent;
+}
+
+/*gameset.css*/
+.game{
+  margin-top: 5%;
+  text-align: center;
+  
+}
+.game a:hover{
+  text-decoration: none;
 }
 
     /*

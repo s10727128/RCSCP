@@ -9,20 +9,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'audiowide',monospace;
   background-color: #190431;
-  position: relative;
-}
-
-a{
-    text-decoration:  none;
-    color: #3ca09e;
-    position: relative;
-    z-index: 1;
-    padding: 25px 130px 25px  ;
+  position: absolute;
 }
 div[class*=box] {
-  height: 25%;
+  height: 33%;
   width: 100%; 
   display: flex;
   justify-content: center;
@@ -30,15 +21,22 @@ div[class*=box] {
   z-index: 0; /*顯示在最上層*/
 }
 
-
 .btn {
   line-height: 50px;
   height: 50px;
   text-align: center;
-  width: 300px;
+  width: 350px;
   cursor: pointer;
 }
-
+.btn a{
+  
+  text-decoration:  none;
+  color: #3ca09e;
+  position: relative;
+  z-index: 1;
+  padding: 10px 100px 10px  ;
+  bottom: 5px;
+}
 /* 
 ========================
       BUTTON ONE
@@ -51,6 +49,13 @@ div[class*=box] {
 }
 .btn-one span {
   transition: all 0.3s;
+}
+.btn a{
+    text-decoration:  none;
+    color: #3ca09e;
+    position: relative;
+    z-index: 1;
+    padding: 25px 130px 25px  ;
 }
 .btn-one::before { /*往後翻*/
   content: '';
@@ -103,6 +108,9 @@ div[class*=box] {
     border: 1px solid rgba(255,255,255,0.5);
     position: relative; 
     overflow: hidden;
+    }
+    .btn-two a{
+      right: 12.5px;
     }
     .btn-two span{
     z-index: 2; 
@@ -171,93 +179,6 @@ div[class*=box] {
     transform: scale(1,1);
   }
   
-    /*
-    =========bar========
-    */
-    ul{
-      position: absolute;;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      margin: 0;
-      padding: 20px 0;
-      background-color: #fff;
-      display: flex;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.3);
-      z-index: 2;
-    }
-    ul li{
-      list-style: none;
-      text-align: center;
-      display: block;
-      border-right: 1px solid rgba(0,0,0,0.2);
-    }
-    ul li:last-child
-    {
-      border-right: none;
-    }
-    ul li a
-    {
-      text-decoration: none;
-      padding: 0 50px;
-      display: block;
-    }
-    ul li a .icon
-    {
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      overflow: hidden;
-      margin: 0 auto 10px;
-    }
-    ul li a .icon .fa
-    {
-      width: 100%;
-      height: 100%;
-      line-height: 40px;
-      font-size: 34px;
-      transition: 0.5s;
-      color:#000;
-    }
-    ul li a .icon .fa:last-child
-    {
-      color: #a030d8;
-    }
-    ul li a:hover .icon .fa
-    {
-      transform: translateY(-100%);
-    }
-    ul li a .name
-    {
-      position: relative;
-      height: 20px;
-      width: 100%;
-      display: block;
-      overflow: hidden;
-    }
-    ul li a .name span
-    {
-      display: block;
-      position: relative;
-      color:#000;
-      font-size: 18px;
-      line-height: 20px;
-      transition: 0.5s;
-    }
-    ul li a .name span::before
-    {
-      content:attr(data-text);
-      position: absolute;
-      top:-100%;
-      width: 100%;
-      height: 100%;
-      color: #a030d8;
-    }
-    ul li a:hover .name span
-    {
-      transform: translateY(20px);
-    }
    /* 
 ========================
       BUTTON four
