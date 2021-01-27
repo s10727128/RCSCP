@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" a href ="css/register.css">
+  <?php
+    include_once('../header.php');
+    ?>
+        <link rel="stylesheet" a href ="css/register.css">  
+</head>
+
 <body>
 <h1>註冊介面</h1>
 <form action="register.php" method="post">
