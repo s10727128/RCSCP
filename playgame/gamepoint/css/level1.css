@@ -28,8 +28,7 @@ div[class*=box] {
   width: 350px;
   cursor: pointer;
 }
-.btn a{
-  
+.btn a{ 
   text-decoration:  none;
   color: #3ca09e;
   position: relative;
