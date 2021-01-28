@@ -253,3 +253,7 @@ transform: translateY(4px);
   color: #000000;
   text-align:justify;
 }
+
+img{
+  width: 100%;
+}

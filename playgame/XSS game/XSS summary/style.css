@@ -209,3 +209,8 @@ button.secondary:not([disabled]) {
 button.cancel:not([disabled]) {
   color: var(--accent);
 }
+
+img{
+  width: 100%;
+  display: block;
+}

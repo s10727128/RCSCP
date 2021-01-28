@@ -25,11 +25,22 @@
       <section>
         <h2>Reflected XSS (反射型)</h2>
         <p>反射型，顧名思義，就像光線映入鏡子一樣，會直接反射，所以注入的程式碼，只會顯示在前端網頁上。最常見的就是以 GET 方法傳送資料給伺服器時，伺服器未檢查就將內容回應到網頁上所產生的漏洞。</p>
+        <p><img class="photo" src="/photo/Reflected XSS.png"></p>
       </section>
 
       <section>
         <h2>Stored XSS (持久型)</h2>
-        <p>會被保存在伺服器資料庫中的 JavaScript 代碼引起的攻擊即為 Stored XSS。像是留言板，使用者可以輸入任意內容，如果沒有人真檢查，那使用者輸入如果 \< script \>等關鍵字就會被當成正常的HTML執行，標籤的內容也會被正常的作為JavaScript代碼執行。</p>
+        <p>會被保存在伺服器資料庫中的 JavaScript 代碼引起的攻擊即為 Stored XSS。像是留言板，使用者可以輸入任意內容，如果沒有人真檢查，那使用者輸入如果&lt;script&lt;等關鍵字就會被當成正常的HTML執行，標籤的內容也會被正常的作為JavaScript代碼執行。 </p>
+        <p><img class="photo" src="/photo/Stored SXX.png"></p>
+      </section>
+
+      <section>
+        <h2>關卡內容</h2>
+        <p>本關卡著重於在前兩種XSS攻擊方式，你們可以透過提示，一步一步的了解，如何達到攻擊目的!</p><br><br><br>
+        
+        <div style="text-align: center;" >
+          <p><button style="font-size: 200%" class="primary" @click="toggleModal">讓我們開始吧!</button></p>
+        </div>
       </section>
 
 
