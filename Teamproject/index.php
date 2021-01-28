@@ -44,7 +44,7 @@
             <a class="nav-link js-scroll-trigger" href="../Teamproject/register/register.php">註冊</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../Teamproject/register/login.html">登入</a>
+            <a class="nav-link js-scroll-trigger" href="../Teamproject/register/login.php">登入</a>
           </li>
         </ul>
       </div>

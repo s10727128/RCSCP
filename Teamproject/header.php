@@ -58,7 +58,7 @@
           echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/register.php">註冊</a>';
           echo '</li>';
 	        echo '<li class="nav-item">';
-          echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/login.html">登入</a>';
+          echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/login.php">登入</a>';
           echo '</li>';
           }
           ?>
