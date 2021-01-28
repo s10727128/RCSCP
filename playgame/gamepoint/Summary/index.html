@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./boradal.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main v-cloak>
+  <p><button class="accent" @click="toggleModal()">網站簡介</button></p>
+
+  <!--  The Modal -->
+  <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
+    <article v-cloak>
+      <section>
+        <h2>網站簡介</h2>
+        <p>本網站主要目的是透過遊戲，學習到一些基本的攻擊手法，也從中可以學習到該如和進行防範</p>
+        <p>關卡分為四大關卡:<br>&nbsp;&nbsp;&nbsp;&nbsp;XSS攻擊<br>&nbsp;&nbsp;&nbsp;&nbsp;CSRF攻擊<br>&nbsp;&nbsp;&nbsp;&nbsp;SQL Injection攻擊<br>&nbsp;&nbsp;&nbsp;&nbsp;MISC雜項<br>可以透過解答關卡後，獲得積分，以提高自己的名次。</p>
+        <p><button class="primary" @click="skip(1)">在開始之前我需要知道......</button>
+      </section>
+
+      <section>
+        <h2>什麼是網頁原始碼?</h2>
+        <p>在討論網頁原始碼之前，先來介紹什麼是原始碼?</p>
+        <p>原始碼，原文為Source Code，是指人類可以讀的電腦語言指令。所以，網頁原始碼，顧名思義就是大家可以看得懂的網頁電腦語言。那有哪些寫網頁的程式語言呢?最長用的網頁程式語法有Html、CSS、JavaScript以及PHP。</p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+
+    </article>
+
+
+    <footer>
+        <!-- Next Arrow -->
+      <div class="forward-actions">
+        <button class="primary next" :disabled="isLastStep" v-show="!isLastStep" @click="skip(1)"><i class="fa fa-fw fa-lg" :class="nextIcon"></i></button>
+        <button class="accent save" :disabled="!isLastStep" v-show="isLastStep" @click="finish"><i class="fa fa-fw fa-lg fa-check"></i></button>
+      </div>
+
+        <!-- Step Dots -->
+      <div class="step-dots" v-if="hasDots">
+        <div class="step-dot" v-for="n in max" :class="{active: n == step}" @click="goToStep(n)"></div>
+      </div>
+      <div class="back-actions">
+
+        <!-- Back Arrow -->
+        <button class="secondary cancel prev" :disabled="isFirstStep" xv-show="!isFirstStep" @click="skip(-1)"><i class="fa fa-fw fa-lg" :class="backIcon"></i></button>
+      </div>
+    </footer>
+  </boardal>
+</main>
+
+
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+<!-- *************************************************************************** -->
+
+<!-- Restart form first page -->
+<!-- <p><button @click="reset()">Rewind</button></p> -->
+
+<!-- Skip to the lastest page -->
+<!--  <p><button class="primary" @click="goToStep(5)">skip to the end</button></p> -->
+
+<!-- Exit Button -->
+<!--  <p><button class="primary" @click="toggleModal">EXIT</button></p> -->
+
+<!-- Next Button -->
+<!-- <p><button class="primary" @click="skip(1)">Next...</button></p> -->

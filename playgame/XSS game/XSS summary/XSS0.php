@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./XSS0.css">
 
 </head>
 <body>
@@ -25,13 +25,13 @@
       <section>
         <h2>Reflected XSS (反射型)</h2>
         <p>反射型，顧名思義，就像光線映入鏡子一樣，會直接反射，所以注入的程式碼，只會顯示在前端網頁上。最常見的就是以 GET 方法傳送資料給伺服器時，伺服器未檢查就將內容回應到網頁上所產生的漏洞。</p>
-        <p><img class="photo" src="/photo/Reflected XSS.png"></p>
+        <p><img class="photo" src="/js-hackgame/photo/Reflected XSS.png"></p>
       </section>
 
       <section>
         <h2>Stored XSS (持久型)</h2>
         <p>會被保存在伺服器資料庫中的 JavaScript 代碼引起的攻擊即為 Stored XSS。像是留言板，使用者可以輸入任意內容，如果沒有人真檢查，那使用者輸入如果&lt;script&lt;等關鍵字就會被當成正常的HTML執行，標籤的內容也會被正常的作為JavaScript代碼執行。 </p>
-        <p><img class="photo" src="/photo/Stored SXX.png"></p>
+        <p><img class="photo" src="/js-hackgame/photo/Stored SXX.png"></p>
       </section>
 
       <section>
@@ -69,7 +69,7 @@
 
 
 <!-- partial -->
-  <script src='https://unpkg.com/vue'></script><script  src="./script.js"></script>
+  <script src='https://unpkg.com/vue'></script><script  src="./XSS0.js"></script>
 
 </body>
 </html>
