@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php
@@ -15,13 +15,13 @@
 
 <form action="register.php" method="post">
 
-  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required">
+  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required" >
   <br><br>
 
-  <input type="varchar" name="Username" placeholder="帳號" id="Uname" required="required">
+  <input type="varchar" name="Username" placeholder="帳號" id="Uname" required="required" >
   <br><br>
 
-  <input type="varchar" name="Password" placeholder="密碼" id="Uname" required="required">
+  <input type="varchar" name="Password" placeholder="密碼" id="Uname"  required="required">
   <br><br>
 
   <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" required="required">
@@ -47,12 +47,12 @@ if(isset($_POST['register'])){
     $result=mysqli_query($connect,$sql);
     if (mysqli_num_rows($result)>0)
     {
-        echo '<h3 class="testerror">帳號重複</h3>';
+        echo '<h3 class="error"><b>帳號重複</b></h3>';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=register.php>';	
     }
     else if($pwd!=$pwd2)
     {
-        echo '輸入密碼不一致,請重新輸入';
+        echo '<h3 class="error"><b>輸入密碼不一致,請重新輸入</b></h3>';
         echo '<meta http-equiv=REFRESH CONTENT=2;url=register.php>';	
     }
     else{
@@ -65,8 +65,8 @@ if(isset($_POST['register'])){
         }
         else{
             $_SESSION['Username'] = $name;
-        echo "<p style>註冊成功,5秒後自動返回主介面</p>";//成功輸出註冊成功
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.php>';
+        echo '<h3 class="forok"><b>註冊成功,3秒後自動返回主介面</b></h3>';//成功輸出註冊成功
+        echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
         }
         }
 }//判斷是否有submit操作

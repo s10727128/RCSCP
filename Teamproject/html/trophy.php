@@ -20,8 +20,8 @@
     <!--改php-->
     <table class="table table-striped table-bordered table-condensed table-hover">
       <caption style="text-align: center;">排行榜</caption>
-      <thead>
-        <tr>
+      <thead class="table-dark">
+        <tr class="thead">
           <th scope="col">名次</th>
           <th scope="col">姓名</th>
           <th scope="col">分數</th>

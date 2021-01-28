@@ -17,3 +17,10 @@ caption {
 .test{
     margin-top: 5%;
 }
+/* 
+table:hover{
+    background-color: rgb(110, 110, 108);
+} */
+.thead:hover{
+    background-color: rgb(41, 41, 41);
+}
