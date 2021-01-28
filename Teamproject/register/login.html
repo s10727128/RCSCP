@@ -3,23 +3,24 @@
 <head>    
     <title>Login Form</title>
       <meta charset="UTF-8">   
-    <link rel="stylesheet" type="text/css" href="css/main.css">    
+        <?php
+      include_once('../header.php');
+      ?>
+    <link rel="stylesheet" type="text/css" href="css/register.css">    
 </head>    
 <body>    
     <h2>登入 頁面</h2><br>    
-    <div class="login">    
+    <div class="registerbox">    
     <form id="login" method="post" action="login.php">    
-        <label><b>用戶名稱    
-        </b>    
+       
         </label>    
         <input type="varchar" name="Username" id="Uname" placeholder="Username"  required="required">    
         <br><br>    
-        <label><b>用戶密碼 
-        </b>    
+            
         </label>    
-        <input type="password" name="Password" id="Pass" placeholder="Password"  required="required">    
+        <input type="password" name="Password" id="Uname" placeholder="Password"  required="required">    
         <br><br>    
-        <input type="submit" name="submit" id="log" value="登入">       
+        <input type="submit" name="submit" id="fadeIn fourth" value="登入">       
         <br><br>    
         <input type="checkbox" id="check">    
         <span>記住我</span>    

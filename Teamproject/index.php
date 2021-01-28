@@ -175,17 +175,6 @@
           <div class="name"><span data-text="首頁">首頁</span></div>
         </a>
       </li>
-      <!-- 遊戲
-      <li>
-          <a href="register/login.html">
-              <div class="icon">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <i class="fa fa-user" aria-hidden="true"></i>
-              </div>
-              <div class="name"><span data-text="Login">Login</span></div>
-          </a>
-      </li>
-      -->
       <li>
         <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
           <div class="icon">
