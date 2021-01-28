@@ -42,7 +42,7 @@ if(isset($_POST['register'])){
     $name=$_POST['Username'];//post獲取表單裡的帳號
     $pwd=$_POST['Password'];//post獲取表單裡的密碼
     $pwd2=$_POST['PasswordCheck'];
-    $password = MD5($pwd);
+    $password = password_hash($pwd,PASSWORD_DEFAULT);
     $sql="select * from user where Username='$name'";
     $result=mysqli_query($connect,$sql);
     if (mysqli_num_rows($result)>0)

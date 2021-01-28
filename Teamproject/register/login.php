@@ -16,23 +16,29 @@ $name = $password = $pwd = '';
 
 $name=$_POST['Username'];//post獲取表單裡的name
 $pwd=$_POST['Password'];//post獲取表單裡的password
-$password = MD5($pwd);
 
-$sql = "SELECT * FROM user WHERE Username = '$name' and Password='$password'";//檢測資料庫是否有對應的
+$sql = "SELECT * FROM user WHERE Username = '$name'";//檢測資料庫是否有對應的帳號
 
 $result=mysqli_query($connect,$sql);
 if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_assoc($result))
 	{
+		$password=$row['Password'];
+		if(password_verify($pwd,$password)){
 		$id = $row["ID"];
 		$name = $row["Username"];
 		session_start();
 		$_SESSION['id'] = $id;
 		$_SESSION['Username'] = $name;
+		echo("登入成功,5秒後自動返回主介面");
+   		echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.php>';
+		}
+		else{
+			echo("登入失敗,帳號或密碼錯誤,5秒後自動返回登入介面");
+			echo '<meta http-equiv=REFRESH CONTENT=5;url=login.html>';
+		}
 	}
-	echo("登入成功,5秒後自動返回主介面");
-    echo '<meta http-equiv=REFRESH CONTENT=5;url=../index.php>';
 }
 else
 {
