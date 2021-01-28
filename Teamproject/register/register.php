@@ -35,6 +35,10 @@
 
 <?php 
 header("Content-Type: text/html; charset=utf8");
+if($_SESSION)
+{
+	header("Location: /js-hackgame/Teamproject/index.php");
+}
 if(isset($_POST['register'])){
     require_once('connect.php');//連結資料庫
     $name = $password = $pwd =$pwd2=$nickname ='';
@@ -69,6 +73,7 @@ if(isset($_POST['register'])){
         echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
         }
         }
+
 }//判斷是否有submit操作
 else{
 
