@@ -13,7 +13,9 @@ caption {
     text-align: center;
     caption-side: top;
     }
-
+b{
+    font-size: 30px;
+}
 .test{
     margin-top: 5%;
 }

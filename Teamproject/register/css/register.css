@@ -2,7 +2,7 @@ body{
   padding: 0px;
   margin: 0px;
   background-color: #87CEEB;
-  margin-top: 10%;
+  margin-top: 160px;
 }
 a{
   text-decoration: none;
@@ -12,6 +12,10 @@ a:hover{
 
   text-decoration: none;
   color:black;
+}
+h3{
+  text-align: center;
+  margin-top:-5px;
 }
 .error{
   position:relative;
@@ -65,7 +69,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   border: none;
   color: white;
   margin: 100px;
-  padding: 10px 60px;
+  padding: 15px 60px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

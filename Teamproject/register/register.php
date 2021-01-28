@@ -15,6 +15,7 @@
 
 <form action="register.php" method="post">
 
+<h3><b>會員註冊</b></h3><br>
   <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required" >
   <br><br>
 

@@ -6,32 +6,23 @@
 	  <?php
 	include('../header.php');
 	?>      
-	<link rel="stylesheet" type="text/css" href="css/register.css"> 
+	<link rel="stylesheet" type="text/css" href="css/login.css"> 
 </head>    
 <body>    
-    <h2>登入 頁面</h2><br>    
-    <div class="registerbox">    
+    <div class="login">    
     <form id="login" method="post" action="login.php">    
        
+	<h3><b>會員登入</b></h3>
+        </label>   <br>
+        <input type="varchar" name="Username" id="Uname" placeholder="帳號"  required="required">    
+          
+		<br><br>
         </label>    
-        <input type="varchar" name="Username" id="Uname" placeholder="Username"  required="required">    
-        <br><br>    
-            
-        </label>    
-        <input type="password" name="Password" id="Uname" placeholder="Password"  required="required">    
-        <br><br>    
+        <input type="password" name="Password" id="Uname" placeholder="密碼"  required="required">    
+        <br>      <br>
         <input type="submit" name="submit" id="fadeIn fourth" value="登入">       
-        <br><br>    
-        <input type="checkbox" id="check">    
-        <span>記住我</span>    
-		<br><br>  
-	
+         
 
-		<a href="register.php" id="a1">創建帳號</a>
-			
-		 <a href="../index.php" id="a2">上一頁</a>    
-		 
-		</div>  
     </form>     
 		
 </div>       

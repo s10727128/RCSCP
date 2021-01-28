@@ -19,7 +19,7 @@
       
     <!--改php-->
     <table class="table table-striped table-bordered table-condensed table-hover">
-      <caption style="text-align: center;">排行榜</caption>
+      <caption style="text-align: center;"><b>排行榜</b></caption>
       <thead class="table-dark">
         <tr class="thead">
           <th scope="col">名次</th>
