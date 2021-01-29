@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #190431;
+  background-color: #87CEEB;
   position: absolute;
 }
 div[class*=box] {
