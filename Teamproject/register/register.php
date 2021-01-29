@@ -70,7 +70,7 @@ if(isset($_POST['register'])){
         }
         else{
             $_SESSION['Username'] = $name;
-        echo '<h3 class="forok"><b>註冊成功,3秒後自動返回主介面</b></h3>';//成功輸出註冊成功
+        echo '<h3 class="forok"><b>註冊成功,3秒後自動返回首頁</b></h3>';//成功輸出註冊成功
         echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
         }
         }
