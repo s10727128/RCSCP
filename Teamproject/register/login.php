@@ -38,8 +38,8 @@ if(!isset($_POST["submit"])){
 }
 else{//檢測是否有submit操作 
 $name = $password = $pwd = '';
-$name=$_POST['Username'];//post獲取表單裡的name
-$pwd=$_POST['Password'];//post獲取表單裡的password
+$name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的name
+$pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的password
 $sql = "SELECT * FROM user WHERE Username = '$name'";//檢測資料庫是否有對應的帳號
 $result=mysqli_query($connect,$sql);
 if(mysqli_num_rows($result) > 0)

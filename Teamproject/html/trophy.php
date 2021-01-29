@@ -23,7 +23,8 @@
       搜尋名稱(需完全相同):
       <form action="" method="post">
       <input type="varchar" name="search"  >
-      <input type="submit"  name="search_button"  value="搜尋"> 
+      <input type="submit"  name="search_button"  value="搜尋">
+      <input type="submit"  name="reset_button"  value="清除結果">  
       </form>
       <thead class="table-dark">
         <tr class="thead">
@@ -34,14 +35,15 @@
       </thead>
       <?php
       require_once('../register/connect.php');
-      #顯示所有資料
-      $sql = "SELECT Username,Score FROM user ORDER BY Score DESC";
+      //搜尋所有帳號,如有管理員帳號,使用NOT IN排除搜尋--------------------------------
+      $sqlall = "SELECT Username,Score FROM user ORDER BY Score DESC";
+      $resultall = mysqli_query($connect, $sqlall);
       $rank=array();
-      $i = 1;
+      $i=1;
       $r=0;
-      $result = mysqli_query($connect, $sql);
-      if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_array($result)) {
+      if (mysqli_num_rows($resultall) > 0) {
+        #排行判斷--------------------------------------------
+        while ($row = mysqli_fetch_array($resultall)) {
           $name = $row["Username"];
           $score = $row["Score"];
           $rank[$r]=$row["Score"];
@@ -55,39 +57,11 @@
           else{
             $i++;
           }
-           #搜尋特定資料
-      //  if(isset($_POST["search_button"])){
-      //   $key=$_POST['search'];//post獲取表單裡的search
-      //   $sql = "SELECT * FROM user WHERE Username='$key'";
-      //       $result=mysqli_query($connect,$sql);
-      //       if (!$result){
-      //           echo "錯誤";
-      //       }
-      //   {
-      //   if(mysqli_num_rows($result) > 0)
-      //   {
-      //     while($row = mysqli_fetch_assoc($result))
-      //     {
-      //       $name=$row["Username"];
-      //       $score=$row["Score"];
-      //       echo '<tr>';
-      //       echo '<td>' . $i.'</td>';
-      //       echo '<td>' . $name. '</td>';
-      //       echo '<td>' . $score. '</td>';
-      //       echo '</tr>';
-      //       }
-      //       echo "</table>"; 
-      //       exit();
-      //   }
-      //       else
-      //       {
-              
-      //       echo "查無搜尋結果".'<br>';
-      //       }
-      //   }
-      // }
         }
+        $sqlrank="UPDATE user SET  Rank='$i' WHERE Username='$name'";
+        $resultrank = mysqli_query($connect, $sqlrank);
         if(!isset($_POST["search_button"])){
+           #顯示所有資料---------------------------------------
           echo '<tr>';
           echo '<td>' . $i . '</td>';
           echo '<td>' . $name. '</td>';
@@ -97,21 +71,20 @@
           echo '</tr>';
         }
         else{
-          $key=$_POST['search'];//post獲取表單裡的search
-          $sql = "SELECT * FROM user WHERE Username='$key'";
-              $result=mysqli_query($connect,$sql);
-              if (!$result){
-                  echo "錯誤";
-              }
           {
+          #顯示特定資料-----------------------------------------
+          $key=mysqli_real_escape_string($connect,$_POST['search']);
+          $sql = "SELECT * FROM user WHERE Username='$key' ORDER BY Score DESC";
+          $result=mysqli_query($connect,$sql);
           if(mysqli_num_rows($result) > 0)
           {
-            while($row = mysqli_fetch_assoc($result))
-            {
-              $name=$row["Username"];
-              $score=$row["Score"];
+               while($row = mysqli_fetch_assoc($result))
+               {
+              $name = $row["Username"];
+              $score = $row["Score"];
+              $RK=$row["Rank"];
               echo '<tr>';
-              echo '<td>' . $i.'</td>';
+              echo '<td>' . $RK.'</td>';
               echo '<td>' . $name. '</td>';
               echo '<td>' . $score. '</td>';
               echo '</tr>';
@@ -120,9 +93,9 @@
               exit();
           }
               else
-              {
-                
+              {  
               echo "查無搜尋結果".'<br>';
+              exit();
               }
           }
         }

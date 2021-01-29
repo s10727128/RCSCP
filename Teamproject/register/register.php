@@ -43,10 +43,10 @@ if($_SESSION)
 if(isset($_POST['register'])){
     require_once('connect.php');//連結資料庫
     $name = $password = $pwd =$pwd2=$nickname ='';
-    $nickname=$_POST['Nickname'];//post獲取表單裡的暱稱
-    $name=$_POST['Username'];//post獲取表單裡的帳號
-    $pwd=$_POST['Password'];//post獲取表單裡的密碼
-    $pwd2=$_POST['PasswordCheck'];
+    $nickname=mysqli_real_escape_string($connect,$_POST['Nickname']);//post獲取表單裡的暱稱
+    $name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的帳號
+    $pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的密碼
+    $pwd2=mysqli_real_escape_string($connect,$_POST['PasswordCheck']);
     $password = password_hash($pwd,PASSWORD_DEFAULT);
     $sql="select * from user where Username='$name'";
     $result=mysqli_query($connect,$sql);
