@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Tik Game排行榜</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <?php
@@ -41,6 +41,7 @@
       $rank=array();
       $i=1;
       $r=0;
+      $user = @$_SESSION['Username']; 
       if (mysqli_num_rows($resultall) > 0) {
         #排行判斷--------------------------------------------
         while ($row = mysqli_fetch_array($resultall)) {
@@ -63,9 +64,19 @@
         if(!isset($_POST["search_button"])){
            #顯示所有資料---------------------------------------
           echo '<tr>';
-          echo '<td>' . $i . '</td>';
-          echo '<td>' . $name. '</td>';
-          echo '<td>' . $score . '</td>';
+          if($user==$name){
+            echo '<thead class="table-success">';
+            echo '<td >'. $i . '</td>';
+            echo '<td>' . $name. '</td>';
+            echo '<td>' . $score. '</td>';
+            echo '</thead>';
+          }
+          else{
+            echo '<td>' . $i . '</td>';
+            echo '<td>' . $name. '</td>';          
+            echo '<td>' . $score . '</td>';
+          }
+
           //$i++;
           $r++;
           echo '</tr>';
@@ -84,9 +95,18 @@
               $score = $row["Score"];
               $RK=$row["Rank"];
               echo '<tr>';
+              if($user==$name){
+                echo '<thead class="table-success">';
+                echo '<td >'. $RK . '</td>';
+                echo '<td>' . $name. '</td>';
+                echo '<td>' . $score. '</td>';
+                echo '</thead>';
+              }
+              else{
               echo '<td>' . $RK.'</td>';
               echo '<td>' . $name. '</td>';
               echo '<td>' . $score. '</td>';
+              }
               echo '</tr>';
               }
               echo "</table>"; 

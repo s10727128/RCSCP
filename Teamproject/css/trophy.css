@@ -26,3 +26,6 @@ table:hover{
 .thead:hover{
     background-color: rgb(41, 41, 41);
 }
+.userscore:hover{
+    background-color: #3ed395;
+}
