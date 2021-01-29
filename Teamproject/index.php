@@ -100,21 +100,21 @@
           style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1200')">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="display-4">First Slide</h3>
-            <p class="lead">This is a description for the first slide.</p>
+            <p class="lead">put photo</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/800x600')">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="display-4">Second Slide</h3>
-            <p class="lead">This is a description for the second slide.</p>
+            <p class="lead">put photo2</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="display-4">Third Slide</h3>
-            <p class="lead">This is a description for the third slide.</p>
+            <p class="lead">put photo3</p>
           </div>
         </div>
       </div>
@@ -136,9 +136,7 @@
         <div class="col-lg-6 mr-auto">
 
           <h2>網站介紹</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita
-            quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore
-            ut velit dignissimos.</p>
+          <p class="lead">our Introduction</p>
         </div>
       </div>
     </div>
@@ -151,9 +149,7 @@
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <h2>自拍照1</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor,
-            provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa
-            exercitationem, in, quo totam.</p>
+          <p class="lead">big photo</p>
         </div>
       </div>
     </div>
@@ -172,7 +168,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
     </div>
     <!-- /.container -->
   </footer>
