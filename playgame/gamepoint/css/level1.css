@@ -193,8 +193,6 @@ div[class*=box] {
        left: 0;
        top: 0;
        border: 120px solid transparent;
-       border-top-width: 0;
-       border-bottom-width: 0;
        height: 100%;
        width: 0;
        z-index: -1;
@@ -202,8 +200,8 @@ div[class*=box] {
        -webkit-transition: all 0.1s ease-out;
      }    
      .btn:active {
-       transform: scale(1.2, 0.8);
-       -webkit-transform: scale(1.2,0.8);
+       transform: scale(1.2, 1.5);
+       -webkit-transform: scale(1.2,1.5);
        
      }
      .btn:hover::before{
