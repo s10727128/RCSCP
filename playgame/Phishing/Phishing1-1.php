@@ -12,7 +12,7 @@
 </head>
 <body a link="blue" vlink="red">
     <div class="instructions">
-        <h1 style="text-align: center;">LEVEL2-2</h1>
+        <h1 style="text-align: center;">Phishing1</h1>
         <div id="menubar" style="text-align: center";> <a href="gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
     </div>
     <hr>
@@ -50,9 +50,10 @@
     <div style="text-align: center;">
             <button type="button" id="hintList" class="button">提示</button>
             <div class="word2" style="list-style: none; ">
-                <li id="hint1"><b></b></li>
+                <li id="hint1"></li>
                 <li id="hint2"></li>
-                <li id="hint3"></li>
+                <li id="hint3"></li>    
+                <li id="hint4"></li>
             </div>
         </div>
 
@@ -63,15 +64,19 @@
             x ++;
             switch(x){
                 case 1:
-                    $("#hint1").text("1.");
+                    $("#hint1").text("1. 還記得XSS2的關卡嗎?可以看一下原始碼。");
                     break;
 
                 case 2:
-                    $("#hint2").text("2.");
+                    $("#hint2").text("2. 沒錯，跟XSS2一樣有程式碼的漏洞，可以注入程式碼。");
                     break;
 
                 case 3:
-                    $("#hint3").text("3.");
+                    $("#hint3").text("3. 可以利用<a href="">test<a>，2; 當作注入的連結。");
+                    break;
+
+                case 4:
+                    $("#hint4").text("4. 解答有很多個方法，但本關卡提供為&lt;a href=&quot;Phishing1&oline;2.php&quot;&gt;test&lt;a&gt;");
                     break;
 
                 default:
