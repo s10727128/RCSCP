@@ -187,7 +187,7 @@
         </a>
       </li>
       <li>
-        <a href="html/gameset.html">
+        <a href="html/gameset.php">
           <div class="icon">
             <i class="fa fa-gamepad" aria-hidden="true"></i>
             <i class="fa fa-gamepad" aria-hidden="true"></i>

@@ -3,6 +3,7 @@
 
 <head>
 
+<title>GameSet</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -11,6 +12,9 @@
   <title>TIK Gammer</title>
 
   <!-- Bootstrap core CSS -->
+  <?php
+  include_once("../header.php");
+  ?>
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -22,27 +26,6 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-
-      <a class="navbar-brand js-scroll-trigger" href="../index.php">TIK GAME</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../../Teamproject/register/login.php">登入</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    
-  </nav>
   
   <h1>  <b>  遊戲首頁 </b> </h1>
 
@@ -57,16 +40,16 @@
   <div class="flex">
 
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">XSS</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level1index.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></div>
   </button>
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">CSRF</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level1index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <button>
     <div class="item"><a href="../../playgame/gamepoint/level1index.html">SQL Injection</a></div>
   </button>
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">MISC</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level1index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <button>
 
