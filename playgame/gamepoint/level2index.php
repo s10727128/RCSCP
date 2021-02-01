@@ -14,21 +14,21 @@
 <body>
     <h1><b>
 
-            SQL Injection關卡難易度
+            CSRF關卡難易度
         </b>
     </h1>
 
     <div class="auto">
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>
+            <div class="item"><span><a href="../CSRF game/#">簡單</a></span></div>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>
+            <div class="item"><span><a href="../CSRF game/#">中級</a></span></div>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-3.php">困難</a></span></div>
+            <div class="item"><span><a href="../CSRF game/#">困難</a></span></div>
         </button>
 
         <button class="btn">

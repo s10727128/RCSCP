@@ -14,7 +14,7 @@
 <body a link="blue" vlink="red">
     <div class="instructions">
         <h1 style="text-align: center;">LEVEL1-2</h1>
-        <div id="menubar" style="text-align: center";> <a href="../../Teamproject/index.php" class="menu_exit">EXIT</a> </div>
+        <div id="menubar" style="text-align: center";> <a href="../gamepoint/level1index.php" class="menu_exit">EXIT</a> </div>
     </div>
     <hr>
 
@@ -72,9 +72,8 @@
                 $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
                 break;
 
-
                 case 5:
-                $("#hint5").text("5. \"\>\<script\>alert\(\)\</script\>，利用\">讓Value裡為完整的函式");
+                $("#hint5").text('5. "><script>alert()\<\/script>，利用\">讓Value裡為完整的函式');
                 break;
 
                 default:

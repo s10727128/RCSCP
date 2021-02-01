@@ -11,79 +11,56 @@
     </head>
 
     <body>
+    <h1><b>
 
-        <div class="intruduction">
-            <p></p>
-        </div>
-        
+            MISC關卡難易度
+        </b>
+    </h1>
 
-        <!--Button 1~4--->
-        <div class="box-1">
-            <div class="btn btn-one"><span><a href="../MISC/level5-1.php">簡單</a></span></div> 
-        </div>
-        
-        <div class="box-2">
-            <div class="btn btn-two"><span><a href="../MISC/level5-2.php">中級</a></span></div>
-        </div>
-        
-        <div class="box-3">
-            <div class="btn btn-three"><span><a href="../MISC/level5-3.php">困難</a></span></div>
-        </div>
+    <div class="auto">
+        <button class="btn">
+            <div class="item"><span><a href="../MISC/level5-1.php">簡單</a></span></div>
+        </button>
 
-        <div class="box-4">
-            <div class="btn btn-four"><span><a href="../../Teamproject/test1/index.html">返回主頁</a></span></div>
-        </div>
+        <button class="btn">
+            <div class="item"><span><a href="../MISC/level5-2.php">中級</a></span></div>
+        </button>
+
+        <button class="btn">
+            <div class="item"><span><a href="../MISC/level5-3.php">困難</a></span></div>
+        </button>
+
+        <button class="btn">
+            <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
+        </button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
 
-        <!--bar-->  
-        <ul>
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                        <i class="fa fa-trophy" aria-hidden="true"></i>
-                    </div>
-                    <div class="name"><span data-text="Trophy">Trophy</span></div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <i class="fa fa-gamepad" aria-hidden="true"></i>
-                        <i class="fa fa-gamepad" aria-hidden="true"></i>
-                    </div>
-                    <div class="name"><span data-text="Game">Game</span></div>
-                </a>
-            </li>
-            <li>
-                <a href="../../Teamproject/test1/index.html">
-                    <div class="icon">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
-                    <div class="name"><span data-text="Home">Home</span></div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                    </div>
-                    <div class="name"><span data-text="Login">Login</span></div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="name"><span data-text="Contact">Contact</span></div>
-                </a>
-            </li>
-        </ul>
+    <div class="footer">
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
 
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        document.addEventListener("touchstart", function() {}, false);
+    </script>
     
     </body>
 </html>

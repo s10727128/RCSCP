@@ -32,7 +32,7 @@
   </button>
   <!--SQL-->
   <button class="btn">
-    <div class="item"><a href="../../playgame/gamepoint/level3index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level2index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <!--level3 = SQL-->
   <button class="btn">
@@ -40,7 +40,7 @@
   </button>
   <!--level5 = MISC-->
   <button class="btn">
-    <div class="item"><a href="../../playgame/gamepoint/level1index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level5index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <button class="btn">
    <div class="item"><a href="#">5</a></div>
