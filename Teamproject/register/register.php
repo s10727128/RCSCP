@@ -62,8 +62,9 @@ if(isset($_POST['register'])){
     }
     else{
         $sql="insert into user(Username,Password,Nickname) values ('$name','$password','$nickname')";//向資料庫插入表單傳來的值的sql
-        
         $result=mysqli_query($connect,$sql);//執行sql
+        $sqlgame="insert into game(Username) values ('$name')";
+        $resultgame=mysqli_query($connect,$sqlgame);
         
         if (!$result){
         die();//如果sql執行失敗輸出錯誤

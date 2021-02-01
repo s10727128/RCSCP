@@ -4,18 +4,27 @@
     <title>資安遊戲闖關網站</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    include_once("../../Teamproject/header.php");
+    ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/bird.jpg">
     <link rel="stylesheet" a href ="../CSS/playgame3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <!-- <script  src="time.js"></script> -->
 
 </head>
 <body a link="blue" vlink="red">
+    <?php
+        require_once("../../Teamproject/register/connect.php");
+        $starttime=time();
+        $sqlgame="UPDATE game SET  SQL_1open='$starttime' WHERE Username='$name'";
+        $resultgame=mysqli_query($connect,$sqlgame);
+    ?>
     <form action="" method="POST">
         <div class="instructions">
             <h1>LEVEL3-1</h1>
-            <div id="menubar" > <a href="../gamepoint/level3index.html" class="menu_exit">EXIT</a> </div>
+            <div id="menubar" > <a href="../gamepoint/level3index.php" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
@@ -30,28 +39,13 @@
             <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p>
             <br></br>
         </div>
-
         <div>
-            <?php
-                echo "通關密碼: ";
-                echo '<input type="varchar" name="Key">';
-                echo "&nbsp";
-                echo '<input type="submit" name="KeySubmit" value="驗證"  >';
-                if(isset($_POST["KeySubmit"])){
-                  $Key=$_POST['Key'];
-                  if($Key=="0800092000")
-                  {
-                      echo '<br>'."恭喜通關!!";
-                      exit();
-                  }
-                  else
-                  {   
-                      echo '<div class="word2">';
-                      echo '<br>'."通關密碼不正確,請繼續加油!";
-                      echo '</div>';
-                  }
-                }
-            ?>
+        </form>        
+        <form action="level3-1done.php" method="post">
+        通關密碼
+         <input type="varchar" name="Key">
+         <input type="submit" name="KeySubmit" value="驗證"  >
+        </form>
         </div>
 
         <br><br>

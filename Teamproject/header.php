@@ -35,7 +35,7 @@
           {
 	        while($row = mysqli_fetch_assoc($result))
 	        {
-		      $name=$row["Username"];
+          $name=$row["Username"];
 		      $access=$row["Access"];
 	        }
 	        //echo "歡迎.$name".'<br>';
