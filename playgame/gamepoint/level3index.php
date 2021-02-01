@@ -2,6 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+          
+  <?php
+  include_once("../../Teamproject/header.php");
+  ?>
         <link rel=stylesheet a href="css/level1.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  >
     </head>
@@ -21,9 +25,6 @@
             <div class="btn btn-three"><span><a href="../SQL Injection game/level3-3.php">困難</a></span></div>
         </div>
 
-        <div class="box-4">
-            <div class="btn btn-four"><span><a href="../../Teamproject/index.php">返回主頁</a></span></div>
-        </div>
     
     </body>
 </html>

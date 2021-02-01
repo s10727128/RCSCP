@@ -15,11 +15,6 @@
   <?php
   include_once("../header.php");
   ?>
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="../css/scrolling-nav.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href ="../css/gameset.css" rel="stylesheet"  type="text/css">
   
 </head>
@@ -29,27 +24,23 @@
   
   <h1>  <b>  遊戲首頁 </b> </h1>
 
-  <!-- <div class="game">
-    <div class="gamechoose">
-      <button><a href="../../playgame/gamepoint/level1index.html">XSS</a></button>
-      <button><a href="../../playgame/gamepoint/level3index.html">CSRF</a></button>
-      <button><a href="../../playgame/gamepoint/level5index.html">SQL Injection</a></button>
-      <button><a href="../../playgame/gamepoint/level5index.html">MISC</a></button>
-    </div>
-  </div> -->
   <div class="flex">
 
+  <!--level1 = xss-->
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level1index.php"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></div>
   </button>
+  <!--SQL-->
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level3index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
+  <!--level3 = SQL-->
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">SQL Injection</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level3index.php">SQL Injection</a></div>
   </button>
+  <!--level5 = MISC-->
   <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
+    <div class="item"><a href="../../playgame/gamepoint/level1index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <button>
 
@@ -65,8 +56,7 @@
 <br>
 <br>
 <br>
-<!-- 
-  Footer  -->
+<!--  Footer  -->
   <div class="footer">
     
   <footer class="py-2 bg-dark ">
