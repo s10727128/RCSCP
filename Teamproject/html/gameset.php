@@ -27,25 +27,25 @@
   <div class="flex">
 
   <!--level1 = xss-->
-  <button>
+  <button class="btn">
     <div class="item"><a href="../../playgame/gamepoint/level1index.php"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></div>
   </button>
   <!--SQL-->
-  <button>
+  <button class="btn">
     <div class="item"><a href="../../playgame/gamepoint/level3index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
   <!--level3 = SQL-->
-  <button>
+  <button class="btn">
     <div class="item"><a href="../../playgame/gamepoint/level3index.php">SQL Injection</a></div>
   </button>
   <!--level5 = MISC-->
-  <button>
-    <div class="item"><a href="../../playgame/gamepoint/level1index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
+  <button class="btn">
+    <div class="item"><a href="../../playgame/gamepoint/level1index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div>
   </button>
-  <button>
+  <button class="btn">
+   <div class="item"><a href="#">5</a></div>
+  </button>
 
-    <div class="item"><a href="#">5</a></div>
-  </button>
 </div>
 <!-- <a href="#" class="action-button animate blue">Hello</a>
 <a href="#" class="action-button animate red">How</a>
@@ -53,8 +53,7 @@
 <a href="#" class="action-button animate yellow">You?</a>
   -->
 <br>
-<br>
-<br>
+
 <br>
 <!--  Footer  -->
   <div class="footer">

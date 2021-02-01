@@ -1,24 +1,23 @@
-
-   body{
-    width: 100%;
-    height: 100%;
-   padding: 0%;
-   text-align: center;
-   background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
-   
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #87CEEB;
+  position: absolute;
 }
-h1{
-  margin: 5%;
-   margin-bottom: 100px;
-}
-/* }
 div[class*=box] {
-  height: 25%;
+  height: 33%;
   width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0; 顯示在最上層
+  z-index: 0; /*顯示在最上層*/
 }
 
 .btn {
@@ -34,12 +33,12 @@ div[class*=box] {
   z-index: 1;
   padding: 10px 140px 10px  ;
   bottom: 5px;
-} */
-
-/* ========================
+}
+/* 
+========================
       BUTTON ONE
 ========================
-
+*/
 .btn-one {
   background-color: #fff;
   transition: all 0.3s;
@@ -49,7 +48,7 @@ div[class*=box] {
 .btn-one span {
   transition: all 2s;
 }
-.btn-one::before { 往後翻 
+.btn-one::before { /*往後翻*/
   content: '';
   position: absolute;
   bottom: 0;
@@ -79,7 +78,7 @@ div[class*=box] {
   opacity: 1; 
   transform: scale(1, 1); 
 }
-.btn-one::after { 面向前時
+.btn-one::after { /*面向前時*/
   content: '';
   position: absolute;
   bottom: 0;
@@ -92,8 +91,7 @@ div[class*=box] {
 .btn-one:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
-}*/
-
+}
 /*
   ================
     button two
@@ -101,10 +99,9 @@ div[class*=box] {
 */
  
 
-  /* .btn-two{
-    background-color: #fff;
+  .btn-two{
     color: rgba(255,255,255,1);
-    transition: all 0.5s;
+    transition: all 2s;
     border: 1px solid rgba(255,255,255,0.5);
     position: relative; 
     overflow: hidden;
@@ -127,115 +124,26 @@ div[class*=box] {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0;
-    background-color: rgba(207, 216, 215, 0.5);
-    transition: all 0.5s;
+    opacity:1;
+    background-color: rgba(23, 172, 154, 0.5);
+    transition: all 5s;
     }
     .btn-two:hover::before{
     opacity: 1;
-    transform: skewX(-180deg)  scale(0.5,1);
-    } */
-
-    .auto{
-      padding-left: 40%;
+    transform: skewX(180deg)  scale(0,1);
     }
-   .btn1{
-     width: 238px;
-     height: 72px;
-   }
-     .btn  {
-      content: '';
-      background-image: url('../../gameskin3.PNG');
-      background-repeat: no-repeat;
-      background-size: contain;
-       font-size: 2em;
-       position: relative;
-       width: 250px;
-       height: 75px;
-        margin: 0px 0px 45px 30px;
-       padding: 0px 0px 40px 0px;
-       text-align: center;
-       overflow: hidden;
-       display: block;
-       justify-content: center;
-       align-items: center;
-       border: 1px solid blue;
-       transition: all 0.2s ease-ou t;
-       -webkit-transition: all 0.2s ease-out;
-       box-shadow: 0 0 0.8em #333;
-     }
-     
-    .btn span{
-      z-index: 2; 
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;   
-      }  
 
-     .btn::before {
-       content: "";
-       position: absolute;
-       left: 0;
-       top: 0;
-       height: 100%;
-       width: 100%;
-       z-index: 1;
-       opacity: 0;
-       background-color: rgba(207, 216, 215, 0.5);
-      
-       transition: all 1s ;
-       -webkit-transition: all 1s;
-     }
-     .btn::after {
-       content: "";
-       position: absolute;
-       left: 0;
-       top: 0;
-       border: 120px solid transparent;
-       border-top-width: 0;
-       border-bottom-width: 0;
-       height: 100%;
-       width: 0;
-       z-index: -1;
-       transition: all 0.1s ease-out;
-       -webkit-transition: all 0.1s ease-out;
-     }    
-     .btn:active {
-       transform: scale(1.2, 0.8);
-       -webkit-transform: scale(1.2,0.8);
-       
-     }
-     .btn:hover::before{
-      opacity: 1;
-      transform: skewX(-180deg)  scale(0.5,1);
-      
-      }
-      .btn a{ 
-        color: #78a4b6;
-        font-family:Impact, fantasy;
-        padding: 20px 90px;
-        transform:  scale(1.2,1.2);
-        transition: all 3s;
-      }
-      .btn a:hover{
-        transition: all 1.5s;
-        text-decoration: none;
-        color: white;
-        transform:  scale(1.2,1.2);
-      }
-      
+ 
+  
   /* 
   ========================
         BUTTON THREE
   ========================
   */
-  /* .btn-three {
-    background-color: #000;
+  .btn-three {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
-    border: 1px solid #fff;
   }
   .btn-three::before {
     content: '';
@@ -244,7 +152,7 @@ div[class*=box] {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.1);
     transition: all 0.3s;
   }
   .btn-three:hover::before {
@@ -260,32 +168,31 @@ div[class*=box] {
     height: 100%;
     opacity: 0;
     transition: all 0.3s;
-    background-color: #fff;
+    border: 1px solid rgba(255,255,255,0.5);
     transform: scale(1.2,1.2);
   }
   .btn-three:hover::after {
     opacity: 1;
     transform: scale(1,1);
-  } */
+  }
   
    /* 
 ========================
       BUTTON four
 ========================
-*/
-/* .btn-four {
+.btn-two {
     color: #FFF;
     transition: all 0.5s;
     position: relative; 
   }
-  .btn-four span {
+  .btn-two span {
     z-index: 2; 
-    display: flex;
+    display: block;
     position: absolute;
     width: 100%;
     height: 100%; 
   }
-  .btn-four::before {
+  .btn-two::before {
     content: '';
     position: absolute;
     top: 0;
@@ -296,7 +203,7 @@ div[class*=box] {
     border: 1px solid rgba(255,255,255,0.2);
     background-color: rgba(255,255,255,0.1);
   }
-  .btn-four::after {
+  .btn-two::after {
     content: '';
     position: absolute;
     top: 0;
@@ -307,12 +214,68 @@ div[class*=box] {
     border: 1px solid rgba(255,255,255,0.2);
     background-color: rgba(255,255,255,0.1);
   }
-  .btn-four:hover::before {
+  .btn-two:hover::before {
     transform: rotate(-45deg);
-    background-color: #fff;
+    background-color: rgba(255,255,255,0);
   }
-  .btn-four:hover::after {
+  .btn-two:hover::after {
     transform: rotate(45deg);
-  background-color: #fff;
-  } */
-  
+    background-color: rgba(255,255,255,0);
+  }
+  */
+
+ 
+  /*
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'audiowide',monospace;
+    color: #84c754;
+}
+a{
+    text-decoration: none;
+}
+.list1{
+    font-family:'audiowide',monospace;
+    font-size: 30px;
+    left:18.5%;
+    margin-top: 5%;
+    position: absolute;
+    list-style:none;
+}
+.list2{
+    font-family:'audiowide',monospace;
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 5%;
+    position: absolute;
+    list-style:none;
+}
+.list3{
+    font-family:'audiowide',monospace;
+    font-size: 30px;
+    margin-left: 62.5%;
+    margin-top: 5%;
+    position: absolute;
+    list-style:none;
+}
+a{
+    
+    border: #ccc 2px solid;
+    background-color: black;
+    color:#84c754;
+    padding:70px;
+    transition: 0.5s;
+}
+a:hover{
+    color:white;
+    box-shadow: inset 0 0 0 30px #CCC;
+}
+.demo{
+    transition: 1s;
+}
+.demo:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+*/
