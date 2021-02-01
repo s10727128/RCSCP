@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" a href ="homesummart.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="attack" id="attack_btn" >攻擊</button>
+    <p class="hurt" id="hurt"></p>
+
+    <script>
+        let x = 0;
+        let y = 0;
+        $("#attack_btn").click(function(){
+            x++;
+            if((x == 5) && (x > 0)){
+                y = 1;
+            }
+            switch(y){
+                case 0:
+                    $("#hurt").text("-100");
+                    break;
+                case 1:
+                    $("#hurt").text("-300");
+                    y = 0;
+                    x = 0;
+                    break;
+            }
+        })
+    </script>
+
+
+</body>
+</html>
