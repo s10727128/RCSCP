@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel=stylesheet href="../CSS/playgame1.scss">
+    <link rel=stylesheet href="../CSS/playgame1.css">
     <script src="../JavaScript/XSS1.js"></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <form action="" method="GET">
         <div class="instructions">
             <h1>LEVEL1-1</h1>
-            <div id="menubar" > <a href="../gamepoint/level1index.html" class="menu_exit">EXIT</a> </div>
+            <div id="menubar" > <a href="../gamepoint/level1index.php" class="menu_exit">EXIT</a> </div>
         </div>
         <hr>
 
@@ -53,8 +53,8 @@
                                 </div>
                         <div class="modal-body">
                             <div class="container-fluid">
-                            <p>1.&nbsp;執行一個< script ><br>2.&nbsp;在< script >裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=< script >alert()</ script ></p>
-                                
+                            <p>1.&nbsp;執行一個	&lt; script &gt;<br>2.&nbsp;在	&lt; script &gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=	&lt; script &gt;alert()&lt;/ script &gt;
+                            </p>
                             </div>
                         </div>
                         <div class="modal-footer">

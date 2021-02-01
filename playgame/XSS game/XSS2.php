@@ -72,12 +72,14 @@
                 $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
                 break;
 
+
                 case 5:
                 $("#hint5").text("5. \"\>\<script\>alert\(\)\</script\>，利用\">讓Value裡為完整的函式");
                 break;
 
                 default:
-                    break;
+                
+                break;    
             }
         });
     </script>
