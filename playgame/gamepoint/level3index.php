@@ -22,10 +22,36 @@
         <button class="btn">
             <div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>
         </button>
+        <?php
+        $SQL1total=0;
+        $sql="SELECT SQL_1 FROM game WHERE SQL_1 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $SQL1total++;
+          }
+        }
+        echo "通關人數:".$SQL1total;
+        ?>
 
         <button class="btn">
             <div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>
         </button>
+        <?php
+        $SQL2total=0;
+        $sql2="SELECT SQL_2 FROM game WHERE SQL_2 IS NOT null ";
+        $result2=mysqli_query($connect,$sql2);
+        if(mysqli_num_rows($result2) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result2))
+          {
+              $SQL2total++;
+          }
+        }
+        echo "通關人數:".$SQL2total;
+        ?>
 
         <button class="btn">
             <div class="item"><span><a href="../SQL Injection game/level3-3.php">困難</a></span></div>
