@@ -20,7 +20,23 @@
 
     <div class="auto">
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>
+            <?php
+            $sql="SELECT SQL_1,SQL_1open FROM game WHERE SQL_1 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['SQL_1open'];
+                #修改class
+                echo '<div class="item"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>';
+            }
+            
+            ?>
         </button>
         <?php
         $SQL1total=0;
