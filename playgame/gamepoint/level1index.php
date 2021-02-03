@@ -12,11 +12,12 @@
 
     <?php
     include_once("../../Teamproject/header.php");
+    include_once("../XSS game/XSS summary/XSS0.php");
     ?>
     <link href="css/level1.css" rel=stylesheet type="text/css">
 </head>
 
-<body>
+<body>  
     <h1><b>
 
             XSS關卡難易度
