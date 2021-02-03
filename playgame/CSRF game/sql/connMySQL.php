@@ -7,6 +7,6 @@ $db_link=mysqli_connect($server,$db_Username,$db_Password,$db_Database);
 if (!$db_link) {
     die('資料庫連結失敗!');
 } else {
-   echo '資料庫連結成功';
+   echo '';
 }
 ?>
