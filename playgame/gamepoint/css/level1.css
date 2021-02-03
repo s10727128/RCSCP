@@ -18,7 +18,7 @@ h1{
     }
      .btn  {
       content: '';
-      background-image: url('../../gameskin3.PNG');
+      background-image: url('../../../photo/Btnskin/gameskin3.png');
       background-repeat: no-repeat;
       background-size: contain;
        font-size: 2em;

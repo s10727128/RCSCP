@@ -29,14 +29,14 @@ button{
 */
 .btn {    
   content: '';
-  background-image: url('../../playgame/gameskin3.png');
+  background-image: url('../../photo/Btnskin/gameskin3.png');
   background-repeat: no-repeat;
   background-size: contain;
    font-size: 2em;
    color: white;
    position: relative;
-    width: 250px;
-   height: 100px;
+    width: 350px;
+   height: 105px;
    overflow: hidden;
    text-align: center;
    justify-content: center;
@@ -98,12 +98,13 @@ button{
   .btn a{ 
     color: #78a4b6;
     font-family:Impact, fantasy;
-    padding: 20px 25px;
+    padding: 30px 70px;
     transform:  scale(1.2,1.2);
-    transition: all 2s;
+    transition: all 1s;
+    border: 1px solid #000;
   }
   .btn a:hover{
-    transition: all 1.5s;
+    transition: all 1s;
     text-decoration: none;
     color: white;
     transform:  scale(1.2,1.2);
