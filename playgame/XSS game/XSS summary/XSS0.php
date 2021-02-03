@@ -16,7 +16,7 @@
     <article v-cloak>
       <section>
         <h2>XSS攻擊介紹</h2>
-        <p>XSS跨網站腳本(Cross-Site Scripting, XSS)是一種經常出現在Web應用程式中的電腦安全性漏洞，是由於Web應用程式對使用者的輸入過濾不足而產生的。攻擊者利用網站漏洞把惡意的腳本程式碼注入到網頁之中，當使用者遊覽這些網頁時，就會執行其中的惡意程式碼，對受害使用者可能採取Cookie資瞭竊取、Session(連線)劫持、釣魚欺騙等各種攻擊。</p>
+        <p>XSS跨網站腳本(Cross-Site Scripting, XSS)是一種經常出現在Web應用程式中的電腦安全性漏洞，是由於Web應用程式對使用者的輸入過濾不足而產生的。攻擊者利用網站漏洞把惡意的腳本程式碼注入到網頁之中，當使用者瀏覽這些網頁時，就會執行其中的惡意程式碼，對受害使用者可能採取Cookie資料竊取、Session(連線)劫持、釣魚欺騙等各種攻擊。</p>
         <p>目前 XSS 攻擊的種類大致可以分成以下幾種類型：<br>&nbsp;&nbsp;&nbsp;&nbsp;Reflected XSS  (反射型)<br>&nbsp;&nbsp;&nbsp;&nbsp;Stored XSS (儲存型)<br>&nbsp;&nbsp;&nbsp;&nbsp;DOM-Based XSS (基於 DOM 的類型)</p>
         <p><button class="accent" @click="skip(1)" >接下去看!</button></p>
       </section>

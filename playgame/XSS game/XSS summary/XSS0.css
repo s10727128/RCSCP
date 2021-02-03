@@ -48,7 +48,7 @@
   opacity: 0.65;
 }
 .boardal-enter-active, .boardal-leave-active {
-  transition: opacity 0.00001s;
+  transition: opacity 0s;
 }
 .boardal-enter, .boardal-leave-to {
   opacity: 0;
