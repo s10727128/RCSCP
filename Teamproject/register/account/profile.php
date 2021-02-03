@@ -9,8 +9,16 @@
 		include_once("../../header.php");
 		?>
 		<link rel="stylesheet" a href ="profile.css">
+		<table class="table table-striped table-bordered table-condensed table-hover">
+      <thead class="table-dark">
+        <tr class="thead">
+          <th scope="col">關卡</th>
+          <th scope="col">完成狀況</th>
+        </tr>
+      </thead>
 	<body>
 <?php 
+// echo (date('Y-m-d H:i:s',time()+7*3600));
 $sql = "SELECT * FROM user WHERE Username='$name'";
 $result=mysqli_query($connect,$sql);
 if(mysqli_num_rows($result) > 0)
@@ -40,17 +48,31 @@ if(mysqli_num_rows($result) > 0)
 {
 	while($fieldinfo = mysqli_fetch_field($result))
 	{
+		echo '<tr>';
 		$sql_2="SELECT $fieldinfo->name FROM game WHERE $fieldinfo->name is not null AND Username='$name'";
 		$result2=mysqli_query($connect,$sql_2);
 		while($row= mysqli_fetch_assoc($result2))
 		{
-		echo "關卡".$fieldinfo->name."已完成";
-		echo "<br>";
+		echo '<thead class="table-success">';
+		echo '<td >'.$fieldinfo->name.'</td>';
+		echo '<td >'."已完成".'</td>';
+		echo '</thead>';
 		}
+		$sql_3="SELECT $fieldinfo->name FROM game WHERE $fieldinfo->name is null AND Username='$name'";
+		$result3=mysqli_query($connect,$sql_3);
+		while($row= mysqli_fetch_assoc($result3))
+		{
+		echo '<thead class="table-default">';
+		echo '<td >'.$fieldinfo->name.'</td>';
+		echo '<td >'."未完成".'</td>';
+		echo '</thead>';
+		}
+		echo '</tr>';
 	}
 }
 echo '<a href="EditProfile.php">更改個人資料</a><br>';
 echo '<a href="ChangePassword.html">更換密碼</a><br>';
 ?>
+
 	</body>
 </html>
