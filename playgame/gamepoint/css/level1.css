@@ -79,7 +79,7 @@ h1{
      }
      .btn:hover::before{
       opacity: 1;
-      transform: skewX(-180deg)  scale(0.5,1);
+      transform: skewX(-180deg)  scale(0,1);
       }
       .btn::after:hover{
         background-color: #000;
@@ -91,6 +91,7 @@ h1{
         padding: 30px 90px;
         transform:  scale(1.2,1.2);
         transition: all 3s;
+        border: 1px solid #000;
       }
       .btn a:hover{
         transition: all 1.5s;
