@@ -21,13 +21,13 @@
 </head>
 <body>
 <h1 align = "center">會員資料總表</h1>
-<p align= "center">目前資料筆數：，<a href='create.php'>新增資料</a></p>
+<p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href='create.php'>新增資料</a></p>
 
 <table border="1" align= "center">
     <tr>
         <th>ID</th>
         <th>姓名</th>
-        <th>積分</th>
+        <th>積分</th>   
     </tr>
 
 
