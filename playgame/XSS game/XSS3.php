@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tik Game</title>
-<link rel="shortcut icon" href="/bird.jpg">
-<link rel="stylesheet" href="../CSS/playgame1.css">
+<title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <?php
+    include_once("../../Teamproject/header.php");
+    ?>
+
+    <link rel=stylesheet href="../CSS/playgame1.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../JavaScript/XSS3.js"></script>
 
 
 </head>
 <body a link="blue" vlink="red">
-    <div class="instructions">
-        <h1 style="text-align: center;">LEVEL1-3</h1>
-        <div id="menubar" style="text-align: center";> <a href="../gamepoint/level1index.php" class="menu_exit">Exit</a> </div>
-    </div>
-    <br>
-    <hr>
+<div class="body2">
+<div class="instructions">
+                <h1><a href="../gamepoint/level1index.php" class="exit">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg>
+
+                    </a><b>LEVEL1-3</b>
+                </h1>
+
+            </div>
+            <hr>
 
     <!--下一關按鈕-->
     <div style="text-align: center;">
@@ -29,11 +40,11 @@
 
         <div class="message_logs" id="messagelogs">
             <div class="message">
-                <div class="user-photo"><img src="../../photo/elephant.jpeg"></div>
+                <div class="user-photo"><img src="../../photo/XSS/elephant.jpeg"></div>
                 <p class="message_chat">What's up, Bro!</p>
             </div>
             <div class="message">
-                <div class="user-photo"><img src="../../photo/elephant.jpeg"></div>
+                <div class="user-photo"><img src="../../photo/XSS/elephant.jpeg"></div>
                 <p class="message_chat">Haha</p>
             </div>
         </div>
@@ -77,6 +88,28 @@
             }
         });
     </script>
+</div>
+<br><br>
+    <br><br>
+<div class="footer">
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
 
+    </div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script>
+        document.addEventListener("touchstart", function() {}, false);
+    </script>
 </body>
 </html>

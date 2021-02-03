@@ -8,8 +8,8 @@
    
 }
 h1{
-  margin-top: 10%;
-   margin-bottom: 100px;
+  margin-top: 5%;
+   margin-bottom: 50px;
 }
 
 
@@ -79,7 +79,7 @@ h1{
      }
      .btn:hover::before{
       opacity: 1;
-      transform: skewX(-180deg)  scale(0,1);
+      transform: skewX(-45deg)  scale(0,1);
       }
       .btn::after:hover{
         background-color: #000;

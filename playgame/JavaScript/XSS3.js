@@ -9,7 +9,7 @@ window.alert = function(){
 function sendFunction(){
     var talkbox = document.getElementById("talkbox").value;
     var str = "";
-    str = '<div class="message"><div class="user-photo"><img src="../elephant.jpeg"></div><p class="message_chat">' + talkbox + '</p></div>';
+    str = '<div class="message"><div class="user-photo"><img src="../../photo/XSS/elephant.jpeg"></div><p class="message_chat">' + talkbox + '</p></div>';
     messagelogs.innerHTML = messagelogs.innerHTML + str;
     //alert(talkbox);     //test alert
     document.getElementById("talkbox").value="";
