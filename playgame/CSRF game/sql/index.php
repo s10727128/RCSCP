@@ -27,8 +27,10 @@
         <input type="hidden" name="Username" id="Username">
         <input type="hidden" name="Score" id="Score">
         <input type="hidden" name="action" value="add">
-        <input style="text-align: center;" type="submit" name="button" value="新增資料">
     </form> 
+    <form action="" method="POST" name="formAdd2" id="formAdd2">
+    <input style="text-align: center;" type="submit" name="button" value="新增資料">
+    </form>
 </div>
 
 
@@ -51,6 +53,7 @@
         }
 
         //先檢查請求來源是否是我們上面創建的 form
+    if(isset($_POST['button'])){
         if (isset($_GET["action"])&&($_GET["action"] == "add")) {
 
             //引入檔，負責連結資料庫
@@ -75,11 +78,13 @@
             mysqli_query($db_link,$sql_query);
 
             //導航回首頁
-            $str1=htmlspecialchars("&action=add");
-            $str2=htmlspecialchars("&button=新增資料");
+
+            $str1=mysqli_real_escape_string($db_link,"&action=add");
+            $str2=mysqli_real_escape_string($db_link,"&button=新增資料");
             //header("Location: index.php?Username=&Score=&action=add&button=新增資料");
-            echo '<meta http-equiv=REFRESH CONTENT=0.5; url=index.php?Username='.$name.'&Score=1'.$str1.$str2.'>';
+            echo '<meta http-equiv=REFRESH CONTENT=0; url=index.php?Username='.$name.'Score=1'.$str1.$str2.'>';
         }
+    }
     ?>
 </table>
 
