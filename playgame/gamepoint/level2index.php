@@ -20,7 +20,7 @@
 
     <div class="auto">
         <button class="btn">
-            <div class="item"><span><a href="../CSRF game/#">簡單</a></span></div>
+            <div class="item"><span><a href="../CSRF game/csrf_sql/index.php?Username=&Score=&action=add&addbtn=新增資料">簡單</a></span></div>
         </button>
 
         <button class="btn">

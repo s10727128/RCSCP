@@ -16,7 +16,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>會員資料的 CRUD 練習</title>
+    <title>會員資料總表</title>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </head>
 <body>
     <h1 align = "center">會員資料總表</h1>
@@ -27,10 +29,12 @@
         <input type="hidden" name="Username" id="Username">
         <input type="hidden" name="Score" id="Score">
         <input type="hidden" name="action" value="add">
+        <input style="text-align: center;" type="submit" name="addbtn" id="addbtn" onclick="addfunction()" value="新增資料">
     </form> 
-    <form action="" method="POST" name="formAdd2" id="formAdd2">
-    <input style="text-align: center;" type="submit" name="button" value="新增資料">
-    </form>
+
+    <!-- <form action="" method="GET" name="formAdd2" id="formAdd2">
+        <input style="text-align: center;" type="submit" name="button" value="新增資料">
+    </form> -->
 </div>
 
 
@@ -53,8 +57,8 @@
         }
 
         //先檢查請求來源是否是我們上面創建的 form
-    if(isset($_POST['button'])){
-        if (isset($_GET["action"])&&($_GET["action"] == "add")) {
+    // if(isset($_POST['button'])){
+        if (isset($_GET["addbtn"])) {
 
             //引入檔，負責連結資料庫
             include("connMySQL.php");
@@ -77,16 +81,29 @@
             //對資料庫執行查訪的動作
             mysqli_query($db_link,$sql_query);
 
+ 
+
+            echo '<script>
+                function addfunction(){
+                    window.alert("確定要執行嗎?");
+                }
+            </script>';
             //導航回首頁
 
-            $str1=mysqli_real_escape_string($db_link,"&action=add");
-            $str2=mysqli_real_escape_string($db_link,"&button=新增資料");
-            //header("Location: index.php?Username=&Score=&action=add&button=新增資料");
-            echo '<meta http-equiv=REFRESH CONTENT=0; url=index.php?Username='.$name.'Score=1'.$str1.$str2.'>';
+            // $str1=mysqli_real_escape_string($db_link,"&action=add");
+            // $str2=mysqli_real_escape_string($db_link,"&button=新增資料");
+            //header("Location: index.php");
+            //echo '<meta http-equiv=REFRESH CONTENT=0; url=index.php?Username='.$name.'Score=1'.$str1.$str2.'>';
         }
-    }
+    // }
     ?>
 </table>
+
+<script>
+        //  $("#addbtn").click(function(){
+        //     window.alert("確定要執行嗎?");
+        //  });
+</script>
 
 
 
