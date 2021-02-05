@@ -81,7 +81,7 @@
                 #修改class
                 echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
             }
-            }
+            } 
             else{
                echo '<div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>';
             }
