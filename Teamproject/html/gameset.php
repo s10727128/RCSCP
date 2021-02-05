@@ -45,7 +45,10 @@
     <button class="btn">
       <div class="item"><span><a href="#">5</a></span></div>
     </button>
-
+    <br>
+    <button class="btn">
+      <div class="item"><span><a href="../index.php">返回</a></span></div>
+    </button>
   </div>
   <!-- <a href="#" class="action-button animate blue">Hello</a>
 <a href="#" class="action-button animate red">How</a>

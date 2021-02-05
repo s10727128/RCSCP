@@ -71,7 +71,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <p>1.&nbsp;執行一個 &lt;script&gt;<br>2.&nbsp;在 &lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=&lt;script&gt;alert()&lt;/script&gt;
+                            <p>1.&nbsp;執行一個&lt;script&gt;<br>2.&nbsp;在&lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=&lt;script&gt;alert()&lt;/script&gt;
                             </p>
                         </div>
                     </div>
@@ -96,18 +96,7 @@
 </script>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-    <script>
-        document.addEventListener("touchstart", function() {}, false);
-    </script>
+ 
 <br><br>
 <br><br>
 <br><br>

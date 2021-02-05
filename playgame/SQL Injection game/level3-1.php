@@ -17,6 +17,7 @@
 </head>
 
 <body a link="blue" vlink="red">
+    <div class="body2">
     <?php
     require_once("../../Teamproject/register/connect.php");
     $starttime = time();
@@ -135,7 +136,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 
         <br>
         <br>
