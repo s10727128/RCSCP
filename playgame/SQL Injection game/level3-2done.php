@@ -72,21 +72,21 @@ if(isset($_POST["KeySubmit"]))
           $totalscore="UPDATE user SET  score=$score WHERE Username='$name'";
           $result=mysqli_query($connect,$totalscore);
         }
-      else if($totaltime>600&&totaltime<=1200){
+      else if($totaltime>600&&$totaltime<=1200){
           $score=200;
           $gamescore="UPDATE game SET SQL_2=200 WHERE Username='$name'";
           $result=mysqli_query($connect,$gamescore);
           $totalscore="UPDATE user SET  score=$score WHERE Username='$name'";
           $result=mysqli_query($connect,$totalscore);
       }
-      else if($totaltime>1200&&totaltime<=1800){
+      else if($totaltime>1200&&$totaltime<=1800){
         $score=160;
         $gamescore="UPDATE game SET SQL_2=160 WHERE Username='$name'";
         $result=mysqli_query($connect,$gamescore);
         $totalscore="UPDATE user SET  score=$score WHERE Username='$name'";
         $result=mysqli_query($connect,$totalscore);
       }
-      else if($totaltime>1800&&totaltime<=3600){
+      else if($totaltime>1800&&$totaltime<=3600){
         $score=125;
         $gamescore="UPDATE game SET SQL_2=125 WHERE Username='$name'";
         $result=mysqli_query($connect,$gamescore);

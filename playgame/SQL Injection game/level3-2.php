@@ -72,10 +72,18 @@
         <br>
         </form>
     
+    
+    <!-- Button trigger modal -->    
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+      提示
+    </button>
+    
     <?php
-    echo "<table>";
-    echo "<tr><td>名稱</td>"."<td>分數</td></tr>";  
+    echo '<table class="table2">';
+     
     if(isset($_POST["search_button"])){
+        
+    echo "<tr><td>名稱</td>"."<td>分數</td></tr>"; 
     require_once('level3connect.php');//連結資料庫
     $key=$_POST['search'];//post獲取表單裡的search
     //$sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
@@ -110,21 +118,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- Button trigger modal -->    
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-      提示
-    </button>
+
     
     <!-- Modal -->
     <div class="hint"> 
