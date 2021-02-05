@@ -19,26 +19,8 @@
     </h1>
 
     <div class="auto">
-        <button class="btn">
-            <?php
-            $sql="SELECT SQL_1,SQL_1open FROM game WHERE SQL_1 IS NOT null && Username='$name'";
-            $result=mysqli_query($connect,$sql);
-            if(mysqli_num_rows($result) > 0)
-            {
-            while($row = mysqli_fetch_assoc($result))
-            {
-                $row=$row['SQL_1open'];
-                #修改class
-                echo '<div class="item"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
-            }
-            }
-            else{
-               echo '<div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>';
-            }
-            
-            ?>
-        </button>
-        <?php
+
+    <?php
         $SQL1total=0;
         $sql="SELECT SQL_1 FROM game WHERE SQL_1 IS NOT null ";
         $result=mysqli_query($connect,$sql);
@@ -49,12 +31,29 @@
               $SQL1total++;
           }
         }
-        echo "通關人數:".$SQL1total;
+        echo '<div class="testtext2"><b>目前通關人數:'.$SQL1total .' </b></div>';
         ?>
 
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>
+            <?php
+            $sql="SELECT SQL_1,SQL_1open FROM game WHERE SQL_1 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['SQL_1open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>';
+            }
+            
+            ?>
         </button>
+
         <?php
         $SQL2total=0;
         $sql2="SELECT SQL_2 FROM game WHERE SQL_2 IS NOT null ";
@@ -66,18 +65,38 @@
               $SQL2total++;
           }
         }
-        echo "通關人數:".$SQL2total;
+        echo '<div class="testtext2"><b>目前通關人數:'.$SQL2total .' </b></div>';
         ?>
 
+        
         <button class="btn">
-            <div class="item"><span><a href="../SQL Injection game/level3-3.php">困難</a></span></div>
+            <?php
+            $sql="SELECT SQL_2,SQL_2open FROM game WHERE SQL_2 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['SQL_2open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>';
+            }
+            
+            ?>
         </button>
+
+
 
         <button class="btn">
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
         </button>
     </div>
 
+    <br>
     <br>
     <br>
     <br>

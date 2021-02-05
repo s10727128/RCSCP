@@ -65,8 +65,8 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo("登入失敗,帳號或密碼錯誤,5秒後自動返回登入介面");
-	echo '<meta http-equiv=REFRESH CONTENT=5;url=login.php>';
+	echo('<h3 class="error"><b>登入失敗,帳號或密碼錯誤,3秒後自動返回登入介面</b></h3>');
+	echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
 }
 }
 

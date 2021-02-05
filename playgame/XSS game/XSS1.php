@@ -10,6 +10,8 @@
     
     ?>
 
+
+
     <link rel=stylesheet href="../CSS/playgame1.css">
     <script src="../JavaScript/XSS1.js"></script>
 </head>
@@ -53,7 +55,7 @@
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
-        提示
+        <b>提示</b>
     </button>
 
     <!-- Modal -->

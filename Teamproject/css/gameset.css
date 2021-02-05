@@ -93,7 +93,6 @@ button{
   }
   .btn::after:hover{
     background-color: #000;
-    transform: scale(1.5,1.5);
   }
   .btn a{ 
     color: #78a4b6;
@@ -101,7 +100,6 @@ button{
     padding: 30px 70px;
     transform:  scale(1.2,1.2);
     transition: all 1s;
-    border: 1px solid #000;
   }
   .btn a:hover{
     transition: all 1s;
