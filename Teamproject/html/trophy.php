@@ -59,6 +59,7 @@
             $i++;
           }
         }
+
         $sqlrank="UPDATE user SET  Rank='$i' WHERE Username='$name'";
         $resultrank = mysqli_query($connect, $sqlrank);
         if(!isset($_POST["search_button"])){
@@ -113,13 +114,24 @@
               exit();
           }
               else
-              {  
+              { 
               echo "查無搜尋結果".'<br>';
               exit();
               }
           }
         }
+        
         }
+        $sql_select="SELECT Rank FROM user ORDER BY Rank DESC LIMIT 0 , 1";
+          $result_select=mysqli_query($connect,$sql_select);
+          if(mysqli_num_rows($result_select) > 0)
+          {
+            while($row = mysqli_fetch_assoc($result_select))
+            {
+             $Last=$row["Rank"];
+            }
+          }
+          echo $Last;
         echo "</table>";
       }
       ?>
