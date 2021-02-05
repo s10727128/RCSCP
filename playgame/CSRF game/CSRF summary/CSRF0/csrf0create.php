@@ -1,3 +1,17 @@
+<?php
+    //載入連結SQL檔
+    include("csrf0connMySQL.php");
+    $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
+    $result = mysqli_query($db_link,$sql_query);
+    $total_records = mysqli_num_rows($result);
+    $idcount = $idcount=$total_records + 1;
+
+    //清除所有資料表內容
+    // for($idcount ; $idcount > 0; $idcount --){
+    //     $sql_delete = "DELETE FROM csrf0 WHERE ID = $idcount";
+    //     $result = mysqli_query($db_link,$sql_delete);
+    // }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +33,6 @@
         //先檢查請求來源是否是我們上面創建的 form
         if (isset($_GET["action"])&&($_GET["action"] == "add")) {
 
-            //引入檔，負責連結資料庫
-            include("csrf0connMySQL.php");
-            $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
-            $result = mysqli_query($db_link,$sql_query);
-            $total_records = mysqli_num_rows($result);
-
             //取得請求過來的資料
             $name = $_GET["Username"];
             $Score = $_GET['Score'];
@@ -32,7 +40,6 @@
             //判斷SQL ID number
             $idcount=$total_records + 1;
             
-
             //資料表查訪指令，請注意 "" , '' 的位置
             //INSERT INTO 就是新建一筆資料進哪個表的哪個欄位
             $sql_query = "INSERT INTO csrf0 (ID, Username, Score) VALUES ('$idcount', '$name', '$Score')";

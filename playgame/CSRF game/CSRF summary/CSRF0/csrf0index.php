@@ -1,16 +1,28 @@
 <?php
-    //1. 引入程式檔
-    include("csrf0connMySQL.php");
-    
-    //2. 加入sql 語法，白話文：從 user 的資料表中選擇所有欄位，並依照 cID 遞增排序
-    $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
 
-    //3. 使用 mysqli_query() 函式可以在 MySQL 中執行 sql 指令後會回傳一個資源識別碼，否則回傳 False。
+    //載入連結SQL檔
+    include("csrf0connMySQL.php");
+    $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
     $result = mysqli_query($db_link,$sql_query);
-    
-    //4. 使用 mysqli_num_rows() 函式來取得資料筆數
     $total_records = mysqli_num_rows($result);
+    $idcount = $idcount=$total_records + 1;
+
+    session_start();
+    if( isset( $_SESSION['counter'] ) ) {
+        if($_SESSION['counter'] = 1){
+            //清除所有資料表內容
+            for($idcount ; $idcount > 0; $idcount --){
+                $sql_delete = "DELETE FROM csrf0 WHERE ID = $idcount";
+                $result = mysqli_query($db_link,$sql_delete);
+            }
+        }else{
+            $msg = "You have visited this page ".  $_SESSION['counter'];
+            $msg .= "in this session.";
+        }
+        echo ($msg);
+    }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
