@@ -1,3 +1,4 @@
+
 <?php
 include_once("../../Teamproject/header.php");
 if(isset($_POST["KeySubmit"]))
@@ -102,23 +103,38 @@ if(isset($_POST["KeySubmit"]))
       }
       echo $totaltime;
     }        
-  echo '<br>'."恭喜通關!!<br>";
-  echo '<a href="../../Teamproject/index.php">返回主頁</a><br>';
-  exit();
+
+  echo '<div class="pass"><br>'."恭喜通關~<br>";
+  echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
+  
   }
   #不是正確答案的情況
   else
   {   
-    echo '<div class="word2">';
+    echo '<div class="pass">';
     echo '<br>'."通關密碼不正確,請繼續加油!";
+    echo '<br><a href="level3-2.php">返回關卡</a><br>';
     echo '</div>';
   }
 }
 else{
-    echo '<br>' ;
-    echo '<br>' ;
-    echo '<br>' ;
-    echo '<br>' ;
-  exit("錯誤執行");
+  echo '<br>' ;
+  echo '<br>' ;
+  echo '<br>' ;
+  echo '<div class="pass"><br>' ;
+echo("錯誤執行");
 }   
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="level3.css">
+    <title>過關</title>
+</head>
+<body>
+
+</body>
+</html>
