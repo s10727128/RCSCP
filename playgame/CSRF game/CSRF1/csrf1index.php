@@ -1,4 +1,12 @@
 <?php
+<<<<<<< HEAD:playgame/CSRF game/CSRF1/csrf1index.php
+=======
+    //1. 引入程式檔
+    include("../CSRF summary/CSRF0/csrf0connMySQL.php");
+    
+    //2. 加入sql 語法，白話文：從 user 的資料表中選擇所有欄位，並依照 cID 遞增排序
+    $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
+>>>>>>> 254c117ba353e3aa637d9805e65be95978c00064:playgame/CSRF game/csrf_sql/index.php
 
     //載入連結SQL檔
     include("csrf1connMySQL.php");
