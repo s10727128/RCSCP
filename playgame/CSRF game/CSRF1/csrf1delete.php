@@ -4,5 +4,6 @@
     $sql_query = "DELETE FROM csrf1 WHERE ID = $userId";
     mysqli_query($db_link,$sql_query);
     $db_link->close();
-    header("Location: csrf1index.php");
+    echo '<meta http-equiv=REFRESH CONTENT=0.25;url=csrf1index.php>';
+    //header("Location: csrf1index.php");
 ?>

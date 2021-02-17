@@ -43,7 +43,7 @@
         </tr>
 
 
-        <?phpㄖ
+        <?php
             while($row_result = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
                 echo "<td>".$row_result['ID']."</td>";
