@@ -15,6 +15,10 @@ caption {
     }
 b{
     font-size: 30px;
+    margin: 10px;
+}
+form{
+    margin: 5px;
 }
 .test{
     margin-top: 5%;

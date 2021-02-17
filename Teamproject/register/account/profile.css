@@ -35,3 +35,15 @@ body{
 .table2 > tbody + tbody {
   border-top: 2px solid #ddd;  
 } 
+
+.link{
+  margin: 10px;
+}
+.link a{
+  color: #a51900;
+  text-decoration: none;
+}
+.link a:hover{
+  text-decoration: none;
+  color: #aad0df;
+}

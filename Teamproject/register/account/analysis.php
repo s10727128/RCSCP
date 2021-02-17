@@ -83,20 +83,74 @@
         }
         if($user==$name){
             echo '<thead class="table-danger">';
-            // echo $i;
             echo '<td>'."前".(round($i/$j,2)*100)."%".'</td>';
             echo '</thead>';
           }
-           #顯示所有資料---------------------------------------
-        //    echo '<tr>';
-        //  echo '<td >'. $i . '</td>';
-        //  echo '<td>' . $user. '</td>';
-        //  echo '<td>' . $score. '</td>';
-        //  echo '<td>'.(round($i/9,2)*100)."%".'</td>';
             $r++;
           echo '</tr>';
         }
         }
+
+        echo '<thead class="table-dark">';
+        echo '<tr class="thead">';
+        echo '<th scope="col">SQL-2佔比</th>';
+        echo '</tr>';
+        echo '</thead>';
+        $sqlall = "SELECT Username,SQL_2 FROM game ORDER BY SQL_2 DESC";
+        $resultall = mysqli_query($connect, $sqlall);
+        $total=array();
+        $rank=array();
+        $i=1;
+        $j=1;
+        $r=0;
+        $k=0;
+        $user = @$_SESSION['Username']; 
+        if (mysqli_num_rows($resultall) > 0) {
+          #排行總數
+          while ($row = mysqli_fetch_array($resultall)) {
+              $total[$k]=$row["SQL_2"];
+            if($k==0){
+            }
+            else{
+            if($total[$k]==$total[$k-1])
+            {
+              $j=$j;
+            }
+            else{
+              $j++;
+            }
+            }
+            $k++;
+          }
+        }
+        $sql = "SELECT Username,SQL_2 FROM game ORDER BY SQL_2 DESC";
+        $result = mysqli_query($connect, $sqlall);
+        if (mysqli_num_rows($result) > 0) {   
+          #排行判斷--------------------------------------------
+          while ($row = mysqli_fetch_array($result)) {
+            $user = $row["Username"];
+            $score = $row["SQL_2"];
+            $rank[$r]=$row["SQL_2"];
+            if($r==0){  
+            }
+            else{
+            if($rank[$r]==$rank[$r-1])
+            {
+              $i=$i;    
+            }
+            else{
+              $i++;
+            }
+          }
+          if($user==$name){
+              echo '<thead class="table-danger">';
+              echo '<td>'."前".(round($i/$j,2)*100)."%".'</td>';
+              echo '</thead>';
+            }
+              $r++;
+            echo '</tr>';
+          }
+          }
       ?>
     </table>
   </div>

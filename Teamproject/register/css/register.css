@@ -1,7 +1,8 @@
 body{
   padding: 0px;
   margin: 0px;
-  background-color: #87CEEB;
+  height: 562px;
+  background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
   margin-top: 160px;
 }
 a{
@@ -96,7 +97,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
   -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  transform: scale(0.8);
 }
 
 input[type=text] {

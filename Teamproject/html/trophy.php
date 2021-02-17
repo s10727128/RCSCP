@@ -17,15 +17,16 @@
     <!-- Navigation -->
     <div class="test">
       
-    <!--改php-->
+    <!--改php-->  
     <table class="table table-striped table-bordered table-condensed table-hover">
-      <caption style="text-align: center;"><b>排行榜</b></caption>
-      搜尋名稱(需完全相同):
+      <caption><b>排行榜</b><BR>
       <form action="" method="post">
+      搜尋名稱(需完全相同):
       <input type="varchar" name="search"  >
       <input type="submit"  name="search_button"  value="搜尋">
       <input type="submit"  name="reset_button"  value="清除結果">  
       </form>
+      </caption>
       <thead class="table-dark">
         <tr class="thead">
           <th scope="col">名次</th>
@@ -131,7 +132,6 @@
              $Last=$row["Rank"];
             }
           }
-          echo $Last;
         echo "</table>";
       }
       ?>
