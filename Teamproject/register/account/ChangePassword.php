@@ -7,7 +7,7 @@
 
 <body>
 <?php
-if(!isset($_POST['submit'])){
+if(!isset($_POST['Modify'])){
     exit("錯誤執行");
     }//判斷是否有submit操作
 require_once('../connect.php');

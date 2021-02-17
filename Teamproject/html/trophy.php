@@ -131,7 +131,6 @@
              $Last=$row["Rank"];
             }
           }
-          echo $Last;
         echo "</table>";
       }
       ?>

@@ -24,8 +24,8 @@
          
 
     </form>     
-		
 </div>       
+
 <?PHP
 header("Content-Type: text/html; charset=utf8");
 require_once('connect.php');//連結資料庫
@@ -71,5 +71,6 @@ else
 }
 
 ?>
+
 </body>
 </html>
