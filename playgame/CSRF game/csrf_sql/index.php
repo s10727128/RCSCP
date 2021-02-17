@@ -1,6 +1,6 @@
 <?php
     //1. 引入程式檔
-    include("csrf0connMySQL.php");
+    include("../CSRF summary/CSRF0/csrf0connMySQL.php");
     
     //2. 加入sql 語法，白話文：從 user 的資料表中選擇所有欄位，並依照 cID 遞增排序
     $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
