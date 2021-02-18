@@ -13,7 +13,7 @@ if($access!=1){
   
   <form action="ModifyAccount_Access.php" method="post">
   <b>修改使用者名稱:</b>
-  <input type="varchar" name="Username" id="Username">
+    <input type="varchar" name="Username" id="Username">
   <br>
   <b>修改密碼:</b>
   <input type="varchar" name="Password" id="Password">

@@ -15,13 +15,13 @@ if($access!=1){
 <form action="AddAcount.php" method="post">
   <b>使用者名稱:</b>
   <input type="varchar" name="Username" id="Username">
-  
+  <BR>
   <b>使用者密碼:</b>
   <input type="varchar" name="Password" id="Password">
-  
+  <BR>
   <b>使用者分數:</b>
   <input type="varchar" name="Score" id="Score" >
- 
+ <BR>
   <b>使用者權限:</b>
   <input type="varchar" name="Access" id="Access" >
 

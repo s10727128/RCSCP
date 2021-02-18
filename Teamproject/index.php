@@ -37,9 +37,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">網站介紹</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#photo">相片</a>
-          </li>
+          </li> -->
           <?php
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
           $connectDir="$RootDir/js-hackgame/Teamproject/register/connect.php";
@@ -214,7 +214,7 @@
         </a>
       </li>
       <li>
-        <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
+        <a href="#">
           <div class="icon">
             <i class="fa fa-users" aria-hidden="true"></i>
             <i class="fa fa-users" aria-hidden="true"></i>
