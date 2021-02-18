@@ -5,7 +5,9 @@ body{
     text-align: center;
 }
 
-
+.passtime{
+    font-size: 35px;
+}
 .pass{
     margin-top: 5%;
     color:red;
