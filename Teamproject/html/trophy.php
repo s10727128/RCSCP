@@ -37,7 +37,7 @@
       <?php
       require_once('../register/connect.php');
       //搜尋所有帳號,如有管理員帳號,使用NOT IN排除搜尋--------------------------------
-      $sqlall = "SELECT Username,Score FROM user ORDER BY Score DESC";
+      $sqlall = "SELECT Username,Score,Nickname  FROM user ORDER BY Score DESC";
       $resultall = mysqli_query($connect, $sqlall);
       $rank=array();
       $i=1;
@@ -48,6 +48,7 @@
         while ($row = mysqli_fetch_array($resultall)) {
           $name = $row["Username"];
           $score = $row["Score"];
+          $Nickname=$row["Nickname"];
           $rank[$r]=$row["Score"];
           if($r==0){
           }
@@ -69,13 +70,13 @@
           if($user==$name){
             echo '<thead class="table-success">';
             echo '<td >'. $i . '</td>';
-            echo '<td>' . $name. '</td>';
+            echo '<td>' . $Nickname. '</td>';
             echo '<td>' . $score. '</td>';
             echo '</thead>';
           }
           else{
             echo '<td>' . $i . '</td>';
-            echo '<td>' . $name. '</td>';          
+            echo '<td>' . $Nickname. '</td>';          
             echo '<td>' . $score . '</td>';
           }
 
@@ -87,7 +88,7 @@
           {
           #顯示特定資料-----------------------------------------
           $key=mysqli_real_escape_string($connect,$_POST['search']);
-          $sql = "SELECT * FROM user WHERE Username='$key' ORDER BY Score DESC";
+          $sql = "SELECT * FROM user WHERE Nickname='$key' ORDER BY Score DESC";
           $result=mysqli_query($connect,$sql);
           if(mysqli_num_rows($result) > 0)
           {
@@ -100,13 +101,13 @@
               if($user==$name){
                 echo '<thead class="table-success">';
                 echo '<td >'. $RK . '</td>';
-                echo '<td>' . $name. '</td>';
+                echo '<td>' . $Nickname. '</td>';
                 echo '<td>' . $score. '</td>';
                 echo '</thead>';
               }
               else{
               echo '<td>' . $RK.'</td>';
-              echo '<td>' . $name. '</td>';
+              echo '<td>' . $Nickname. '</td>';
               echo '<td>' . $score. '</td>';
               }
               echo '</tr>';
@@ -143,14 +144,14 @@
 
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="../js/scrolling-nav.js"></script>
 
 </body>
 

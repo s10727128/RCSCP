@@ -11,10 +11,7 @@
 <body>
 
   <form action="EditProfile.php" method="post">
-    <?php
-    
-// require_once('../connect.php');
-// session_start();
+<?php
 $id = $_SESSION['id'];
 $name = $score = '';
 
@@ -46,7 +43,6 @@ echo'</div>';
 <?php
 
 if (isset($_POST['Modify'])) {
-  require_once('../connect.php');
   $nickname = $_POST['nickname'];
   $email = $_POST['Email'];
   $Age = $_POST['Age'];

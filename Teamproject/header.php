@@ -33,10 +33,11 @@
             {
             $name=$row["Username"];
             $access=$row["Access"];
+            $Nickname=$row["Nickname"];
             }
             //echo "歡迎.$name".'<br>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">'.$name.'</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">'.$Nickname.'</a>';
             echo '</li>';
             echo '<li class="nav-item">';
             echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/logout.php">登出</a>';

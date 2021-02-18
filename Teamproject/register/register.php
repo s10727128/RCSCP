@@ -16,16 +16,16 @@
 <form action="register.php" method="post">
 
 <h3><b>會員註冊</b></h3><br>
-  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" required="required" >
+  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" minlength="4" maxlength="16" required="required" >
   <br><br>
 
-  <input type="varchar" name="Username" placeholder="帳號" id="Uname" required="required" >
+  <input type="varchar" name="Username" placeholder="帳號" id="Uname" minlength="4" maxlength="16" required="required" >
   <br><br>
 
-  <input type="varchar" name="Password" placeholder="密碼" id="Uname"  required="required">
+  <input type="varchar" name="Password" placeholder="密碼" id="Uname" minlength="4" maxlength="16"  required="required">
   <br><br>
 
-  <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" required="required">
+  <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" minlength="4" maxlength="16" required="required">
   <br><br>
   <input type="submit" name="register" class="fadeIn fourth" value="註冊">
   
@@ -47,6 +47,10 @@ if(isset($_POST['register'])){
     $name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的帳號
     $pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的密碼
     $pwd2=mysqli_real_escape_string($connect,$_POST['PasswordCheck']);
+    if((strlen($nickname)>16)||(strlen($name)>16)||(strlen($pwd)>16)||(strlen($pwd2)>16)==1){
+        echo '<h3 class="error"><b>字數過多</b></h3>';
+        exit();
+    }
     $password = password_hash($pwd,PASSWORD_DEFAULT);
     $sql="select * from user where Username='$name'";
     $result=mysqli_query($connect,$sql);
