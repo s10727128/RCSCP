@@ -96,6 +96,7 @@
                {
               $name = $row["Username"];
               $score = $row["Score"];
+              $Nickname=$row["Nickname"];
               $RK=$row["Rank"];
               echo '<tr>';
               if($user==$name){
