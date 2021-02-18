@@ -1,15 +1,45 @@
+<?php
+include("../../header.php");
+if($access!=1){
+    exit("錯誤執行");
+}
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="AddAcount.css" >  
+</head>
+<body>
+<div class="add">
+<form action="AddAcount.php" method="post">
+  <b>使用者名稱:</b>
+  <input type="varchar" name="Username" id="Username">
+  
+  <b>使用者密碼:</b>
+  <input type="varchar" name="Password" id="Password">
+  
+  <b>使用者分數:</b>
+  <input type="varchar" name="Score" id="Score" >
+ 
+  <b>使用者權限:</b>
+  <input type="varchar" name="Access" id="Access" >
+
+  <input type="submit" name="Add" value="新增">
+</div>
+ </form>
+ </body>
+ </html>
 <?php 
-header("Content-Type: text/html; charset=utf8");
-if(!isset($_POST['Add'])){
-exit("錯誤執行");
-}//判斷是否有submit操作
+if(isset($_POST['Add'])){
 require_once('../connect.php');//連結資料庫
+//判斷是否有submit操作
 $name = $password = $pwd ='';
-$name=$_POST['Username'];//post獲取表單裡的name
-$pwd=$_POST['Password'];//post獲取表單裡的password
-$score=$_POST['Score'];
-$access=$_POST['Access'];
-$password = MD5($pwd);
+$name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的name
+$pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的password
+$score=mysqli_real_escape_string($connect,$_POST['Score']);
+$access=mysqli_real_escape_string($connect,$_POST['Access']);
+$password = password_hash($pwd,PASSWORD_DEFAULT);
 $sql="select * from user where Username='$name'";
 $result=mysqli_query($connect,$sql);
 if (mysqli_num_rows($result)>0)
@@ -17,7 +47,7 @@ if (mysqli_num_rows($result)>0)
     echo'<div class="error">';
 	echo '<b>帳號重複</b>';
     echo'</div>';
-	echo '<meta http-equiv=REFRESH CONTENT=2;url=AddAcount.html>';	
+	echo '<meta http-equiv=REFRESH CONTENT=2;url=AddAcount.php>';	
 }
 else{
     $sql="insert into user(Username,Password,Score,Access) values ('$name','$password','$score','$access')";//向資料庫插入表單傳來的值的sql
@@ -34,15 +64,5 @@ else{
     echo '<meta http-equiv=REFRESH CONTENT=3;url=access.php>';
     }
     }
+}
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="AddAcount.css">
-</head>
-<body>
-</body>
-</html>

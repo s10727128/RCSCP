@@ -55,10 +55,11 @@
 	        {
 		      $name=$row["Username"];
 		      $access=$row["Access"];
+          $Nickname=$row["Nickname"];
 	        }
 	        //echo "歡迎.$name".'<br>';
 	        echo '<li class="nav-item">';
-          echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">'.$name.'</a>';
+          echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">'.$Nickname.'</a>';
           echo '</li>';
 	        echo '<li class="nav-item">';
           echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/logout.php">登出</a>';
@@ -143,7 +144,7 @@
 
 
   </section>
-
+<!-- 
   <section id="photo">
     <div class="container">
       <div class="row">
@@ -165,13 +166,11 @@
 
 
 
-  <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
     </div>
-    <!-- /.container -->
-  </footer>
+  </footer> -->
 
 
   <!--bar-->
@@ -195,7 +194,7 @@
           </div>
           <div class="name"><span data-text="遊戲">遊戲</span></div>
         </a>
-      </li>
+      <!-- </li>
       <li>
         <a href="../Teamproject/index.php">
           <div class="icon">
@@ -204,7 +203,7 @@
           </div>
           <div class="name"><span data-text="首頁">首頁</span></div>
         </a>
-      </li>
+      </li> -->
       <li>
         <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
           <div class="icon">
@@ -214,9 +213,22 @@
           <div class="name"><span data-text="Q&A">Q&A</span></div>
         </a>
       </li>
+      <li>
+        <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
+          <div class="icon">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <i class="fa fa-users" aria-hidden="true"></i>
+          </div>
+          <div class="name"><span data-text="關於我們">關於我們</span></div>
+        </a>
+      </li>
     </ul>
   </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 

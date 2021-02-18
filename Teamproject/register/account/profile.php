@@ -79,7 +79,7 @@
 	echo '</table>';
 	echo '<div class="link">';
 	echo '<a href="EditProfile.php">更改個人資料</a><br>';
-	echo '<a href="ChangePassword1.php">更換密碼</a><br>';
+	echo '<a href="ChangePassword.php">更換密碼</a><br>';
 	echo '<a href="analysis.php">個人評估表</a><br>';
 	echo '</div>';
 	?>

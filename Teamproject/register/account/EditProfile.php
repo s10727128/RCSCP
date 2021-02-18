@@ -26,7 +26,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 echo'<div class="login">';
 echo '<form name ="login" method="post" action="EditProfile.php">';
-echo '<b>暱稱</b>:<input type="text" name="nickname" id="nickname" value="'.$nickname.'"/><br/>';
+echo '<b>暱稱</b>:<input type="text" name="nickname" id="nickname" minlength="2" maxlength="16" value="'.$nickname.'"/><br/>';
 echo '<b>信箱</b>:<input type="email" name="Email" id="email" value="'.$mail.'"><br>';
 echo '<b>年齡</b>:<input type="varchar" name="Age" id="age" value="'.$age.'" ><br>';
 echo '<input type="submit" name="Modify" value="更改">';
@@ -43,9 +43,9 @@ echo'</div>';
 <?php
 
 if (isset($_POST['Modify'])) {
-  $nickname = $_POST['nickname'];
-  $email = $_POST['Email'];
-  $Age = $_POST['Age'];
+  $nickname = mysqli_real_escape_string($connect,$_POST['nickname']);
+  $email = mysqli_real_escape_string($connect,$_POST['Email']);
+  $Age = mysqli_real_escape_string($connect,$_POST['Age']);
   // if($_POST['Age'] >=12 && $_POST['Age'] <=80){
 
   
