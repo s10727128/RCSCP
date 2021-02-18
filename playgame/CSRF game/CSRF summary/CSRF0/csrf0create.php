@@ -4,7 +4,7 @@
     $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
     $result = mysqli_query($db_link,$sql_query);
     $total_records = mysqli_num_rows($result);
-    $idcount = $idcount=$total_records + 1;
+    $idcount = $total_records + 1;
 
     //清除所有資料表內容
     // for($idcount ; $idcount > 0; $idcount --){
