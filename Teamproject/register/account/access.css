@@ -1,0 +1,42 @@
+
+
+body{
+      padding: 0%;
+      text-align: center;
+      background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+      margin-top: 5%;
+    
+  }
+  .body2{
+    font-family: 'audiowide',monospace;
+    font-size: 25px;
+  }
+   .table2 {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid #000;
+  }
+  .table2 > thead > tr > td,
+  .table2 > tbody > tr > td,
+  .table2 > tfoot > tr > td {
+    padding: 8px;  
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #000;  
+  }
+  .table2 > tbody + tbody {
+    border-top: 2px solid #ddd;  
+  } 
+  
+  .link{
+    margin: 10px;
+  }
+  .link a{
+    color: #a51900;
+    text-decoration: none;
+  }
+  .link a:hover{
+    text-decoration: none;
+    color: #aad0df;
+  }

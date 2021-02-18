@@ -14,7 +14,9 @@ $sql="select * from user where Username='$name'";
 $result=mysqli_query($connect,$sql);
 if (mysqli_num_rows($result)>0)
 {
-	echo '帳號重複';
+    echo'<div class="error">';
+	echo '<b>帳號重複</b>';
+    echo'</div>';
 	echo '<meta http-equiv=REFRESH CONTENT=2;url=AddAcount.html>';	
 }
 else{
@@ -23,11 +25,24 @@ else{
     $result=mysqli_query($connect,$sql);//執行sql
     
     if (!$result){
-    die('錯誤:' .mysqli_error());//如果sql執行失敗輸出錯誤
+    die('錯誤:' );//如果sql執行失敗輸出錯誤
     }
     else{
-    echo "新增成功,5秒後自動返回主介面";//成功輸出註冊成功
-    echo '<meta http-equiv=REFRESH CONTENT=5;url=access.php>';
+        echo'<div class="forok">';
+    echo "<b>新增成功,3秒後自動返回主介面</b>";//成功輸出註冊成功
+    echo'</div>';
+    echo '<meta http-equiv=REFRESH CONTENT=3;url=access.php>';
     }
     }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AddAcount.css">
+</head>
+<body>
+</body>
+</html>

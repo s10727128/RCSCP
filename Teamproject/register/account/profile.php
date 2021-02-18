@@ -29,6 +29,7 @@
 			$access = $row["Access"];
 		}
 	}
+	echo'<div class="table1">'; //table1 紀錄暱稱,信箱,年齡,分數
 	echo "暱稱:";
 	echo $nickname . '<br>';
 	echo "信箱:";
@@ -37,7 +38,9 @@
 	echo $age . '<br>';
 	echo "分數:";
 	echo $score . '<br>';
-	echo '<table class="table2">';
+	echo'</div>'; 
+
+	echo '<table class="table2">'; //table2 用來記錄關卡那些完成以及未完成
 		echo '<thead class="table-dark">';
 			echo '<tr class="thead">';
 				echo '<th scope="col">關卡</th>';
