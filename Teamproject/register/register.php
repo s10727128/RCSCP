@@ -16,7 +16,7 @@
 <form action="register.php" method="post">
 
 <h3><b>會員註冊</b></h3><br>
-  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" minlength="4" maxlength="16" required="required" >
+  <input type="varchar" name="Nickname" placeholder="暱稱" id="Uname" minlength="2" maxlength="16" required="required" >
   <br><br>
 
   <input type="varchar" name="Username" placeholder="帳號" id="Uname" minlength="4" maxlength="16" required="required" >

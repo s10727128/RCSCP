@@ -1,6 +1,9 @@
 
 <?php
 include("../../header.php");
+if($access!=1){
+    exit("錯誤執行");
+}
 require_once('../connect.php');
 $sql = "SELECT * FROM user";
 $result=mysqli_query($connect,$sql);
@@ -30,7 +33,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {   
-    exit("錯誤執行"); 
+    //exit("錯誤執行"); 
 }
 
 ?>
@@ -46,9 +49,9 @@ else
     
     <div class="body2">
         <div class="link">
-<a href="AddAcount.html">新增帳號</a><br>
-<a href="ModifyAccount_Access.html">修改帳號</a><br>
-<a href="DeleteAccount.html">刪除帳號</a><br>
+<a href="AddAcount.php">新增帳號</a><br>
+<a href="ModifyAccount_Access.php">修改帳號</a><br>
+<a href="DeleteAccount.php">刪除帳號</a><br>
 </div>
 </div>
 </body>
