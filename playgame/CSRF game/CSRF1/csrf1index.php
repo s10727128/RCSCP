@@ -7,6 +7,7 @@
     $total_records = mysqli_num_rows($result);
     $idcount = $idcount=$total_records + 1;
 
+    //判斷使用者玩過此關
     require_once("../../../Teamproject/register/connect.php");
     $sqlgame = "UPDATE game SET  SCRF_1open='1' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);

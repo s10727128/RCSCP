@@ -38,9 +38,11 @@
             $Score = $_GET['Score'];
 
             //判斷SQL ID number
-            while("SELECT * FROM csrf1 WHERE 'id'='$idcount'"){
-                IF NOT EXISTS(SELECT * FROM Clock WHERE clockDate = '2018/01/01')
-            }
+            // if((NOT EXISTS("SELECT * FROM csrf1 where ID = '$idcount'")){
+            //     $idcount = $idcount;
+            // }
+            
+             
             
             //資料表查訪指令，請注意 "" , '' 的位置
             //INSERT INTO 就是新建一筆資料進哪個表的哪個欄位
