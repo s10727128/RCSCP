@@ -12,22 +12,6 @@
     $sqlgame = "UPDATE game SET  SCRF_1open='1' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
 
-
-    //新增由西基本資料
-    // session_start();
-    // if( isset( $_SESSION['counter'] ) ) {
-    //     if($_SESSION['counter'] = 1){
-    //         //清除所有資料表內容
-    //         for($idcount ; $idcount > 0; $idcount --){
-    //             $sql_delete = "DELETE FROM csrf1 WHERE ID = $idcount";
-    //             $result = mysqli_query($db_link,$sql_delete);
-    //         }
-    //     }else{
-    //         $msg = "You have visited this page ".  $_SESSION['counter'];
-    //         $msg .= "in this session.";
-    //     }
-    //     echo ($msg);
-    // }
 ?>
 
 <!DOCTYPE html>
