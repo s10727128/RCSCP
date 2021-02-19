@@ -3,23 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./MISC2.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="MISC2.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <main v-cloak>
-  <p><button class="accent" @click="toggleModal()">前提摘要</button></p>
+  <button class="button" @click="toggleModal()"><b>前提摘要</b></button>
 
   <!--  The Modal -->
   <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
     <article v-cloak>
+     <!--哈哥修改裡面內容--> <!--哈哥修改裡面內容-->
+    
       <section>
-        <h2>MISC關卡介紹</h2>
+        <h2>MISC關卡介紹</h2><br>
         <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
       </section>
 
-
+      <section>
+       
+        <p>"1.解答長這樣=> Flag{This_is_a_flag}。"</p>
+      </section> 
+      <section>
+        <h2>MISC關卡介紹</h2>
+        <p>2. 建議使用工具jd-gui。</p>
+      </section>
 
     </article>
 

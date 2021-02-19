@@ -57,7 +57,10 @@
     <div style="text-align: center;">
         <p>請吃到100顆蘋果，並拿到解答Flag。</p>
     </div>
-    <div style="text-align: center;">
+    <?php
+        include("MISC2.html");//input modal
+    ?>
+    <!-- <div style="text-align: center;">
         <button type="button" id="hintList">Hint</button>
         <div style="list-style: none; ">
             <li id="hint1"><b></b></li>
@@ -65,14 +68,14 @@
             <li id="hint3"><b></b></li>
         </div>
     </div>
-</div>
-    <script>
+</div> -->
+    <!-- <script>
         let j = 0;
         $("#hintList").click(function() {
             j++;
             switch (j) {
                 case 1:
-                    $("#hint1").text("1. 解答長這樣=> Flag{This_is_a_flag}。");
+                    $("#hint1").text("1.解答長這樣=> Flag{This_is_a_flag}。");
                     break;
                 case 2:
                     $("#hint2").text("2. 建議使用工具jd-gui。");
@@ -83,7 +86,7 @@
 
             }
         });
-    </script>
+    </script> -->
     <br><br>
     <br><br>
     <br><br>

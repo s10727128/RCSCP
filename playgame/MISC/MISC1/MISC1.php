@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
     include_once("../../../Teamproject/header.php");
+    
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" a href="../../CSS/playgame5.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="source.js"></script>
+    <link rel="stylesheet" a href="../../CSS/playgame5.css">
 </head>
 
 <body a link="blue" vlink="red">
@@ -77,10 +79,15 @@
         });
     </script> -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
+    <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
         <b>提示</b>
-    </button>
+    </button> -->
 
+    <?php
+    include("MISC1.html");
+
+    ?>
+    
     <!-- Modal -->
     <div class="hint">
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">

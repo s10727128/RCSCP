@@ -12,22 +12,21 @@
 
     <body>
     <h1><b>
-
             MISC關卡難易度
         </b>
     </h1>
 
     <div class="auto">
         <button class="btn">
-            <div class="item"><span><a href="../MISC/level5-1.php">簡單</a></span></div>
+            <div class="item"><span><a href="../MISC/MISC1/MISC1.php">簡單</a></span></div>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../MISC/level5-2.php">中級</a></span></div>
-        </button>
+            <div class="item"><span><a href="../MISC/MISC2/MISC2.php">中級</a></span></div>
+            </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../MISC/level5-3.php">困難</a></span></div>
+            <div class="item"><span><a href="../MISC/MISC3/MISC3.php">困難</a></span></div>
         </button>
 
         <button class="btn">

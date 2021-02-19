@@ -9,7 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <main v-cloak>
-  <p><button class="accent" @click="toggleModal()">提示</button></p>
+ <button class="button" @click="toggleModal()"><b>提示</b></button>
 
   <!--  The Modal -->
   <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
