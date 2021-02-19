@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include_once("../../Teamproject/header.php");
+    include_once("../../../Teamproject/header.php");
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" a href="../CSS/playgame5.css">
+    <link rel="stylesheet" a href="../../CSS/playgame5.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="source.js"></script>
 </head>
@@ -17,7 +17,7 @@
 <body a link="blue" vlink="red">
     <div class="body2">
     <div class="instructions">
-                <h1><a href="../gamepoint/level5index.php" class="exit">
+                <h1><a href="../../gamepoint/level5index.php" class="exit">
 
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
