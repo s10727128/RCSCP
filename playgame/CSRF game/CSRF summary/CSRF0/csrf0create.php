@@ -6,11 +6,6 @@
     $total_records = mysqli_num_rows($result);
     $idcount = $total_records + 1;
 
-    //清除所有資料表內容
-    // for($idcount ; $idcount > 0; $idcount --){
-    //     $sql_delete = "DELETE FROM csrf0 WHERE ID = $idcount";
-    //     $result = mysqli_query($db_link,$sql_delete);
-    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
