@@ -89,10 +89,11 @@ h1{
       .btn a{ 
         color: #78a4b6;
         font-family:Impact, fantasy;
-        padding: 30px 90px;
+        padding: 30px 50px;
         transform:  scale(1.2,1.2);
         transition: all 3s;
-        border: 1px solid #000;
+        position: relative;
+        text-align: center;
       }
       .btn a:hover{
         transition: all 1.5s;
@@ -100,7 +101,7 @@ h1{
         color: white;
         transform:  scale(1.2,1.2);
       }
-    .item2{
+    .item2  {
       color: floralwhite;
       font-size: 20px;
       width: 100%;
