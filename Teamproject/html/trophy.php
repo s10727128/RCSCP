@@ -19,9 +19,9 @@
       
     <!--改php-->  
     <table class="table table-striped table-bordered table-condensed table-hover">
-      <caption><b>排行榜</b><BR>
+      <caption><b class="b1">排行榜</b><BR>
       <form action="" method="post">
-      搜尋名稱(需完全相同):
+      <b>搜尋名稱(需完全相同):</b>
       <input type="varchar" name="search"  >
       <input type="submit"  name="search_button"  value="搜尋">
       <input type="submit"  name="reset_button"  value="清除結果">  

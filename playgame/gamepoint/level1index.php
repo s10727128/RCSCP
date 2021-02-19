@@ -12,7 +12,6 @@
 
     <?php
     include_once("../../Teamproject/header.php");
-    include_once("../XSS game/XSS summary/XSS0.php");
     ?>
     
 
@@ -27,6 +26,7 @@
             XSS關卡難易度
         </b>
     </h1>
+  
     <!--Button 1~4--->
     <!-- <div class="box-1">
             <div class="btn btn-one"><span><a href="../XSS game/XSS1.php?name=test">簡單</a></span></div> 
@@ -46,6 +46,10 @@
         </div> -->
 
     <div class="auto">
+        
+    <?php   
+    include_once("../XSS game/XSS summary/XSS0.php");
+    ?>
         <button class="btn">
             <div class="item"><span><a href="../XSS game/XSS1.php?name=test">簡單</a></span></div>
         </button>

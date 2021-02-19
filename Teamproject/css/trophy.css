@@ -1,4 +1,7 @@
-
+body{
+    
+      background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+}
 
 .exit{
     position: fixed;
@@ -13,10 +16,11 @@ caption {
     text-align: center;
     caption-side: top;
     }
-b{
+.b1{
     font-size: 30px;
     margin: 10px;
 }
+
 form{
     margin: 5px;
 }
