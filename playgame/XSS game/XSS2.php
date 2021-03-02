@@ -33,7 +33,7 @@
 
         <!--下一關按鈕-->
         <div style="text-align: center;">
-            <a id="next_btn" style="display: none;" href="">Next</a>
+        <a class="btn btn-secondary" id="next_btn" style="display: none;" href="">Next</a>
         </div>
         <br>
 
