@@ -42,7 +42,7 @@
             <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
-            echo '<form action=level1-2.php method=GET>
+            echo '<form action=XSS2.php method=GET>
             <input name=input value="' . $ans . '">
             <input type=submit name=submit value="搜尋"/>
             </form><br>';

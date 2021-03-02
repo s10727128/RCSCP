@@ -38,9 +38,9 @@
     <br>
 
     <div style="text-align: center;">
-        <form action="../downloadfile/level5-1.txt" method="GET">
+        <form action="../../../downloadfile/level5-1.txt" method="GET">
             下載點:
-            <a href="../../downloadfile/level5-1.txt" download><b>Download</b></a>
+            <a href="../../../downloadfile/level5-1.txt" download><b>Download</b></a>
         </form>
         <br>
         <?php
@@ -49,7 +49,7 @@
         if ($ans == "thisyearis2021") {
             echo '<script>alert("Congratuation! You sucessed!")</script>';
         }
-        echo '<form action=level5-1.php =GET>
+        echo '<form action=MISC1.php method="GET">
             <input name=input value"' . $ans . '"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
