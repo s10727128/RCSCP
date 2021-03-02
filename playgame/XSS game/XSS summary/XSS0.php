@@ -16,13 +16,13 @@
 
     <!--  The Modal -->
     <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
-    <div class="modal-content">
+ 
     <div class="modal-header">  
                         <button type="button" class="close" data-dismiss="modal" @click="finish">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-    </div>
+
     <article v-cloak>
       
         <section>

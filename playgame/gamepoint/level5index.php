@@ -17,8 +17,9 @@
     </h1>
 
     <div class="auto">
+    
     <?php   
-    // include_once("../MISC/MISC summary/MISC0.php");
+    include_once("../MISC/MISC_summary/MISC0.php");
     ?>
         <button class="btn">
             <div class="item"><span><a href="../MISC/MISC1/MISC1.php">簡單</a></span></div>

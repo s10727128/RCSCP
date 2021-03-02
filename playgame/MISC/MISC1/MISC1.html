@@ -13,7 +13,13 @@
 
   <!--  The Modal -->
   <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
-    <article v-cloak>
+    <div class="modal-header">  
+      <button type="button" class="close" data-dismiss="modal" @click="finish">
+        
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <article v-cloak>
       <section>
         <h2>提示(1/1)</h2>
         <p>1.此關卡為"摩斯密碼"</p>
