@@ -54,7 +54,7 @@
 	$result = mysqli_query($connect, $sql);
 	$complete = array();
 	$i = 0;
-	if (mysqli_num_rows($result) > 0) {
+	if (mysqli_num_rows($result) > 0){
 		while ($fieldinfo = mysqli_fetch_field($result)) {
 			echo '<tr>';
 			$sql_2 = "SELECT $fieldinfo->name FROM game WHERE $fieldinfo->name is not null AND Username='$name'";
