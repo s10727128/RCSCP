@@ -32,7 +32,7 @@
 
     <!--下一關按鈕-->
     <div style="text-align: center;">
-        <a id="next_btn" style="display: none;" href="../../playgame/gamepoint/level1index.php" >Next</a> 
+    <a class="btn btn-secondary" id="next_btn" style="display: none;" href="../../playgame/gamepoint/level1index.php" >Next</a> 
     </div>
 
     <div class="message_box" id="messagebox">
