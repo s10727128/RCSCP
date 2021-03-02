@@ -53,8 +53,10 @@
             </form><br>';
             ?>
         </div>
-
-        <div style="text-align: center;">
+        <?php
+    include("MISC3.html");
+ ?>
+        <!-- <div style="text-align: center;">
             <p>請幫我拿解開檔案，謝謝!</p>
         </div>
         <div style="text-align: center;">
@@ -83,7 +85,8 @@
 
             }
         });
-    </script>
+    </script> -->
+
 
     <br><br>
     <br><br>

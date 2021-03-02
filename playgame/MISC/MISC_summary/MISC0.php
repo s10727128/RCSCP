@@ -4,17 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/js-hackgame/playgame/MISC/MISC summary/MISC0.css">
-
+  <link rel="stylesheet" href="/js-hackgame/playgame/MISC/MISC_summary/MISC0.CSS">
 </head>
 
 <body>
   <!-- partial:index.partial.html -->
   <main v-cloak>
-    <button class="btn" @click="toggleModal()"><span><a href="#">前提摘要</a><span></button>
+  <button class="btn" @click="toggleModal()"><span><a href="#">前提摘要</a><span></button>
+ 
 
+<!--  The Modal -->
+<boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
+
+<div class="modal-header">  
+                    <button type="button" class="close" data-dismiss="modal" @click="finish">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
     <!--  The Modal -->
-    <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
+    
       <article v-cloak>
         <section>
           <h2>MISC關卡介紹</h2>
@@ -49,7 +57,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/MISC0.js"></script>
+  <script src="/js-hackgame/playgame/MISC/MISC_summary/MISC0.js"></script>
 
 </body>
 
