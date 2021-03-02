@@ -7,18 +7,18 @@
     <meta charset="utf-8">
     <?php
     include_once("../../Teamproject/header.php");
-    
     ?>
-
-
-
     <link rel=stylesheet href="../CSS/playgame1.css">
     <script src="../JavaScript/XSS1.js"></script>
 </head>
 
 <body>
-
-
+<?php
+    require_once("../../Teamproject/register/connect.php");
+    $starttime = time();
+    $sqlgame = "UPDATE game SET  XSS_1open='$starttime' WHERE Username='$name'";
+    $resultgame = mysqli_query($connect, $sqlgame);
+?>
     <div class="body2">
         <form action="" method="GET">
             <div class="instructions">
