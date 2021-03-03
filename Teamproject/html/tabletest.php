@@ -1,8 +1,14 @@
+<?php
+include("../header.php");
+?>
 
+
+
+
+  
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <script src='//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
 <link href='//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet'></link>
-
 <table id="myTable" class="display">
     <meta charset="utf-8">
     <thead>
@@ -14,6 +20,7 @@
     </thead>
 
     <tbody>
+    <br><br><br><br><br><br><br>
         <!-- <tr> -->
             <!-- <td><i class="fa fa-angle-double-down"></i></td>
             <td>&lt;i class="fafa-angle-double-down"&gt;&lt;/i&gt;</td>
@@ -27,11 +34,11 @@
       $rank=array();
       $i=1;
       $r=0;
-      $user = @$_SESSION['Username']; 
+      
       if (mysqli_num_rows($resultall) > 0) {
         #排行判斷--------------------------------------------
         while ($row = mysqli_fetch_array($resultall)) {
-          $name = $row["Username"];
+          $username = $row["Username"];
           $score = $row["Score"];
           $Nickname=$row["Nickname"];
           $rank[$r]=$row["Score"];
@@ -47,18 +54,15 @@
           }
         }
 
-        $sqlrank="UPDATE user SET  Rank='$i' WHERE Username='$name'";
+        $sqlrank="UPDATE user SET  Rank='$i' WHERE Username='$username'";
         $resultrank = mysqli_query($connect, $sqlrank);
         echo '<tr>';
         if(!isset($_POST["search_button"])){
            #顯示所有資料---------------------------------------
-          if($user==$name){
-            echo '<thead class="table-success">';
+          if($name==$username){
             echo '<td >'. $i . '</td>';
             echo '<td>' . $Nickname. '</td>';
             echo '<td>' . $score. '</td>';
-            echo '</thead>';
-            
           }
           else{
             echo '<td>' . $i . '</td>';
@@ -81,11 +85,12 @@
 <script>
     $('#myTable').DataTable({
         language: {
-            searching: true,
             "emptyTable": "無資料...",
             "processing": "處理中...",
             "loadingRecords": "載入中...",
-            "lengthMenu": "每頁 _MENU_ 筆資料",
+            "lengthMenu": '顯示<select>'+'<option value="10">10</option>'+'<option value="20">20</option>'+
+            '<option value="30">30</option>'+'<option value="40">40</option>'+'<option value="50">50</option>'+
+            '<option value="-1">All</option>'+'</select> 筆資料',
             "zeroRecords": "無搜尋結果",
             "info": "_START_ 至 _END_ / 共 _TOTAL_ 筆",
             "infoEmpty": "尚無資料",
@@ -96,7 +101,7 @@
                 "first": "首頁",
                 "last": "末頁",
                 "next": "下頁",
-                "previous": "前頁"
+                "previous": "上頁"
             },
             "aria": {
                 "sortAscending": ": 升冪",
@@ -107,9 +112,7 @@
 </script>
  <!-- Bootstrap core JavaScript -->
  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src='//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>  
-  <link href='//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet'></link>
+
   <!-- Plugin JavaScript -->
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
