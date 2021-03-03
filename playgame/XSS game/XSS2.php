@@ -24,22 +24,16 @@
     <div class="body2">
         <div class="instructions">
             <h1><a href="../gamepoint/level1index.php" class="exit">
-
-
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 15 20">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
-
                 </a><b>LEVEL 1-2</b>
             </h1>
-
+        </div>
+        <hr><br><div>
+            <p><b>繼承第一關的作法，看你能不能找到其中的奧秘!</b></p>
         </div>
 
-        <!--下一關按鈕-->
-        <div style="text-align: center;">
-        <a class="btn btn-secondary" id="next_btn" style="display: none;" href="">Next</a>
-        </div>
-        <br>
 
         <!--遊戲輸入框內容-->
         <div style="text-align: center;">

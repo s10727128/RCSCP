@@ -19,20 +19,21 @@
     $sqlgame = "UPDATE game SET  XSS_3open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
 ?>
-<div class="body2">
-<div class="instructions">
-                <h1><a href="../gamepoint/level1index.php" class="exit">
+    <div class="body2">
+    <div class="instructions">
+        <h1><a href="../gamepoint/level1index.php" class="exit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
+            path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+        </svg>
+        </a><b>LEVEL1-3</b>
+        </h1>
+    </div><hr><br>
+    <div>
+        <p><b>這一關以儲存型的XSS作為基礎，所發出去的聊天訊息，都會存在伺服器裡。<br>如果你是駭客，要怎麼注入XSS呢?</b></p>
+    </div>
 
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                        </svg>
 
-                    </a><b>LEVEL1-3</b>
-                </h1>
-
-            </div>
-            <hr>
 
     <!--下一關按鈕-->
     <div style="text-align: center;">
