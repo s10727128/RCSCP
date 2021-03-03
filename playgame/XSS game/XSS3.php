@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <?php
-    include_once("../../Teamproject/header.php");
-    ?>
+    <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <?php
+        include_once("../../Teamproject/header.php");
+        ?>
 
     <link rel=stylesheet href="../CSS/playgame1.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../JavaScript/XSS3.js"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JavaScript/XSS3.js"></script>
 </head>
 <body a link="blue" vlink="red">
+<?php
+    require_once("../../Teamproject/register/connect.php");
+    $starttime = time();
+    $sqlgame = "UPDATE game SET  XSS_3open='$starttime' WHERE Username='$name'";
+    $resultgame = mysqli_query($connect, $sqlgame);
+?>
 <div class="body2">
 <div class="instructions">
                 <h1><a href="../gamepoint/level1index.php" class="exit">
