@@ -29,20 +29,13 @@
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>LEVEL1-1</b>
+                    <b>LEVEL 1-1</b>
                 </h1>
-
-            </div>
-            <hr>
-
+            </div><hr><br>
             <div>
-                <a class="btn btn-secondary" id="next_btn" style="display: none;" href="">Next</a>
-            </div>
-            <br>
-            <div">
                 <p><b>這個關卡是一個很經典的XSS漏洞，屬於Reflected XSS (反射型)，是由網頁後端直接嵌入由前端使用者所傳送過來的內容造成的。</b></p>
                 <p><b>請嘗試在網頁注入一個 alert() ，即可即可過關!</b></p>
-    </div>
+            </div>
 
     <?php
     ini_set("display_errors", 0);

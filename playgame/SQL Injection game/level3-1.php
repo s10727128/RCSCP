@@ -77,6 +77,7 @@
     </form>
 
     <?php
+    ini_set("display_errors", 0);
     if (isset($_POST["submit"])) {
         require_once('level3connect.php'); //連結資料庫
         $name = $password = $pwd = '';
@@ -91,11 +92,12 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                     $KEYYYYYY = $row["KeyWord"];
                 }
-                echo ("注入成功!!") . '<br>';
-                echo "通關密碼為" . $KEYYYYYY . '<br>';
+                echo '<div class="pass">';
+                echo ("<b>注入成功!!") . '<br>';
+                echo '通關密碼為<div class="fail">' . $KEYYYYYY . '</b></div><br>';
             } else {
-                echo '<div class="word2">';
-                echo "注入失敗" . '<br>';
+                echo '<div class="fail">';
+                echo "<b>注入失敗</b>" . '<br>';
                 echo '</div>';
             }
         }

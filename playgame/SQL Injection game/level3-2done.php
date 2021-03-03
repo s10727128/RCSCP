@@ -101,9 +101,9 @@ if(isset($_POST["KeySubmit"]))
         $totalscore="UPDATE user SET  score=$score WHERE Username='$name'";
         $result=mysqli_query($connect,$totalscore);
       }
-      echo'<div class="passtime">';
-      echo '<b>通關時間：</b>'.$totaltime.'<b>秒</b>';
-      echo '</div>';
+      // echo'<div class="passtime">';
+      // echo '<b>通關時間：</b>'.$totaltime.'<b>秒</b>';
+      // echo '</div>';
     }        
 
   echo '<div class="pass"><br>'."恭喜通關~<br>";

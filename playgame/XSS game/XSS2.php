@@ -11,11 +11,15 @@
 
     <link rel=stylesheet href="../CSS/playgame1.css">
     <script src="../JavaScript/XSS2.js"></script>
-
-
 </head>
 
 <body a link="blue" vlink="red">
+<?php
+    require_once("../../Teamproject/register/connect.php");
+    $starttime = time();
+    $sqlgame = "UPDATE game SET  XSS_2open='$starttime' WHERE Username='$name'";
+    $resultgame = mysqli_query($connect, $sqlgame);
+?>
 
     <div class="body2">
         <div class="instructions">
@@ -26,7 +30,7 @@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
 
-                </a><b>LEVEL1-2</b>
+                </a><b>LEVEL 1-2</b>
             </h1>
 
         </div>

@@ -1,4 +1,5 @@
 <?php
+  include_once("../../Teamproject/header.php");
     $enddate=time();//讀取完成時間
     #搜尋game裡的玩家的開啟時間
     $sql="select XSS_1open from game where Username='$name'";
@@ -94,10 +95,22 @@
         $result=mysqli_query($connect,$totalscore);
       }
       echo $totaltime;
-    }        
+    }       
     echo '<div class="pass"><br>'."恭喜通關~<br>";
-    echo '<a href="XSS1.php">前往下一關</a><br>';
+    echo '<a href="XSS2.php">前往下一關</a><br>'; 
     echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
-  exit();
-  }
+    exit();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="level3.css">
+    <title>過關</title>
+</head>
+<body>
+
+</body>
+</html>
