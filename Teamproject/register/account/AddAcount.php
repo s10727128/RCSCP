@@ -51,9 +51,9 @@ if (mysqli_num_rows($result)>0)
 }
 else{
     $sql="insert into user(Username,Password,Score,Access) values ('$name','$password','$score','$access')";//向資料庫插入表單傳來的值的sql
-    
     $result=mysqli_query($connect,$sql);//執行sql
-    
+    $sql="insert into game(Username) values ('$name')";//向資料庫插入表單傳來的值的sql
+    $result=mysqli_query($connect,$sql);//執行sql
     if (!$result){
     die('錯誤:' );//如果sql執行失敗輸出錯誤
     }

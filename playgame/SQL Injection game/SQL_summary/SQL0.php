@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/js-hackgame/playgame/MISC/MISC_summary/MISC0.CSS">
+  <link rel="stylesheet" href="/js-hackgame/playgame/SQL Injection game/SQL_summary/SQL0.css">
 </head>
 
 <body>
@@ -28,7 +28,6 @@
           <h2>MISC關卡介紹</h2>
           <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
         </section>
-
         <section>
           <h2>MISC關卡介紹</h2>
           <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
@@ -36,6 +35,7 @@
           <h2>MISC關卡介紹</h2>
           <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
         </section>
+
 
       </article>
 
@@ -63,7 +63,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/js-hackgame/playgame/MISC/MISC_summary/MISC0.js"></script>
+  <script src="/js-hackgame/playgame/SQL Injection game/SQL_summary/SQL0.js"></script>
 
 </body>
 

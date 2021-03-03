@@ -19,7 +19,9 @@
     </h1>
 
     <div class="auto">
-
+    <?php   
+    include_once("../SQL Injection game/SQL_summary/SQL0.php");
+    ?>
     <?php
         $SQL1total=0;
         $sql="SELECT SQL_1 FROM game WHERE SQL_1 IS NOT null ";
@@ -70,6 +72,8 @@
 
         
         <button class="btn">
+     
+    
             <?php
             $sql="SELECT SQL_2,SQL_2open FROM game WHERE SQL_2 IS NOT null && Username='$name'";
             $result=mysqli_query($connect,$sql);

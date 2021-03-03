@@ -4,62 +4,60 @@
 <head>
     <title>資安遊戲闖關網站</title>
     <meta charset="UTF-8">
-    <?php
-    include_once("../../Teamproject/header.php");
-    ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    include_once("../../../Teamproject/header.php");
+    ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/bird.jpg">
-    <link rel="stylesheet" a href="../CSS/playgame3.css">
+    <link rel="stylesheet" a href="../../CSS/playgame3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <!-- <script  src="time.js"></script> -->
 
 </head>
 
 <body a link="blue" vlink="red">
     <div class="body2">
-        <?php
-    ini_set("display_errors", 0);
-        require_once("../../Teamproject/register/connect.php");
-        $starttime = time();
-        $sqlgame = "UPDATE game SET  SQL_2open='$starttime' WHERE Username='$name'";
-        $resultgame = mysqli_query($connect, $sqlgame);
-        ?>
-        <form action="" method="POST">
-            <div class="instructions">
-                <h1><a href="../gamepoint/level3index.php" class="exit">
+    <?php
+    require_once("../../../Teamproject/register/connect.php");
+    $starttime = time();
+    $sqlgame = "UPDATE game SET  SQL_1open='$starttime' WHERE Username='$name'";
+    $resultgame = mysqli_query($connect, $sqlgame);
+    ?>
+    <form action="" method="POST">
+        <div class="instructions">
+                <h1><a href="../../gamepoint/level3index.php" class="exit">
 
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 15 20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>LEVEL3-2</b>
+                    <b>LEVEL3-1</b>
                 </h1>
 
             </div>
-            <hr>
+        <hr>
 
-            <div>
-                <a id="next_btn" style="display: none;" href="">Next</a>
+        <div>
+            <a id="next_btn" style="display: none;" href="">Next</a>
+        </div>
+        <br>
+        <div">
+            <p><b>你發現了某個網站中的SQL資料庫系統沒有針對SQL injection做保護</b></p>
+            <p><b>而你想嘗試去破解這個網頁的登入驗證,並窺視使用者的資料</b></p>
+            <p><b>聰明的你應該知道該怎麼做吧?</b></p>
+            <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p>
+            <br></br>
             </div>
-            <br>
-            <div">
-                <p><b>網頁搜尋時,通常會對該網頁的伺服器資料庫進行搜尋,找尋是否有相同的關鍵字.內容物.</b></p>
-                <p><b>如果用戶與資料庫之間未使用任何輸入驗證/過濾，</b></p>
-                <p><b>則用戶可以使用SQL查詢直接與資料庫進行連接.</b></p>
-                <p><b>--試著找到該資料庫sqli_select裡所有的資料,並從中找尋過關密碼--</b></p>
-                <br></br>
-    </div>
+            <div>
     </form>
-
-    <form action="level3-2done.php" method="post">
-        通關密碼
+    <form action="SQL_1done.php" method="post">
+        <b>通關密碼</b>
         <input type="varchar" name="Key">
         <input type="submit" name="KeySubmit" value="驗證">
     </form>
     </div>
-
 
     <br><br>
     <div class="login">
@@ -67,8 +65,11 @@
             <label><b>SQL injection
                 </b>
             </label>
-            <input type="varchar" name="search" placeholder="search">
-            <input type="submit" name="search_button" value="搜尋">
+            <input type="varchar" name="Username" id="Uname" placeholder="名稱">
+            <br><br>
+            <input type="password" name="Password" id="Pass" placeholder="密碼">
+            <br><br>
+            <input type="submit" name="submit" id="log" value="登入">
             <br><br>
         </form>
     </div>
@@ -76,59 +77,56 @@
     </form>
 
     <?php
+    ini_set("display_errors", 0);
+    if (isset($_POST["submit"])) {
+        require_once('SQL_connect.php'); //連結資料庫
+        $name = $password = $pwd = '';
 
-    if (isset($_POST["search_button"])) {
+        $name = $_POST['Username']; //post獲取表單裡的name
+        $password = $_POST['Password']; //post獲取表單裡的password
 
-        require_once('level3connect.php'); //連結資料庫
-        $key = $_POST['search']; //post獲取表單裡的search
-        //$sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
-        $sql = "SELECT * FROM sqli_select WHERE name='$key'";
-        $result = mysqli_query($connect, $sql);
-        if (!$result) {
-            echo "錯誤";
-        } {
+
+        $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; //檢測資料庫是否有對應的
+        $result = mysqli_query($connect, $sql); {
             if (mysqli_num_rows($result) > 0) {
-                echo '<table class="table2">';
-                echo "<tr><td>名稱</td>" . "<td>分數</td></tr>";
                 while ($row = mysqli_fetch_assoc($result)) {
-                    $name = $row["Name"];
-                    $score = $row["Score"];
-                    echo '<tr>';
-                    echo '<td>' . $name . '</td>';
-                    echo '<td>' . $score . '</td>';
-                    echo '</tr>';
+                    $KEYYYYYY = $row["KeyWord"];
                 }
-                echo "</table>";
+                echo '<div class="pass">';
+                echo ("<b>注入成功!!") . '<br>';
+                echo '通關密碼為<div class="fail">' . $KEYYYYYY . '</b></div><br>';
             } else {
                 echo '<div class="fail">';
-                echo "<b>查無搜尋結果</b>" . '<br>';
+                echo "<b>注入失敗</b>" . '<br>';
                 echo '</div>';
             }
         }
     }
     ?>
 
+
+    <?php
+    include("SQL_1.html");
+    ?>
+
+
+
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
         提示
-    </button>
-
-
-
-
-
+    </button> -->
 
     <!-- Modal -->
-    <div class="hint">
+    <!-- <div class="hint">
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Hint</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title">Hint</h5> -->
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
+                        </button> -->
+                    <!-- </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <p>test</p>
@@ -136,19 +134,17 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     <div class="footer">
         <footer class="py-2 bg-dark ">
@@ -173,6 +169,7 @@
 
         });
     </script>
+
 
 
 
