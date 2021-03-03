@@ -19,27 +19,27 @@
     </h1>
 
     <div class="auto">
+    <?php   
+    include_once("../CSRF game/CSRF summary/CSRF0/CSRF_summary.php");
+    ?>
         <button class="btn">
-            <div class="item"><span><a href="../CSRF game/csrf_sql/index.php?Username=&Score=&action=add&addbtn=新增資料">簡單</a></span></div>
+            <div class="item"><span><a href="../CSRF game/CSRF1/csrf1index.php">簡單</a></span></div>
         </button>
 
-        <button class="btn">
+        <!-- <button class="btn">
             <div class="item"><span><a href="../CSRF game/#">中級</a></span></div>
         </button>
 
         <button class="btn">
             <div class="item"><span><a href="../CSRF game/#">困難</a></span></div>
-        </button>
+        </button> -->
 
         <button class="btn">
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
         </button>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br><br><br><br><br><br>
 
 
     <div class="footer">
