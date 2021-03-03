@@ -50,16 +50,79 @@
     <?php   
     include_once("../XSS game/XSS summary/XSS0.php");
     ?>
+         <?php
+        $XSS1total=0;
+        $sql="SELECT XSS_1 FROM game WHERE XSS_1 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $XSS1total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$XSS1total .' </b></div>';
+        ?>
+
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS1.php?name=test">簡單</a></span></div>
+            <?php
+            $sql="SELECT XSS_1,XSS_1open FROM game WHERE XSS_1 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['XSS_1open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../XSS game/XSS1.php">簡單</a></span></div>';
+            }
+            
+            ?>
+        </button>
+
+        <?php
+        $XSS2total=0;
+        $sql2="SELECT XSS_2 FROM game WHERE XSS_2 IS NOT null ";
+        $result2=mysqli_query($connect,$sql2);
+        if(mysqli_num_rows($result2) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result2))
+          {
+              $XSS2total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$XSS2total .' </b></div>';
+        ?>
+
+        
+        <button class="btn">
+     
+    
+            <?php
+            $sql="SELECT XSS_2,XSS_2open FROM game WHERE XSS_2 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['XSS_2open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            } 
+            else{
+               echo '<div class="item"><span><a href="../XSS game/XSS2.php">中級</a></span></div>';
+            }
+            
+            ?>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS2.php?name=test">中級</a></span></div>
-        </button>
-
-        <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS3.php?name=test">困難</a></span></div>
+            <div class="item"><span><a href="../XSS game/XSS3.php?">困難</a></span></div>
         </button>
 
         <button class="btn">

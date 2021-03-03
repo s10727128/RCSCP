@@ -4,13 +4,24 @@ include("../header.php");
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <script src='//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
 <link href='//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet'></link>
+
+<meta charset="utf-8">
+</head>
+    <body>
 <table id="myTable" class="display">
-    <meta charset="utf-8">
+  
+    <br><br><br><br>
     <thead>
         <tr>
             <th>名次</th>
@@ -20,7 +31,6 @@ include("../header.php");
     </thead>
 
     <tbody>
-    <br><br><br><br><br><br><br>
         <!-- <tr> -->
             <!-- <td><i class="fa fa-angle-double-down"></i></td>
             <td>&lt;i class="fafa-angle-double-down"&gt;&lt;/i&gt;</td>
@@ -80,7 +90,7 @@ include("../header.php");
     </tbody>
 </table>
 
-
+</body>
 
 <script>
     $('#myTable').DataTable({
@@ -118,3 +128,4 @@ include("../header.php");
 
   <!-- Custom JavaScript for this theme -->
   <script src="../js/scrolling-nav.js"></script>
+</html>
