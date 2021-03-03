@@ -45,8 +45,8 @@
         <div style="text-align: center;">
             <?php
             ini_set("display_errors", 0);
-            $ans = $_GET["input"];
-            echo '<form action=XSS2.php method=GET>
+            $ans = $_POST["input"];
+            echo '<form action=XSS2.php method=POST>
             <input name=input value="' . $ans . '">
             <input type=submit name=submit value="搜尋"/>
             </form><br>';

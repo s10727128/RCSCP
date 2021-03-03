@@ -38,9 +38,16 @@
             </div>
 
     <?php
+    // ini_set("display_errors", 0);
+    // $ans = $_GET["name"];
+    // echo "Your answer is: $ans";
     ini_set("display_errors", 0);
-    $ans = $_GET["name"];
-    echo "Your answer is: $ans";
+    $ans = $_GET["input"];
+    echo '<form action=XSS1.php method=GET>
+    <input name=input value="">
+    </form><br>';
+
+    echo "Your answer is: ".$ans;
     ?>
     <br><br>
 
@@ -88,15 +95,7 @@
     });
 </script>
 
-
- 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">

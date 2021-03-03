@@ -51,15 +51,15 @@
     include_once("../XSS game/XSS summary/XSS0.php");
     ?>
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS1.php?name=test">簡單</a></span></div>
+            <div class="item"><span><a href="../XSS game/XSS1.php?input=test">簡單</a></span></div>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS2.php?name=test">中級</a></span></div>
+            <div class="item"><span><a href="../XSS game/XSS2.php?">中級</a></span></div>
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS3.php?name=test">困難</a></span></div>
+            <div class="item"><span><a href="../XSS game/XSS3.php?">困難</a></span></div>
         </button>
 
         <button class="btn">
