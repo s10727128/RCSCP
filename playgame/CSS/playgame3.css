@@ -20,9 +20,13 @@ h1{
       text-decoration: none;
       color: blue;
     }
-
-.word2{
+.pass{
+    color: green;
+    font-size: 25px;
+}
+.fail{
     color:red;
+    font-size: 25px;
 }
 .instructions{
     color: #233516;
