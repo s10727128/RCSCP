@@ -47,7 +47,7 @@
     </button>
     <br>
     <button class="btn">
-      <div class="item"><span><a href="../index.php">返回</a></span></div>
+      <div class="item"><span><a href="../index.php"><b>返回</b></a></span></div>
     </button>
   </div>
   <!-- <a href="#" class="action-button animate blue">Hello</a>
