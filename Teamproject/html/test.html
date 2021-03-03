@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 <div style="width:600px; height:600px">
 <canvas id="myChart" ></canvas>
 </div>>
@@ -13,12 +25,26 @@ var chart = new Chart(ctx, {
         labels: ['XSS', 'Phishing', 'SQL', 'CSRF', 'MISC'],
         datasets: [{
             label: '關卡PR值(%)',
-            backgroundColor: '#FFD700',
+            borderColor: '#FFD700',
             data: [99,70, 80, 60, 80],
             borderWidth: 1,
-        }]
+            //backgroundColor:'#FFD700',
+        },  {label: '總平均值(%)',
+            borderColor: '#98FB98',
+            data: [50,30, 72, 34, 55],
+            borderWidth: 1,
+            backgroundColor:'#90EE90',},
+    
+    
+    ]
         
     },
+    // datasets: [{
+    //         label: '總平均值(%)',
+    //         backgroundColor: '#98FB98',
+    //         data: [50,30, 72, 34, 55],
+    //         borderWidth: 1,
+    //     }]
 
     // Configuration options go here    
     options: {
@@ -36,15 +62,3 @@ var chart = new Chart(ctx, {
 
 });
     </script>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
