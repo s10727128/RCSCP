@@ -21,13 +21,13 @@
 ?>
     <div class="body2">
     <div class="instructions">
-        <h1><a href="../gamepoint/level1index.php" class="exit">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
-            path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-        </svg>
-        </a><b>LEVEL1-3</b>
-        </h1>
-    </div><hr><br>
+            <h1><a href="../gamepoint/level1index.php" class="exit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 15 20">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </a><b>LEVEL 1-3</b>
+            </h1>
+        </div><hr><br>
     <div>
         <p><b>這一關以儲存型的XSS作為基礎，所發出去的聊天訊息，都會存在伺服器裡。<br>如果你是駭客，要怎麼注入XSS呢?</b></p>
     </div>
@@ -105,14 +105,14 @@
 
     </div>
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../Teamproject/vendor/jquery/jquery.min.js"></script>
+    <script src="../../Teamproject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../Teamproject/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="../../Teamproject/js/scrolling-nav.js"></script>
     <script>
         document.addEventListener("touchstart", function() {}, false);
     </script>
