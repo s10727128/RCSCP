@@ -121,8 +121,38 @@
             ?>
         </button>
 
+        <?php
+        $XSS3total=0;
+        $sql="SELECT XSS_3 FROM game WHERE XSS_3 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $XSS3total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$XSS3total .' </b></div>';
+        ?>
+
         <button class="btn">
-            <div class="item"><span><a href="../XSS game/XSS3.php?">困難</a></span></div>
+            <?php
+            $sql="SELECT XSS_3,XSS_3open FROM game WHERE XSS_3 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['XSS_3open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../XSS game/XSS3.php">困難</a></span></div>';
+            }
+            
+            ?>
         </button>
 
         <button class="btn">
