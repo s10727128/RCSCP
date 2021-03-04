@@ -95,6 +95,10 @@
         $result=mysqli_query($connect,$totalscore);
       }
       echo $totaltime;
+      echo '<br>';
+      echo $enddate;
+      echo '<br>';
+      echo $date;
     }       
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="XSS2.php">前往下一關</a><br>'; 
