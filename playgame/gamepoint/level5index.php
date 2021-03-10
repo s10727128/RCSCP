@@ -21,16 +21,107 @@
     <?php   
     include_once("../MISC/MISC_summary/MISC0.php");
     ?>
+         <?php
+        $MISC1total=0;
+        $sql="SELECT MISC_1 FROM game WHERE MISC_1 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $MISC1total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$MISC1total .' </b></div>';
+        ?>
+
         <button class="btn">
-            <div class="item"><span><a href="../MISC/MISC1/MISC1.php">簡單</a></span></div>
+            <?php
+            $sql="SELECT MISC_1,MISC_1open FROM game WHERE MISC_1 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['MISC_1open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../MISC/MISC1/MISC1.php">簡單</a></span></div>';
+            }
+            
+            ?>
         </button>
 
-        <button class="btn">
-            <div class="item"><span><a href="../MISC/MISC2/MISC2.php">中級</a></span></div>
-            </button>
+        <?php
+        $MISC2total=0;
+        $sql="SELECT MISC_2 FROM game WHERE MISC_2 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $MISC2total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$MISC2total .' </b></div>';
+        ?>
 
         <button class="btn">
-            <div class="item"><span><a href="../MISC/MISC3/MISC3.php">困難</a></span></div>
+            <?php
+            $sql="SELECT MISC_2,MISC_2open FROM game WHERE MISC_2 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['MISC_2open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../MISC/MISC1/MISC1.php">中級</a></span></div>';
+            }
+            
+            ?>
+        </button>
+
+
+        <?php
+        $MISC3total=0;
+        $sql="SELECT MISC_3 FROM game WHERE MISC_3 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $MISC3total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$MISC3total .' </b></div>';
+        ?>
+
+        <button class="btn">
+            <?php
+            $sql="SELECT MISC_3,MISC_3open FROM game WHERE MISC_3 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['MISC_3open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../MISC/MISC1/MISC1.php">困難</a></span></div>';
+            }
+            
+            ?>
         </button>
 
         <button class="btn">
