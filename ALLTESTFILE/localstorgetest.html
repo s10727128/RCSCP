@@ -8,15 +8,21 @@
 </head>
 <body>
     <script>
-        if(window.localStorage){
-            alert("Local storge Success!");
-        }
+        var i = 0;
 
-        localStorage.setItem('myCat', 'Tom');
-        var cat = localStorage.getItem('myCat');
+        localStorage.setItem('IDCount', i);
+        localStorage.setItem(i, 'Tom');
+        localStorage.setItem('Score', '100');
+        i ++;
+        
+        localStorage.setItem('IDCount', i);
+        localStorage.setItem(i, 'Tom');
+        localStorage.setItem('Score', '200');
+
+
+
+        
 
     </script>
-
-    <button></button>
 </body>
 </html>

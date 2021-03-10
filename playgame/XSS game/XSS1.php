@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -36,19 +36,17 @@
             </div>
 
     <?php
-    // ini_set("display_errors", 0);
-    // $ans = $_GET["name"];
-    // echo "Your answer is: $ans";
-    ini_set("display_errors", 0);
-    $ans = $_GET["input"];
-    echo '<div><form action=XSS1.php method=GET>
-    <input name=input value=""></form>
-    <input type=submit value="搜尋"></div><br>';
-    echo "Your answer is: ".$ans;
+        // ini_set("display_errors", 0);
+        // $ans = $_GET["name"];
+        // echo "Your answer is: $ans";
+        ini_set("display_errors", 0);
+        $ans = $_GET["input"];
+        echo '<div><form action=XSS1.php method=GET>
+        <input name=input value=""></form>
+        <input type=submit value="搜尋"></div><br>';
+        echo "Your answer is: ".$ans;
     ?>
     <br><br>
-
-
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">

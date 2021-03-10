@@ -7,13 +7,29 @@
     <title>JStimer Test</title>
 </head>
 <script>
-    var originalAlert = window.alert;
-    window.alert = function(){
-        originalAlert("Congratuation! You sucessed!\n" + "\nYou can go to next part.");
+    let i = 0;
+    setInterval(myTimer ,1000);
+    function myTimer() {
+        i ++;
+    //var date = new Date();
+    //var second = date.getSeconds();
+    document.getElementById("demo").innerHTML = i;
     }
-    // ScriptManager.RegisterClientScriptBlock(this, typeof(Page), "test", "alert('welcome');");
+
+    // function changePage(newLoc){
+    //     subid = newLoc.options[newLoc.selectedIndex].value
+    //         $.ajax({
+    //         url: 'ajac.php',
+    //         data: {"subId":subid},
+    //         type: 'post',
+    //         success:function(data){
+    //             //Succes!
+    //         }
+    //         });
+    // }
 </script>
 <body>
+    <p id="demo"></p>
     
 </body>
-</html>
+</html> 
