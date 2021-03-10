@@ -18,12 +18,6 @@
 
 <body a link="blue" vlink="red">
     <div class="body2">
-    <?php
-    require_once("../../Teamproject/register/connect.php");
-    $starttime = time();
-    $sqlgame = "UPDATE game SET  SQL_1open='$starttime' WHERE Username='$name'";
-    $resultgame = mysqli_query($connect, $sqlgame);
-    ?>
     <form action="" method="POST">
         <div class="instructions">
                 <h1><a href="../gamepoint/level3index.php" class="exit">
@@ -52,7 +46,7 @@
             </div>
             <div>
     </form>
-    <form action="level3-1done.php" method="post">
+    <form action="level3-1.php" method="post">
         <b>通關密碼</b>
         <input type="varchar" name="Key">
         <input type="submit" name="KeySubmit" value="驗證">
@@ -60,33 +54,126 @@
     </div>
 
     <br><br>
-    <div class="login">
-        <form id="login" method="post" action="">
-            <label><b>SQL injection
-                </b>
-            </label>
-            <input type="varchar" name="Username" id="Uname" placeholder="名稱">
-            <br><br>
-            <input type="password" name="Password" id="Pass" placeholder="密碼">
-            <br><br>
-            <input type="submit" name="submit" id="log" value="登入">
-            <br><br>
-        </form>
-    </div>
-    <br>
-    </form>
 
     <?php
+    #防止warning出現
     ini_set("display_errors", 0);
+    #記住開始的時間點
+    if ($_SESSION["time"] == null)
+    {
+        $_SESSION["time"] = time();
+    }
+    else if($_SESSION["time"]!=null){
+        // echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]+7*3600));//顯示開始時間點,可不加
+    }
+    #通關驗證
+    if(isset($_POST["KeySubmit"]))
+    {
+    $Key=$_POST['Key'];
+    #判斷是不是正確答案
+    if($Key=="0800092000")
+    {   
+    $enddate=time();//讀取完成時間
+    $resultendtate = mysqli_query($connect,"UPDATE game SET  SQL_1open='$enddate' WHERE Username='$name'");
+    $totaltime=($enddate-$_SESSION["time"]);
+    // echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate+7*3600));
+    // echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
+            #搜尋user裡的玩家的分數
+            $resultscore=mysqli_query($connect,"SELECT Score FROM user WHERE Username='$name'");
+            if(mysqli_num_rows($resultscore) > 0)
+            {
+              while($row = mysqli_fetch_assoc($resultscore))
+              {
+                $score=$row["Score"];
+              }
+            }
+            #確認玩家是否已經有分數  
+            $resultcheck=mysqli_query($connect,"SELECT SQL_1 FROM game WHERE Username='$name'");
+            if(mysqli_num_rows($resultcheck) > 0)
+            {
+              while($row = mysqli_fetch_assoc($resultcheck))
+              {
+                $check=$row["SQL_1"];
+              }
+            }
+            #判斷是否已經有分數
+            if($check>0)
+            {
+              $score+=0;//如果有分數,則不再另外給分
+            }
+            #根據通關時間給分
+            else
+            {
+              if($totaltime<=300){//時間少於5分鐘
+                $score+=200;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=200    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+                }
+              else if($totaltime>300&&$totaltime<=600){//時間在5分鐘~10分鐘間
+                $score+=180;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=180    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+                }
+              else if($totaltime>600&&$totaltime<=900){//時間在10分鐘~15分鐘間
+                $score+=160;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=160    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+                }
+              else if($totaltime>900&&$totaltime<=1200){//時間在15分鐘~20分鐘間
+                $score+=140;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=140    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+              }
+              else if($totaltime>1200&&$totaltime<=1800){//時間在20分鐘~30分鐘間
+                $score+=120;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=120    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+              }
+              else if($totaltime>1800&&$totaltime<=2700){//時間在30分鐘~45分鐘間
+                $score+=100;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=100    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+              }
+              else if($totaltime>2700&&$totaltime<=3600){//時間在45分鐘~1小時間
+                $score+=75;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=75    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+              }
+              else if($totaltime>3600){//時間大於1小時
+                $score=50;
+                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=50    WHERE Username='$name'");
+                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+              }
+            }        
+            echo '<div class="pass"><br>'."恭喜通關~<br>";
+            echo '<a href="level3-2.php">前往下一關</a><br>';
+            echo '<a href="../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+    }
+    
+      #不是正確答案的情況
+    else
+    {   
+        echo '<div class="pass">';
+        echo '<br>'."通關密碼不正確,請繼續加油!";
+        echo '<br><a href="level3-1.php">返回關卡</a><br>';
+        echo '</div>';
+    }
+    }
+    #3-1關卡
     if (isset($_POST["submit"])) {
-        require_once('level3connect.php'); //連結資料庫
-        $name = $password = $pwd = '';
+        require_once('level3connect.php'); //連結level3資料庫
 
         $name = $_POST['Username']; //post獲取表單裡的name
         $password = $_POST['Password']; //post獲取表單裡的password
-
-
-        $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; //檢測資料庫是否有對應的
+        
+        if(strpos($name,'drop') !== false){ 
+            exit();//防止drop table情形
+            }
+        if(strpos($password,'drop') !== false){ 
+            exit();//防止drop table情形
+            }
+        #3-1注入程式
+        $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; 
         $result = mysqli_query($connect, $sql); {
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
@@ -103,7 +190,21 @@
         }
     }
     ?>
-
+    <div class="login">
+        <form id="login" method="post" action="">
+            <label><b>SQL injection
+                </b>
+            </label>
+            <input type="varchar" name="Username" id="Uname" placeholder="名稱">
+            <br><br>
+            <input type="password" name="Password" id="Pass" placeholder="密碼">
+            <br><br>
+            <input type="submit" name="submit" id="log" value="登入">
+            <br><br>
+        </form>
+    </div>
+    <br>
+    </form>
 
 
 

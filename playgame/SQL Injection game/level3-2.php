@@ -81,12 +81,20 @@
 
         require_once('level3connect.php'); //連結資料庫
         $key = $_POST['search']; //post獲取表單裡的search
+        if(strpos($key,'drop') !== false){
+            echo '<div class="fail">';
+                echo "<b>查無搜尋結果</b>" . '<br>';
+                echo '</div>'; 
+            exit();
+            }
+          
         //$sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
         $sql = "SELECT * FROM sqli_select WHERE name='$key'";
         $result = mysqli_query($connect, $sql);
         if (!$result) {
-            echo "錯誤";
-        } {
+            
+        } 
+        {
             if (mysqli_num_rows($result) > 0) {
                 echo '<table class="table2">';
                 echo "<tr><td>名稱</td>" . "<td>分數</td></tr>";
