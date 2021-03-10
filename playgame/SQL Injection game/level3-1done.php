@@ -51,7 +51,6 @@ if(isset($_POST["KeySubmit"]))
     #根據通關時間給分
     else
     {
-      $totaltime=$enddate-$date;
       if($totaltime<=180){
           $score+=200;
           $gamescore="UPDATE game SET SQL_1=200 WHERE Username='$name'";
@@ -108,7 +107,6 @@ if(isset($_POST["KeySubmit"]))
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="level3-2.php">前往下一關</a><br>';
     echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
- 
   }
   #不是正確答案的情況
   else
