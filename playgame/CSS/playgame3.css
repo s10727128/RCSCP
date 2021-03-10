@@ -20,14 +20,33 @@ h1{
       text-decoration: none;
       color: blue;
     }
+/*為過關按鈕的CSS*/
 .pass{
-    color: green;
-    font-size: 25px;
+    color:green;
+    font-size: 30px;
+}   
+.pass a{
+    color: rgb(0, 0, 163);
+    text-decoration: none;
+}
+.pass a:hover{
+    color: rgb(0, 0, 54);
+    text-decoration: none;
 }
 .fail{
     color:red;
-    font-size: 25px;
+    font-size: 30px;
+}   
+.fail a{
+    color: rgb(0, 0, 163);
+    text-decoration: none;
 }
+.fail a:hover{
+    color: rgb(0, 0, 54);
+    text-decoration: none;
+}
+
+/*----------------*/
 .instructions{
     color: #233516;
 }

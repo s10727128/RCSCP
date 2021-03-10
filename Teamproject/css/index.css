@@ -1,11 +1,10 @@
 body{
   padding: 0px;
   margin: 0px;
-  background-color: #87CEEB;
 }
 .carousel-item {
   
-  height: 65vh;
+  height: 80vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;

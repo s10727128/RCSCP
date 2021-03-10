@@ -53,7 +53,7 @@
     </form>
     </div>
 
-    <br><br>
+   
 
     <?php
     #防止warning出現
@@ -153,9 +153,9 @@
       #不是正確答案的情況
     else
     {   
-        echo '<div class="pass">';
-        echo '<br>'."通關密碼不正確,請繼續加油!";
-        echo '<br><a href="level3-1.php">返回關卡</a><br>';
+        echo '<div class="fail">';
+        echo '<br>'."通關密碼不正確,請繼續加油!<br>";
+        echo '<a href="level3-1.php">返回關卡</a><br>';
         echo '</div>';
     }
     }
@@ -190,6 +190,7 @@
         }
     }
     ?>
+    <br>
     <div class="login">
         <form id="login" method="post" action="">
             <label><b>SQL injection
