@@ -21,8 +21,7 @@
     <?php
     require_once("../../../Teamproject/register/connect.php");
     $starttime = time();
-    $sqlgame = "UPDATE game SET  SQL_1open='$starttime' WHERE Username='$name'";
-    $resultgame = mysqli_query($connect, $sqlgame);
+    $resultgame = mysqli_query($connect,"UPDATE game SET  SQL_1open='$endtime' WHERE Username='$name'");
     ?>
     <form action="" method="POST">
         <div class="instructions">
