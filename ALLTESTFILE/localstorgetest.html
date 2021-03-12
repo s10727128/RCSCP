@@ -11,15 +11,38 @@
         var i = 0;
 
         localStorage.setItem('IDCount', i);
-        localStorage.setItem(i, 'Tom');
-        localStorage.setItem('Score', '100');
+        localStorage.setItem('Name'+i, 'Tom');
+        localStorage.setItem('Score'+i, '100');
         i ++;
         
         localStorage.setItem('IDCount', i);
-        localStorage.setItem(i, 'Tom');
-        localStorage.setItem('Score', '200');
+        localStorage.setItem('Name'+i, 'Jane');
+        localStorage.setItem('Score'+i, '200');
 
 
+    //     var defaultMessage = "Welcome!<br><br>This is your <i>personal</i>"
+    //     + " stream. You can post anything you want here, especially "
+    //     + "<span style='color: #f00ba7'>madness</span>.";
+
+    //   var DB = new PostDB(defaultMessage);
+
+    //   function displayPosts() {
+    //     var containerEl = document.getElementById("post-container");
+    //     containerEl.innerHTML = "";
+
+    //     var posts = DB.getPosts();
+    //     for (var i=0; i<posts.length; i++) {
+    //       var html = '<table class="message"> <tr> <td valign=top> '
+    //         + '<img src="/static/level2_icon.png"> </td> <td valign=top '
+    //         + ' class="message-container"> <div class="shim"></div>';
+
+    //       html += '<b>You</b>';
+    //       html += '<span class="date">' + new Date(posts[i].date) + '</span>';
+    //       html += "<blockquote>" + posts[i].message + "</blockquote";
+    //       html += "</td></tr></table>"
+    //       containerEl.innerHTML += html; 
+    //     }
+    //   }
 
         
 
