@@ -98,11 +98,8 @@
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/800x600')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="display-4">Second Slide</h3>
-            <p class="lead">put photo2</p>
-          </div>
+        <div class="carousel-item" style="background-image: url('/js-hackgame/photo/index/hack2.jpg')">
+         
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
@@ -127,16 +124,16 @@
   <section id="services">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 mr-auto" >
+        <div class="col-lg-5 mr-auto">
 
           <h2 style="text-align: center;">網站介紹</h2>
           <p class="lead">現今社會中，充斥著許多的網路犯罪手法，使用者常常在沒有資訊安全意識的情況下，點下來自惡意人士所傳的網址，導致銀行存款被盜走，或是下載非官方的破解版軟件，以致電腦內的所存的個人資料被竊取。為了提升大家對於資訊安全的基本概念及意識，故此設計的此網站，讓大家對於資訊安全有基本的認知。同時藉由實際的操作遊玩，讓有興趣但無從下手的人，可以跨出對於資訊安全領域的第一步，同時推廣相關的資安競賽及遊戲網站，以提升此領域的人才。</p>
         </div>
         <div class="col-lg-5 mx-auto">
 
-<h2 style="text-align: center;">網站介紹</h2>
-<p class="lead">現今社會中，充斥著許多的網路犯罪手法，使用者常常在沒有資訊安全意識的情況下，點下來自惡意人士所傳的網址，導致銀行存款被盜走，或是下載非官方的破解版軟件，以致電腦內的所存的個人資料被竊取。為了提升大家對於資訊安全的基本概念及意識，故此設計的此網站，讓大家對於資訊安全有基本的認知。同時藉由實際的操作遊玩，讓有興趣但無從下手的人，可以跨出對於資訊安全領域的第一步，同時推廣相關的資安競賽及遊戲網站，以提升此領域的人才。</p>
-</div>
+          <h2 style="text-align: center;">網站介紹</h2>
+          <p class="lead">現今社會中，充斥著許多的網路犯罪手法，使用者常常在沒有資訊安全意識的情況下，點下來自惡意人士所傳的網址，導致銀行存款被盜走，或是下載非官方的破解版軟件，以致電腦內的所存的個人資料被竊取。為了提升大家對於資訊安全的基本概念及意識，故此設計的此網站，讓大家對於資訊安全有基本的認知。同時藉由實際的操作遊玩，讓有興趣但無從下手的人，可以跨出對於資訊安全領域的第一步，同時推廣相關的資安競賽及遊戲網站，以提升此領域的人才。</p>
+        </div>
       </div>
     </div>
 
@@ -145,94 +142,114 @@
 
   <section id="our-apps" class="padding">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-7 col-sm-12">
-                <div class="heading-title bottom30 wow fadeInUp"  style="visibility: visible;  animation-name: fadeInUp;">
-                    <span class="defaultcolor text-center text-md-left">What’s excellent design of the website?</span>
-                    <h2 class="darkcolor font-normal text-center text-md-left">什麼是好的網頁設計?</h2>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-5 col-sm-12">
-                <p class="text-center text-md-left">一個好的網站代表了企業在網路上的形象和門面，不但可以做為市場行銷的工具，還能為企業贏得消費者的信任感和口碑。鴻翔資訊在網頁設計此領域有多年的經驗，相信我們能為客戶帶來更大的效益。</p>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-7 col-sm-12">
+          <div class="heading-title bottom30 wow fadeInUp" style="visibility: visible;  animation-name: fadeInUp;">
+            <span class="defaultcolor text-center text-md-left">What’s excellent design of the website?</span>
+            <h2 class="darkcolor font-normal text-center text-md-left">什麼是好的網頁設計?</h2>
+          </div>
         </div>
-        <div class="row d-flex align-items-center" id="app-feature">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="text-center text-md-right">
-                    <div class="feature-item mt-3 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
-                        <div class="icon"><i class="fas fa-cog"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block">網站風格符合企業形象</span>
-                            </h3>
-                            <p>如果公司有LOGO與品牌標識、營業資料、宣傳手冊等等..，這些產品識別需要適當的呈現在網頁中，這就是建立公司品牌與網站一致性，也是增加信任感一個重要部分，新的與舊有的客戶可以很容易的辨識公司品牌，並且與網站產生認同感。</p>
-                        </div>
-                    </div>
-                    <div class="feature-item mt-5 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
-                        <div class="icon"><i class="fas fa-edit"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block">大標題文字取代美工文字</span>
-                            </h3>
-                            <p>早期沒有響應式的網頁設計時，形象圖片都是以美工圖案來設計，這樣的設計好處是簡單，僅需再美工軟體處理好再放到網頁即可，成本較低，但這樣的設計在行動裝置上卻無法自動調整到適合的尺寸，解析度也不夠好，而且SEO效果較差，因搜尋引擎無法辨識，現在最好的方式是用文字來設計主標題與副標題，才能讓手機、平板、電腦等所有客戶都能有最棒的視覺體驗。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="app-image top30">
-                    <div class="app-slider-lock-btn"></div>
-                    <div class="app-slider-lock">
-                        <img src="images/iphone-slide-lock.jpg" alt="">
-                    </div>
-                    <div id="app-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
-
-
-
-                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-470px, 0px, 0px); transition: all 0s ease 0s; width: 1645px;"><div class="owl-item cloned" style="width: 235px;"><div class="item">
-                            <img src="images/iphone-slide2.jpg" alt="">
-                        </div></div>
-                        
-                        <div class="owl-item cloned" style="width: 235px;"><div class="item">
-                            <img src="images/iphone-slide3.jpg" alt="">
-                        </div></div>
-
-                        <div class="owl-item active" style="width: 235px;"><div class="item">
-                            <img src="images/iphone-slide1.jpg" alt="">
-                        </div></div>
-
-
-                        <div class="owl-item cloned" style="width: 235px;"><div class="item">
-                            <img src="images/iphone-slide2.jpg" alt="">
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
-                    <img src="images/iphone.png" alt="image">
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="text-center text-md-left">
-                    <div class="feature-item mt-3 wow fadeInRight"  style="visibility: visible;  animation-name: fadeInRight;">
-                        <div class="icon"><i class="fas fa-code"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block">網站架構優化</span>
-                            </h3>
-                            <p>許多舊程式設計出來的網站，表面上看起來漂亮，但效果卻不好，這是先天無法改善的，唯有從程式優化，讓搜尋引擎熟悉且喜歡，才能達到最好的效果。我們的架構有針對搜尋引擎優化，先天就比一般網佔有優勢。</p>
-                        </div>
-                    </div>
-                    <div class="feature-item mt-5 wow fadeInRight"  style="visibility: visible;  animation-name: fadeInRight;">
-                        <div class="icon"><i class="far fa-folder-open"></i></div>
-                        <div class="text">
-                            <h3 class="bottom15">
-                                <span class="d-inline-block">豐富的資訊及內容</span>
-                            </h3>
-                            <p>建置網站的目的無非是想讓您的商品與服務讓更多人接受與購買，如果內容充實豐富，但是缺乏脈絡與導覽性，會如同抽象畫一般，讓人無法充分理解內容，好的網頁設計方式會將內容資訊區分級數，最重要的的資訊會讓網頁使用者優先看到，依次類推下去，讓訪客先接收到重要訊息，較不會讓人感到無所適從而離開。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-6 col-md-5 col-sm-12">
+          <p class="text-center text-md-left">一個好的網站代表了企業在網路上的形象和門面，不但可以做為市場行銷的工具，還能為企業贏得消費者的信任感和口碑。鴻翔資訊在網頁設計此領域有多年的經驗，相信我們能為客戶帶來更大的效益。</p>
         </div>
+      </div>
+      <div class="row d-flex align-items-center" id="app-feature">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="text-center text-md-right">
+            <div class="feature-item mt-3 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
+              <!-- <div class="icon"><i class="fas fa-cog"></i></div> -->
+              <div class="text">
+                <h3 class="bottom15">
+                  <span class="d-inline-block">網站風格符合企業形象</span>
+                </h3>
+                <p>如果公司有LOGO與品牌標識、營業資料、宣傳手冊等等..，這些產品識別需要適當的呈現在網頁中，這就是建立公司品牌與網站一致性，也是增加信任感一個重要部分，新的與舊有的客戶可以很容易的辨識公司品牌，並且與網站產生認同感。</p>
+              </div>
+            </div>
+            <div class="feature-item mt-5 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
+              <!-- <div class="icon"><i class="fas fa-edit"></i></div> -->
+              <div class="text">
+                <h3 class="bottom15">
+                  <span class="d-inline-block">大標題文字取代美工文字</span>
+                </h3>
+                <p>早期沒有響應式的網頁設計時，形象圖片都是以美工圖案來設計，這樣的設計好處是簡單，僅需再美工軟體處理好再放到網頁即可，成本較低，但這樣的設計在行動裝置上卻無法自動調整到適合的尺寸，解析度也不夠好，而且SEO效果較差，因搜尋引擎無法辨識，現在最好的方式是用文字來設計主標題與副標題，才能讓手機、平板、電腦等所有客戶都能有最棒的視覺體驗。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="app-image top30">
+            <div class="app-slider-lock-btn"></div>
+
+            <!-- <div class="app-slider-lock">
+              <img src="images/iphone-slide-lock.jpg" alt="">
+            </div> -->
+
+            <div id="app-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+
+              <!-- <div class="owl-stage-outer">
+                <div class="owl-stage" style="transform: translate3d(-470px, 0px, 0px); transition: all 0s ease 0s; width: 1645px;">
+                  <div class="owl-item cloned" style="width: 235px;">
+                    <div class="item">
+                      <img src="images/iphone-slide2.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="owl-item cloned" style="width: 235px;">
+                    <div class="item">
+                      <img src="images/iphone-slide3.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="owl-item active" style="width: 235px;">
+                    <div class="item">
+                      <img src="images/iphone-slide1.jpg" alt="">
+                    </div>
+                  </div>
+
+
+                  <div class="owl-item cloned" style="width: 235px;">
+                    <div class="item">
+                      <img src="images/iphone-slide2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              
+              <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div> -->
+             
+              <div class="owl-dots disabled"></div>
+            </div>
+            <img src="images/iphone.png" alt="image">
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="text-center text-md-left">
+            <div class="feature-item mt-3 wow fadeInRight" style="visibility: visible;  animation-name: fadeInRight;">
+              <!-- <div class="icon"><i class="fas fa-code"></i></div> -->
+              <div class="text">
+                <h3 class="bottom15">
+                  <span class="d-inline-block">網站架構優化</span>
+                </h3>
+                <p>許多舊程式設計出來的網站，表面上看起來漂亮，但效果卻不好，這是先天無法改善的，唯有從程式優化，讓搜尋引擎熟悉且喜歡，才能達到最好的效果。我們的架構有針對搜尋引擎優化，先天就比一般網佔有優勢。</p>
+              </div>
+            </div>
+            <div class="feature-item mt-5 wow fadeInRight" style="visibility: visible;  animation-name: fadeInRight;">
+              <!-- <i class="far fa-folder-open"></i> -->
+              <div class="text">
+                <h3 class="bottom15">
+                  <span class="d-inline-block">豐富的資訊及內容</span>
+                </h3>
+                <p>建置網站的目的無非是想讓您的商品與服務讓更多人接受與購買，如果內容充實豐富，但是缺乏脈絡與導覽性，會如同抽象畫一般，讓人無法充分理解內容，好的網頁設計方式會將內容資訊區分級數，最重要的的資訊會讓網頁使用者優先看到，依次類推下去，讓訪客先接收到重要訊息，較不會讓人感到無所適從而離開。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
   <!-- 
   <section id="photo">
     <div class="container">
