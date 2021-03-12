@@ -59,12 +59,12 @@
     #防止warning出現
     ini_set("display_errors", 0);
     #記住開始的時間點
-    if ($_SESSION["time"] == null)
+    if ($_SESSION["time"] == null)//每個關卡的SESSION名字都要改
     {
         $_SESSION["time"] = time();
     }
     else if($_SESSION["time"]!=null){
-        // echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]+7*3600));//顯示開始時間點,可不加
+        echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]+7*3600));//顯示開始時間點,可不加
     }
     #通關驗證
     if(isset($_POST["KeySubmit"]))

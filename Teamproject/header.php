@@ -25,7 +25,7 @@
             require_once($connectDir);
             $name='';
             session_start();
-            $id = @$_SESSION['id']; 
+            $id = $_SESSION['id']; 
             $sql = "SELECT * FROM user WHERE ID='$id'";
             $result=mysqli_query($connect,$sql);
             if(mysqli_num_rows($result) > 0)
