@@ -145,14 +145,20 @@ body{
     {
       transform: translateY(20px);
     }
-/*index's image*/
 
+/*about index*/
+.defaultcolor {
+  color: #24cdd5;
+}
+
+
+/*index's image*/
+/*------------------------*/
 .hack3{
       color: #a030d8;
   background-repeat: no-repeat;
-  border: 1px solid #000;
 margin: 10px;
-  background-image: url(/js-hackgame/photo/index/hack3.jpg)  ;
+  /* background-image: url(/js-hackgame/photo/index/hack3.jpg)  ; */
   background-size: cover;
 }
 

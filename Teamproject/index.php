@@ -151,14 +151,13 @@
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
                 <div class="heading-title mb-4">
-                    <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">鴻翔資訊</span>三大承諾</h2>
+                    <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span>網站介紹</h2>
                 </div>
                 <p class="bottom35">一、專案規劃:本公司團隊的每位菁英，無論是網頁設計抑是程式設計，皆有專門的技術人員與設計師執行，保證給客戶最專業的規劃與推薦。</p>
                 <p class="bottom35">二、專屬設計:針對每位客戶的產業及產品特性，我們會在與您討論之後，精心為您挑選合適的圖片素材及整體風格配色，讓您的網站更能呈現貴司的企業形象與文化。</p>
                 <p class="bottom35">三、專業服務:從初步設計網站至結束，我們皆指派專屬業務同仁及專案負責人員，全程負責您的案件，讓您能更了解網站的製作流程與細節。 </p>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
-                <div class="image"><img alt="SEO" src="images/awesome-feature.png"></div>
             </div>
         </div>
     </div>
