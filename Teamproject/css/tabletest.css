@@ -1,0 +1,39 @@
+body{
+    
+    background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
+}
+
+.exit{
+  position: fixed;
+  left: 48.9%;
+}
+
+.exit :hover{
+  text-decoration: none;
+}
+caption {
+  top: 100px;
+  text-align: center;
+  caption-side: top;
+  }
+.b1{
+  font-size: 30px;
+  margin: 10px;
+}
+
+form{
+  margin: 5px;
+}
+.test{
+  margin-top: 5%;
+}
+/* 
+table:hover{
+  background-color: rgb(110, 110, 108);
+} */
+.thead:hover{
+  background-color: rgb(41, 41, 41);
+}
+.userscore:hover{
+  background-color: #3ed395;
+}

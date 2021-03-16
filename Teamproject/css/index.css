@@ -148,9 +148,10 @@ body{
 /*index's image*/
 
 .hack3{
-  color:#fff ;
+      color: #a030d8;
   background-repeat: no-repeat;
- 
+  border: 1px solid #000;
+margin: 10px;
   background-image: url(/js-hackgame/photo/index/hack3.jpg)  ;
   background-size: cover;
 }

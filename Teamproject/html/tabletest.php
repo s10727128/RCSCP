@@ -15,7 +15,7 @@ include("../header.php");
 <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 <script src='//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'></script>
 <link href='//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css' rel='stylesheet'></link>
-
+<link rel="stylesheet" href="../css/tabletest.css">
 <meta charset="utf-8">
 </head>
     <body>
@@ -98,7 +98,7 @@ include("../header.php");
             "emptyTable": "無資料...",
             "processing": "處理中...",
             "loadingRecords": "載入中...",
-            "lengthMenu": '顯示<select>'+'<option value="10">10</option>'+'<option value="20">20</option>'+
+            "lengthMenu": '"顯示<select>'+'<option value="10">10</option>'+'<option value="20">20</option>'+
             '<option value="30">30</option>'+'<option value="40">40</option>'+'<option value="50">50</option>'+
             '<option value="-1">All</option>'+'</select> 筆資料',
             "zeroRecords": "無搜尋結果",
