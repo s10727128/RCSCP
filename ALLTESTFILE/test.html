@@ -22,7 +22,7 @@
 
           //html += '<b>You</b>';
           //html += '<span class="date">' + new Date(posts[i].date) + '</span>';
-          html += "<blockquote>" + posts[i].message + "</blockquote";
+          html += posts[i].message;
           //html += "</td></tr></table>"
           containerEl.innerHTML += html; 
         }
@@ -62,7 +62,7 @@
         <td class="message-container">
           <div class="shim"></div>
           <form action="?" id="post-form" >
-            <textarea id="post-content" name="content" rows="2" cols="50"></textarea>
+            <input type="text" id="post-content" name="content" rows="2" cols="50">
             <input class="share" type="submit" value="Share status!">
             <input type="hidden" name="action" value="sign">
           </form>
