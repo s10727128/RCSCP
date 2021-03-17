@@ -40,9 +40,9 @@
       $total=array();
       $rank=array();
       $i=1;
-      $j=1;
+      $j=1;//j為不同分數的數量
       $r=0;
-      $k=0;
+      $k=0;//k為所有玩家分數
       $user = @$_SESSION['Username']; 
       if (mysqli_num_rows($resultall) > 0) {
         #排行總數
@@ -96,6 +96,7 @@
         echo '<th scope="col">SQL-2佔比</th>';
         echo '</tr>';
         echo '</thead>';
+        #
         $sqlall = "SELECT Username,SQL_2 FROM game ORDER BY SQL_2 DESC";
         $resultall = mysqli_query($connect, $sqlall);
         $total=array();
