@@ -1,7 +1,8 @@
 function Add(){
-    var id = document.getElementById('id');
-    var name = document.getElementById('name');
-    var fraction = document.getElementById('name');
+    var id = document.getElementById('id').value;
+    var name = document.getElementById('name').value;
+    var fraction = document.getElementById('name').value;
 
-    
+    var newfile = "";
+    newfile = ''
 }

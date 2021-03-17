@@ -146,7 +146,7 @@
   </section> -->
 
 <!--Some Feature -->
-<section id="our-feature" class="single-feature padding">
+<section id="our-feature" class="single-feature padding" >
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
@@ -155,30 +155,30 @@
                 </div>
                 <p class="bottom35">一、專案規劃:本公司團隊的每位菁英，無論是網頁設計抑是程式設計，皆有專門的技術人員與設計師執行，保證給客戶最專業的規劃與推薦。</p>
                 <p class="bottom35">二、專屬設計:針對每位客戶的產業及產品特性，我們會在與您討論之後，精心為您挑選合適的圖片素材及整體風格配色，讓您的網站更能呈現貴司的企業形象與文化。</p>
-                <p class="bottom35">三、專業服務:從初步設計網站至結束，我們皆指派專屬業務同仁及專案負責人員，全程負責您的案件，讓您能更了解網站的製作流程與細節。 </p>
+                <p class="bottom32">三、專業服務:從初步設計網站至結束，我們皆指派專屬業務同仁及專案負責人員，全程負責您的案件，讓您能更了解網站的製作流程與細節。 </p>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
             </div>
         </div>
     </div>
-</section>
+
+<br><br><br><br><br><br>
 <!--Some Feature ends-->
 
 <div class="hack3">
 
-  <section id="our-apps" class="padding">
     <div class="container" >
 
         <!-- <img src="" alt="image"  > -->
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-7 col-sm-12">
             <div class="heading-title bottom30 wow fadeInUp" style="visibility: visible;  animation-name: fadeInUp;">
-              <span>What’s excellent Information Security?</span>
+              <span>What’s Information Security?</span>
               <h2 class="darkcolor font-normal text-center text-md-left">什麼是資訊安全?</h2>
             </div>
           </div>
           <div class="col-lg-6 col-md-5 col-sm-12">
-            <p class="text-center text-md-left">一個好的網站代表了企業在網路上的形象和門面，不但可以做為市場行銷的工具，還能為企業贏得消費者的信任感和口碑。鴻翔資訊在網頁設計此領域有多年的經驗，相信我們能為客戶帶來更大的效益。</p>
+            <p class="text-center text-md-left">資訊安全（簡稱「資安」）為一總稱，涵蓋了網路、網際網路、端點、API、雲端、應用程式以及容器等各項領域的安全機制，是藉由建立一套安全策略，來共同協防您的數位資料。用來保護電腦系統、網路和資料等各類資訊技術的完整性，以避免遭受攻擊、毀損或出現未經授權的存取動作。</p>
           </div>
         </div>
         <div class="row d-flex align-items-center" id="app-feature">
@@ -276,9 +276,10 @@
           </div>
         </div>
       </div>
+  </div>
     </div>
   </section>
-  </div>
+
   <!-- 
   <section id="photo">
     <div class="container">

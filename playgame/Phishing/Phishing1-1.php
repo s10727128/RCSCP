@@ -42,7 +42,7 @@
 
             echo "你現在是一位駭客，請利用網站XSS漏洞，將注入連結導向\"Phishing1-2.php\"這個網址，取得密碼。";
             echo '<br>';
-            echo "Your answer is: ".htmlspecialchars($ans);
+            echo "Your answer is:" . $ans;
         ?>
     </div>
     <br>
@@ -72,11 +72,11 @@
                     break;
 
                 case 3:
-                    $("#hint3").text("3. 可以利用<a href="">test<a>，2; 當作注入的連結。");
+                    $("#hint3").text('3. 可以利用<a href="">test</a>，2; 當作注入的連結。');
                     break;
 
                 case 4:
-                    $("#hint4").text("4. 解答有很多個方法，但本關卡提供為&lt;a href=&quot;Phishing1&oline;2.php&quot;&gt;test&lt;a&gt;");
+                    $("#hint4").text('4. 解答有很多個方法，但本關卡提供為<a href="Phishing1-2.php">test</a>');
                     break;
 
                 default:

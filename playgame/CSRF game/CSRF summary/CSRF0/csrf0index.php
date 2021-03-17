@@ -20,7 +20,7 @@
     <br><br><br><h1 align = "center">會員資料總表</h1>
     <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf0create.php">新增資料</a></p>
 
-    <table border="1" align= "center">
+    <table  border="1" align= "center">
         <tr>
             <th>ID</th>
             <th>姓名</th>

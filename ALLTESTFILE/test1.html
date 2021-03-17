@@ -12,15 +12,30 @@
     ?> -->
 </head>
 <body>
-    <input type="submit" id="clear_btn" value="Clear all">
-
-    <div class="add">
+    <button style="text-align: right;" id="clear_btn">Clear all</button>
+    <div class="add" style="text-align: center;">
         <form action="?" method="GET">
             <input type="text" id="id" value="">
             <input type="text" id="name" value="">
             <input type="text" id="fraction" value="">
             <input type="button" onclick="Add()" value="add">
         </form>
+    </div>
+
+    <hr>
+
+    <table border="1" align="center">
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>積分</th>
+        </tr>
+
+    </table>
+
+    <div class="display">
+
+
     </div>
     
 </body>
