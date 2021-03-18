@@ -14,12 +14,12 @@
 </head>
 
 <body a link="blue" vlink="red">
-<?php
+    <?php
     require_once("../../Teamproject/register/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  XSS_2open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
-?>
+    ?>
 
     <div class="body2">
         <div class="instructions">
@@ -30,7 +30,8 @@
                 </a><b>LEVEL 1-2</b>
             </h1>
         </div>
-        <hr><br><div>
+        <hr><br>
+        <div>
             <p><b>繼承第一關的作法，看你能不能找到其中的奧秘!</b></p>
         </div>
 
@@ -95,13 +96,8 @@
         </script>
     </div>
 
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-       <div class="footer">
+    <br><br><br><br> <br><br><br><br><br>
+    <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">
                 <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
