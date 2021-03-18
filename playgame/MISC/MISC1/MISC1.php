@@ -7,60 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
     include_once("../../../Teamproject/header.php");
-    
+
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="source.js"></script>
+    <!-- <script src="source.js"></script> -->
     <link rel="stylesheet" a href="../../CSS/playgame5.css">
 </head>
 
 <body a link="blue" vlink="red">
     <div class="body2">
-    <div class="instructions">
-                <h1><a href="../../gamepoint/level5index.php" class="exit">
+        <div class="instructions">
+            <h1><a href="../../gamepoint/level5index.php" class="exit">
 
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                        </svg>
-                    </a>
-                    <b>LEVEL5-1</b>
-                </h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 15 20">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </a>
+                <b>LEVEL5-1</b>
+            </h1>
 
-            </div>
-    <hr>
+        </div>
+        <hr>
 
-    <div style="text-align: center;">
-        <a id="next_btn" style="display: none;" href="">Next</a>
-    </div>
-    <br>
-
-    <div style="text-align: center;">
-        <form action="../../../downloadfile/level5-1.txt" method="GET">
-            下載點:
-            <a href="../../../downloadfile/level5-1.txt" download><b>Download</b></a>
-        </form>
+        <div style="text-align: center;">
+            <a id="next_btn" style="display: none;" href="">Next</a>
+        </div>
         <br>
-        <?php
-        ini_set("display_errors", 0);
-        $ans = $_GET["input"];
-        if ($ans == "thisyearis2021") {
-            echo '<script>alert("Congratuation! You sucessed!")</script>';
-        }
-        echo '<form action=MISC1.php method="GET">
+
+        <div style="text-align: center;">
+            <form action="../../../downloadfile/level5-1.txt" method="GET">
+                下載點:
+                <a href="../../../downloadfile/level5-1.txt" download><b>Download</b></a>
+            </form>
+            <br>
+            <?php
+            ini_set("display_errors", 0);
+            $ans = $_GET["input"];
+            if ($ans == "thisyearis2021") {
+                echo '<script>alert("Congratuation! You sucessed!")</script>';
+            }
+            echo '<form action=MISC1.php method="GET">
             <input name=input value"' . $ans . '"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
-        ?>
-    </div>
-    
-   
+            ?>
+        </div>
 
 
 
-    <!-- <div style="text-align: center;">
+
+
+        <!-- <div style="text-align: center;">
         <button type="button" id="hintList">Hint</button>
         <div style="list-style: none; ">
             <li id="hint1"><b></b></li>
@@ -78,39 +78,28 @@
             }
         });
     </script> -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
         <b>提示</b>
     </button> -->
 
-    <?php
-    include("MISC1.html");
+        <?php
+        include("MISC1.html");
 
-    ?>
-    
-
-      <script>
-        $('#exampleModal').on('show.bs.modal', event => {
-            var button = $(event.relatedTarget);
-            var modal = $(this);
-            // Use above variables to manipulate the DOM
-
-        });
-    </script>
+        ?>
 
 
+        <script>
+            $('#exampleModal').on('show.bs.modal', event => {
+                var button = $(event.relatedTarget);
+                var modal = $(this);
+                // Use above variables to manipulate the DOM
+
+            });
+        </script>
 
     </div>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-
-
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="footer">
         <footer class="py-2 bg-dark ">
@@ -133,4 +122,5 @@
 
 
 </body>
+
 </html>
