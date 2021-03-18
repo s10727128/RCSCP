@@ -11,4 +11,4 @@ function sendFunction(){
     str = '<div class="message"><div class="user-photo"><img src="../../photo/XSS/elephant.jpeg"></div><p class="message_chat">' + talkbox + '</p></div>';
     messagelogs.innerHTML = messagelogs.innerHTML + str;
     document.getElementById("talkbox").value="";
-} 
+}

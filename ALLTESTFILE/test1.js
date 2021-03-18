@@ -1,8 +1,8 @@
-function Add(){
-    var id = document.getElementById('id').value;
-    var name = document.getElementById('name').value;
-    var fraction = document.getElementById('name').value;
+$("#button").click(function Add(){
+    var id = $("#id").val();
+    var name = $("#name").val();
+    var fraction = $("#fraction").val();
 
-    var newfile = "";
-    newfile = ''
-}
+    var str = '<tr><th>ID</th><th>姓名</th><th>積分</th></tr>';
+    $("#data").after(str);
+})
