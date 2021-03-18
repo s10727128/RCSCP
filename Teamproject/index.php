@@ -350,7 +350,7 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="/js-hackgame/Teamproject/html/about.php">
           <div class="icon">
             <i class="fa fa-users" aria-hidden="true"></i>
             <i class="fa fa-users" aria-hidden="true"></i>

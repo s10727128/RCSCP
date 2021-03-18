@@ -61,8 +61,8 @@ body{
     =========bar========
     */
  .bar ul{
-      position: fixed;
-      top: 92%;
+      position: absolute;
+      top: 255%;
       left: 50%;
       transform: translate(-50%,-50%);
       margin: 0;
