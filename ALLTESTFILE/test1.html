@@ -6,37 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localstorge + JSON test</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/ALLTESTFILE/test1.js"></script>
 
     <!-- <?php
     include_once("../../Teamproject/header.php");
     ?> -->
 </head>
 <body>
-    <button style="text-align: right;" id="clear_btn">Clear all</button>
+    <div style="text-align: right;">
+        <button style="text-align: right;" id="clear_btn">Clear all</button>
+    </div>
+   
     <div class="add" style="text-align: center;">
-        <form action="?" method="GET">
+        <form action="" method="GET">
             <input type="text" id="id" value="">
             <input type="text" id="name" value="">
             <input type="text" id="fraction" value="">
-            <input type="button" onclick="Add()" value="add">
+            <input type="button" id="button" value="新增">
         </form>
     </div>
 
     <hr>
 
-    <table border="1" align="center">
-        <tr>
-            <th>ID</th>
-            <th>姓名</th>
-            <th>積分</th>
-        </tr>
 
-    </table>
-
-    <div class="display">
-
+        <table border="1" align="center">
+            <div class="display" id="display">
+                <div class="data" id="data">
+                    <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>積分</th>
+                    </tr>
+                </div>
+            </div>
+        </table>
 
     </div>
+
     
+    <div class="display">
+    </div>
+    
+    <!-- <script>
+        $("#button").click(function Add(){
+            var id = $("#id").val();
+            var name = $("#name").val();
+            var fraction = $("#fraction").val();
+
+            var str = '<tr><th>ID</th><th>姓名</th><th>積分</th></tr>';
+            $("#data").after(str);
+        })
+    </script> -->
+
+
 </body>
 </html>
