@@ -90,7 +90,8 @@
     });
 </script>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+
 <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">

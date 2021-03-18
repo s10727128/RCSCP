@@ -43,7 +43,7 @@
       <div class="item"><span><a href="../../playgame/gamepoint/level5index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/Phishing/Phishing1-1.php">Phishing</a></span></div>
+      <div class="item"><span><a href="../../playgame/gamepoint/level6index.php">Phishing</a></span></div>
     </button>
     <br>
     <button class="btn">
