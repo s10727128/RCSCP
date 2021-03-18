@@ -52,29 +52,6 @@
                 <br></br>
     </div>
     </form>
-
-    <form action="level3-2.php" method="post">
-        通關密碼
-        <input type="varchar" name="Key">
-        <input type="submit" name="KeySubmit" value="驗證">
-    </form>
-    </div>
-
-    
-    <br><br>
-    <div class="login">
-        <form id="login" method="post" action="">
-            <label><b>SQL injection
-                </b>
-            </label>
-            <input type="varchar" name="search" placeholder="search">
-            <input type="submit" name="search_button" value="搜尋">
-            <br><br>
-        </form>
-    </div>
-    <br>
-    </form>
-
     <?php
     #防止warning出現
     ini_set("display_errors", 0);
@@ -215,43 +192,36 @@
         }
     }
     ?>
+    <br><br>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-        提示
-    </button>
-
-
-
-
-
-
-    <!-- Modal -->
-    <div class="hint">
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Hint</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <p>test</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <form action="level3-2.php" method="post">
+        通關密碼
+        <input type="varchar" name="Key">
+        <input type="submit" name="KeySubmit" value="驗證">
+    </form>
     </div>
 
+    
+    <br><br>
+    <div class="login">
+        <form id="login" method="post" action="">
+            <label><b>SQL injection
+                </b>
+            </label>
+            <input type="varchar" name="search" placeholder="search">
+            <input type="submit" name="search_button" value="搜尋">
+            <br><br>
+        </form>
     </div>
+    <br>
+    </form>
+
+    
+
+    <?php
+    include("level3-2.html");
+    ?>
+
     <br>
     <br>
     <br>

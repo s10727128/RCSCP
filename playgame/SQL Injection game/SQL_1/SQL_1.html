@@ -1,68 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./SQL_1.css">
+  <link rel="stylesheet" href="SQL_1.css">
 
 </head>
-
 <body>
-  <!-- partial:index.partial.html -->
-  <main v-cloak>
-    <button class="button" @click="toggleModal()"><b>提示</b></button>
+<!-- partial:index.partial.html -->
+<main v-cloak>
+ <button class="button" @click="toggleModal()"><b>提示</b></button>
 
-    <!--  The Modal -->
-    <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX"
-      @toggle="toggleModal">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" @click="finish">
+  <!--  The Modal -->
+  <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
+    <div class="modal-header">  
+      <button type="button" class="close" data-dismiss="modal" @click="finish">
           <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <article v-cloak>
-        <section>
-          <h2>提示(1/1)</h2>
-          <p>1.此關卡為"摩斯密碼"</p>
-        </section>
+      </button>
+  </div>
+  <article v-cloak>
+      <section>
+        <h2>提示(1/1)</h2>
+        <p>1.此關卡為"摩斯密碼"</p>
+      </section>
 
 
 
-      </article>
+    </article>
 
 
-      <footer>
+    <footer>
         <!-- Next Arrow -->
-        <div class="forward-actions">
-          <button class="primary next" :disabled="isLastStep" v-show="!isLastStep" @click="skip(1)"><i
-              class="fa fa-fw fa-lg" :class="nextIcon"></i></button>
-          <button class="accent save" :disabled="!isLastStep" v-show="isLastStep" @click="finish"><i
-              class="fa fa-fw fa-lg fa-check"></i></button>
-        </div>
+      <div class="forward-actions">
+        <button class="primary next" :disabled="isLastStep" v-show="!isLastStep" @click="skip(1)"><i class="fa fa-fw fa-lg" :class="nextIcon"></i></button>
+        <button class="accent save" :disabled="!isLastStep" v-show="isLastStep" @click="finish"><i class="fa fa-fw fa-lg fa-check"></i></button>
+      </div>
 
         <!-- Step Dots -->
-        <div class="step-dots" v-if="hasDots">
-          <div class="step-dot" v-for="n in max" :class="{active: n == step}" @click="goToStep(n)"></div>
-        </div>
-        <div class="back-actions">
+      <div class="step-dots" v-if="hasDots">
+        <div class="step-dot" v-for="n in max" :class="{active: n == step}" @click="goToStep(n)"></div>
+      </div>
+      <div class="back-actions">
 
-          <!-- Back Arrow -->
-          <button class="secondary cancel prev" :disabled="isFirstStep" xv-show="!isFirstStep" @click="skip(-1)"><i
-              class="fa fa-fw fa-lg" :class="backIcon"></i></button>
-        </div>
-      </footer>
-    </boardal>
-  </main>
+        <!-- Back Arrow -->
+        <button class="secondary cancel prev" :disabled="isFirstStep" xv-show="!isFirstStep" @click="skip(-1)"><i class="fa fa-fw fa-lg" :class="backIcon"></i></button>
+      </div>
+    </footer>
+  </boardal>
+</main>
 
 
-  <!-- partial -->
-  <script src='https://unpkg.com/vue'></script>
-  <script src="./SQL_1.js"></script>
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script><script  src="SQL_1.js"></script>
 
 </body>
-
 </html>
 
 <!-- *************************************************************************** -->

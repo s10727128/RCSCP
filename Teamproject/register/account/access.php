@@ -50,7 +50,7 @@ else
     <div class="body2">
         <div class="link">
 <a href="AddAcount.php">新增帳號</a><br>
-<a href="ModifyAccount_Access.php">修改帳號</a><br>
+<a href="ModifyScore.php">修改帳號分數</a><br>
 <a href="DeleteAccount.php">刪除帳號</a><br>
 </div>
 </div>
