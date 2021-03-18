@@ -43,9 +43,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#services">網站介紹</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#photo">相片</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#whats">資訊安全</a>
+          </li>
           <?php
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
           $connectDir = "$RootDir/js-hackgame/Teamproject/register/connect.php";
@@ -146,7 +146,7 @@
   </section> -->
 
 <!--Some Feature -->
-<section id="our-feature" class="single-feature padding" >
+<section id="services" class="single-feature padding" >
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
@@ -162,7 +162,7 @@
         </div>
     </div>
 
-<br><br><br><br><br><br>
+<br><br  id="whats"><br><br><br><br>
 <!--Some Feature ends-->
 
 <div class="hack3">

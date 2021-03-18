@@ -46,15 +46,6 @@
             </div>
             <div>
     </form>
-    <form action="level3-1.php" method="post">
-        <b>通關密碼</b>
-        <input type="varchar" name="Key">
-        <input type="submit" name="KeySubmit" value="驗證">
-    </form>
-    </div>
-
-   
-
     <?php
     #防止warning出現
     ini_set("display_errors", 0);
@@ -190,6 +181,17 @@
         }
     }
     ?>
+    <br><br>
+    <form action="level3-1.php" method="post">
+        <b>通關密碼</b>
+        <input type="varchar" name="Key">
+        <input type="submit" name="KeySubmit" value="驗證">
+    </form>
+    </div>
+
+   
+
+    
     <br>
     <div class="login">
         <form id="login" method="post" action="">
@@ -211,35 +213,11 @@
 
 
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-        提示
-    </button>
+  
 
-    <!-- Modal -->
-    <div class="hint">
-        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Hint</h5>
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button> -->
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <p>test</p>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<?php
+    include("level3-1.html");
+?>
         <br>
         <br>
         <br>
