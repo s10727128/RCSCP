@@ -13,12 +13,22 @@ function Add(){
     var fraction = document.getElementById("fraction").value;
 
     var str = "";
-    str = '<div class="data"><tr><th>' + id + '</th><th>' + name + '</th><th>' + fraction + '</th></tr></div>';
-    datatable.innerHTML = datatable.innerHTML + str;
+    str = '<p class="data"><tr><th>' + id + ' </th><th>' + name + ' </th><th>' + fraction + ' </th></tr></p>';
+    data_area.innerHTML = data_area.innerHTML + str;
 
+    Clear();
+}
+
+function Clear(){
     document.getElementById("id").value = "";
     document.getElementById("name").value = "";
     document.getElementById("fraction").value = "";
+}
 
+function Save(){
 
+}
+
+function Delete(){
+    
 }
