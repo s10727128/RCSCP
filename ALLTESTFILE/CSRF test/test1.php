@@ -25,10 +25,11 @@
             <input name="id" id="id" value="">
             <input name="name" id="name" value="">
             <input name="fraction" id="fraction" value="">
-            <input type="submit" id="btn_add" onclick="Add()" value="新增">
          </form><br>';
         //echo "Your answer is: " .$id." ".$name." ".$fraction;
     ?>
+
+    <input type="submit" id="btn_add" onclick="Add()" value="新增">
 
     <div class="data_area">
         <div class="datatable">
