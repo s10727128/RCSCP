@@ -183,6 +183,7 @@
           </div>
         </div>
         <div class="row d-flex align-items-center" id="app-feature">
+
           <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="text-center text-md-right">
               <div class="feature-item mt-3 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
@@ -207,6 +208,7 @@
             </div>
           </div>
           
+  
           <div class="col-md-4 text-center">
             <div class="app-image top30">
               <div class="app-slider-lock-btn"></div>
@@ -247,8 +249,9 @@
               </div> -->
 
                 <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div> -->
-
-                <div class="owl-dots disabled"></div>
+<?php
+              include_once("../playgame/gamepoint/Summary/homesummary.php")
+              ?>
               </div>
             </div>
           </div>
@@ -279,11 +282,9 @@
       </div>
   </div>
     </div>
+    <br><br><br>
   </section>
 
-  <?php
-              include_once("../playgame/gamepoint/Summary/homesummary.php")
-              ?>
               
   <!-- 
   <section id="photo">
