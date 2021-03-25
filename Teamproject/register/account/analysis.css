@@ -1,17 +1,13 @@
 
 
 body{
-    width: 100%;
-    height: 100%;
       padding: 0%;
       text-align: center;
       background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
       background-size: cover;
-    
   }
-  .body2{
-    margin-top: 5%;
-     margin-bottom: 50px;
-    font-family: 'audiowide',monospace;
-    font-size: 25px;
-  }
+ .myChart{
+     width: 1000px; 
+
+
+}
