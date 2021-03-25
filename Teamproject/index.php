@@ -146,6 +146,7 @@
   </section> -->
 
 <!--Some Feature -->
+  <br><br><br>
 <section id="services" class="single-feature padding" >
     <div class="container">
         <div class="row d-flex align-items-center">
@@ -205,7 +206,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="col-md-4 text-center">
             <div class="app-image top30">
               <div class="app-slider-lock-btn"></div>
@@ -280,6 +281,10 @@
     </div>
   </section>
 
+  <?php
+              include_once("../playgame/gamepoint/Summary/homesummary.php")
+              ?>
+              
   <!-- 
   <section id="photo">
     <div class="container">

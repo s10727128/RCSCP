@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF0/CSRF_summary.css">
+  <link rel="stylesheet" href="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF_summary.css">
 </head>
 
 <body>
@@ -61,7 +61,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF0/CSRF_summary.js"></script>
+  <script src="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF_summary.js"></script>
 
 </body>
 

@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./homesummary.css">
+  <link rel="stylesheet" href="/js-hackgame/playgame/gamepoint/Summary/homesummary.css">
 
 </head>
 
@@ -103,7 +102,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="./homesummary.js"></script>
+  <script src="/js-hackgame/playgame/gamepoint/Summary/homesummary.js"></script>
 
 </body>
 
