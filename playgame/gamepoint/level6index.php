@@ -19,7 +19,7 @@
     <div class="auto">
     
     <?php   
-    // include_once("../MISC/MISC_summary/MISC0.php");
+    include_once("../Phishing/Phishing_summary/Phishing0.php");
     ?>
          <?php
         $MISC1total=0;
