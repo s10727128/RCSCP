@@ -25,22 +25,16 @@
     
       <article v-cloak>
         <section>
-          <h2>MISC關卡介紹</h2>
-          <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
-        </section>
-        <section>
-          <h2>MISC關卡介紹</h2>
-          <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
-        </section><section>
-          <h2>MISC關卡介紹</h2>
-          <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
+          <h2>CSRF關卡介紹</h2>
+          <p>csrf跨站請求偽造(Cross-site request forgery)，也稱為one-click attack或者session riding。</br>與XSS的差別為，XSS是針對網站的設計漏洞進行破壞，而CSRF是針對網站對使用者的認證不夠嚴謹，因次有心人假冒為使用者進行資料竊取或轉帳。</br><br/>在遊戲當中的環境為，模擬管理玩家的管理員，玩家已經是在該環境下進行遊戲，因此不需要額外竊取cookies 或session token。</p>
+          <p><button class="primary" @click="toggleModal"><a href="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF0/csrf0index.php">遊戲模擬環境</a></button></p> 
         </section>
       </article>
 
 
       <footer>
         <!-- Next Arrow -->
-        <div class="forward-actions">
+        <div class="forward-actions"> 
           <button class="primary next" :disabled="isLastStep" v-show="!isLastStep" @click="skip(1)"><i class="fa fa-fw fa-lg" :class="nextIcon"></i></button>
           <button class="accent save" :disabled="!isLastStep" v-show="isLastStep" @click="finish"><i class="fa fa-fw fa-lg fa-check"></i></button>
         </div>

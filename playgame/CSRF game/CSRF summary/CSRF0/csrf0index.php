@@ -39,5 +39,8 @@
             }
         ?>
     </table>
+    <div class="content" style="text-align: center;">
+        <br><h4>管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</h4>
+    </div>
 </body>
 </html>
