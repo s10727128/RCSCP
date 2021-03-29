@@ -78,7 +78,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../XSS game/XSS1.php">簡單</a></span></div>';
+               echo '<div class="item"><span><a href="../XSS game/XSS1.php?input=">簡單</a></span></div>';
             }
             
             ?>

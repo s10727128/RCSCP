@@ -66,7 +66,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <p>1.&nbsp;執行一個&lt;script&gt;<br>2.&nbsp;在&lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;將neam=test，改成name=&lt;script&gt;alert()&lt;/script&gt;
+                            <p>1.&nbsp;執行一個&lt;script&gt;<br>2.&nbsp;在&lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;在上方網址input=後的文字,改成input=&lt;script&gt;alert()&lt;/script&gt;
                             </p>
                         </div>
                     </div>
