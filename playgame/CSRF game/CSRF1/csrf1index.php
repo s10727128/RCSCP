@@ -52,9 +52,16 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </head>`
 <body>
-    <br><br><br><h1 align = "center">會員資料總表</h1>
-    <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf1create.php">新增資料</a></p>
+    <br><br><br><h1 align = "center">會員資料總表</h1><hr>
+    
+    <div class="content" style="text-align: center;">
+        <h4>由於開發人員的疏失，因此在網站中存在了一些漏洞。<br>雖然只有管理員可以新增以及刪除資料，但是聰明的你，應該可以運用一些方法，將資料刪除</h4>
+        <br><h4><b>目標:將玩家資料刪除，以獲取相對應積分</b></h4>
+    </div><br><br>
 
+
+
+    <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf1create.php">新增資料</a></p>
     <table border="1" align= "center">
         <tr>
             <th>ID</th>
@@ -69,7 +76,7 @@
                 echo "<td>".$row_result['ID']."</td>";
                 echo "<td>".$row_result['Username']."</td>";
                 echo "<td>".$row_result['Score']."</td>";
-                echo "<td><a href='csrf1delete.php?id=".$row_result['ID']."'>刪除</a></td>";
+                echo "<a href='csrf1delete.php?id=".$row_result['ID']."'></a>";
                 echo "</tr>";
             }
         ?>
