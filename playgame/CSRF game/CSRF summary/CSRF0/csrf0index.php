@@ -18,6 +18,11 @@
 </head>
 <body>
     <br><br><br><h1 align = "center">會員資料總表</h1>
+
+    <div class="content" style="text-align: center; color: red;">
+        <br><p>內文:管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</p>
+    </div><br>
+
     <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf0create.php">新增資料</a></p>
 
     <table  border="1" align= "center">
@@ -39,8 +44,5 @@
             }
         ?>
     </table>
-    <div class="content" style="text-align: center;">
-        <br><h4>管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</h4>
-    </div>
 </body>
 </html>

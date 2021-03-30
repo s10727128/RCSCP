@@ -53,11 +53,11 @@
 </head>`
 <body>
     <br><br><br><h1 align = "center">會員資料總表</h1><hr>
-    
-    <div class="content" style="text-align: center;">
-        <h4>由於開發人員的疏失，因此在網站中存在了一些漏洞。<br>雖然只有管理員可以新增以及刪除資料，但是聰明的你，應該可以運用一些方法，將資料刪除</h4>
-        <br><h4><b>目標:將玩家資料刪除，以獲取相對應積分</b></h4>
-    </div><br><br>
+
+    <div class="content" style="text-align: center; color: red;">
+        <br><p>內文:由於開發人員的疏失，因此在網站中存在了一些漏洞。<br>雖然只有管理員可以新增以及刪除資料，但是聰明的你，應該可以運用一些方法，將資料刪除</p>
+        <br><p><b>目標:將玩家資料刪除，以獲取相對應積分</b></p>
+    </div><br>
 
 
 
