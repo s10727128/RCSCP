@@ -180,11 +180,12 @@
             }
     }
     ?>
-    <br><br>
     <form action="level3-1.php" method="post">
         <b>通關密碼</b>
         <input type="varchar" name="Key">
         <input type="submit" name="KeySubmit" value="驗證">
+    <br><br>
+
     </form>
     </div>
 
