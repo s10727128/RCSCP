@@ -22,10 +22,10 @@
   <input type="varchar" name="Username" placeholder="帳號" id="Uname" minlength="4" maxlength="16" required="required" >
   <br><br>
 
-  <input type="varchar" name="Password" placeholder="密碼" id="Uname" minlength="4" maxlength="16"  required="required">
+  <input type="password" name="Password" placeholder="密碼" id="Uname" minlength="4" maxlength="16"  required="required">
   <br><br>
 
-  <input type="varchar" name="PasswordCheck" placeholder="密碼確認" id="Uname" minlength="4" maxlength="16" required="required">
+  <input type="password" name="PasswordCheck" placeholder="密碼確認" id="Uname" minlength="4" maxlength="16" required="required">
   <br><br>
   <input type="submit" name="register" class="fadeIn fourth" value="註冊">
   

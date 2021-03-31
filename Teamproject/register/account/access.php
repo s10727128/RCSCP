@@ -8,7 +8,7 @@ require_once('../connect.php');
 $sql = "SELECT * FROM user";
 $result=mysqli_query($connect,$sql);
 echo "<table class='table2'>";
-echo "<tr><td>帳號</td>"."<td>暱稱</td>"."<td>信箱</td>"."<td>年齡</td>"."<td>分數</td>"."<td>權限</td></tr>";
+echo "<tr><td>帳號</td>"."<td>暱稱</td>"."<td>年齡</td>"."<td>分數</td>"."<td>權限</td></tr>";
 if(mysqli_num_rows($result) > 0)
 {
 	while($row = mysqli_fetch_assoc($result))
@@ -18,11 +18,9 @@ if(mysqli_num_rows($result) > 0)
         $score=$row["Score"];
         $nickname=$row["Nickname"];
         $age=$row["Age"];
-        $email=$row["Email"];
         echo '<tr>';
         echo '<td>' . $name. '</td>';
         echo '<td>' . $nickname. '</td>';
-        echo '<td>' . $email. '</td>';
         echo '<td>' . $age. '</td>';
         echo '<td>' . $score . '</td>';
         echo '<td>' . $access. '</td>';
