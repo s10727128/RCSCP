@@ -50,7 +50,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../SQL Injection game/level3-1.php">簡單</a></span></div>';
+               echo '<div class="item"><span><a href="../SQL Injection game/level3-1.php">登入注入</a></span></div>';
             }
             
             ?>
@@ -87,7 +87,7 @@
             }
             } 
             else{
-               echo '<div class="item"><span><a href="../SQL Injection game/level3-2.php">中級</a></span></div>';
+               echo '<div class="item"><span><a href="../SQL Injection game/level3-2.php">查詢注入</a></span></div>';
             }
             
             ?>

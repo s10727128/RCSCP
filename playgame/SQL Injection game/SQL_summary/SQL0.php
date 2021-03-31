@@ -32,6 +32,7 @@
           <h2>SQL Injection的手法及目的</h2>
           <p>SQL Injection會透過在網頁上的輸入欄位中插入SQL語法<br>讓系統也把該SQL語法一起執行進去<br>
           這很有可能讓資料庫中的某些資料被提取.外洩.竄改,甚至被刪除</p>
+          <p><img class="photo" src="/js-hackgame/photo/SQL/SQL.jpg"></p>
         </section> <section>
           <h2>關卡內容</h2>
           <p>本關卡會透過簡單的指令<br>讓玩家們能從中理解到SQL Injection可能會帶來的傷害性</p>
