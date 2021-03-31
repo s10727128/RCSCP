@@ -118,11 +118,21 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../MISC/MISC3/MISC3.php">偽加密</a></span></div>';
+               echo '<div class="item"><span><a href="../MISC/MISC3/MISC3.php">Base64</a></span></div>';
             }
             
             ?>
         </button>
+
+
+        <!-- 尚未加入時間偵測 -->
+        <button class="btn">
+            <?php
+               echo '<div class="item"><span><a href="../MISC/MISC4/MISC4.php">偽加密</a></span></div>';
+            ?>
+        </button>
+
+
 
         <button class="btn">
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>

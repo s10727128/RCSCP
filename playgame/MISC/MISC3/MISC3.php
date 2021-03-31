@@ -41,15 +41,15 @@
         </div>
 
         <div style="text-align: center;">
-            <form action="../../downloadfile/stego.zip" method="GET">
+            <form action="../../../downloadfile/base64.txt" method="GET">
                 下載點:
-                <a href="../../downloadfile/stego.zip" download><b>Download</b></a>
+                <a href="../../../downloadfile/base64.txt" download><b>Download</b></a>
             </form>
 
             <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
-            if ($ans == "AIOcfjw0793!BQopcbe97504") {
+            if ($ans == "thisisbase64") {
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
             echo '<form action=MISC3.php =GET>

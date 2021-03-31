@@ -41,9 +41,9 @@
         </div>
 
         <div style="text-align: center;">
-            <form action="../../downloadfile/stego.zip" method="GET">
+            <form action="../../../downloadfile/stego.zip" method="GET">
                 下載點:
-                <a href="../../downloadfile/stego.zip" download><b>Download</b></a>
+                <a href="../../../downloadfile/stego.zip" download><b>Download</b></a>
             </form>
 
             <?php
@@ -52,14 +52,14 @@
             if ($ans == "AIOcfjw0793!BQopcbe97504") {
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
-            echo '<form action=MISC3.php =GET>
+            echo '<form action=MISC4.php =GET>
             <input name=input value"' . $ans . '"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';
             ?>
         </div>
         <?php
-    include("MISC3.html");
+    include("MISC4.html");
  ?>
         <!-- <div style="text-align: center;">
             <p>請幫我拿解開檔案，謝謝!</p>
