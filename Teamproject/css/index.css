@@ -1,6 +1,10 @@
+
 body{
   padding: 0px;
   margin: 0px;
+  font-family: 'audiowide',monospace !important;
+ 
+
 }
 .carousel-item {
   
@@ -38,15 +42,9 @@ body{
   background: #000;
   box-sizing: border-box;
 }
-.imagebox{
-  width: calc(50% + 50px);
-  height: 100%;
-  background: #f00;
-  box-sizing: border-box;
-  border-left: 100px solid #000;
-  border-bottom: 400px solid transparent;
+.security_introduction{
+  font-size: 25px;
 }
-
 /*gameset.css*/
 .game{
   margin-top: 5%;
@@ -157,9 +155,10 @@ body{
 /*index's image*/
 /*------------------------*/
 .hack3{
-      color: #a030d8;
+      color: #000;
   background-repeat: no-repeat;
 margin: 10px;
+
   /* background-image: url(/js-hackgame/photo/index/hack3.jpg)  ; */
   background-size: cover;
 }

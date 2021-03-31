@@ -145,37 +145,39 @@
     </div>
   </section> -->
 
-<!--Some Feature -->
+  <!--Some Feature -->
   <br><br><br>
-<section id="services" class="single-feature padding" >
+  <section id="services" class="single-feature padding">
     <div class="container">
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
-                <div class="heading-title mb-4">
-                    <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span>網站介紹</h2>
-                </div>
-                <p class="bottom35">一、專案規劃:本公司團隊的每位菁英，無論是網頁設計抑是程式設計，皆有專門的技術人員與設計師執行，保證給客戶最專業的規劃與推薦。</p>
-                <p class="bottom35">二、專屬設計:針對每位客戶的產業及產品特性，我們會在與您討論之後，精心為您挑選合適的圖片素材及整體風格配色，讓您的網站更能呈現貴司的企業形象與文化。</p>
-                <p class="bottom32">三、專業服務:從初步設計網站至結束，我們皆指派專屬業務同仁及專案負責人員，全程負責您的案件，讓您能更了解網站的製作流程與細節。 </p>
-            </div>
-            <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
-            </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+          <div class="heading-title mb-4">
+            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span><id class="security_introduction">資安網站介紹</h2>
+          </div>
+          <p class="bottom35">一、本網站誕生的主旨是為了讓不懂"資訊安全"或是剛入門的玩家們透過遊玩遊戲了解資安在做什麼。</p>
+          <p class="bottom35">二、為了讓玩家們了解"資訊安全"，本網站用了五大關卡(例：釣魚網站，XSS，CSRF，SQL注入，MISC)，解釋說平時可能會遇到的資訊安全危險。</p>
+          <p class="bottom32">三、讓玩家們遊玩關卡過後，了解這些資訊安全的危機，並使玩家們理解這些常見的資訊安全攻擊是怎麼運作的，在此之後該如何防範或者預防。 </p>
         </div>
+        <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+        </div>
+      </div>
     </div>
+    <br><br id="whats">
 
-<br><br  id="whats"><br><br><br><br>
-<!--Some Feature ends-->
+<hr>
+    <br id="whats"><br><br>
+    <!--Some Feature ends-->
 
-<div class="hack3">
+    <div class="hack3">
 
-    <div class="container" >
+      <div class="container">
 
         <!-- <img src="" alt="image"  > -->
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-7 col-sm-12">
             <div class="heading-title bottom30 wow fadeInUp" style="visibility: visible;  animation-name: fadeInUp;">
-              <span>What’s Information Security?</span>
-              <h2 class="darkcolor font-normal text-center text-md-left">什麼是資訊安全?</h2>
+              <!-- <span>What’s Information Security?</span> -->
+              <h2 class="darkcolor font-normal text-center text-md-left">有關資訊安全的攻擊?</h2>
             </div>
           </div>
           <div class="col-lg-6 col-md-5 col-sm-12">
@@ -190,25 +192,25 @@
                 <!-- <div class="icon"><i class="fas fa-cog"></i></div> -->
                 <div class="text">
                   <h3 class="bottom15">
-                    <span class="d-inline-block">網站風格符合企業形象</span>
+                    <span class="d-inline-block">網路釣魚</span>
                   </h3>
-                  <p>如果公司有LOGO與品牌標識、營業資料、宣傳手冊等等..，這些產品識別需要適當的呈現在網頁中，這就是建立公司品牌與網站一致性，也是增加信任感一個重要部分，新的與舊有的客戶可以容易的辨識公司品牌，並且與網站產生認同感。</p>
+                  <p>網路釣魚是傳送假冒可信任來源之電子郵件的詐騙電子郵件手法。其目標是竊取敏感資料，像是信用卡號碼和登入資訊。這是最常見的網路攻擊類型。您可以透過教學或能夠過濾惡意電子郵件的技術解決方案，保護自己</p>
                 </div>
               </div>
               <div class="feature-item mt-5 wow fadeInLeft" style="visibility: visible;  animation-name: fadeInLeft;">
                 <!-- <div class="icon"><i class="fas fa-edit"></i></div> -->
                 <div class="text">
                   <h3 class="bottom15">
-                    <span class="d-inline-block">大標題文字取代美工文字</span>
+                    <span class="d-inline-block">勒索軟體</span>
                   </h3>
-                  <p>早期沒有響應式的網頁設計時，形象圖片都是以美工圖案來設計，這樣的設計好處是簡單，僅需再美工軟體處理好再放到網頁即可，成本較低，但這樣的設計在行動裝置上卻無法自動調整到適合的尺寸，解析度也不夠好，而且SEO效果較差，因搜尋引擎無法辨識，現在最好的方式是用文字來設計主標題與副標題，才能讓手機、平板、電腦等所有客戶都能有最棒的視覺體驗。</p>
+                  <p>勒索軟體是一種惡意軟體，旨在透過封鎖檔案或電腦系統的存取權限直到付清贖款為止，藉此勒索金錢。支付贖款並不保證能夠復原檔案或還原系統。</p>
 
                 </div>
               </div>
             </div>
           </div>
-          
-  
+
+
           <div class="col-md-4 text-center">
             <div class="app-image top30">
               <div class="app-slider-lock-btn"></div>
@@ -249,9 +251,9 @@
               </div> -->
 
                 <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div> -->
-<?php
-              include_once("../playgame/gamepoint/Summary/homesummary.php")
-              ?>
+                <?php
+                include_once("../playgame/gamepoint/Summary/homesummary.php")
+                ?>
               </div>
             </div>
           </div>
@@ -263,29 +265,29 @@
                 <!-- <div class="icon"><i class="fas fa-code"></i></div> -->
                 <div class="text">
                   <h3 class="bottom15">
-                    <span class="d-inline-block">網站架構優化</span>
+                    <span class="d-inline-block">惡意軟體</span>
                   </h3>
-                  <p>許多舊程式設計出來的網站，表面上看起來漂亮，但效果卻不好，這是先天無法改善的，唯有從程式優化，讓搜尋引擎熟悉且喜歡，才能達到最好的效果。我們的架構有針對搜尋引擎優化，先天就比一般網佔有優勢。</p>
+                  <p>惡意軟體是專門用來取得未授權存取或對電腦造成損害的軟體。 </p>
                 </div>
               </div>
               <div class="feature-item mt-5 wow fadeInRight" style="visibility: visible;  animation-name: fadeInRight;">
                 <!-- <i class="far fa-folder-open"></i> -->
                 <div class="text">
                   <h3 class="bottom15">
-                    <span class="d-inline-block">豐富的資訊及內容</span>
+                    <span class="d-inline-block">社交工程</span>
                   </h3>
-                  <p>建置網站的目的無非是想讓您的商品與服務讓更多人接受與購買，如果內容充實豐富，但是缺乏脈絡與導覽性，會如同抽象畫一般，讓人無法充分理解內容，好的網頁設計方式會將內容資訊區分級數，最重要的的資訊會讓網頁使用者優先看到，依次類推下去，讓訪客先接收到重要訊息，較不會讓人感到無所適從而離開。</p>
+                  <p>社交工程是惡意人士用來欺騙您揭露敏感資訊的手法。他們可能會要求付款或取得您機密資料的存取權限。社交工程可能會結合上方列出的任一種威脅，讓您更可能點擊連結、下載惡意軟體或信任惡意來源。</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
     </div>
     <br><br><br>
   </section>
 
-              
+
   <!-- 
   <section id="photo">
     <div class="container">
@@ -380,7 +382,7 @@
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
   <!--custom functions and script-->
-<script src="js/functions.js"></script>
+  <script src="js/functions.js"></script>
 
 </body>
 

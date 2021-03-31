@@ -11,11 +11,12 @@
     $sql = "SELECT CSRF_1open FROM game WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sql);
     if (mysqli_num_rows($resultgame) > 0) {
-		while ($row = mysqli_fetch_assoc($resultgame)) 
+		while ($row = mysqli_fetch_assoc($resultgame))  
             {
             $flag=$row["CSRF_1open"];
             }
         }
+
     
     //session_start();
     if($flag == 0){
@@ -25,7 +26,7 @@
          }
 
         //新增遊戲資料
-        $palyer1 = "INSERT INTO csrf1 (ID, Username, Score) VALUES ('1', 'player1', '800')";
+        $palyer1 = "INSERT INTO csrf1 (ID, Username, Score) VALUES ('1', 'player1', '300')";
         $palyer2 = "INSERT INTO csrf1 (ID, Username, Score) VALUES ('2', 'player2', '150')";
         $palyer3 = "INSERT INTO csrf1 (ID, Username, Score) VALUES ('3', 'player3', '50')";
          if($total_records == 0){
@@ -36,11 +37,24 @@
 
         //FLAG記錄玩家玩過此關
         $setflag = "UPDATE game SET  CSRF_1open='1' WHERE Username='$name'";
-        $resultgame = mysqli_query($connect, $setflag);
-        
-    }else{
-    }
+        $resultgame = mysqli_query($connect, $setflag);   
 
+
+    }else{
+        $id = 1;
+        while($id <= 3){
+            $judge = "SELECT ID FROM csrf1 WHERE ID = $id";
+            $resultjudge = mysqli_query($db_link, $judge);
+            if (mysqli_num_rows($resultjudge) == 0) {
+                $count += 100;
+                $id ++;
+            }
+            else{
+                break;
+            }
+        }
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +66,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </head>`
 <body>
+
     <br><br><br><h1 align = "center">會員資料總表</h1><hr>
 
     <div class="content" style="text-align: center; color: red;">
@@ -81,5 +96,9 @@
             }
         ?>
     </table>
+
+    <?php
+        echo $count;
+    ?>
 </body>
 </html>

@@ -32,6 +32,9 @@
     </button>
     <!--SQL-->
     <button class="btn">
+      <div class="item"><span><a href="../../playgame/gamepoint/level6index.php">Phishing</a></span></div>
+    </button>
+    <button class="btn">
       <div class="item"><span><a href="../../playgame/gamepoint/level2index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
     <!--level3 = SQL-->
@@ -42,9 +45,7 @@
     <button class="btn">
       <div class="item"><span><a href="../../playgame/gamepoint/level5index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
-    <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level6index.php">Phishing</a></span></div>
-    </button>
+    
     <br>
     <button class="btn">
       <div class="item"><span><a href="../index.php"><b>返回</b></a></span></div>
