@@ -24,16 +24,13 @@
 		while ($row = mysqli_fetch_assoc($result)) {
 			$nickname = $row["Nickname"];
 			$score = $row["Score"];
-			$email = $row["Email"];
 			$age = $row["Age"];
 			$access = $row["Access"];
 		}
 	}
-	echo'<div class="table1">'; //table1 紀錄暱稱,信箱,年齡,分數
+	echo'<div class="table1">'; //table1 紀錄暱稱,年齡,分數
 	echo "暱稱:";
 	echo $nickname . '<br>';
-	echo "信箱:";
-	echo $email . '<br>';
 	echo "年齡:";
 	echo $age . '<br>';
 	echo "分數:";
