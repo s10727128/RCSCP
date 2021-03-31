@@ -11,11 +11,16 @@
 <body>
   <!-- partial:index.partial.html -->
   <main v-cloak>
-    <p><button class="accent" @click="toggleModal()">網站簡介</button></p>
+    <p><button class="btn" @click="toggleModal()"><b>網站簡介</b></button></p>
 
     <!--  The Modal -->
     <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX"
       @toggle="toggleModal">
+      <div class="modal-header">  
+      <button type="button" class="close" data-dismiss="modal" @click="finish">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
       <article v-cloak>
         <section>
           <h2>網站簡介</h2>
