@@ -34,13 +34,19 @@
         <a id="next_btn" style="display: none;" href="">Next</a>
     </div>
     <br>
+    
+    <div style="text-align: center;">
+        <p><b>吃到100顆蘋果，並拿到解答</b></p>
+        <p><b>--找到密碼過關--</b></p><br>
+    </div>
+
 
     <div style="text-align: center;">
         <form action="../../downloadfile/SnakeGmae2.rar" method="GET">
             下載點:
             <a href="../../downloadfile/SnakeGmae2.rar" download><b>Download</b></a>
         </form>
-        <br>
+
         <?php
         ini_set("display_errors", 0);
         $ans = $_GET["input"];
@@ -54,9 +60,6 @@
         ?>
     </div>
 
-    <div style="text-align: center;">
-        <p>請吃到100顆蘋果，並拿到解答Flag。</p>
-    </div>
     <?php
         include("MISC2.html");//input modal
     ?>

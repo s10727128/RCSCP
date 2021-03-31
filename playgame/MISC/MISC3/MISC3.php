@@ -35,19 +35,24 @@
         </div>
         <br>
 
+        
+        <div>
+            <p><b>--找到密碼過關--</b></p><br>
+        </div>
+
         <div style="text-align: center;">
             <form action="../../downloadfile/stego.zip" method="GET">
                 下載點:
                 <a href="../../downloadfile/stego.zip" download><b>Download</b></a>
             </form>
-            <br>
+
             <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
             if ($ans == "AIOcfjw0793!BQopcbe97504") {
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
-            echo '<form action=level5-3.php =GET>
+            echo '<form action=MISC3.php =GET>
             <input name=input value"' . $ans . '"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';

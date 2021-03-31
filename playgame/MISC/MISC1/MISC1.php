@@ -36,13 +36,17 @@
             <a id="next_btn" style="display: none;" href="">Next</a>
         </div>
         <br>
+        
+        <div>
+            <p><b>--找到密碼過關--</b></p><br>
+        </div>
 
         <div style="text-align: center;">
             <form action="../../../downloadfile/level5-1.txt" method="GET">
                 下載點:
                 <a href="../../../downloadfile/level5-1.txt" download><b>Download</b></a>
             </form>
-            <br>
+            
             <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];

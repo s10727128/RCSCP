@@ -37,7 +37,7 @@
             <a id="next_btn" style="display: none;" href="">Next</a>
         </div>
         <br>
-        <div">
+        <div>
             <p><b>你發現了某個網站中的SQL資料庫系統沒有針對SQL injection做保護</b></p>
             <p><b>而你想嘗試去破解這個網頁的登入驗證,並窺視使用者的資料</b></p>
             <p><b>聰明的你應該知道該怎麼做吧?</b></p>
