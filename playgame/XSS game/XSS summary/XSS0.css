@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 2; 
 }
 .boardal__mask {
   background: rgba(0, 0, 0, 0.65);
