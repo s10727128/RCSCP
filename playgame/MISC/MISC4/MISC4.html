@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="MISC2.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="MISC3.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <main v-cloak>
   <button class="button" @click="toggleModal()"><b>提示</b></button>
+
 
   <!--  The Modal -->
   <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
@@ -19,18 +20,13 @@
           <span aria-hidden="true">&times;</span>
       </button>
   </div>
-  <article v-cloak>
-     <!--哈哥修改裡面內容--> <!--哈哥修改裡面內容-->
-
+    <article v-cloak>
       <section>
-        <h2>提示(1/2)</h2>
-        <p>反編譯</p>
-      </section> 
-
-      <section>
-        <h2>提示(2/2)</h2>
-        <p>建議使用工具jd-gui。<br>(可以上網搜尋工具名稱後下載。)</p>
+        <h2>MISC關卡介紹</h2>
+        <p>此關卡為"雜項"，會有許多不同的解碼遊戲，也可能會用到不同的工具。<br>而你目標只有一個，就是拿到密碼過關，祝你好運~</p>
       </section>
+
+
 
     </article>
 
@@ -57,7 +53,7 @@
 
 
 <!-- partial -->
-  <script src='https://unpkg.com/vue'></script><script  src="./MISC2.js"></script>
+  <script src='https://unpkg.com/vue'></script><script  src="./MISC3.js"></script>
 
 </body>
 </html>

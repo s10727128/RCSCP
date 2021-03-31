@@ -49,7 +49,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../MISC/MISC1/MISC1.php">簡單</a></span></div>';
+               echo '<div class="item"><span><a href="../MISC/MISC1/MISC1.php">摩斯密碼</a></span></div>';
             }
             
             ?>
@@ -83,7 +83,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../MISC/MISC2/MISC2.php">中級</a></span></div>';
+               echo '<div class="item"><span><a href="../MISC/MISC2/MISC2.php">反編譯</a></span></div>';
             }
             
             ?>
@@ -118,7 +118,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../MISC/MISC3/MISC3.php">困難</a></span></div>';
+               echo '<div class="item"><span><a href="../MISC/MISC3/MISC3.php">偽加密</a></span></div>';
             }
             
             ?>
