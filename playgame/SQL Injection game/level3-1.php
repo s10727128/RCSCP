@@ -165,7 +165,7 @@
             }
         #3-1注入程式
         $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; 
-        $result = mysqli_query($connect, $sql); {
+        $result = mysqli_query($connect, $sql);
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
                     $KEYYYYYY = $row["KeyWord"];
@@ -178,14 +178,14 @@
                 echo "<b>注入失敗</b>" . '<br>';
                 echo '</div>';
             }
-        }
     }
     ?>
-    <br><br>
     <form action="level3-1.php" method="post">
         <b>通關密碼</b>
         <input type="varchar" name="Key">
         <input type="submit" name="KeySubmit" value="驗證">
+    <br><br>
+
     </form>
     </div>
 
