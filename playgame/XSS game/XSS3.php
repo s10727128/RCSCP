@@ -65,7 +65,12 @@
 
 
         <br>
-        <div style="text-align: center;">
+
+        <?php
+        include_once("XSS3.html")
+
+        ?>
+        <!-- <div style="text-align: center;">
             <button type="button" id="hintList" class="button">Hint</button>
             <div class="word2" style="list-style: none; ">
                 <li id="hint1"><b></b></li>
@@ -95,7 +100,7 @@
                         break;
                 }
             });
-        </script>
+        </script> -->
     </div>
     <br><br><br><br>
     <div class="footer">

@@ -50,8 +50,16 @@
             ?>
         </div>
         <br>
+        
 
-        <div style="text-align: center;">
+
+        <?php
+            include_once("XSS2.html")
+        
+        ?>
+        
+
+        <!-- <div style="text-align: center;">
             <button type="button" id="hintList" class="button">Hint</button>
             <div class="word2" style="list-style: none; ">
                 <li id="hint1"></li>
@@ -69,11 +77,11 @@
                 x++;
                 switch (x) {
                     case 1:
-                        $("#hint1").text("1. 執行一個<script>");
+                        $("#hint1").text("1.執行一個<script>");
                         break;
 
                     case 2:
-                        $("#hint2").text("2. 哇...<script>行不通，試試看輸入其他東西");
+                        $("#hint2").text("2.哇...<script>行不通，試試看輸入其他東西");
                         break;
 
                     case 3:
@@ -81,7 +89,7 @@
                         break;
 
                     case 4:
-                        $("#hint4").text("4. 觀察input1裡的value變化，試著執行");
+                        $("#hint4").text("4.觀察input1裡的value變化，試著執行");
                         break;
 
                     case 5:
@@ -93,10 +101,10 @@
                         break;
                 }
             });
-        </script>
+        </script> -->
     </div>
 
-    <br><br><br><br> <br><br><br><br><br>
+    <br><br><br><br> <br><br><br><br><br><br>
     <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">

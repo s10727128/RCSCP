@@ -48,12 +48,13 @@
     ?>
     <br><br>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
+    <?php
+        include_once("XSS1.html")
+    ?>
+    <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modelId">
         <b>提示</b>
     </button>
 
-    <!-- Modal -->
     <div class="hint">
         <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -66,7 +67,8 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <p>1.&nbsp;執行一個&lt;script&gt;<br>2.&nbsp;在&lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>4.&nbsp;在上方網址input=後的文字,改成input=&lt;script&gt;alert()&lt;/script&gt;
+                            <p>1.&nbsp;執行一個&lt;script&gt;<br>2.&nbsp;在&lt;script&gt;裡加入alert()<br>3.&nbsp;不知道輸入在哪嗎?仔細觀察網址<br>
+                            4.在上方網址input=後的文字,改成input=&lt;script&gt;alert()&lt;/script&gt;
                             </p>
                         </div>
                     </div>
@@ -76,7 +78,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
     </div>
 </body>
 
