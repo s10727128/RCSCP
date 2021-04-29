@@ -50,10 +50,10 @@
         <?php
         ini_set("display_errors", 0);
         $ans = $_GET["input"];
-        if ($ans == "Flag{Answer_is_135000}") {
+        if ($ans == "AIOcfjw0793!BQop") {
             echo '<script>alert("Congratuation! You sucessed!")</script>';
         }
-        echo '<form action=level5-2.php =GET>
+        echo '<form action=MISC2.php =GET>
             <input name=input value"' . $ans . '"/>
             <input type=submit name=submit value="送出"/>
             </form><br>';

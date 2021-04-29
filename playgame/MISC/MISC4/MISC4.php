@@ -49,7 +49,7 @@
             <?php
             ini_set("display_errors", 0);
             $ans = $_GET["input"];
-            if ($ans == "AIOcfjw0793!BQopcbe97504") {
+            if ($ans == "UpassAllMisc666!") {
                 echo '<script>alert("Congratuation! You sucessed!")</script>';
             }
             echo '<form action=MISC4.php =GET>
