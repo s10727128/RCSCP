@@ -3,6 +3,11 @@ body{
       background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
 }
 
+.search_not{
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
 .exit{
     position: fixed;
     left: 48.9%;
@@ -37,3 +42,7 @@ table:hover{
 .userscore:hover{
     background-color: #3ed395;
 }
+
+.footer{
+    margin-top: 30%;
+ }
