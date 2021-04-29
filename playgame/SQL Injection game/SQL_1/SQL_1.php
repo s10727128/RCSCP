@@ -160,35 +160,35 @@
     }
     }
     #3-1關卡
-    if (isset($_POST["submit"])) {
-        require_once('level3connect.php'); //連結level3資料庫
+    // if (isset($_POST["submit"])) {
+    //     require_once('level3connect.php'); //連結level3資料庫
 
-        $name = $_POST['Username']; //post獲取表單裡的name
-        $password = $_POST['Password']; //post獲取表單裡的password
+    //     $name = $_POST['Username']; //post獲取表單裡的name
+    //     $password = $_POST['Password']; //post獲取表單裡的password
         
-        if(strpos($name,'drop') !== false){ 
-            exit();//防止drop table情形
-            }
-        if(strpos($password,'drop') !== false){ 
-            exit();//防止drop table情形
-            }
-        #3-1注入程式
-        $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; 
-        $result = mysqli_query($connect, $sql); {
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    $KEYYYYYY = $row["KeyWord"];
-                }
-                echo '<div class="pass">';
-                echo ("<b>注入成功!!") . '<br>';
-                echo '通關密碼為<div class="fail">' . $KEYYYYYY . '</b></div><br>';
-            } else {
-                echo '<div class="fail">';
-                echo "<b>注入失敗</b>" . '<br>';
-                echo '</div>';
-            }
-        }
-    }
+    //     if(strpos($name,'drop') !== false){ 
+    //         exit();//防止drop table情形
+    //         }
+    //     if(strpos($password,'drop') !== false){ 
+    //         exit();//防止drop table情形
+    //         }
+    //     #3-1注入程式
+    //     $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; 
+    //     $result = mysqli_query($connect, $sql); {
+    //         if (mysqli_num_rows($result) > 0) {
+    //             while ($row = mysqli_fetch_assoc($result)) {
+    //                 $KEYYYYYY = $row["KeyWord"];
+    //             }
+    //             echo '<div class="pass">';
+    //             echo ("<b>注入成功!!") . '<br>';
+    //             echo '通關密碼為<div class="fail">' . $KEYYYYYY . '</b></div><br>';
+    //         } else {
+    //             echo '<div class="fail">';
+    //             echo "<b>注入失敗</b>" . '<br>';
+    //             echo '</div>';
+    //         }
+    //     }
+    // }
     ?>
     <br>
     <div class="login">
