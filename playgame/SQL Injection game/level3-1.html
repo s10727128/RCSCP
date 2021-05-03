@@ -21,14 +21,31 @@
   </div>
   <article v-cloak>
       <section>
-        <h2>介紹</h2>
-        <p>1.此關卡為"摩斯密碼"</p>
+        <!--<h2>介紹</h2>-->
+        <p>本關卡為SQL Injection裡最基礎的攻擊手法，在使用者登入
+          的頁面加入特定的字元使得SQL語法產生錯誤的判斷。</p>
       </section>
       <section>
-        <h2>提示(1/1)</h2>
-        <p>1.此關卡為"摩斯密碼"</p>
+        <p>以下為一個SQL語法的例子:
+          SELECT * FROM database WHERE Username = '$name ' and Password='$password'
+          其中$name和$password為伺服器端所設置的變數名稱
+          而該語句用意為:
+          搜尋任何在資料庫中，使用者名稱為欄位中輸入的名稱，以及使用者密碼為欄位中輸入的密碼。
+          再加入一些執行和判斷語句，就能變成一個簡易的使用者登入系統。</p>
       </section>
-
+      <section>
+        <p>但當欄位中輸入某些特殊字元的時候呢?
+          若是玩家在使用者名稱欄位輸入這段特殊字元:「'or 1=1--」時，整段的SQL語法會變成以下的樣子:
+          
+          SELECT * FROM database WHERE Username = ''or 1=1-- ' and Password='$password'
+          而這段特殊字元的用意 就是讓伺服器系統產生錯誤判斷:
+          若是Username為任意值或是1=1，而因為1=1恆真 又因輸入了"--"導致之後的語法被註釋掉，
+          所以這段SQL語句不管如何都會是正確的判斷，且會執行接下來伺服器端的語句
+          ，使得玩家能夠不用知道帳號密碼就能夠輕易地登入該網頁。</p>
+      </section>
+      <section>
+        <p>現在的您知道了這個關卡的運作方式，就換您來動動手試試看破解該登入系統吧!</p>
+      </section>
       
 
     </article>

@@ -55,7 +55,8 @@
         $_SESSION["time"] = time();
     }
     else if($_SESSION["time"]!=null){
-        echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]+7*3600));//顯示開始時間點,可不加
+        date_default_timezone_set('Asia/Taipei');
+        //echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]));//顯示開始時間點,可不加
     }
     #通關驗證
     if(isset($_POST["KeySubmit"]))
@@ -67,8 +68,8 @@
     $enddate=time();//讀取完成時間
     $resultendtate = mysqli_query($connect,"UPDATE game SET  SQL_1open='$enddate' WHERE Username='$name'");
     $totaltime=($enddate-$_SESSION["time"]);
-    // echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate+7*3600));
-    // echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
+    //echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate));
+    //echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
             #搜尋user裡的玩家的分數
             $resultscore=mysqli_query($connect,"SELECT Score FROM user WHERE Username='$name'");
             if(mysqli_num_rows($resultscore) > 0)
