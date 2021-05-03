@@ -24,7 +24,7 @@
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>LEVEL5-2</b>
+                    <b>MISC2</b>
                 </h1>
 
             </div>
@@ -36,8 +36,7 @@
     <br>
     
     <div style="text-align: center;">
-        <p><b>吃到100顆蘋果，並拿到解答</b></p>
-        <p><b>--找到密碼過關--</b></p><br>
+        <p><b>--吃到100顆蘋果，並找到密碼過關--</b></p>
     </div>
 
 
@@ -54,30 +53,30 @@
                 <input type="submit" name="KeySubmit" value="驗證">
             </form>
         </div>
+    </div>
     <!-- 更新程式  開始-->
 
     <?php
         #防止warning出現
         ini_set("display_errors", 0);
         #記住開始的時間點
-        if ($_SESSION["time"] == null)//每個關卡的SESSION名字都要改
+        if ($_SESSION["MISC2_time"] == null)//每個關卡的SESSION名字都要改
         {
-            $_SESSION["time"] = time();
+            $_SESSION["MISC2_time"] = time();
         }
-        else if($_SESSION["time"]!=null){
-            echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]+7*3600));//顯示開始時間點,可不加
+        else if($_SESSION["MISC2_time"]!=null){
+            echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC2_time"]+7*3600));//顯示開始時間點,可不加
         }
         #通關驗證
         if(isset($_POST["KeySubmit"]))
         {
         $Key = $_POST["Key"];
-        }
         #判斷是不是正確答案
         if($Key == "AIOcfjw0793!BQop")
         {   
         $enddate=time();//讀取完成時間
         $resultendtate = mysqli_query($connect,"UPDATE game SET  MISC_2open='$enddate' WHERE Username='$name'");
-        $totaltime=($enddate-$_SESSION["time"]);
+        $totaltime=($enddate-$_SESSION["MISC2_time"]);
         // echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate+7*3600));
         // echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
                 #搜尋user裡的玩家的分數
@@ -159,6 +158,7 @@
             echo '<br>'."通關密碼不正確,請繼續加油!<br>";
             //echo '<a href="MISC1.php">返回關卡</a><br>';
             echo '</div>';
+        }
         }
     ?>
 
