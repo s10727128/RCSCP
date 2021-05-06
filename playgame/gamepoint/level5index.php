@@ -132,6 +132,13 @@
             ?>
         </button>
 
+                <!-- 尚未加入時間偵測 -->
+                <button class="btn">
+            <?php
+               echo '<div class="item"><span><a href="../MISC/MISC5/MISC5.php">凱薩密碼</a></span></div>';
+            ?>
+        </button>
+
 
 
         <button class="btn">
