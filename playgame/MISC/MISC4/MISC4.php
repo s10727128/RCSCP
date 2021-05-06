@@ -24,7 +24,7 @@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
                 </a>
-                <b>LEVEL5-3</b>
+                <b>MISC-4</b>
             </h1>
 
         </div>
@@ -46,6 +46,7 @@
                 <a href="../../../downloadfile/stego.zip" download><b>Download</b></a>
             </form>
 
+            <br>
             <div>
                 <form action="MISC4.php" method="post">
                     <b>通關密碼</b>
@@ -54,7 +55,6 @@
                 </form>
             </div>
         </div>
-
             <!-- 更新程式  開始-->
 
     <?php
@@ -66,7 +66,7 @@
             $_SESSION["MISC4_time"] = time();
         }
         else if($_SESSION["MISC4_time"]!=null){
-            echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC4_time"]+7*3600));//顯示開始時間點,可不加
+           // echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC4_time"]+7*3600));//顯示開始時間點,可不加
         }
         #通關驗證
         if(isset($_POST["KeySubmit"]))
@@ -147,8 +147,8 @@
                     $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
                 }
                 }        
-                echo '<div class="pass"><br>'."恭喜通關~<br>";
-                //echo '<a href="../MISC4/MISC4.php">前往下一關</a><br>';
+                echo '<div class="pass"><br>'."恭喜全通關~<br>";
+                //echo '<a href="../MISC5/MISC5.php">前往下一關</a><br>';
                 echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
         }
         
@@ -164,7 +164,7 @@
     ?>
 
     <!-- 結束 -->
-
+        <br>
         <?php
             include("MISC4.html");
         ?>

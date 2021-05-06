@@ -23,6 +23,8 @@
     include_once("../SQL Injection game/SQL_summary/SQL0.php");
     ?>
     <?php
+    
+    date_default_timezone_set('Asia/Taipei');
         $SQL1total=0;
         $sql="SELECT SQL_1 FROM game WHERE SQL_1 IS NOT null ";
         $result=mysqli_query($connect,$sql);
@@ -46,7 +48,7 @@
             {
                 $row=$row['SQL_1open'];
                 #修改class
-                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d h:i:s',$row)).'</span></div>';
             }
             }
             else{
@@ -57,6 +59,7 @@
         </button>
 
         <?php
+    date_default_timezone_set('Asia/Taipei');
         $SQL2total=0;
         $sql2="SELECT SQL_2 FROM game WHERE SQL_2 IS NOT null ";
         $result2=mysqli_query($connect,$sql2);
@@ -83,7 +86,7 @@
             {
                 $row=$row['SQL_2open'];
                 #修改class
-                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             } 
             else{

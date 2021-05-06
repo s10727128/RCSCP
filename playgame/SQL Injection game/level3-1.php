@@ -27,7 +27,7 @@
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>LEVEL3-1</b>
+                    <b>SQL-1</b>
                 </h1>
 
             </div>
@@ -37,12 +37,12 @@
             <a id="next_btn" style="display: none;" href="">Next</a>
         </div>
         <br>
-        <div">
+        <div>
             <p><b>你發現了某個網站中的SQL資料庫系統沒有針對SQL injection做保護</b></p>
             <p><b>而你想嘗試去破解這個網頁的登入驗證,並窺視使用者的資料</b></p>
             <p><b>聰明的你應該知道該怎麼做吧?</b></p>
             <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p>
-            <br></br>
+            
             </div>
             <div>
     </form>
@@ -56,7 +56,7 @@
     }
     else if($_SESSION["time"]!=null){
         date_default_timezone_set('Asia/Taipei');
-        //echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]));//顯示開始時間點,可不加
+        // echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["time"]));//顯示開始時間點,可不加
     }
     #通關驗證
     if(isset($_POST["KeySubmit"]))
@@ -139,7 +139,7 @@
             }        
             echo '<div class="pass"><br>'."恭喜通關~<br>";
             echo '<a href="level3-2.php">前往下一關</a><br>';
-            echo '<a href="../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+            echo '<a href="../../Teamproject/html/gameset.php">返回主頁</a><br><br></div>';
     }
     
       #不是正確答案的情況
@@ -182,13 +182,13 @@
     }
     ?>
     <form action="level3-1.php" method="post">
+      <br>
         <b>通關密碼</b>
         <input type="varchar" name="Key">
         <input type="submit" name="KeySubmit" value="驗證">
     <br><br>
 
     </form>
-    </div>
 
    
 
@@ -202,7 +202,7 @@
             <input type="varchar" name="Username" id="Uname" placeholder="名稱">
             <br><br>
             <input type="password" name="Password" id="Pass" placeholder="密碼">
-            <br><br>
+            <br><br><br>
             <input type="submit" name="submit" id="log" value="登入">
             <br><br>
         </form>
@@ -250,6 +250,7 @@
     </script>
 
 
+</div>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
