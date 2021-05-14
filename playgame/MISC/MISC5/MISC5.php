@@ -23,7 +23,7 @@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
                 </a>
-                <b>MISC5</b>
+                <b>MISC-4</b>
             </h1>
 
         </div>
@@ -44,7 +44,7 @@
                 下載點:
                 <a href="../../../downloadfile/MISC5.txt" download><b>Download</b></a>
             </form>
-
+            <br>
             <div>
                 <form action="MISC5.php" method="post">
                     <b>通關密碼</b>
@@ -145,7 +145,7 @@
                     }
                     }        
                     echo '<div class="pass"><br>'."恭喜通關~<br>";
-                    echo '<a href="../MISC2/MISC2.php">前往下一關</a><br>';
+                    echo '<a href="../MISC4/MISC4.php">前往下一關</a><br>';
                     echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
             }
             
@@ -159,7 +159,7 @@
             }
         }
         ?>
-
+        <br>
         <?php
             include("MISC5.html");
         ?>

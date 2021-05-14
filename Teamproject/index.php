@@ -152,7 +152,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
-            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span><id class="security_introduction">資安網站介紹</h2>
+            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span><id class="security_introduction">網站介紹</h2>
           </div>
           <p class="bottom35">一、本網站誕生的主旨是為了讓不懂"資訊安全"或是剛入門的玩家們透過遊玩遊戲了解資安在做什麼。</p>
           <p class="bottom35">二、為了讓玩家們了解"資訊安全"，本網站用了五大關卡(例：釣魚網站，XSS，CSRF，SQL注入，MISC)，解釋說平時可能會遇到的資訊安全危險。</p>

@@ -1,7 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
-    height: 537px;
+    height: 100%;
     background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
     margin-top:185px;
   }
@@ -190,3 +190,6 @@ body{
      color: red;
      font-size: 20px;
   }*/
+  .footer2{
+    margin-top: 24%;
+  }

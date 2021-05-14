@@ -22,6 +22,7 @@
     include_once("../MISC/MISC_summary/MISC0.php");
     ?>
          <?php
+    date_default_timezone_set('Asia/Taipei');
         $MISC1total=0;
         $sql="SELECT MISC_1 FROM game WHERE MISC_1 IS NOT null ";
         $result=mysqli_query($connect,$sql);
@@ -45,7 +46,7 @@
             {
                 $row=$row['MISC_1open'];
                 #修改class
-                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             }
             else{
@@ -71,6 +72,7 @@
 
         <button class="btn">
             <?php
+    date_default_timezone_set('Asia/Taipei');
             $sql="SELECT MISC_2,MISC_2open FROM game WHERE MISC_2 IS NOT null && Username='$name'";
             $result=mysqli_query($connect,$sql);
             if(mysqli_num_rows($result) > 0)
@@ -79,7 +81,7 @@
             {
                 $row=$row['MISC_2open'];
                 #修改class
-                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             }
             else{
@@ -106,6 +108,7 @@
 
         <button class="btn">
             <?php
+    date_default_timezone_set('Asia/Taipei');
             $sql="SELECT MISC_3,MISC_3open FROM game WHERE MISC_3 IS NOT null && Username='$name'";
             $result=mysqli_query($connect,$sql);
             if(mysqli_num_rows($result) > 0)
@@ -114,7 +117,7 @@
             {
                 $row=$row['MISC_3open'];
                 #修改class
-                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row+7*3600)).'</span></div>';
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             }
             else{
@@ -125,22 +128,80 @@
         </button>
 
 
-        <!-- 尚未加入時間偵測 -->
+      
+
+
+        <?php
+        $MISC5total=0;
+        $sql="SELECT MISC_5 FROM game WHERE MISC_5 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $MISC5total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$MISC5total .' </b></div>';
+        ?>
+
         <button class="btn">
             <?php
-               echo '<div class="item"><span><a href="../MISC/MISC4/MISC4.php">偽加密</a></span></div>';
+    date_default_timezone_set('Asia/Taipei');
+            $sql="SELECT MISC_5,MISC_4open FROM game WHERE MISC_5 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['MISC_5open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
+            }
+            }
+            else{
+                echo '<div class="item"><span><a href="../MISC/MISC5/MISC5.php">凱薩密碼</a></span></div>';
+            }
+            
             ?>
         </button>
 
-                <!-- 尚未加入時間偵測 -->
-                <button class="btn">
+
+        <?php
+        $MISC4total=0;
+        $sql="SELECT MISC_4 FROM game WHERE MISC_4 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $MISC4total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$MISC4total .' </b></div>';
+        ?>
+
+        <button class="btn">
             <?php
-               echo '<div class="item"><span><a href="../MISC/MISC5/MISC5.php">凱薩密碼</a></span></div>';
+    date_default_timezone_set('Asia/Taipei');
+            $sql="SELECT MISC_4,MISC_4open FROM game WHERE MISC_4 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['MISC_4open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
+            }
+            }
+            else{
+                echo '<div class="item"><span><a href="../MISC/MISC4/MISC4.php">偽加密</a></span></div>';
+            }
+            
             ?>
         </button>
-
-
-
+        
         <button class="btn">
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
         </button>

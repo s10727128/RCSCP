@@ -6,8 +6,8 @@ body{
 }
 .body2{
     font-family: 'audiowide',monospace;
-
     font-size: 20px;
+
 }
 h1{
     margin-top: 5%;
@@ -52,7 +52,7 @@ h1{
 }
 
 .login{  
-    width: 382px;  
+    width: 420px;  
     overflow: hidden;  
     margin: auto;  
     margin: 5 0 0 450px;  

@@ -1,7 +1,7 @@
 body{
   padding: 0px;
   margin: 0px;
-  height: 562px;
+  height: 100%;
   background-image: linear-gradient(-25deg, #616161 0%, #96B7C4 100%);
   margin-top: 160px;
 }
@@ -192,3 +192,8 @@ width: 100%;
    color: red;
    font-size: 20px;
 }*/
+
+/*應急用 f11 footer 要改掉的話 上面的height也要動 跟login依樣*/
+.footer2{
+  margin-top: 15%;
+}

@@ -25,7 +25,7 @@
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                     </svg>
                 </a>
-                <b>MISC1</b>
+                <b>MISC-1</b>
             </h1>
 
         </div>
@@ -44,14 +44,16 @@
             <form action="../../../downloadfile/MISC1.txt" method="GET">
                 下載點:
                 <a href="../../../downloadfile/MISC1.txt" download><b>Download</b></a>
+               
             </form>
-
+            <br>
             <div>
                 <form action="MISC1.php" method="post">
                     <b>通關密碼</b>
                     <input type="varchar" name="Key">
                     <input type="submit" name="KeySubmit" value="驗證">
                 </form>
+                
             </div>
         </div>
         <!-- 更新程式  開始-->
@@ -190,6 +192,7 @@
 
 
         <!--Hint -->
+        <br>
         <?php
         include("MISC1.html");
 
