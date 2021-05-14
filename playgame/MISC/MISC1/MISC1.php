@@ -65,7 +65,7 @@
             $_SESSION["MISC1_time"] = time();
         }
         else if($_SESSION["MISC1_time"]!=null){
-            //echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC1_time"]+7*3600));//顯示開始時間點,可不加
+            echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC1_time"]+7*3600));//顯示開始時間點,可不加
         }
         #通關驗證
         if(isset($_POST["KeySubmit"]))
