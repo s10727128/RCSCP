@@ -37,7 +37,7 @@
         <br>
         
         <div>
-            <p><b>--找到密碼過關--</b></p><br>
+            <p><b>在辦公室工作的你，突然收到一個載點，打開文件後發現，一整組的密碼似曾相識。</b><br><b>請試著找出通關密碼!</b></p><br>
         </div>
 
         <div style="text-align: center;">
@@ -67,7 +67,7 @@
             $_SESSION["MISC1_time"] = time();
         }
         else if($_SESSION["MISC1_time"]!=null){
-            echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC1_time"]+7*3600));//顯示開始時間點,可不加
+            //echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["MISC1_time"]+7*3600));//顯示開始時間點,可不加
         }
         #通關驗證
         if(isset($_POST["KeySubmit"]))
