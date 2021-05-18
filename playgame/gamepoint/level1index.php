@@ -78,7 +78,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../XSS game/XSS1.php?input=">反射型</a></span></div>';
+               echo '<div class="item"><span><a href="../XSS game/XSS1.php?input=">反射型(1)</a></span></div>';
             }
             
             ?>
@@ -115,7 +115,7 @@
             }
             } 
             else{
-               echo '<div class="item"><span><a href="../XSS game/XSS2.php">反射型</a></span></div>';
+               echo '<div class="item"><span><a href="../XSS game/XSS2.php">反射型(2)</a></span></div>';
             }
             
             ?>
