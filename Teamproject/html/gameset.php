@@ -32,11 +32,9 @@
     </button>
     <!--SQL-->
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level6index.php">Phishing</a></span></div>
-    </button>
-    <button class="btn">
       <div class="item"><span><a href="../../playgame/gamepoint/level2index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
+    <BR>
     <!--level3 = SQL-->
     <button class="btn">
       <div class="item"><span><a href="../../playgame/gamepoint/level3index.php">SQL Injection</a></span></div>

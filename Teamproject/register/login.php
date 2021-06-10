@@ -61,7 +61,7 @@ if(mysqli_num_rows($result) > 0)
    		echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
 		}
 		else{
-			echo'<h3 class="error"><b>登入失敗,帳號或密碼錯誤,3秒後自動返回登入介面</b></h3>';
+			echo'<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>';
 			
 			echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
 		}
@@ -69,7 +69,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo('<h3 class="error"><b>登入失敗,帳號或密碼錯誤,3秒後自動返回登入介面</b></h3>');
+	echo('<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>');
 	echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
 }
 }
