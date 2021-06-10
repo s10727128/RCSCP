@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>TIK Gammer</title>
+  <title>TIK GAME</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -98,18 +98,21 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('/js-hackgame/photo/index/hack1.jpg')">
+        <!--/js-hackgame/photo/index/hack1.jpg-->
+        <div class="carousel-item active" style="background-image: url('')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">First Slide</h3>
             <p class="lead">put photo</p> -->
           </div>
         </div>
+        <!--/js-hackgame/photo/index/hack2.jpg-->
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('/js-hackgame/photo/index/hack2.jpg');">
+        <div class="carousel-item" style="background-image: url('');">
 
         </div>
+        <!--/js-hackgame/photo/index/hack3.jpg-->
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('/js-hackgame/photo/index/hack3.jpg')">
+        <div class="carousel-item" style="background-image: url('')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">Third Slide</h3>
             <p class="lead">put photo3</p> -->
@@ -152,7 +155,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
-            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">朝陽資工</span><id class="security_introduction">網站介紹</h2>
+            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">網站</span><id class="security_introduction">目的</h2>
           </div>
           <p class="bottom35">一、本網站誕生的主旨是為了讓不懂"資訊安全"或是剛入門的玩家們透過遊玩遊戲了解資安在做什麼。</p>
           <p class="bottom35">二、為了讓玩家們了解"資訊安全"，本網站用了五大關卡(例：釣魚網站，XSS，CSRF，SQL注入，MISC)，解釋說平時可能會遇到的資訊安全危險。</p>
