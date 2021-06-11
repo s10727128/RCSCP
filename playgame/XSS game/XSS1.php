@@ -27,7 +27,7 @@
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>LEVEL 1-1</b>
+                    <b>XSS-I</b>
                 </h1>
             </div><hr><br>
             <div>
@@ -82,16 +82,6 @@
 
     </div>
 </body>
-
-
-<script>
-    $('#exampleModal').on('show.bs.modal', event => {
-        var button = $(event.relatedTarget);
-        var modal = $(this);
-        // Use above variables to manipulate the DOM
-
-    });
-</script>
 
 <br><br><br><br><br><br><br><br><br>
 

@@ -24,7 +24,7 @@
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
-                    <b>MISC-2</b>
+                    <b>MISC-II</b>
                 </h1>
 
             </div>
@@ -108,22 +108,22 @@
                 {
                 if($totaltime<=300){//時間少於5分鐘
                     $score+=200;
-                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=200    WHERE Username='$name'");
+                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=300    WHERE Username='$name'");
                     $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
                     }
                 else if($totaltime>300&&$totaltime<=600){//時間在5分鐘~10分鐘間
                     $score+=180;
-                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=180    WHERE Username='$name'");
+                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=250    WHERE Username='$name'");
                     $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
                     }
                 else if($totaltime>600&&$totaltime<=900){//時間在10分鐘~15分鐘間
                     $score+=160;
-                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=160    WHERE Username='$name'");
+                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=200    WHERE Username='$name'");
                     $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
                     }
                 else if($totaltime>900&&$totaltime<=1200){//時間在15分鐘~20分鐘間
                     $score+=140;
-                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=140    WHERE Username='$name'");
+                    $result=mysqli_query($connect,"UPDATE game SET  MISC_2=180    WHERE Username='$name'");
                     $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
                 }
                 else if($totaltime>1200&&$totaltime<=1800){//時間在20分鐘~30分鐘間
