@@ -12,16 +12,20 @@
     //判斷使用者玩過此關
     $sql = "SELECT CSRF_1open FROM game WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sql);
-    if (mysqli_num_rows($resultgame) > 0) {
-		while ($row = mysqli_fetch_assoc($resultgame))  
-            {
-            $flag=$row["CSRF_1open"];
-            }
+    $flag=$row["CSRF_1open"];
+
+    if($flag == 0){
+        #防止warning出現
+        #ini_set("display_errors", 0);
+
+        #記住開始的時間點
+        if ($_SESSION["CSRF1_time"] == null)//每個關卡的SESSION名字都要改
+        {
+            $_SESSION["CSRF1_time"] = time();
+        }else if($_SESSION["CSRF1_time"] != null){
+            //echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["CSRF1_time"]+7*3600));//顯示開始時間點,可不加
         }
 
-    
-    //session_start();
-    if($flag == 0){
         //清除所有資料
          for($total_records ; $total_records > 0; $total_records --){
              $sql_delete = mysqli_query($db_link,"DELETE FROM csrf1 WHERE ID = $idcount");
@@ -38,115 +42,108 @@
         }
         //重新計算會員人數
         $total_records = mysqli_num_rows($result);
-        $flag = 1;
-
-        #防止warning出現
-        ini_set("display_errors", 0);
-
-        #記住開始的時間點
-        if ($_SESSION["_time"] == null)//每個關卡的SESSION名字都要改
-        {
-            $_SESSION["SCRF1_time"] = time();
-        }
-        else if($_SESSION["SCRF1_time"] != null){
-             echo '開始時間'.(date('Y-m-d H:i:s',$_SESSION["SCRF1_time"]+7*3600));//顯示開始時間點,可不加
-        }
-
-
-    }else{
-        while($id <= 3){
-            $judge = "SELECT ID FROM csrf1 WHERE ID = $id";
-            $resultjudge = mysqli_query($db_link, $judge);
-            if (mysqli_num_rows($resultjudge) == 0) {
-                if($id == 1){
-                    $count += 400;
-                }else if($id == 2){
-                    $count += 200;
-                }else if($id == 3){
-                    $count += 100;
-                }
-                $id ++;
-            }
-            else if($id > 3)
-            {   
-            $enddate=time();//讀取完成時間
-            $resultendtate = mysqli_query($connect,"UPDATE game SET  SCRF1_open='$enddate' WHERE Username='$name'");
-            $totaltime=($enddate-$_SESSION["SCRF1_time"]);
-            // echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate+7*3600));
-            // echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
-                    #搜尋user裡的玩家的分數
-                    $resultscore=mysqli_query($connect,"SELECT Score FROM user WHERE Username='$name'");
-                    if(mysqli_num_rows($resultscore) > 0)
-                    {
-                    while($row = mysqli_fetch_assoc($resultscore))
-                    {
-                        $score=$row["Score"];
-                    }
-                    }
-                    #確認玩家是否已經有分數  
-                    $resultcheck=mysqli_query($connect,"SELECT SCRF_1 FROM game WHERE Username='$name'");
-                    if(mysqli_num_rows($resultcheck) > 0)
-                    {
-                    while($row = mysqli_fetch_assoc($resultcheck))
-                    {
-                        $check=$row["SCRF_1"];
-                    }
-                    }
-                    #判斷是否已經有分數
-                    if($check>0)
-                    {
-                    $score+=0;//如果有分數,則不再另外給分
-                    }
-                    #根據通關時間給分
-                    else
-                    {
-                    if($totaltime<=300){//時間少於5分鐘
-                        $score+=200;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=200    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                        }
-                    else if($totaltime>300&&$totaltime<=600){//時間在5分鐘~10分鐘間
-                        $score+=180;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=180    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                        }
-                    else if($totaltime>600&&$totaltime<=900){//時間在10分鐘~15分鐘間
-                        $score+=160;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=160    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                        }
-                    else if($totaltime>900&&$totaltime<=1200){//時間在15分鐘~20分鐘間
-                        $score+=140;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=140    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                    }
-                    else if($totaltime>1200&&$totaltime<=1800){//時間在20分鐘~30分鐘間
-                        $score+=120;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=120    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                    }
-                    else if($totaltime>1800&&$totaltime<=2700){//時間在30分鐘~45分鐘間
-                        $score+=100;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=100    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                    }
-                    else if($totaltime>2700&&$totaltime<=3600){//時間在45分鐘~1小時間
-                        $score+=75;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=75    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                    }
-                    else if($totaltime>3600){//時間大於1小時
-                        $score=50;
-                        $result=mysqli_query($connect,"UPDATE game SET  SCRF_1=50    WHERE Username='$name'");
-                        $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                    }
-                    }        
-                    echo '<div class="pass"><br>'."恭喜全通關~<br>";
-                    echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
-            }
-        }
-
+        $flag = $row["CSRF_1open"] = 1;
     }
+
+    if($id <= 3){
+        $judge = "SELECT ID FROM csrf1 WHERE ID = $id";
+        $resultjudge = mysqli_query($db_link, $judge);
+
+        if (mysqli_num_rows($resultjudge) == 0) {
+            if($id == 1){
+                $count += 400;
+            }else if($id == 2){
+                $count += 200;
+            }else if($id == 3){
+                $count += 100;
+            }
+            $id ++;
+        }
+    }
+
+
+
+
+
+        
+
+
+        // }else if($id >= 3){   
+        // $enddate=time();//讀取完成時間
+        // $resultendtate = mysqli_query($connect,"UPDATE game SET  CSRF1_open='$enddate' WHERE Username='$name'");
+        // $totaltime=($enddate-$_SESSION["CSRF1_time"]);
+        // echo '<br>'."結束時間:".(date('Y-m-d H:i:s',$enddate+7*3600));
+        // echo '<br>'."總共花費:".($enddate-$_SESSION["time"])."秒";//顯示結束時間點,可不加
+        //         #搜尋user裡的玩家的分數
+        //         $resultscore=mysqli_query($connect,"SELECT Score FROM user WHERE Username='$name'");
+        //         if(mysqli_num_rows($resultscore) > 0)
+        //         {
+        //         while($row = mysqli_fetch_assoc($resultscore))
+        //         {
+        //             $score=$row["Score"];
+        //         }
+        //         }
+        //         #確認玩家是否已經有分數  
+        //         $resultcheck=mysqli_query($connect,"SELECT CSRF_1 FROM game WHERE Username='$name'");
+        //         if(mysqli_num_rows($resultcheck) > 0)
+        //         {
+        //         while($row = mysqli_fetch_assoc($resultcheck))
+        //         {
+        //             $check=$row["CSRF_1"];
+        //         }
+        //         }
+        //         #判斷是否已經有分數
+        //         if($check>0)
+        //         {
+        //         $score+=0;//如果有分數,則不再另外給分
+        //         }
+        //         #根據通關時間給分
+        //         else
+        //         {
+        //         if($totaltime<=300){//時間少於5分鐘
+        //             $score+=200;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=200    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //             }
+        //         else if($totaltime>300&&$totaltime<=600){//時間在5分鐘~10分鐘間
+        //             $score+=180;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=180    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //             }
+        //         else if($totaltime>600&&$totaltime<=900){//時間在10分鐘~15分鐘間
+        //             $score+=160;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=160    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //             }
+        //         else if($totaltime>900&&$totaltime<=1200){//時間在15分鐘~20分鐘間
+        //             $score+=140;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=140    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //         }
+        //         else if($totaltime>1200&&$totaltime<=1800){//時間在20分鐘~30分鐘間
+        //             $score+=120;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=120    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //         }
+        //         else if($totaltime>1800&&$totaltime<=2700){//時間在30分鐘~45分鐘間
+        //             $score+=100;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=100    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //         }
+        //         else if($totaltime>2700&&$totaltime<=3600){//時間在45分鐘~1小時間
+        //             $score+=75;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=75    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //         }
+        //         else if($totaltime>3600){//時間大於1小時
+        //             $score=50;
+        //             $result=mysqli_query($connect,"UPDATE game SET  CSRF_1=50    WHERE Username='$name'");
+        //             $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
+        //         }
+        //     }        
+        //     echo '<div class="pass"><br>'."恭喜全通關~<br>";
+        //     echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+        // }
 ?>
 
 <!DOCTYPE html>
@@ -186,6 +183,7 @@
                 echo "<a href='csrf1delete.php?id=".$row_result['ID']."'></a>";
                 echo "</tr>";
             }
+            
         ?>
     </table>
 
