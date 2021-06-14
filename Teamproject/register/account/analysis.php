@@ -356,65 +356,6 @@ include("../../header.php");
       $CSRF1sum+=$score;
       $CSRF1i++;
     }
-#Phishing PR---------------------------------------------------------------------
-    $resultall = mysqli_query($connect,"SELECT Username,Phishing_1 FROM game ORDER BY Phishing_1 DESC");
-    $i=1;
-    $j=1;
-    $r=0;
-    $k=0;
-    if (mysqli_num_rows($resultall) > 0) {
-      #排行總數
-      while ($row = mysqli_fetch_array($resultall)) {
-          $total[$k]=$row["Phishing_1"];
-        if($k==0){
-        }
-        else{
-        if($total[$k]==$total[$k-1])
-        {
-          $j=$j;
-        }
-        else{
-          $j++;
-        }
-        }
-        $k++;
-      }
-    }
-    $result = mysqli_query($connect,"SELECT Username,Phishing_1 FROM game ORDER BY Phishing_1 DESC");
-    if (mysqli_num_rows($result) > 0) {   
-      #個人排行判斷
-      while ($row = mysqli_fetch_array($result)) {
-        $user = $row["Username"];
-        $score = $row["Phishing_1"];
-        $rank[$r]=$row["Phishing_1"];
-        if($r==0){  
-        }
-        else{
-        if($rank[$r]==$rank[$r-1])
-        {
-          $i=$i;    
-        }
-        else{
-          $i++;
-        }
-      }
-      if($user==$name){
-          $myPhishing1=(round(($j-$i)/$j,2)*100);
-          break;
-        }
-          $r++;
-      }
-      }
-    //echo $myPhishing1."%";
-#Phishing資料庫平均---------------------------------------------------------------------
-    $Phishingi=0;
-    $Phishing1sum=0;
-    $result = mysqli_query($connect,"SELECT Phishing_1 FROM game WHERE Phishing_1 IS NOT NULL");
-    while ($row = mysqli_fetch_array($result)) {
-      $score = $row["Phishing_1"];
-      $Phishing1sum+=$score;
-      $Phishing1i++;
-    }
 #MISC1 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_1 FROM game ORDER BY MISC_1 DESC");
     $i=1;
