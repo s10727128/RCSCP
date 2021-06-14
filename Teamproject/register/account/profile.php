@@ -47,7 +47,7 @@
 	
 
 
-	$sql = "SELECT XSS_1,XSS_2,XSS_3,Phishing_1,Phishing_2,SQL_1,SQL_2,CSRF_1,CSRF_2,MISC_1,MISC_2,MISC_3,MISC_4,MISC_5,MISC_6 FROM game WHERE Username='$name'";
+	$sql = "SELECT XSS_1,XSS_2,XSS_3,SQL_1,SQL_2,CSRF_1,CSRF_2,MISC_1,MISC_2,MISC_3,MISC_4,MISC_5,MISC_6 FROM game WHERE Username='$name'";
 	$result = mysqli_query($connect, $sql);
 	$complete = array();
 	$i = 0;

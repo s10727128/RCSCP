@@ -54,7 +54,7 @@ include("../../header.php");
             $r++;
         }
         }
-        echo $mySQL1."%";
+        //echo $mySQL1."%";
 #SQL2 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,SQL_2 FROM game ORDER BY SQL_2 DESC");
       $i=1;
@@ -104,7 +104,7 @@ include("../../header.php");
             $r++;
         }
         }
-        echo $mySQL2."%";
+        //echo $mySQL2."%";
 #SQL資料庫平均---------------------------------------------------------------------
     $SQL1i=0;
     $SQL1sum=0;
@@ -171,7 +171,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS1."%";
+      //echo $myXSS1."%";
 #XSS2 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,XSS_2 FROM game ORDER BY XSS_2 DESC");
       $i=1;
@@ -221,7 +221,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS2."%";
+      //echo $myXSS2."%";
 #XSS3 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,XSS_3 FROM game ORDER BY XSS_3 DESC");
       $i=1;
@@ -271,7 +271,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS3."%";
+      //echo $myXSS3."%";
 #XSS資料庫平均---------------------------------------------------------------------
     $XSS1i=0;
     $XSS1sum=0;
@@ -346,7 +346,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myCSRF1."%";
+    //echo $myCSRF1."%";
 #CSRF資料庫平均---------------------------------------------------------------------
     $CSRF1i=0;
     $CSRF1sum=0;
@@ -355,65 +355,6 @@ include("../../header.php");
       $score = $row["CSRF_1"];
       $CSRF1sum+=$score;
       $CSRF1i++;
-    }
-#Phishing PR---------------------------------------------------------------------
-    $resultall = mysqli_query($connect,"SELECT Username,Phishing_1 FROM game ORDER BY Phishing_1 DESC");
-    $i=1;
-    $j=1;
-    $r=0;
-    $k=0;
-    if (mysqli_num_rows($resultall) > 0) {
-      #排行總數
-      while ($row = mysqli_fetch_array($resultall)) {
-          $total[$k]=$row["Phishing_1"];
-        if($k==0){
-        }
-        else{
-        if($total[$k]==$total[$k-1])
-        {
-          $j=$j;
-        }
-        else{
-          $j++;
-        }
-        }
-        $k++;
-      }
-    }
-    $result = mysqli_query($connect,"SELECT Username,Phishing_1 FROM game ORDER BY Phishing_1 DESC");
-    if (mysqli_num_rows($result) > 0) {   
-      #個人排行判斷
-      while ($row = mysqli_fetch_array($result)) {
-        $user = $row["Username"];
-        $score = $row["Phishing_1"];
-        $rank[$r]=$row["Phishing_1"];
-        if($r==0){  
-        }
-        else{
-        if($rank[$r]==$rank[$r-1])
-        {
-          $i=$i;    
-        }
-        else{
-          $i++;
-        }
-      }
-      if($user==$name){
-          $myPhishing1=(round(($j-$i)/$j,2)*100);
-          break;
-        }
-          $r++;
-      }
-      }
-    echo $myPhishing1."%";
-#Phishing資料庫平均---------------------------------------------------------------------
-    $Phishingi=0;
-    $Phishing1sum=0;
-    $result = mysqli_query($connect,"SELECT Phishing_1 FROM game WHERE Phishing_1 IS NOT NULL");
-    while ($row = mysqli_fetch_array($result)) {
-      $score = $row["Phishing_1"];
-      $Phishing1sum+=$score;
-      $Phishing1i++;
     }
 #MISC1 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_1 FROM game ORDER BY MISC_1 DESC");
@@ -464,7 +405,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC1."%";
+    //echo $myMISC1."%";
 #MISC2 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_2 FROM game ORDER BY MISC_2 DESC");
     $i=1;
@@ -514,7 +455,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC2."%";
+    //echo $myMISC2."%";
 #MISC3 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_3 FROM game ORDER BY MISC_3 DESC");
     $i=1;
@@ -564,7 +505,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC3."%";
+    //echo $myMISC3."%";
 #MISC資料庫平均---------------------------------------------------------------------
     $MISC1i=0;
     $MISC1sum=0;
@@ -621,13 +562,11 @@ include("../../header.php");
 var SQL = <?php echo ($mySQL1+$mySQL2)/2 ?>;
 var XSS = <?php echo round(($myXSS1+$myXSS2+$myXSS3)/3) ?>;
 var CSRF = <?php echo $myCSRF1 ?>;
-var Phishing = <?php echo $myPhishing1 ?>;
 var MISC = <?php echo ($myMISC1+$myMISC2+$myMISC3)/3 ?>;
 
 var SQLAVG=<?php echo round(((round(($SQL1sum/$SQL1i)/200,2)*100)+(round(($SQL2sum/$SQL2i)/300,2)*100))/2) ?>;
 var XSSAVG=<?php echo round(((round(($XSS1sum/$XSS1i)/200,2)*100)+(round(($XSS2sum/$XSS2i)/300,2)*100)+(round(($XSS3sum/$XSS3i)/400,2)*100))/3,2) ?>;
 var CSRFAVG=<?php echo (round(($CSRF1sum/$CSRF1i)/300,2)*100) ?>;
-var PhishingAVG=<?php echo (round(($Phishing1sum/$Phishing1i)/300,2)*100) ?>;
 var MISCAVG=<?php echo round(((round(($MISC1sum/$MISC1i)/300,2)*100)+(round(($MISC2sum/$MISC2i)/300,2)*100)+(round(($MISC3sum/$MISC3i)/300,2)*100))/3) ?>;
 
     var ctx = document.getElementById('myChart').getContext('2d');
@@ -637,11 +576,11 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['XSS', 'Phishing', 'SQL', 'CSRF', 'MISC'],
+        labels: ['XSS', 'SQL', 'CSRF', 'MISC'],
         datasets: [{
             label: '關卡PR值(%)',
             borderColor: '#FFD700',
-            data: [XSS,Phishing, SQL, CSRF, MISC],
+            data: [XSS, SQL, CSRF, MISC],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(255, 215, 0, 0.4)',
@@ -649,7 +588,7 @@ var chart = new Chart(ctx, {
         },  {
             label: '總平均值(%)',
             borderColor: '#98FB98',
-            data: [XSSAVG,PhishingAVG, SQLAVG, CSRFAVG, MISCAVG],
+            data: [XSSAVG, SQLAVG, CSRFAVG, MISCAVG],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(144, 238, 144, 0.4)',
@@ -673,7 +612,6 @@ var chart = new Chart(ctx, {
     }
     }
 });
-
     </script>
 </body>
 </html>
