@@ -75,7 +75,7 @@
           <p>PHP(全名:Hypertext Preprocessor)，它是個被廣泛運用在網頁程式撰寫的語言，尤其是它能適用於網頁程式的開發及能夠嵌入HTML文件之中，因此除了可以處理後端程式以外，他也可以嵌入HTML。
           </p>
           <img style="width: 50%;" src="/js-hackgame/photo/Home summary/HTML Summary Example8.png"><br>
-          <img style="width: 50%;" src="./js-hackgame/photo/Home summary/HTML Summary Example9.png"><br>
+          <img style="width: 50%;" src="/js-hackgame/photo/Home summary/HTML Summary Example9.png"><br>
         </section>
 
       </article>

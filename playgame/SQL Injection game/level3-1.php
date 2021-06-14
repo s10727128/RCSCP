@@ -21,15 +21,12 @@
     <form action="" method="POST">
         <div class="instructions">
                 <h1><a href="../gamepoint/level3index.php" class="exit">
-
-
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"  viewBox="0 0 15 20">
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                         </svg>
                     </a>
                     <b>SQL-1</b>
                 </h1>
-
             </div>
         <hr>
 
@@ -44,7 +41,7 @@
             <p><b>--試著找到使用者資料裡所提供的過關密碼--</b></p>
             
             </div>
-            <div>
+</div>
     </form>
     <?php
     #防止warning出現
@@ -181,6 +178,7 @@
             }
     }
     ?>
+
     <form action="level3-1.php" method="post">
       <br>
         <b>通關密碼</b>
@@ -231,7 +229,6 @@
                 <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
             </div>
         </footer>
-
     </div>
 
     <!-- Optional JavaScript -->
