@@ -621,13 +621,11 @@ include("../../header.php");
 var SQL = <?php echo ($mySQL1+$mySQL2)/2 ?>;
 var XSS = <?php echo round(($myXSS1+$myXSS2+$myXSS3)/3) ?>;
 var CSRF = <?php echo $myCSRF1 ?>;
-var Phishing = <?php echo $myPhishing1 ?>;
 var MISC = <?php echo ($myMISC1+$myMISC2+$myMISC3)/3 ?>;
 
 var SQLAVG=<?php echo round(((round(($SQL1sum/$SQL1i)/200,2)*100)+(round(($SQL2sum/$SQL2i)/300,2)*100))/2) ?>;
 var XSSAVG=<?php echo round(((round(($XSS1sum/$XSS1i)/200,2)*100)+(round(($XSS2sum/$XSS2i)/300,2)*100)+(round(($XSS3sum/$XSS3i)/400,2)*100))/3,2) ?>;
 var CSRFAVG=<?php echo (round(($CSRF1sum/$CSRF1i)/300,2)*100) ?>;
-var PhishingAVG=<?php echo (round(($Phishing1sum/$Phishing1i)/300,2)*100) ?>;
 var MISCAVG=<?php echo round(((round(($MISC1sum/$MISC1i)/300,2)*100)+(round(($MISC2sum/$MISC2i)/300,2)*100)+(round(($MISC3sum/$MISC3i)/300,2)*100))/3) ?>;
 
     var ctx = document.getElementById('myChart').getContext('2d');
@@ -637,11 +635,11 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['XSS', 'Phishing', 'SQL', 'CSRF', 'MISC'],
+        labels: ['XSS', 'SQL', 'CSRF', 'MISC'],
         datasets: [{
             label: '關卡PR值(%)',
             borderColor: '#FFD700',
-            data: [XSS,Phishing, SQL, CSRF, MISC],
+            data: [XSS, SQL, CSRF, MISC],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(255, 215, 0, 0.4)',
@@ -649,7 +647,7 @@ var chart = new Chart(ctx, {
         },  {
             label: '總平均值(%)',
             borderColor: '#98FB98',
-            data: [XSSAVG,PhishingAVG, SQLAVG, CSRFAVG, MISCAVG],
+            data: [XSSAVG, SQLAVG, CSRFAVG, MISCAVG],
             borderWidth: 1,
             backgroundColor: [
                 'rgba(144, 238, 144, 0.4)',
