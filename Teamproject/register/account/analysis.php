@@ -54,7 +54,7 @@ include("../../header.php");
             $r++;
         }
         }
-        echo $mySQL1."%";
+        //echo $mySQL1."%";
 #SQL2 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,SQL_2 FROM game ORDER BY SQL_2 DESC");
       $i=1;
@@ -104,7 +104,7 @@ include("../../header.php");
             $r++;
         }
         }
-        echo $mySQL2."%";
+        //echo $mySQL2."%";
 #SQL資料庫平均---------------------------------------------------------------------
     $SQL1i=0;
     $SQL1sum=0;
@@ -171,7 +171,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS1."%";
+      //echo $myXSS1."%";
 #XSS2 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,XSS_2 FROM game ORDER BY XSS_2 DESC");
       $i=1;
@@ -221,7 +221,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS2."%";
+      //echo $myXSS2."%";
 #XSS3 PR---------------------------------------------------------------------
       $resultall = mysqli_query($connect,"SELECT Username,XSS_3 FROM game ORDER BY XSS_3 DESC");
       $i=1;
@@ -271,7 +271,7 @@ include("../../header.php");
             $r++;
         }
         }
-      echo $myXSS3."%";
+      //echo $myXSS3."%";
 #XSS資料庫平均---------------------------------------------------------------------
     $XSS1i=0;
     $XSS1sum=0;
@@ -346,7 +346,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myCSRF1."%";
+    //echo $myCSRF1."%";
 #CSRF資料庫平均---------------------------------------------------------------------
     $CSRF1i=0;
     $CSRF1sum=0;
@@ -405,7 +405,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myPhishing1."%";
+    //echo $myPhishing1."%";
 #Phishing資料庫平均---------------------------------------------------------------------
     $Phishingi=0;
     $Phishing1sum=0;
@@ -464,7 +464,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC1."%";
+    //echo $myMISC1."%";
 #MISC2 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_2 FROM game ORDER BY MISC_2 DESC");
     $i=1;
@@ -514,7 +514,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC2."%";
+    //echo $myMISC2."%";
 #MISC3 PR---------------------------------------------------------------------
     $resultall = mysqli_query($connect,"SELECT Username,MISC_3 FROM game ORDER BY MISC_3 DESC");
     $i=1;
@@ -564,7 +564,7 @@ include("../../header.php");
           $r++;
       }
       }
-    echo $myMISC3."%";
+    //echo $myMISC3."%";
 #MISC資料庫平均---------------------------------------------------------------------
     $MISC1i=0;
     $MISC1sum=0;
@@ -673,7 +673,6 @@ var chart = new Chart(ctx, {
     }
     }
 });
-
     </script>
 </body>
 </html>
