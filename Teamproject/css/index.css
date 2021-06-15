@@ -4,17 +4,17 @@ body{
   margin: 0px;
   font-family: 'audiowide',monospace !important;
  
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 
 }
 .carousel-item {
   
-  height: 80vh;
-  min-height: 350px;
+  height: 85vh;
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100% 90%;
+  -moz-background-size: 100% 90%;
+  -o-background-size: 100% 90%;
+  background-size: 100% 90%;
 }
 
 @media (min-width: 768px) {

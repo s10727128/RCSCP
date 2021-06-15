@@ -145,15 +145,6 @@ del {
 }
 
 /*這裡的CSS有套到主頁的*/
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: sans-serif;
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-
-  color: #333;
-}
-
 button {
   outline: none;
   font: inherit;
