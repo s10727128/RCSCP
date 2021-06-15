@@ -21,11 +21,6 @@
 
 <body>
   <!--PreLoader-->
-  <div class="loader">
-    <div class="loader-inner">
-      <div class="cssload-loader"></div>
-    </div>
-  </div>
 
   <!--PreLoader Ends-->
 
@@ -99,7 +94,7 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <!--/js-hackgame/photo/index/hack1.jpg-->
-        <div class="carousel-item active" style="background-image: url('')">
+        <div class="carousel-item active"  style="background-image: url('../photo/index/hack1.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">First Slide</h3>
             <p class="lead">put photo</p> -->
@@ -107,12 +102,12 @@
         </div>
         <!--/js-hackgame/photo/index/hack2.jpg-->
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('');">
+        <div class="carousel-item" style="background-image: url('../photo/home1.png');">
 
         </div>
         <!--/js-hackgame/photo/index/hack3.jpg-->
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('')">
+        <div class="carousel-item" style="background-image: url('../photo/home1.png')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">Third Slide</h3>
             <p class="lead">put photo3</p> -->
@@ -321,6 +316,12 @@
 
 
   <!--bar-->
+  <div class="loader">
+    <div class="loader-inner">
+      <div class="cssload-loader">
+  </div>
+    </div>
+  </div>
   <div class="bar">
     <ul>
       <li>
@@ -371,7 +372,6 @@
       </li>
     </ul>
   </div>
-
 
 
 
