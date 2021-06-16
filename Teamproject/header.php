@@ -10,7 +10,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/js-hackgame/Teamproject/index.php">TIK GAME
+      <a class="navbar-brand js-scroll-trigger" href="/js-hackgame/Teamproject/index.php">資安意識提升之互動平台
         <span class="sr-only">(current)</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"

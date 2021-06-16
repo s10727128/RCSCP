@@ -78,7 +78,7 @@
     </table>
 
     <?php
-        include("csrf1.php");
+        include("csrf1.html");
     ?>
 
     <?php
