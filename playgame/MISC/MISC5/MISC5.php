@@ -166,36 +166,6 @@
         <?php
             include("MISC5.html");
         ?>
-        <!-- <div style="text-align: center;">
-            <p>請幫我拿解開檔案，謝謝!</p>
-        </div>
-        <div style="text-align: center;">
-            <button type="button" id="hintList">Hint</button>
-            <div style="list-style: none; ">
-                <li id="hint1"><b></b></li>
-                <li id="hint2"><b></b></li>
-                <li id="hint3"><b></b></li>
-            </div>
-        </div>
-    </div>
-    <script>
-        let j = 0;
-        $("#hintList").click(function() {
-            j++;
-            switch (j) {
-                case 1:
-                    $("#hint1").text("1.這是一個zip偽加密的檔案");
-                    break;
-                case 2:
-                    $("#hint2").text("2.內容經由Base64 code加密過");
-                    break;
-                case 3:
-                    $("#hint3").text("3.內容經由Hex code加密過");
-                    break;
-
-            }
-        });
-    </script> -->
 
 
     <br><br>
