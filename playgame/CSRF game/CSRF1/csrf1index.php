@@ -33,7 +33,7 @@
         //重新計算會員人數
         $total_records = mysqli_num_rows($result);
         $row = 1;
-        echo '<meta http-equiv=REFRESH CONTENT=0.005;url=csrf1index.php>';
+        echo '<meta http-equiv=REFRESH CONTENT=0.00005;url=csrf1index.php>';
 
     }else if($_SESSION["CSRF1_time"] != null){
         date_default_timezone_set('Asia/Taipei');
@@ -76,6 +76,10 @@
             }
         ?>
     </table>
+
+    <?php
+        include("csrf1.php");
+    ?>
 
     <?php
         #判斷是不是正確答案
@@ -156,7 +160,6 @@
                 echo '<div class="pass"><br>'."恭喜通關~<br>";
                 echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
         }
-    
     ?>
 </body>
 </html>
