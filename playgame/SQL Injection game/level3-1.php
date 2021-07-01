@@ -162,7 +162,7 @@
             exit();//防止drop table情形
             }
         #3-1注入程式
-        $sql = "SELECT * FROM sqli_login WHERE Username = '$name' and Password='$password'"; 
+        $sql = "SELECT * FROM sqli_login WHERE Username = '$name ' and Password='$password '"; 
         $result = mysqli_query($connect, $sql);
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
