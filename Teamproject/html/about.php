@@ -110,7 +110,7 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
-<<<<<<< HEAD
+
             
             <div class="namecard">
               <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">關於</span>
@@ -127,14 +127,8 @@
            </div>
           
 
-          
-=======
-            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">關於</span><id class="security_introduction">我們</h2>
-          </div>
-          <p class="bottom35"><B>指導老師：</B>陳金鈴教授</p>
-          <p class="bottom35"><b>專題學生：</b>10727128 涂承洋、10727054 曹昌裕、10727024 鄭穎明</p>
-          <p class="bottom32"><B></B></p>
->>>>>>> f856e04da9527bc2650e1b7ecc944694349a6a8d
+
+
         </div>
         <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
         </div>
