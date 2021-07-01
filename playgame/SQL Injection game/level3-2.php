@@ -149,7 +149,7 @@
         exit();
       }
       //$sql = "SELECT * FROM sqli_select WHERE name='' union SELECT * FROM sqli_select";
-      $sql = "SELECT * FROM sqli_select WHERE name='$key'";
+      $sql = "SELECT * FROM sqli_select WHERE name='$key '";
       $result = mysqli_query($connect, $sql);
       if (!$result) {
       } {
