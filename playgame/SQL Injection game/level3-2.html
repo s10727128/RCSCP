@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>CodePen - Boardal — An Onboarding Modal with Vue.js</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="level3-1.css">
+  <link rel="stylesheet" href="level3-2.css">
 
 </head>
 <body>
@@ -20,20 +20,30 @@
       </button>
   </div>
   <article v-cloak>
-      <section>
-        <h2>提示(1/1)</h2>
-        <p>1.此關卡為"摩斯密碼"</p>
-      </section>
-      <section>
-        <h2>提示(1/1)</h2>
-        <p>1.此關卡為"摩斯密碼"</p>
-      </section>
 
+    <section>
+      <!--<h2>介紹</h2>-->
+      <p>此關卡的運作方式與上一關相同，只不過這次需要的是
+         搜尋資料庫，所以我們需要用到的是UNION這個語法。
+      </p>
+    </section>
+    <section>
+      <p>以下為一個搜尋的SQL語法例子:
+        <p><img class="photo" src="/js-hackgame/photo/SQL/SQL2_hint1.png"></p>
+        該語意為搜尋資料庫裡所有(圖中的*)有關鍵字的資料，這樣子就能做到搜尋資料的效果。</p>
+    </section>
+    <section>
+      <p>這時候使用union select的話，就能將原本的搜尋項目改成你需要搜尋的資料。
+        
+        <p><img class="photo" src="/js-hackgame/photo/SQL/SQL2_hint2.png"></p>
 
+      </p>
+    </section>
+    <section>
+      <p>現在的您知道了這個關卡的運作方式，就換您來動動手試試看吧!</p>
+    </section>
 
     </article>
-
-
     <footer>
         <!-- Next Arrow -->
       <div class="forward-actions">
