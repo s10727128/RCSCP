@@ -42,9 +42,9 @@
 
 
     <div style="text-align: center;">
-        <form action="../../downloadfile/SnakeGmae2.rar" method="GET">
+        <form action="../../downloadfile/SnakeGame2.rar" method="GET">
             下載點:
-            <a href="../../downloadfile/SnakeGmae2.rar" download><b>Download</b></a>
+            <a href="../../../downloadfile/SnakeGame2.rar" download><b>Download</b></a>
         </form>
         <br>
         <div>
