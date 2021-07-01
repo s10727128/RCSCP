@@ -20,7 +20,7 @@
 
     <div class="auto">
     <?php   
-    include_once("../CSRF game/CSRF summary/CSRF_summary.php");
+    include_once("../CSRF game/CSRF summary/CSRF_summary.html");
     ?>
         <button class="btn">
             <div class="item"><span><a href="../CSRF game/CSRF1/csrf1index.php">簡單</a></span></div>
@@ -38,8 +38,6 @@
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
         </button>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br>
 
 
     <div class="footer">
