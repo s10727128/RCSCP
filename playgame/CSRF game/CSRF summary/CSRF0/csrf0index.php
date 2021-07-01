@@ -39,7 +39,7 @@
                 echo "<td>".$row_result['ID']."</td>";
                 echo "<td>".$row_result['Username']."</td>";
                 echo "<td>".$row_result['Score']."</td>";
-                echo "<td><a href='csrf0delete.php?id=".$row_result['ID']."'>刪除</a></td>";
+                echo "<td><a href='delete.php?id=".$row_result['ID']."'>刪除</a></td>";
                 echo "</tr>";
             }
         ?>

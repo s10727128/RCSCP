@@ -26,22 +26,23 @@
       <article v-cloak>
         <section>
           <h2>提示(1/4)</h2>
-          <p>CSRF是透過對"網站對使用者的信任"所產生的漏洞，與XSS"使用者對網站的信任"，是不一樣的概念!</p>
+          <p>毫無頭緒嗎?你可以回到前提摘要內的練習場，試看看在刪除資料時，網頁有甚麼變化!</p>
         </section>
 
         <section>
           <h2>提示(2/4)</h2>
-          <p>CSRF是透過對"網站對使用者的信任"所產生的漏洞，與XSS"使用者對網站的信任"，是不一樣的概念!</p>
+          <p>在練習場內可以發現刪除資料時，會跳轉往頁。</p>
+          <img src="/js-hackgame/photo/CSRF/CSRF1_hint/hint1.png">
         </section>
 
         <section>
           <h2>提示(3/4)</h2>
-          <p>CSRF是透過對"網站對使用者的信任"所產生的漏洞，與XSS"使用者對網站的信任"，是不一樣的概念!</p>
+          <p>若刪除資料，會發現網頁跳轉到"delete.php?id="</p>
         </section>
 
         <section>
           <h2>提示(4/4)</h2>
-          <p>CSRF是透過對"網站對使用者的信任"所產生的漏洞，與XSS"使用者對網站的信任"，是不一樣的概念!</p>
+          <p>沒錯，恭喜你，我們只要把網頁的最後一個檔案位置，改成"delete.php?id="，就可以把資料刪除了!</p>
         </section>
       </article>
 
@@ -69,7 +70,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/js-hackgame/playgame/CSRF game/CSRF summary/CSRF_summary.js"></script>
+  <script src="./csrf1.js"></script>
 
 </body>
 

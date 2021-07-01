@@ -44,15 +44,19 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>會員資料總表</title>
+    <title>資安意識提升之互動平台</title>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </head>
 <body>
     <br><br><br><h1 align = "center">會員資料總表</h1>
 
-    <div class="content" style="text-align: center; color: red;">
-        <br><p>內文:管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</p>
+    <div class="content" style="text-align: center;">
+        <div>
+            <p><b>維修員~你要小心點~網站上所保護的資料，沒你想的這麼完善。</b></p>
+            <p><b>你需要站在有心人士的角度去思考，請試著把資料表內的資料刪除。</b></p>
+            <p><b>--請將資料刪除以獲取積分--</b></p>
+        </div>
     </div><br>
 
     <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf1create.php">新增資料</a></p>
@@ -71,7 +75,7 @@
                 echo "<td>".$row_result['ID']."</td>";
                 echo "<td>".$row_result['Username']."</td>";
                 echo "<td>".$row_result['Score']."</td>";
-                #echo "<td><a href='csrf1deletetest.php?id=".$row_result['ID']."'>刪除</a></td>";
+                #echo "<td><a href='delete.php?id=".$row_result['ID']."'>刪除</a></td>";
                 echo "</tr>";
             }
         ?>
