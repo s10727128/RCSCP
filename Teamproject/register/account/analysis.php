@@ -546,6 +546,7 @@ include("../../header.php");
 <div class="myChart">
 <canvas height="40vh" width="80vw"  id="myChart"></canvas>
 </div>
+
 <div class="word_right">
 <h1 >123123123123123123123</h1>
 
