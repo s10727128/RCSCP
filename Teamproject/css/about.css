@@ -58,10 +58,34 @@ body{
   /*about index*/
   .defaultcolor {
     color: #2724d5;
+    font-size: 30px;
   }
   
+  /*namecard*/
   
+  .namecard{
+    
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    background-color:#eee;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 20px 15px -1px rgba(0,0,0,0.5)
+    
+  }
+  .namecard h2{
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .namecard p{
+    font-size: 20px;
+    line-height: 15px
+  }
   
+
   
   /* ---- PreLoader ---- */
   
