@@ -545,11 +545,13 @@ include("../../header.php");
  <!-- myChart -->
 <div class="myChart">
 <canvas height="40vh" width="80vw"  id="myChart"></canvas>
-
 </div>
+<div class="word_right">
+<h1 >123123123123123123123</h1>
 
-
-
+<hr id="intermediate">
+<h1 >123123123123123123123</h1>
+</div>
 <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">

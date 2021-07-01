@@ -7,7 +7,22 @@ body{
       background-size: cover;
   }
  .myChart{
+    position: absolute;
+    text-align: left;
      width: 1000px; 
+ }
 
-
-}
+ .word_right{
+     position: absolute;
+     left: 55%;
+     width: 600px;
+     height: 450px;
+     text-align: center;
+     padding: 50px;
+     border: 1px solid #000;
+ }
+ .footer{
+     position: absolute;
+    top: 95%;
+    width: 100%;
+ }
