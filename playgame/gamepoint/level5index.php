@@ -148,19 +148,19 @@
         <button class="btn">
             <?php
     date_default_timezone_set('Asia/Taipei');
-            $sql="SELECT MISC_5,MISC_4open FROM game WHERE MISC_5 IS NOT null && Username='$name'";
+            $sql="SELECT MISC_4,MISC_4open FROM game WHERE MISC_4 IS NOT null && Username='$name'";
             $result=mysqli_query($connect,$sql);
             if(mysqli_num_rows($result) > 0)
             {
             while($row = mysqli_fetch_assoc($result))
             {
-                $row=$row['MISC_5open'];
+                $row=$row['MISC_4open'];
                 #修改class
                 echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             }
             else{
-                echo '<div class="item"><span><a href="../MISC/MISC5/MISC5.php">凱薩密碼</a></span></div>';
+                echo '<div class="item"><span><a href="../MISC/MISC4/MISC4.php">凱薩密碼</a></span></div>';
             }
             
             ?>
@@ -184,19 +184,19 @@
         <button class="btn">
             <?php
     date_default_timezone_set('Asia/Taipei');
-            $sql="SELECT MISC_4,MISC_4open FROM game WHERE MISC_4 IS NOT null && Username='$name'";
+            $sql="SELECT MISC_5,MISC_5open FROM game WHERE MISC_5 IS NOT null && Username='$name'";
             $result=mysqli_query($connect,$sql);
             if(mysqli_num_rows($result) > 0)
             {
             while($row = mysqli_fetch_assoc($result))
             {
-                $row=$row['MISC_4open'];
+                $row=$row['MISC_5open'];
                 #修改class
                 echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d H:i:s',$row)).'</span></div>';
             }
             }
             else{
-                echo '<div class="item"><span><a href="../MISC/MISC4/MISC4.php">偽加密</a></span></div>';
+                echo '<div class="item"><span><a href="../MISC/MISC5/MISC5.php">偽加密</a></span></div>';
             }
             
             ?>
