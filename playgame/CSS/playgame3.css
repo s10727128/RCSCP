@@ -20,6 +20,10 @@ h1{
       text-decoration: none;
       color: blue;
     }
+    h2 {
+      text-align: center;
+      color: #c75454;
+    }
 /*為過關按鈕的CSS*/
 .pass{
     color:green;
