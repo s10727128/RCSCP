@@ -353,7 +353,8 @@
         </a>
       </li> -->
       <li>
-        <a href="https://forms.gle/YM4LhPU2JtQGR8F78">
+      <!-- 原本的Q&A表單:https://forms.gle/YM4LhPU2JtQGR8F78 -->
+        <a href="/js-hackgame/Teamproject/html/Q&A.php">
           <div class="icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
             <i class="fa fa-envelope" aria-hidden="true"></i>
