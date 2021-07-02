@@ -30,17 +30,14 @@ h1{
     
     
   }
-  .form tr{
-    
-    border: 2px solid #000;
-  }
   .form th{
     border: 2px solid #000;
     color: rgb(20, 20, 22);
   }
   .form td{
-
     padding: 10px;
+    border: 2px solid #000;
+
   }
 
 /*為過關按鈕的CSS*/
