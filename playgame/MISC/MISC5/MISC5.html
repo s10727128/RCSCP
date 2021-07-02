@@ -23,24 +23,33 @@
     <article v-cloak>
       <section>
         <h2>提示(1/4)</h2>
-        <p>偽加密，顧名思義為"假加密"。</p>
+        <p>偽加密，顧名思義為"假的加密"。</p>
+        <p>也就是說，這個RAR檔其實沒有密碼喔。</p>
       </section>
 
       <section>
         <h2>提示(2/4)</h2>
-        <p>打不開檔案吧!想繼續挑戰自我?那就別再點提示了~</p>
+        <p>建議使用工具HxD，這是一個16進制的編輯器。</p>
+        <a href="https://mh-nexus.de/en/hxd/" target="_blank">https://mh-nexus.de/en/hxd/</a>
       </section>
 
-      
       <section>
         <h2>提示(3/4)</h2>
-        <img>
+        <p>一個正常的RAR壓縮檔，一定會有檔案頭標記、壓縮使用的版本、解壓縮檔所需pkware版本、全域性方式位標記(判斷有沒有加密關鍵)......。</p>
+        <p>下圖是將RAR檔丟入16進制編輯器的樣子。</p>
+        <img src="../../../photo/MISC/MISC5/hint1.png"><br>
+        <p>紅色區塊為"壓縮原始檔資料區"。</p>
+        <p>藍色區塊則為"壓縮原始檔目錄區"。</p>
       </section>
 
       
       <section>
         <h2>提示(4/4)</h2>
-        <p>中間介紹過程</p>
+        <p>如何判斷有沒有加密，關鍵都在"全域性方式位標記"。</p>
+        <p>有加密: 基數。</p>
+        <p>無加密: 偶數。</p>
+        <p>因此只要將這關鍵的數字改鰾就可以成功開啟檔案了!</p>
+        <img src="../../../photo/MISC/MISC5/hint2.png">
       </section>
     </article>
 
