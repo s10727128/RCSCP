@@ -20,6 +20,10 @@ h1{
     color: blue;
   }
 
+  h2 {
+    text-align: center;
+    color: #c75454;
+}
   /*表單*/
   .form{
     margin-left:auto; 
