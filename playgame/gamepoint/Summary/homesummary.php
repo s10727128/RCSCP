@@ -26,8 +26,8 @@
           <h2>網站簡介</h2>
           <p>本網站主要目的是透過遊戲，學習到一些基本的攻擊手法，也從中可以學習到該如和進行防範</p>
           <p>
-            關卡分為?大關卡:<br>&nbsp;&nbsp;&nbsp;&nbsp;XSS攻擊<br>&nbsp;&nbsp;&nbsp;&nbsp;<del>Phingshing</del><br>&nbsp;&nbsp;&nbsp;&nbsp;<del>CSRF攻擊</del><br>&nbsp;&nbsp;&nbsp;&nbsp;SQL
-            Injection攻擊<br>&nbsp;&nbsp;&nbsp;&nbsp;MISC雜項<br>可以透過解答關卡後，獲得積分，以提高自己的名次。</p>
+            關卡分為四大關卡:<br>XSS攻擊<br>CSRF攻擊<br>SQL
+            Injection攻擊<br>MISC雜項<br>可以透過解答關卡後，獲得積分，以提高自己的名次。</p>
           <p><button class="primary" @click="skip(1)">在開始之前我需要知道......</button>
         </section>
 
