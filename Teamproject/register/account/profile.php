@@ -24,15 +24,12 @@
 		while ($row = mysqli_fetch_assoc($result)) {
 			$nickname = $row["Nickname"];
 			$score = $row["Score"];
-			$age = $row["Age"];
 			$access = $row["Access"];
 		}
 	}
-	echo'<div class="table1">'; //table1 紀錄暱稱,年齡,分數
+	echo'<div class="table1">'; //table1 紀錄暱稱,分數
 	echo "暱稱:";
 	echo $nickname . '<br>';
-	echo "年齡:";
-	echo $age . '<br>';
 	echo "分數:";
 	echo $score . '<br>';
 	echo'</div>'; 
@@ -47,7 +44,7 @@
 	
 
 
-	$sql = "SELECT XSS_1,XSS_2,XSS_3,SQL_1,SQL_2,CSRF_1,CSRF_2,MISC_1,MISC_2,MISC_3,MISC_4,MISC_5,MISC_6 FROM game WHERE Username='$name'";
+	$sql = "SELECT XSS_1,XSS_2,XSS_3,SQL_1,SQL_2,CSRF_1,CSRF_2,MISC_1,MISC_2,MISC_3,MISC_4,MISC_5 FROM game WHERE Username='$name'";
 	$result = mysqli_query($connect, $sql);
 	$complete = array();
 	$i = 0;
