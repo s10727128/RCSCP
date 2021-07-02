@@ -20,13 +20,11 @@ $result = mysqli_query($connect, $sql);
 if (mysqli_num_rows($result) > 0) {
   while ($row = mysqli_fetch_assoc($result)) {
     $nickname = $row["Nickname"];
-    $age = $row["Age"];
   }
 }
 echo'<div class="login">';
 echo '<form name ="login" method="post" action="EditProfile.php">';
 echo '<b>暱稱</b>:<input type="text" name="nickname" id="nickname" minlength="2" maxlength="16" value="'.$nickname.'"/><br/>';
-echo '<b>年齡</b>:<input type="varchar" name="Age" id="age" value="'.$age.'" ><br>';
 echo '<input type="submit" name="Modify" value="更改">';
 echo '</form>';
 
@@ -42,14 +40,9 @@ echo'</div>';
 
 if (isset($_POST['Modify'])) {
   $nickname = mysqli_real_escape_string($connect,$_POST['nickname']);
-  $Age = mysqli_real_escape_string($connect,$_POST['Age']);
-  // if($_POST['Age'] >=12 && $_POST['Age'] <=80){
-
   
-  $sql = "UPDATE user SET  Nickname='$nickname',Age='$Age' WHERE ID='$id'";
+  $sql = "UPDATE user SET  Nickname='$nickname' WHERE ID='$id'";
   $result = mysqli_query($connect, $sql);
   header('Location: profile.php');
-  // echo '<h3 class="forok"><b>修改成功,3秒後自動返回主介面</b></h3>';//成功輸出修改成功
-  // echo '<meta http-equiv=REFRESH CONTENT=3;url=profile.php>';
 }
 ?>
