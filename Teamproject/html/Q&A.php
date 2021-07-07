@@ -22,7 +22,7 @@
   <!-- Custom styles for this template -->
   <link href="../css/scrolling-nav.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="../css/about.css" rel="stylesheet" type="text/css">
+  <link href="../css/Q&A.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -90,38 +90,20 @@
 
 
 
-
-  <!-- 有改過顏色
-  <section id="services">
-    <div class="container" style="border: 1px solid #000;">
-      <div class="row" >
-        <div class="col-lg-5 mr-auto">
-
-          <h2 style="text-align: center;">網站介紹</h2>
-          <p class="lead">現今社會中，充斥著許多的網路犯罪手法，使用者常常在沒有資訊安全意識的情況下，點下來自惡意人士所傳的網址，導致銀行存款被盜走，或是下載非官方的破解版軟件，以致電腦內的所存的個人資料被竊取。為了提升大家對於資訊安全的基本概念及意識，故此設計的此網站，讓大家對於資訊安全有基本的認知。同時藉由實際的操作遊玩，讓有興趣但無從下手的人，可以跨出對於資訊安全領域的第一步，同時推廣相關的資安競賽及遊戲網站，以提升此領域的人才。</p>
-        </div>
-        <div class="col-lg-5 mx-auto">
-
-          <h2 style="text-align: center;">網站介紹</h2>
-          <p class="lead">現今社會中，充斥著許多的網路犯罪手法，使用者常常在沒有資訊安全意識的情況下，點下來自惡意人士所傳的網址，導致銀行存款被盜走，或是下載非官方的破解版軟件，以致電腦內的所存的個人資料被竊取。為了提升大家對於資訊安全的基本概念及意識，故此設計的此網站，讓大家對於資訊安全有基本的認知。同時藉由實際的操作遊玩，讓有興趣但無從下手的人，可以跨出對於資訊安全領域的第一步，同時推廣相關的資安競賽及遊戲網站，以提升此領域的人才。</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
     <!--Some Feature -->
     <br><br><br>
     <div style="text-align: center;" class="title">
       <h1><p>問題回報</p></h1>
       <label>~若有任何問題，歡迎在下方留言，讓我們知道~</label>
-
+      <div class="return_form">
       <form action="../index.php">
-          <textarea style="text-align: centers;"  id="textarea" rows="20" cols="50"></textarea>
+          <textarea  rows="20" cols="45"></textarea>
           <br>
-          <div style="text-align: center;">
+          <div>
               <button type="submit" onclick="Submit()">送出</button>
           </div>
       </form>
+    </div>
     </div>
 
 
