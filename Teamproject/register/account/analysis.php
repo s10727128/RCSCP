@@ -506,6 +506,106 @@ include("../../header.php");
       }
       }
     //echo $myMISC3."%";
+#MISC4 PR---------------------------------------------------------------------
+    $resultall = mysqli_query($connect,"SELECT Username,MISC_4 FROM game ORDER BY MISC_4 DESC");
+    $i=1;
+    $j=1;
+    $r=0;
+    $k=0;
+    if (mysqli_num_rows($resultall) > 0) {
+      #排行總數
+      while ($row = mysqli_fetch_array($resultall)) {
+          $total[$k]=$row["MISC_4"];
+        if($k==0){
+        }
+        else{
+        if($total[$k]==$total[$k-1])
+        {
+          $j=$j;
+        }
+        else{
+          $j++;
+        }
+        }
+        $k++;
+      }
+    }
+    $result = mysqli_query($connect,"SELECT Username,MISC_4 FROM game ORDER BY MISC_4 DESC");
+    if (mysqli_num_rows($result) > 0) {   
+      #個人排行判斷
+      while ($row = mysqli_fetch_array($result)) {
+        $user = $row["Username"];
+        $score = $row["MISC_4"];
+        $rank[$r]=$row["MISC_4"];
+        if($r==0){  
+        }
+        else{
+        if($rank[$r]==$rank[$r-1])
+        {
+          $i=$i;    
+        }
+        else{
+          $i++;
+        }
+      }
+      if($user==$name){
+          $myMISC4=(round(($j-$i)/$j,2)*100);
+          break;
+        }
+          $r++;
+      }
+      }
+    //echo $myMISC4."%";
+#MISC5 PR---------------------------------------------------------------------
+    $resultall = mysqli_query($connect,"SELECT Username,MISC_5 FROM game ORDER BY MISC_5 DESC");
+    $i=1;
+    $j=1;
+    $r=0;
+    $k=0;
+    if (mysqli_num_rows($resultall) > 0) {
+      #排行總數
+      while ($row = mysqli_fetch_array($resultall)) {
+          $total[$k]=$row["MISC_5"];
+        if($k==0){
+        }
+        else{
+        if($total[$k]==$total[$k-1])
+        {
+          $j=$j;
+        }
+        else{
+          $j++;
+        }
+        }
+        $k++;
+      }
+    }
+    $result = mysqli_query($connect,"SELECT Username,MISC_5 FROM game ORDER BY MISC_5 DESC");
+    if (mysqli_num_rows($result) > 0) {   
+      #個人排行判斷
+      while ($row = mysqli_fetch_array($result)) {
+        $user = $row["Username"];
+        $score = $row["MISC_5"];
+        $rank[$r]=$row["MISC_5"];
+        if($r==0){  
+        }
+        else{
+        if($rank[$r]==$rank[$r-1])
+        {
+          $i=$i;    
+        }
+        else{
+          $i++;
+        }
+      }
+      if($user==$name){
+          $myMISC5=(round(($j-$i)/$j,2)*100);
+          break;
+        }
+          $r++;
+      }
+      }
+    //echo $myMISC5."%";    
 #MISC資料庫平均---------------------------------------------------------------------
     $MISC1i=0;
     $MISC1sum=0;
@@ -531,6 +631,22 @@ include("../../header.php");
       $MISC3sum+=$score;
       $MISC3i++;
     }  
+    $MISC4i=0;
+    $MISC4sum=0;
+    $result = mysqli_query($connect,"SELECT MISC_4 FROM game WHERE MISC_4 IS NOT NULL");
+    while ($row = mysqli_fetch_array($result)) {
+      $score = $row["MISC_4"];
+      $MISC4sum+=$score;
+      $MISC4i++;
+    }  
+    $MISC5i=0;
+    $MISC5sum=0;
+    $result = mysqli_query($connect,"SELECT MISC_5 FROM game WHERE MISC_5 IS NOT NULL");
+    while ($row = mysqli_fetch_array($result)) {
+      $score = $row["MISC_5"];
+      $MISC5sum+=$score;
+      $MISC5i++;
+    }  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -547,30 +663,18 @@ include("../../header.php");
 <canvas height="40vh" width="80vw"  id="myChart"></canvas>
 </div>
 
-<div class="word_right">
-<h1 >123123123123123123123</h1>
 
-<hr id="intermediate">
-<h1 >123123123123123123123</h1>
-</div>
-<div class="footer">
-        <footer class="py-2 bg-dark ">
-            <div class="container">
-                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
-            </div>
-        </footer>
-    </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script>
 var SQL = <?php echo ($mySQL1+$mySQL2)/2 ?>;
-var XSS = <?php echo round(($myXSS1+$myXSS2+$myXSS3)/3) ?>;
+var XSS = <?php echo round(($myXSS1+$myXSS2+$myXSS3)/3,2) ?>;
 var CSRF = <?php echo $myCSRF1 ?>;
-var MISC = <?php echo ($myMISC1+$myMISC2+$myMISC3)/3 ?>;
+var MISC = <?php echo ($myMISC1+$myMISC2+$myMISC3+$myMISC4+$myMISC5)/5 ?>;
 
 var SQLAVG=<?php echo round(((round(($SQL1sum/$SQL1i)/200,2)*100)+(round(($SQL2sum/$SQL2i)/300,2)*100))/2) ?>;
 var XSSAVG=<?php echo round(((round(($XSS1sum/$XSS1i)/200,2)*100)+(round(($XSS2sum/$XSS2i)/300,2)*100)+(round(($XSS3sum/$XSS3i)/400,2)*100))/3,2) ?>;
 var CSRFAVG=<?php echo (round(($CSRF1sum/$CSRF1i)/300,2)*100) ?>;
-var MISCAVG=<?php echo round(((round(($MISC1sum/$MISC1i)/300,2)*100)+(round(($MISC2sum/$MISC2i)/300,2)*100)+(round(($MISC3sum/$MISC3i)/300,2)*100))/3) ?>;
+var MISCAVG=<?php echo round(((round(($MISC1sum/$MISC1i)/300,2)*100)+(round(($MISC2sum/$MISC2i)/200,2)*100)+(round(($MISC3sum/$MISC3i)/400,2)*100)+(round(($MISC4sum/$MISC4i)/400,2)*100)+(round(($MISC5sum/$MISC5i)/500,2)*100))/3) ?>;
 
     var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -579,7 +683,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['XSS', 'SQL', 'CSRF', 'MISC'],
+        labels: ['XSS', 'SQLi', 'CSRF', 'MISC'],
         datasets: [{
             label: '關卡PR值(%)',
             borderColor: '#FFD700',
@@ -616,5 +720,115 @@ var chart = new Chart(ctx, {
     }
 });
     </script>
+<?php
+$sql = "SELECT * FROM user WHERE Username='$name'";//取得名字
+$result = mysqli_query($connect, $sql);
+if (mysqli_num_rows($result) > 0) {
+  while ($row = mysqli_fetch_assoc($result)) {
+    $nickname = $row["Nickname"];
+  }
+}
+
+$userSQL=($mySQL1+$mySQL2)/2;//取得成績
+$userXSS=round(($myXSS1+$myXSS2+$myXSS3)/3,2);
+$userCSRF=$myCSRF1;
+$userMISC=($myMISC1+$myMISC2+$myMISC3+$myMISC4+$myMISC5)/5;
+
+echo '<div class="word_right">';//XSS的評語
+if($myXSS1==null||$myXSS2==null||$myXSS3==null)
+{
+  echo $nickname."的XSS尚未完成所有關卡，請努力完成！";
+}
+else if($userXSS>=90)
+{
+  echo $nickname."對於XSS的瞭解透徹，恭喜你成為頂尖中的佼佼者！";
+}
+else if ($userXSS>=60&&$userXSS<90)
+{
+  echo $nickname."對於XSS有一定程度的瞭解，優秀！";
+}
+else if($userXSS >= 30&&$userXSS<60)
+{
+   echo $nickname."對於XSS的瞭解尚可，還可再努力！";
+}
+else if($userXSS <30)
+{
+   echo $nickname."對於XSS的瞭解不足，請再加油！";
+}
+
+echo '<hr id="intermediate">';//CSRF的評語
+if($myCSRF==null)
+{
+  echo $nickname."的CSRF尚未完成所有關卡，請努力完成！";
+}
+else if($userCSRF>=90)
+{
+  echo $nickname."對於CSRF的瞭解透徹，恭喜你成為頂尖中的佼佼者！";
+}
+else if ($userCSRF>=60&&$userCSRF<90)
+{
+  echo $nickname."對於CSRF有一定程度的瞭解，優秀！";
+}
+else if($userCSRF >= 30&&$userCSRF<60)
+{
+   echo $nickname."對於CSRF的瞭解尚可，還可再努力！";
+}
+else if($userCSRF <30)
+{
+   echo $nickname."對於CSRF的瞭解不足，請再加油！";
+}
+
+echo '<hr id="intermediate">';//SQL的評語
+if($mySQL1==null||$mySQL2==null)
+{
+  echo $nickname."的SQL尚未完成所有關卡，請努力完成！";
+}
+else if($userSQL>=90)
+{
+  echo $nickname."對於SQL的瞭解透徹，恭喜你成為頂尖中的佼佼者！";
+}
+else if ($userSQL>=60&&$userSQL<90)
+{
+  echo $nickname."對於SQL有一定程度的瞭解，優秀！";
+}
+else if($userSQL >= 30&&$userSQL<60)
+{
+   echo $nickname."對於SQL的瞭解尚可，還可再努力！";
+}
+else if($userSQL <30)
+{
+   echo $nickname."對於SQL的瞭解不足，請再加油！";
+}
+
+echo '<hr id="intermediate">';//MISC的評語
+if($myMISC1==null||$myMISC2==null||$myMISC3==null||$myMISC4==null||$myMISC5==null)
+{
+  echo $nickname."的MISC尚未完成所有關卡，請努力完成！";
+}
+else if($userMISC>=90)
+{
+  echo $nickname."對於MISC的瞭解透徹，恭喜你成為頂尖中的佼佼者！";
+}
+else if ($userMISC>=60&&$userMISC<90)
+{
+  echo $nickname."對於MISC有一定程度的瞭解，優秀！";
+}
+else if($userMISC >= 30&&$userMISC<60)
+{
+   echo $nickname."對於MISC的瞭解尚可，還可再努力！";
+}
+else if($userMISC <30)
+{
+   echo $nickname."對於MISC的瞭解不足，請再加油！";
+}
+?>
+</div>
+<div class="footer">
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
+</div>
 </body>
 </html>
