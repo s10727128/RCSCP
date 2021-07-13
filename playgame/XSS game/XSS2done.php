@@ -99,7 +99,7 @@
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="XSS3.php">前往下一關</a><br>'; 
     echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
-    exit();
+    //exit();
 ?>
 <!DOCTYPE html>
 <html lang="en">
