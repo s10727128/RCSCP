@@ -40,13 +40,13 @@
         </div>
 
         <div style="text-align: center;">
-            <form action="../../../downloadfile/MISC5.txt" method="GET">
+            <form action="../../../downloadfile/MISC4.txt" method="GET">
                 下載點:
-                <a href="../../../downloadfile/MISC5.txt" download><b>Download</b></a>
+                <a href="../../../downloadfile/MISC4.txt" download><b>Download</b></a>
             </form>
             <br>
             <div>
-                <form action="MISC5.php" method="post">
+                <form action="MISC4.php" method="post">
                     <b>通關密碼</b>
                     <input type="varchar" name="Key">
                     <input type="submit" name="KeySubmit" value="驗證">
