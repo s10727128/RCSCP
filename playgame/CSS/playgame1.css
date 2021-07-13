@@ -262,3 +262,28 @@ transform: translateY(4px);
 img{
   width: 100%;
 }
+/*為過關按鈕的CSS*/
+.pass{
+  color:green;
+  font-size: 20px;
+}   
+.pass a{
+  color: rgb(0, 0, 163);
+  text-decoration: none;
+}
+.pass a:hover{
+  color: rgb(0, 0, 54);
+  text-decoration: none;
+}
+.fail{
+  color:red;
+  font-size: 30px;
+}   
+.fail a{
+  color: rgb(0, 0, 163);
+  text-decoration: none;
+}
+.fail a:hover{
+  color: rgb(0, 0, 54);
+  text-decoration: none;
+}

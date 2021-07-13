@@ -24,24 +24,51 @@
     <?php   
     include_once("../CSRF game/CSRF summary/CSRF_summary.html");
     ?>
-        <button class="btn">
-            <div class="item"><span><a href="../CSRF game/CSRF1/csrf1index.php">簡單</a></span></div>
-        </button>
+       
 
-        <!-- <button class="btn">
-            <div class="item"><span><a href="../CSRF game/#">中級</a></span></div>
-        </button>
+       
+<!--此區為按鈕的通關人數php-->
+<?php
+    
+    date_default_timezone_set('Asia/Taipei');
+        $CSRF1total=0;
+        $sql="SELECT CSRF_1 FROM game WHERE CSRF_1 IS NOT null ";
+        $result=mysqli_query($connect,$sql);
+        if(mysqli_num_rows($result) > 0)
+        {
+          while($row = mysqli_fetch_assoc($result))
+          {
+              $CSRF1total++;
+          }
+        }
+        echo '<div class="testtext2"><b>目前通關人數:'.$CSRF1total .' </b></div>';
+        ?>
 
         <button class="btn">
-            <div class="item"><span><a href="../CSRF game/#">困難</a></span></div>
-        </button> -->
+            <?php
+            $sql="SELECT CSRF_1,CSRF_1open FROM game WHERE CSRF_1 IS NOT null && Username='$name'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $row=$row['SQL_1open'];
+                #修改class
+                echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d h:i:s',$row)).'</span></div>';
+            }
+            }
+            else{
+               echo '<div class="item"><span><a href="../CSRF game/CSRF1/csrf1index.php">CSRF</a></span></div>';
+            }
+            
+            ?>
+        </button>
 
         <button class="btn">
             <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
         </button>
     </div>
-
-
+    
     <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">
