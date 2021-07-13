@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>資安遊戲闖關網站</title>
+  <title>遊戲</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php

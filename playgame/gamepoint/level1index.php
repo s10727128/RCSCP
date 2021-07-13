@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>TIK Gammer</title>
+    <title>遊戲</title>
 
     <?php
     include_once("../../Teamproject/header.php");

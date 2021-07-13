@@ -1,7 +1,7 @@
 <!DOCTYPE html>    
 <html>    
 <head>    
-    <title>Login Form</title>
+    <title>登入</title>
 	  <meta charset="UTF-8">
 	  <?php
 	include('../header.php');

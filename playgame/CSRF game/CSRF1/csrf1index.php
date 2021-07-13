@@ -44,7 +44,7 @@ if ($_SESSION["CSRF1_time"] == null) //每個關卡的SESSION名字都要改
 
 <head>
     <meta charset="UTF-8">
-    <title>資安意識提升之互動平台</title>
+    <title>遊戲</title>
     <!-- Plugin JavaScript -->
     <script src="/js-hackgame/Teamproject/vendor/jquery-easing/jquery.easing.min.js"></script>
     <link rel=stylesheet href="../../CSS/playgame6.css">
