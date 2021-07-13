@@ -107,7 +107,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" a href="level3.css">
+    <link rel="stylesheet" a href="../CSS/playgame1.css">
     <title>過關</title>
 </head>
 <body>
