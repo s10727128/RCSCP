@@ -52,11 +52,11 @@
     <br><br>
 
     <?php
-        include_once("XSS1.html")
+        include_once("XSS1.html");
     ?>
 
     </div>
-</body>
+
 
 <br><br><br><br><br><br><br><br><br>
 
