@@ -41,7 +41,7 @@
 
         <!--遊戲輸入框內容-->
         <?php
-            //ini_set("display_errors", 0);
+            sssini_set("display_errors", 0);
             $ans = $_POST["input"];
             echo '<div><form action=XSS2.php method=POST>
             <input name=input value="' . $ans . '"></form>
@@ -51,7 +51,7 @@
         <br><br>
         
         <?php
-            include_once("XSS2.html")
+            include_once("XSS2.html");
         ?>
 
         </div>
