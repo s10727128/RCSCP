@@ -41,8 +41,7 @@
 
         <!--遊戲輸入框內容-->
         <?php
-            sssini_set("display_errors", 0);
-            $ans = $_POST["input"];
+            $ans = @$_POST["input"];
             echo '<div><form action=XSS2.php method=POST>
             <input name=input value="' . $ans . '"></form>
             <input type=submit value="搜尋"></div><br>';
