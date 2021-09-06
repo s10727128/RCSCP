@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
           
     <?php
-    in clude_once("../../Teamproject/header.php");
+    include_once("../../Teamproject/header.php");
     ?>
     <link rel=stylesheet a href="css/level1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  >
