@@ -10,7 +10,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/js-hackgame/Teamproject/index.php">資安意識提升之互動平台
+      <a class="navbar-brand js-scroll-trigger" href="/js-hackgame/Teamproject/index.php">資安意識提升之互動平台 <!--重點一-->
         <span class="sr-only">(current)</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -37,7 +37,7 @@
             $access=$row["Access"];
             $Nickname=$row["Nickname"];
             }
-            //echo "歡迎.$name".'<br>';
+            //echo "歡迎.$name".'<br>'; //重點二☆
             echo '<li class="nav-item">';
             echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">'.$Nickname."(".$name.")".'</a>';
             echo '</li>';
