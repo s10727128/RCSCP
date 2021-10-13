@@ -365,7 +365,7 @@
         </a>
       </li>
       <li>
-        <a href="xuser/about.php">
+        <a href="user/about.php">
           <div class="icon">
             <i class="fa fa-users" aria-hidden="true"></i>
             <i class="fa fa-users" aria-hidden="true"></i>
