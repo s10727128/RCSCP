@@ -14,9 +14,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="scrolling-nav.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
           </li>
           <?php
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
-          $connectDir = "$RootDir/js-hackgame/Teamproject/register/connect.php";
+          $connectDir = "$RootDir/RCSCP/user/connect.php";
           require_once($connectDir);
           $name = '';
           session_start();
@@ -94,7 +94,7 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <!--/js-hackgame/photo/index/hack1.jpg-->
-        <div class="carousel-item active"  style="background-image: url('../photo/index/hack1.jpg')">
+        <div class="carousel-item active"  style="background-image: url('photo/index/hack1.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">First Slide</h3>
             <p class="lead">put photo</p> -->
@@ -102,12 +102,12 @@
         </div>
         <!--/js-hackgame/photo/index/hack2.jpg-->
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('../photo/home1.png');">
+        <div class="carousel-item" style="background-image: url('photo/home1.png');">
 
         </div>
         <!--/js-hackgame/photo/index/hack3.jpg-->
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('../photo/home101.png')">
+        <div class="carousel-item" style="background-image: url('photo/home101.png')">
           <div class="carousel-caption d-none d-md-block">  
             <!-- <h3 class="display-4">Third Slide</h3>
             <p class="lead">put photo3</p> -->
@@ -250,7 +250,7 @@
 
                 <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div> -->
                 <?php
-                include_once("../playgame/gamepoint/Summary/homesummary.php")
+                include_once("playgame/gamepoint/Summary/homesummary.php")
                 ?>
               </div>
             </div>
@@ -384,9 +384,9 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script src="scrolling-nav.js"></script>
   <!--custom functions and script-->
-  <script src="js/functions.js"></script>
+  <script src="functions.js"></script>
 
 </body>
 

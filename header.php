@@ -20,9 +20,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <?php
-    ini_set("display_errors", 0);
+            ini_set("display_errors", 0);
             $RootDir = $_SERVER['DOCUMENT_ROOT'];
-            $connectDir="$RootDir/js-hackgame/Teamproject/register/connect.php";
+            $connectDir="$RootDir/RCSCP/user/connect.php";
             require_once($connectDir);
             $name='';
             session_start();
