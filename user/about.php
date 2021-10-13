@@ -14,9 +14,9 @@
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="../css/scrolling-nav.css" rel="stylesheet">
+  <link href="../scrolling-nav.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="../css/about.css" rel="stylesheet" type="text/css">
+  <link href="css/about.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 
   <!--PreLoader Ends-->
 
-  
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
@@ -43,7 +43,7 @@
         <ul class="navbar-nav ml-auto">
           <?php
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
-          $connectDir = "$RootDir/js-hackgame/Teamproject/register/connect.php";
+          $connectDir = "$RootDir/RCSCP/user/connect.php";
           require_once($connectDir);
           $name = '';
           session_start();
@@ -58,22 +58,22 @@
             }
             //echo "歡迎.$name".'<br>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/logout.php">登出</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/logout.php">登出</a>';
             echo '</li>';
             if ($access == 1) {
               echo '<li class="nav-item">';
-              echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/access.php">資料表</a>';
+              echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/access.php">資料表</a>';
               echo '</li>';
             }
           } else {
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/register.php">註冊</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/register.php">註冊</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/login.php">登入</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/login.php">登入</a>';
             echo '</li>';
           }
           ?>
@@ -111,10 +111,10 @@
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
 
-            
+
             <div class="namecard">
               <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">關於</span>
-              <id class="security_introduction">我們
+                <id class="security_introduction">我們
               </h2>
               <hr>
               <br>
@@ -124,8 +124,8 @@
               </p>
               <p class="bottom32"><B></B></p>
             </div>
-           </div>
-          
+          </div>
+
 
 
 
@@ -148,9 +148,9 @@
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../js/scrolling-nav.js"></script>
+    <script src="../scrolling-nav.js"></script>
     <!--custom functions and script-->
-    <script src="../js/functions.js"></script>
+    <script src="../functions.js"></script>
 
 </body>
 
