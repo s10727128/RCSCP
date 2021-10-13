@@ -58,22 +58,22 @@
             }
             //echo "歡迎.$name".'<br>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/logout.php">登出</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/logout.php">登出</a>';
             echo '</li>';
             if ($access == 1) {
               echo '<li class="nav-item">';
-              echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/account/access.php">資料表</a>';
+              echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/access.php">資料表</a>';
               echo '</li>';
             }
           } else {
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/register.php">註冊</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/register.php">註冊</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/js-hackgame/Teamproject/register/login.php">登入</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/login.php">登入</a>';
             echo '</li>';
           }
           ?>
@@ -94,7 +94,7 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
         <!--/js-hackgame/photo/index/hack1.jpg-->
-        <div class="carousel-item active"  style="background-image: url('photo/index/hack1.jpg')">
+        <div class="carousel-item active" style="background-image: url('photo/index/hack1.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">First Slide</h3>
             <p class="lead">put photo</p> -->
@@ -108,7 +108,7 @@
         <!--/js-hackgame/photo/index/hack3.jpg-->
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('photo/home101.png')">
-          <div class="carousel-caption d-none d-md-block">  
+          <div class="carousel-caption d-none d-md-block">
             <!-- <h3 class="display-4">Third Slide</h3>
             <p class="lead">put photo3</p> -->
           </div>
@@ -150,7 +150,9 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
-            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">網站</span><id class="security_introduction">目的</h2>
+            <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">網站</span>
+              <id class="security_introduction">目的
+            </h2>
           </div>
           <p class="bottom35">一、本網站誕生的主旨是為了讓不懂"資訊安全"或是剛入門的玩家們透過遊玩遊戲了解資安在做什麼。</p>
           <p class="bottom35">二、為了讓玩家們了解"資訊安全"，本網站設計了四大關卡(例：XSS，CSRF，SQL注入，MISC)，解釋說平時可能會遇到的資訊安全危險。</p>
@@ -162,7 +164,7 @@
     </div>
     <br><br id="whats">
 
-<hr>
+    <hr>
     <br id="whats"><br><br>
     <!--Some Feature ends-->
 
@@ -319,13 +321,13 @@
   <div class="loader">
     <div class="loader-inner">
       <div class="cssload-loader">
-  </div>
+      </div>
     </div>
   </div>
   <div class="bar">
     <ul>
       <li>
-        <a href="html/trophy.php">
+        <a href="user/trophy.php">
           <div class="icon">
             <i class="fa fa-trophy" aria-hidden="true"></i>
             <i class="fa fa-trophy" aria-hidden="true"></i>
@@ -334,7 +336,7 @@
         </a>
       </li>
       <li>
-        <a href="html/gameset.php">
+        <a href="playgame/gameset.php">
           <div class="icon">
             <i class="fa fa-gamepad" aria-hidden="true"></i>
             <i class="fa fa-gamepad" aria-hidden="true"></i>
@@ -353,7 +355,7 @@
         </a>
       </li> -->
       <li>
-      <!-- 原本的Q&A表單:https://forms.gle/YM4LhPU2JtQGR8F78 -->
+        <!-- 原本的Q&A表單:https://forms.gle/YM4LhPU2JtQGR8F78 -->
         <a href="/js-hackgame/Teamproject/html/Q&A.php">
           <div class="icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -363,7 +365,7 @@
         </a>
       </li>
       <li>
-        <a href="/js-hackgame/Teamproject/html/about.php">
+        <a href="xuser/about.php">
           <div class="icon">
             <i class="fa fa-users" aria-hidden="true"></i>
             <i class="fa fa-users" aria-hidden="true"></i>
