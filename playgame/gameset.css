@@ -29,7 +29,7 @@ button{
 */
 .btn {    
   content: '';
-  background-image: url('../../photo/Btnskin/gameskin3.png');
+  background-image: url('../photo/Btnskin/gameskin3.png');
   background-repeat: no-repeat;
   background-size: contain;
    font-size: 2em;

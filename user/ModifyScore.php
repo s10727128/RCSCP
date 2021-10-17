@@ -1,5 +1,5 @@
 <?php
-include("../../header.php");
+include("../header.php");
 if($access!=1){
     exit("錯誤執行");
 }
@@ -7,7 +7,7 @@ if($access!=1){
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="ModifyScore.css">
+<link rel="stylesheet" href="css/ModifyScore.css">
 <body>
 <div class="modify">
   

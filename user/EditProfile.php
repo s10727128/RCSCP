@@ -2,12 +2,13 @@
 ?>
 <!DOCTYPE html>
 <html>
+  <head>
 <meta charset="UTF-8">
 <?php
-  include("../../header.php");
+  include("../header.php");
 ?>
-<link rel="stylesheet" a href="Editprofile.css">
-
+<link rel="stylesheet" a href="css/Editprofile.css">
+</head>
 <body>
 
   <form action="EditProfile.php" method="post">

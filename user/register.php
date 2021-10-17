@@ -38,7 +38,7 @@
 header("Content-Type: text/html; charset=utf8");
 if($_SESSION)
 {
-	header("Location: /js-hackgame/Teamproject/index.php");
+	header("Location: /RCSCP/index.php");
 }
 if(isset($_POST['register'])){
     require_once('connect.php');//連結資料庫

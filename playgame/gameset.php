@@ -15,7 +15,7 @@
   <?php
   include_once("../header.php");
   ?>
-  <link href="../css/gameset.css" rel="stylesheet" type="text/css">
+  <link href="gameset.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -28,20 +28,20 @@
 
     <!--level1 = xss-->
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level1index.php"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></span></div>
+      <div class="item"><span><a href="gamepoint/level1index.php"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp XSS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a></span></div>
     </button>
     <!--SQL-->
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level2index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
+      <div class="item"><span><a href="gamepoint/level2index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CSRF &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
     <BR>
     <!--level3 = SQL-->
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level3index.php">SQL Injection</a></span></div>
+      <div class="item"><span><a href="gamepoint/level3index.php">SQL Injection</a></span></div>
     </button>
     <!--level5 = MISC-->
     <button class="btn">
-      <div class="item"><span><a href="../../playgame/gamepoint/level5index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
+      <div class="item"><span><a href="gamepoint/level5index.php">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MISC &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></span></div>
     </button>
     
     <br>
@@ -68,14 +68,14 @@
 
   </div>
   <!-- Bootstrap core JavaScript -->
-  <script src="/js-hackgame/Teamproject/vendor/jquery/jquery.min.js"></script>
-  <script src="/js-hackgame/Teamproject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/RCSCP/vendor/jquery/jquery.min.js"></script>
+  <script src="/RCSCP/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="/js-hackgame/Teamproject/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="/js-hackgame/Teamproject/js/scrolling-nav.js"></script>
+  <script src="/RCSCP/scrolling-nav.js"></script>
   <script>
     document.addEventListener("touchstart", function() {}, false);
   </script>

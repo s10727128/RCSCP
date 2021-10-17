@@ -6,11 +6,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<?php
-	include_once("../../header.php");
+	include_once("../header.php");
 	?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" a href="profile.css">
+	<link rel="stylesheet" a href="css/profile.css">
 </head>
 
 <body>

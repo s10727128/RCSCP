@@ -8,7 +8,7 @@
   <?php
   include_once("../header.php");
   ?>
-  <link rel="stylesheet" href="../css/trophy.css" type="text/css">
+  <link rel="stylesheet" href="css/trophy.css" type="text/css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
         </tr>
       </thead>
       <?php
-      require_once('../register/connect.php');
+      require_once('connect.php');
       //搜尋所有帳號,如有管理員帳號,使用NOT IN排除搜尋--------------------------------
       $sqlall = "SELECT Username,Score,Nickname  FROM user ORDER BY Score DESC";
       $resultall = mysqli_query($connect, $sqlall);
@@ -160,7 +160,7 @@
   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="../js/scrolling-nav.js"></script>
+  <script src="../scrolling-nav.js"></script>
 
 </body>
 

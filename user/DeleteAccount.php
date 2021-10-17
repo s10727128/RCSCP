@@ -1,5 +1,5 @@
 <?php
-include("../../header.php");
+include("../header.php");
 if($access!=1){
     exit("錯誤執行");
 }
@@ -9,7 +9,7 @@ if($access!=1){
   <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="DeleteAccount.css">
+    <link rel="stylesheet" href="css/DeleteAccount.css">
 </head>
 <body>
 <div class="delete">
@@ -25,11 +25,11 @@ if($access!=1){
  </html>
 <?php
 if(isset($_POST['Delete'])){
-require_once('../connect.php');
+require_once('connect.php');
 $name=mysqli_real_escape_string($connect,$_POST['Username']);
 $sql = "DELETE FROM user WHERE Username='$name'";
 $result=mysqli_query($connect,$sql);
-echo "刪除成功,5秒後自動返回主介面";//成功輸出刪除成功
+echo "刪除成功,5秒後自動返回管理者介面";//成功輸出刪除成功
 echo '<meta http-equiv=REFRESH CONTENT=5;url=access.php>';
 }
 ?>
