@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include_once("../../../Teamproject/header.php");
+    include_once("../../../header.php");
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" a href="../../CSS/playgame5.css">
+    <link rel="stylesheet" a href="../../playgame_Css/playgame5.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -40,9 +40,9 @@
         </div>
 
         <div style="text-align: center;">
-            <form action="../../../downloadfile/MISC4.txt" method="GET">
+            <form action="../../downloadfile/MISC4.txt" method="GET">
                 下載點:
-                <a href="../../../downloadfile/MISC4.txt" download><b>Download</b></a>
+                <a href="../../downloadfile/MISC4.txt" download><b>Download</b></a>
             </form>
             <br>
             <div>
@@ -146,7 +146,7 @@
                     }        
                     echo '<div class="pass"><br>'."恭喜通關~<br>";
                     echo '<a href="../MISC5/MISC5.php">前往下一關</a><br>';
-                    echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+                    echo '<a href="../../gameset.php">返回主頁</a><br></div>';
             }
             
             #不是正確答案的情況

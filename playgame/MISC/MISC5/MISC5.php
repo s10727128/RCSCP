@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include_once("../../../Teamproject/header.php");
+    include_once("../../../header.php");
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" a href="../../CSS/playgame5.css">
+    <link rel="stylesheet" a href="../../playgame_css/playgame5.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="source.js"></script> -->
 </head>
@@ -41,9 +41,9 @@
         </div>
 
         <div style="text-align: center;">
-            <form action="../../../downloadfile/stego.zip" method="GET">
+            <form action="../../downloadfile/stego.zip" method="GET">
                 下載點:
-                <a href="../../../downloadfile/stego.zip" download><b>Download</b></a>
+                <a href="../../downloadfile/stego.zip" download><b>Download</b></a>
             </form>
 
             <br>
@@ -148,7 +148,7 @@
                 }
                 }        
                 echo '<div class="pass"><br>'."恭喜全通關~<br>";
-                echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+                echo '<a href="../../gameset.php">返回主頁</a><br></div>';
         }
         
         #不是正確答案的情況
