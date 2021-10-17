@@ -1,5 +1,5 @@
 <?php
-  include_once("../../Teamproject/header.php");
+  include_once("../../../RCSCP/header.php");
     $enddate=time();//讀取完成時間
     #搜尋game裡的玩家的開啟時間
     $sql="select XSS_2open from game where Username='$name'";
@@ -97,7 +97,7 @@
     }       
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="XSS3.php">前往下一關</a><br>'; 
-    echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
+    echo '<a href="../../../RCSCP/index.php">返回主頁</a><br></div>';
     //exit();
 ?>
 <!DOCTYPE html>
@@ -106,7 +106,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/playgame1.css">
+    <link rel="stylesheet" href="../playgame_css/playgame1.css">
     <title>過關</title>
 </head>
 <body>

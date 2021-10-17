@@ -8,7 +8,7 @@
 
 .boardal {
   position: fixed;
-  top: 30%;
+  top: 20%;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -21,7 +21,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: ㄅ00vw;
+  width: 100vw;
   height: 100vh;
 }
 .boardal__wrapper {

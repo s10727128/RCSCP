@@ -1,6 +1,6 @@
 
 <?php
-include_once("../../Teamproject/header.php");
+include_once("../../../header.php");
 if(isset($_POST["KeySubmit"]))
 {
   $Key=$_POST['Key'];
@@ -107,7 +107,7 @@ if(isset($_POST["KeySubmit"]))
     }        
 
   echo '<div class="pass"><br>'."恭喜通關~<br>";
-  echo '<a href="../../Teamproject/index.php">返回主頁</a><br></div>';
+  echo '<a href="../../../RCSCP/index.php">返回主頁</a><br></div>';
   
   }
   #不是正確答案的情況

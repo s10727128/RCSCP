@@ -5,12 +5,12 @@
   <title>遊戲</title>
   <meta charset="UTF-8">
   <?php
-  include_once("../../Teamproject/header.php");
+  include_once("../../header.php");
   ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" href="/bird.jpg">
-  <link rel="stylesheet" a href="../CSS/playgame3.css">
+  <link rel="stylesheet" a href="../playgame_css/playgame3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
@@ -20,7 +20,7 @@
   <div class="body2">
     <?php
     ini_set("display_errors", 0);
-    require_once("../../Teamproject/register/connect.php");
+    require_once("../../../RCSCP/user/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  SQL_2open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
@@ -127,7 +127,7 @@
           }
         }
         echo '<div class="pass"><br>' . "恭喜通關~<br>";
-        echo '<a href="../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+        echo '<a href="../../playgame/gameset.php">返回主頁</a><br></div>';
       }
 
       #不是正確答案的情況

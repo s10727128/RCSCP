@@ -1,6 +1,6 @@
 <?php
     //載入連結SQL檔
-    include_once("../../../../Teamproject/header.php");
+    include_once("../../../../../RCSCP/header.php");
     include("csrf0connMySQL.php");
     $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
     $result = mysqli_query($db_link,$sql_query);
@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <title>遊戲</title>
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 </head>
 <body>
     <br><br><br><h1 align = "center">會員資料總表</h1>

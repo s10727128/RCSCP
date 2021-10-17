@@ -6,16 +6,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <?php
-    include_once("../../Teamproject/header.php");
+    include_once("../../../RCSCP/header.php");
     ?>
 
-    <link rel=stylesheet href="../CSS/playgame1.css">
+    <link rel=stylesheet href="../playgame_css/playgame1.css">
     <script src="../JavaScript/XSS2.js"></script>
 </head>
 
 <body>
 <?php
-    require_once("../../Teamproject/register/connect.php");
+    require_once("../../../RCSCP/user/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  XSS_2open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);

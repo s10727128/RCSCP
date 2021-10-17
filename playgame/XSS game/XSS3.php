@@ -6,17 +6,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <?php
-    include_once("../../Teamproject/header.php");
+    include_once("../../../RCSCP/header.php");
     ?>
 
-    <link rel=stylesheet href="../CSS/playgame1.css">
+    <link rel=stylesheet href="../playgame_css/playgame1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../JavaScript/XSS3.js"></script>
 </head>
 
 <body a link="blue" vlink="red">
     <?php
-    require_once("../../Teamproject/register/connect.php");
+    require_once("../../../RCSCP/user/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  XSS_3open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
@@ -114,14 +114,14 @@
 
     </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="../../Teamproject/vendor/jquery/jquery.min.js"></script>
-    <script src="../../Teamproject/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../../RCSCP/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../RCSCP/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../Teamproject/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../../RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../../Teamproject/js/scrolling-nav.js"></script>
+    <script src="../../../../RCSCP/js/scrolling-nav.js"></script>
     <script>
         document.addEventListener("touchstart", function() {}, false);
     </script>

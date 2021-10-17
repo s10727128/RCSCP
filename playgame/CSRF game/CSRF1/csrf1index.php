@@ -1,6 +1,6 @@
 <?php
 //載入連結SQL檔
-include_once("../../../Teamproject/header.php");
+include_once("../../../../RCSCP/header.php");
 include("csrf1connMySQL.php");
 $sql_query = "SELECT * FROM csrf1 ORDER BY ID ASC";
 $result = mysqli_query($db_link, $sql_query);
@@ -46,8 +46,8 @@ if ($_SESSION["CSRF1_time"] == null) //每個關卡的SESSION名字都要改
     <meta charset="UTF-8">
     <title>遊戲</title>
     <!-- Plugin JavaScript -->
-    <script src="/js-hackgame/Teamproject/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <link rel=stylesheet href="../../CSS/playgame6.css">
+    <script src="/RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <link rel=stylesheet href="../../playgame_css/playgame6.css">
 </head>
 
 <body>
@@ -163,7 +163,7 @@ if ($_SESSION["CSRF1_time"] == null) //每個關卡的SESSION名字都要改
                 }
             }
             echo '<div class="pass"><br>' . "恭喜通關~<br>";
-            echo '<a href="../../../Teamproject/html/gameset.php">返回主頁</a><br></div>';
+            echo '<a href="../../../../RCSCP/gameset.php">返回主頁</a><br></div>';
         }
         ?>
 

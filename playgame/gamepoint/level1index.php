@@ -11,7 +11,7 @@
     <title>遊戲</title>
 
     <?php
-    include_once("../../Teamproject/header.php");
+    include_once("../../header.php");
     ?>
     
 
@@ -156,7 +156,7 @@
         </button>
 
         <button class="btn">
-            <div class="item"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
+            <div class="item"><span><a href="../../playgame/gameset.php">返回</a></span></div>
         </button>
     </div>
 
