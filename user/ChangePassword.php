@@ -47,15 +47,19 @@ if (isset($_POST['Modify'])) {
 
   $pwd = mysqli_real_escape_string($connect, $_POST['Password']); //post獲取表單裡的password
   $newpassword = mysqli_real_escape_string($connect, $_POST['NewPassword']);
-  $Npwd = password_hash($newpassword, PASSWORD_DEFAULT);
+  //$Npwd = password_hash($newpassword, PASSWORD_DEFAULT);
   $newpassword2 = mysqli_real_escape_string($connect, $_POST['NewPasswordConfirm']);
-  $Npwd2 = password_hash($newpassword2, PASSWORD_DEFAULT);
-
+  //$Npwd2 = password_hash($newpassword2, PASSWORD_DEFAULT);
+  echo $Npwd.'<br>';
+  echo $Npwd2;
   if (password_verify($pwd, $password)) {
-    if (password_verify($Npwd, $Npwd2)) {
+    if($newpassword!=$newpassword2)
+    {
       echo "新密碼不相符 請5秒後重新輸入";
       echo '<meta http-equiv=REFRESH CONTENT=5;url=ChangePassword.php>';
-    } else {
+    }
+    else{
+      $Npwd = password_hash($newpassword, PASSWORD_DEFAULT);
       $sql = "UPDATE user SET  Password='$Npwd' WHERE ID='$id'";
       $result = mysqli_query($connect, $sql);
       echo "更改成功,5秒後自動返回個人介面";
