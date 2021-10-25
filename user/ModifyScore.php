@@ -56,7 +56,7 @@ if($access!=1){
  </html>
 <?php
 if(isset($_POST['Modify'])){
-require_once('../connect.php');
+require_once('connect.php');
 $name=mysqli_real_escape_string($connect,$_POST['Username']);
 $XSS1=mysqli_real_escape_string($connect,$_POST['XSS1']);
 $XSS2=mysqli_real_escape_string($connect,$_POST['XSS2']);
