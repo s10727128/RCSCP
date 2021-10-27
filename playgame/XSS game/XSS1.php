@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <?php
-    include_once("../../../RCSCP/header.php");
+    include_once("../../../header.php");
     ?>
     <link rel=stylesheet href="../playgame_css/playgame1.css">
     <script src="../JavaScript/XSS1.js"></script>
@@ -14,7 +14,7 @@
 
 <body>
 <?php
-    require_once("../../../RCSCP/user/connect.php");
+    require_once("../../../user/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  XSS_1open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);

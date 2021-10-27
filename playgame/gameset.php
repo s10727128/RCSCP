@@ -68,14 +68,14 @@
 
   </div>
   <!-- Bootstrap core JavaScript -->
-  <script src="/RCSCP/vendor/jquery/jquery.min.js"></script>
-  <script src="/RCSCP/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="/RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="/RCSCP/scrolling-nav.js"></script>
+  <script src="/scrolling-nav.js"></script>
   <script>
     document.addEventListener("touchstart", function() {}, false);
   </script>
