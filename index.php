@@ -43,7 +43,7 @@
           </li>
           <?php
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
-          $connectDir = "$RootDir/RCSCP/user/connect.php";
+          $connectDir = "$RootDir/user/connect.php";
           require_once($connectDir);
           $name = '';
           session_start();
@@ -58,22 +58,22 @@
             }
             //echo "歡迎.$name".'<br>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/logout.php">登出</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/logout.php">登出</a>';
             echo '</li>';
             if ($access == 1) {
               echo '<li class="nav-item">';
-              echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/access.php">資料表</a>';
+              echo  '<a class="nav-link js-scroll-trigger" href="/user/access.php">資料表</a>';
               echo '</li>';
             }
           } else {
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/register.php">註冊</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/register.php">註冊</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/login.php">登入</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/login.php">登入</a>';
             echo '</li>';
           }
           ?>
