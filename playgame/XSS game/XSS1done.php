@@ -1,5 +1,5 @@
 <?php
-  include_once("../../../RCSCP/header.php");
+  include_once("../../../header.php");
     $enddate=time();//讀取完成時間
     #搜尋game裡的玩家的開啟時間
     $sql="select XSS_1open from game where Username='$name'";
@@ -98,7 +98,7 @@
     }       
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="XSS2.php">前往下一關</a><br>'; 
-    echo '<a href="../../../RCSCP/index.php">返回主頁</a><br></div>';
+    echo '<a href="../../../index.php">返回主頁</a><br></div>';
    // exit();
 ?>
 <!DOCTYPE html>

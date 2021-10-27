@@ -107,7 +107,7 @@ if(isset($_POST["KeySubmit"]))
     }        
 
   echo '<div class="pass"><br>'."恭喜通關~<br>";
-  echo '<a href="../../../RCSCP/index.php">返回主頁</a><br></div>';
+  echo '<a href="../../../index.php">返回主頁</a><br></div>';
   
   }
   #不是正確答案的情況

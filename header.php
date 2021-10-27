@@ -1,8 +1,8 @@
   <!-- Bootstrap core CSS -->
-  <link href="/RCSCP/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="/RCSCP/scrolling-nav.css" rel="stylesheet">
+  <link href="/scrolling-nav.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -10,7 +10,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/RCSCP/index.php">資安意識提升之互動平台
+      <a class="navbar-brand js-scroll-trigger" href="/index.php">資安意識提升之互動平台
         <!--重點一-->
         <span class="sr-only">(current)</span>
       </a>
@@ -22,7 +22,7 @@
           <?php
           ini_set("display_errors", 0);
           $RootDir = $_SERVER['DOCUMENT_ROOT'];
-          $connectDir = "$RootDir/RCSCP/user/connect.php";
+          $connectDir = "$RootDir/user/connect.php";
           require_once($connectDir);
           $name = '';
           session_start();
@@ -37,22 +37,22 @@
             }
             //echo "歡迎.$name".'<br>'; //重點二☆
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/logout.php">登出</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/logout.php">登出</a>';
             echo '</li>';
             if ($access == 1) {
               echo '<li class="nav-item">';
-              echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/access.php">資料表</a>';
+              echo  '<a class="nav-link js-scroll-trigger" href="/user/access.php">資料表</a>';
               echo '</li>';
             }
           } else {
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/register.php">註冊</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/register.php">註冊</a>';
             echo '</li>';
             echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/RCSCP/user/login.php">登入</a>';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/login.php">登入</a>';
             echo '</li>';
           }
           ?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <?php
-    include_once("../../../RCSCP/header.php");
+    include_once("../../header.php");
     ?>
     <link rel=stylesheet a href="css/level1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -121,14 +121,14 @@
 
     </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="/RCSCP/vendor/jquery/jquery.min.js"></script>
-    <script src="/RCSCP/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="/RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="/RCSCP/js/scrolling-nav.js"></script>
+    <script src="/js/scrolling-nav.js"></script>
     <script>
         document.addEventListener("touchstart", function() {}, false);
     </script>

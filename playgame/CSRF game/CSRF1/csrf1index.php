@@ -1,6 +1,6 @@
 <?php
 //載入連結SQL檔
-include_once("../../../../RCSCP/header.php");
+include_once("../../../header.php");
 include("csrf1connMySQL.php");
 $sql_query = "SELECT * FROM csrf1 ORDER BY ID ASC";
 $result = mysqli_query($db_link, $sql_query);

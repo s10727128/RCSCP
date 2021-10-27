@@ -24,7 +24,7 @@
           <textarea  name="feedback"  rows="20" cols="45"></textarea>
           <br>
           <div>
-            <input type="submit" name="send" value="送出" onclick="Submit()">
+            <input type="submit" name="send" value="送出" >
           </div>
       </form>
     </div>
@@ -46,12 +46,12 @@ function Submit() {
         if (!$result){
         die();
         }
-        // else{
-        //    echo "<script type='text/javascript'>Submit();</script>";
-        // }
+        else{
+           echo "<script type='text/javascript'>Submit();</script>";
+        }
   }
 ?>
 <!-- Custom JavaScript for this theme -->
-<script src="../js/scrolling-nav.js"></script>
+<script src="../scrolling-nav.js"></script>
 <!--custom functions and script-->
-<script src="../js/functions.js"></script>
+<script src="../functions.js"></script>

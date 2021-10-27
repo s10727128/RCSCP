@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/RCSCP/playgame/MISC/MISC_summary/MISC0.CSS">
+  <link rel="stylesheet" href="/playgame/MISC/MISC_summary/MISC0.CSS">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/RCSCP/playgame/MISC/MISC_summary/MISC0.js"></script>
+  <script src="/playgame/MISC/MISC_summary/MISC0.js"></script>
 
 </body>
 

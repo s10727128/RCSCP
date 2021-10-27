@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/RCSCP/playgame/CSRF game/CSRF summary/CSRF_summary.css">
+  <link rel="stylesheet" href="/playgame/CSRF game/CSRF summary/CSRF_summary.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <section>
           <h2>CSRF關卡介紹</h2>
           <p>csrf跨站請求偽造(Cross-site request forgery)，也稱為one-click attack或者session riding。</br>與XSS的差別為，XSS是針對網站的設計漏洞進行破壞，而CSRF是針對網站對使用者的認證不夠嚴謹，因次有心人假冒為使用者進行資料竊取或轉帳。</br><br/>在遊戲當中的環境為，模擬管理玩家的管理員，玩家已經是在該環境下進行遊戲，因此不需要額外竊取cookies 或session token。</p>
-          <p><button class="primary" @click="toggleModal"><a href="/RCSCP/playgame/CSRF game/CSRF summary/CSRF0/csrf0index.php" target="_">遊戲模擬環境</a></button></p> 
+          <p><button class="primary" @click="toggleModal"><a href="/playgame/CSRF game/CSRF summary/CSRF0/csrf0index.php" target="_">遊戲模擬環境</a></button></p> 
         </section>
       </article>
 
@@ -55,7 +55,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/RCSCP/playgame/CSRF game/CSRF summary/CSRF_summary.js"></script>
+  <script src="/playgame/CSRF game/CSRF summary/CSRF_summary.js"></script>
 
 </body>
 

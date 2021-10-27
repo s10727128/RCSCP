@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <?php
-    include_once("../../../RCSCP/header.php");
+    include_once("../../header.php");
     ?>
 
     <link rel=stylesheet href="../playgame_css/playgame1.css">
@@ -16,7 +16,7 @@
 
 <body a link="blue" vlink="red">
     <?php
-    require_once("../../../RCSCP/user/connect.php");
+    require_once("../../user/connect.php");
     $starttime = time();
     $sqlgame = "UPDATE game SET  XSS_3open='$starttime' WHERE Username='$name'";
     $resultgame = mysqli_query($connect, $sqlgame);
@@ -114,14 +114,14 @@
 
     </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="../../../../RCSCP/vendor/jquery/jquery.min.js"></script>
-    <script src="../../../../RCSCP/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../../../RCSCP/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../../../../RCSCP/js/scrolling-nav.js"></script>
+    <script src="../../../js/scrolling-nav.js"></script>
     <script>
         document.addEventListener("touchstart", function() {}, false);
     </script>
