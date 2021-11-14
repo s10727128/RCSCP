@@ -1,9 +1,9 @@
 var originalAlert = window.alert;
 
 window.alert = function(){
-    originalAlert("Congratuation! You sucessed!\n" + "\nYou can go to next part.");
-    //window.location.href = "XSS3done.php";
- }
+   window.location.href = "XSS3done.php";
+   originalAlert("恭喜你!\n" + "\n你可以進入下一關了。");
+}
 
 function sendFunction(){
     var talkbox = document.getElementById("talkbox").value;

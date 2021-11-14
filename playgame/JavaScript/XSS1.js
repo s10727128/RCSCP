@@ -2,7 +2,7 @@ var originalAlert = window.alert;
 
 window.alert = function(){
     window.location.href = "XSS1done.php";
-    originalAlert("Congratuation! You sucessed!\n" + "\nYou can go to next part.");   
+    originalAlert("恭喜你!\n" + "\n你可以進入下一關了。");   
 }
     // ScriptManager.RegisterClientScriptBlock(this, typeof(Page), "test", "alert('welcome');");
     //timer test

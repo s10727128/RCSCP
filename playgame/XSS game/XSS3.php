@@ -70,39 +70,7 @@
 
         <?php
         include_once("XSS3.html")
-
         ?>
-        <!-- <div style="text-align: center;">
-            <button type="button" id="hintList" class="button">Hint</button>
-            <div class="word2" style="list-style: none; ">
-                <li id="hint1"><b></b></li>
-                <li id="hint2"></li>
-                <li id="hint3"></li>
-            </div>
-        </div>
-
-        <script>
-            let x = 0;
-            $("#hintList").click(function() {
-                x++;
-                switch (x) {
-                    case 1:
-                        $("#hint1").text("1. 一般的<script>alert\(\)\<\/script\>無法執行");
-                        break;
-
-                    case 2:
-                        $("#hint2").text("2. 試試看用<img>");
-                        break;
-
-                    case 3:
-                        $("#hint3").text("3. \<img src=\"***.jpg\" onerror=\"alert()\"\>");
-                        break;
-
-                    default:
-                        break;
-                }
-            });
-        </script> -->
     </div>
     <br><br><br><br>
     <div class="footer">
@@ -114,14 +82,14 @@
 
     </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="../../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="../../../js/scrolling-nav.js"></script>
+    <script src="../../scrolling-nav.js"></script>
     <script>
         document.addEventListener("touchstart", function() {}, false);
     </script>
