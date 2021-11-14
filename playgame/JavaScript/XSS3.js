@@ -1,8 +1,8 @@
 var originalAlert = window.alert;
 
 window.alert = function(){
+   originalAlert("找到答案了~~~");
    window.location.href = "XSS3done.php";
-   originalAlert("恭喜你!\n" + "\n你可以進入下一關了。");
 }
 
 function sendFunction(){
