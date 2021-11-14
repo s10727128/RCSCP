@@ -11,7 +11,7 @@
 <body>
   <!-- partial:index.partial.html -->
   <main v-cloak>
-    <p><button class="btn" @click="toggleModal()"><b>網站目的</b></button></p>
+    <p><button class="btn" @click="toggleModal()"><b>網站目標</b></button></p>
 
     <!--  The Modal -->
     <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
@@ -22,8 +22,8 @@
       </div>
       <article v-cloak>
         <section>
-          <h2>網站簡介</h2>
-          <p>本網站主要目的是透過遊戲，學習到一些基本的攻擊手法，也從中可以學習到該如和進行防範</p>
+          <h2>網站目標</h2>
+          <p>本網站主要目標是透過遊戲，讓玩家學習到一些基本的攻擊手法，也從中可以學習到該如和進行防範</p>
           <p>
             關卡分為四大關卡:<br>XSS攻擊<br>CSRF攻擊<br>SQL
             Injection攻擊<br>MISC雜項<br>可以透過解答關卡後，獲得積分，以提高自己的名次。</p>
