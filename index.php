@@ -151,13 +151,11 @@
         <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
           <div class="heading-title mb-4">
             <h2 class="darkcolor font-normal bottom30"><span class="defaultcolor">網站</span>
-              <id class="security_introduction">目的
+              <id class="security_introduction">簡介
             </h2>
           </div>
-          <p class="bottom35">一、本網站誕生的主旨是為了讓不懂"資訊安全"或是剛入門的玩家們透過遊玩遊戲了解資安在做什麼。</p>
-          <p class="bottom35">二、為了讓玩家們了解"資訊安全"，本網站設計了四大關卡(例：XSS，CSRF，SQL注入，MISC)，解釋說平時可能會遇到的資訊安全危險。</p>
-          <p class="bottom32">三、讓玩家們遊玩關卡過後，了解這些資訊安全的危機，並使玩家們理解這些常見的資訊安全攻擊是怎麼運作的，在此之後該如何防範或者預防。 </p>
-        </div>
+          <p class="bottom35">現今是一個資訊量爆炸的時代，人們可以很方便的利用網際網路，找尋任何資訊。但也因為網路所帶來的便利，導致許多外表看似華麗的網站，實質上卻是惡意人士所用來犯罪的工具。因此，本網站希望透過遊戲，達到教學與實作的目的，引導玩家操作及理解。同時也透過網站的一些標語，提升玩家的資訊安全意識。<br>本網站只提供學習知識，竊勿任意在他人網頁上操作，若有法律責任，後果請自行負責。</p>
+          </div>
         <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
         </div>
       </div>
