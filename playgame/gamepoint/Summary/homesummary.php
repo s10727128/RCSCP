@@ -11,7 +11,7 @@
 <body>
   <!-- partial:index.partial.html -->
   <main v-cloak>
-    <p><button class="btn" @click="toggleModal()"><b>網站簡介</b></button></p>
+    <p><button class="btn" @click="toggleModal()"><b>網站目的</b></button></p>
 
     <!--  The Modal -->
     <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
