@@ -1,5 +1,5 @@
 <?php
-  include_once("../../../header.php");
+  include_once("../../header.php");
     $enddate=time();//讀取完成時間
     #搜尋game裡的玩家的開啟時間
     $sql="select XSS_1open from game where Username='$name'";

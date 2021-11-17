@@ -19,7 +19,7 @@
       
     <!--改php-->  
     <table class="table table-striped table-bordered table-condensed table-hover">
-      <caption><b class="b1">排行榜</b><BR>
+      <caption><b class="b1">積分榜</b><BR>
       <form action="" method="post">
       <b>搜尋名稱(需完全相同):</b>
       <input type="varchar" name="search"  >
