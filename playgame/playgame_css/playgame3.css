@@ -134,3 +134,8 @@ display: block;
 .table2{
     margin: auto;
 }
+.footer{
+    position: absolute;
+   top: 95%;
+   width: 100%;
+  }

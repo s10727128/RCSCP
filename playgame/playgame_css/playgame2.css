@@ -143,4 +143,11 @@ body{
 
     height: 400px;
 }
+
+
+.footer{
+  position: absolute;
+ top: 95%;
+ width: 100%;
+}
   

@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新增會員資料</title>
+    <link rel=stylesheet href="../../../playgame_css/playgame2.css">
 </head>
 <body>
     <a href="csrf0index.php">返回主頁</a>
@@ -48,6 +49,12 @@
             echo "新增成功";    
         }
     ?>
-    
+    <div class="footer">
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

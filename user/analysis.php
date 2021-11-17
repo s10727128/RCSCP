@@ -154,8 +154,8 @@ if($myMISC1==null||$myMISC2==null||$myMISC3==null||$myMISC4==null||$myMISC5==nul
 else {
   Comment($userMISC,"MISC");
 }
+echo'</div>'
 ?>
-</div>
 <div class="footer">
         <footer class="py-2 bg-dark ">
             <div class="container">

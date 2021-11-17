@@ -63,7 +63,7 @@
         <section>
           <h2>CSS</h2>
           <p>剛剛我們有提到過，CSS會與HTML及JavaScript相互搭配使用，CSS主要的功能就是美化網頁，將網頁內容的古板單調風格轉換成栩栩如生。(下圖為設計按紐樣式的程式碼)</p><br>
-          <h1><a href="/playgame/gamepoint/Summary/homesummary/homesummary.html"><b>我想按按看!</b></a></h1>
+          <h1><a href="/playgame/gamepoint/Summary/homesummary/homesummary.html" target="_blank"><b>我想按按看!</b></a></h1>
           <img style="width: 50%;" src="/photo/Home summary/HTML Summary Example6.png"><br>
           <img style="width: 50%;" src="/photo/Home summary/HTML Summary Example7.png"><br>
         </section>

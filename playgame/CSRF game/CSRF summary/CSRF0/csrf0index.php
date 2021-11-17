@@ -15,6 +15,8 @@
     <title>遊戲</title>
     <!-- Plugin JavaScript -->
     <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!--跟csrf1一樣直接拿playgame6.css-->
+    <link rel=stylesheet href="../../../playgame_css/playgame2.css">
 </head>
 <body>
     <br><br><br><h1 align = "center">會員資料總表</h1>
@@ -23,7 +25,7 @@
         <br><p>內文:管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</p>
     </div><br>
 
-    <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf0create.php">新增資料</a></p>
+    <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf0create.php" target="_blank">新增資料</a></p>
 
     <table  border="1" align= "center">
         <tr>
@@ -44,5 +46,13 @@
             }
         ?>
     </table>
+
+    <div class="footer">
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
