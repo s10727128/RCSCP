@@ -144,7 +144,6 @@
     {   
         echo '<div class="fail">';
         echo '<br>'."通關密碼不正確,請繼續加油!<br>";
-        echo '<a href="level3-1.php">返回關卡</a><br>';
         echo '</div>';
     }
     }
