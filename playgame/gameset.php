@@ -14,6 +14,10 @@
   <!-- Bootstrap core CSS -->
   <?php
   include_once("../header.php");
+  if(!isset($_SESSION['id'])) {
+    echo '<br><br><br><br><a href="../user/login.php">請先登入</a>';
+    exit();
+  }
   ?>
   <link href="gameset.css" rel="stylesheet" type="text/css">
 

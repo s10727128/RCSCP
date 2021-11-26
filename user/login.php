@@ -29,51 +29,43 @@
 <?PHP
 header("Content-Type: text/html; charset=utf8");
 require_once('connect.php');//連結資料庫
+
 if($_SESSION)
 {
 	header("Location: /index.php");
 }
-if(!isset($_POST["submit"])){
-
-}
-else{//檢測是否有submit操作 
-$name = $password = $pwd = '';
-$name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的name
-$pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的password
-if(((strlen($name)>16)||(strlen($pwd)>16))){
-	echo '<h3 class="error"><b>字數過多</b></h3>';
-	exit();
-}
-$sql = "SELECT * FROM user WHERE Username = '$name'";//檢測資料庫是否有對應的帳號
-$result=mysqli_query($connect,$sql);
-if(mysqli_num_rows($result) > 0)
-{
-	while($row = mysqli_fetch_assoc($result))
-	{
-		$password=$row['Password'];
-		if(password_verify($pwd,$password)){
-		$id = $row["ID"];
-		$name = $row["Username"];
-		//session_start();
-		$_SESSION['id'] = $id;
-		$_SESSION['Username'] = $name;
-		echo '<h3 class="forok"><b>登入成功,3秒後自動返回首頁</b></h3>';
-   		echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
-		}
-		else{
-			echo'<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>';
-			
-			echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
-		}
+if(isset($_POST["submit"])){
+	$name = $password = $pwd = '';
+	$name=mysqli_real_escape_string($connect,$_POST['Username']);//post獲取表單裡的name
+	$pwd=mysqli_real_escape_string($connect,$_POST['Password']);//post獲取表單裡的password
+	if(((strlen($name)>16)||(strlen($pwd)>16))){
+		echo '<h3 class="error"><b>字數過多</b></h3>';
+		exit();
 	}
+	$sql = "SELECT * FROM user WHERE Username = '$name'";//檢測資料庫是否有對應的帳號
+	$result=mysqli_query($connect,$sql);
+	if(mysqli_num_rows($result) > 0)
+	{
+		while($row = mysqli_fetch_assoc($result))
+		{
+			$password=$row['Password'];
+			if(password_verify($pwd,$password)){
+			$id = $row["ID"];
+			$name = $row["Username"];
+			//session_start();
+			$_SESSION['id'] = $id;
+			$_SESSION['Username'] = $name;
+			echo '<h3 class="forok"><b>登入成功,3秒後自動返回首頁</b></h3>';
+			   echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
+			}
+			else{
+				echo'<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>';
+				
+				echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
+			}
+		}
 }
-else
-{
-	echo('<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>');
-	echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
 }
-}
-
 ?>
 <div class="footer">
 <div class="footer2">

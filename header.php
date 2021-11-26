@@ -20,22 +20,33 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <?php
-          ini_set("display_errors", 0);
-          $RootDir = $_SERVER['DOCUMENT_ROOT'];
-          $connectDir = "$RootDir/user/connect.php";
-          require_once($connectDir);
-          $name = '';
+          //ini_set("display_errors", 0);
           session_start();
-          $id = $_SESSION['id'];
-          $sql = "SELECT * FROM user WHERE ID='$id'";
-          $result = mysqli_query($connect, $sql);
-          if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-              $name = $row["Username"];
-              $access = $row["Access"];
-              $Nickname = $row["Nickname"];
+          if(!isset($_SESSION['id'])) {
+            echo '<li class="nav-item">';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/register.php">註冊</a>';
+            echo '</li>';
+            echo '<li class="nav-item">';
+            echo  '<a class="nav-link js-scroll-trigger" href="/user/login.php">登入</a>';
+            echo '</li>';
+          }
+           else {
+            $RootDir = $_SERVER['DOCUMENT_ROOT'];
+            $connectDir="$RootDir/user/connect.php";
+            require_once($connectDir);
+            $name='';
+            header("Cache-Control:private");
+            $id = $_SESSION['id']; 
+            $sql = "SELECT * FROM user WHERE ID='$id'";
+            $result=mysqli_query($connect,$sql);
+            if(mysqli_num_rows($result) > 0)
+            {
+            while($row = mysqli_fetch_assoc($result))
+            {
+             $name=$row["Username"];
+             $Nickname = $row["Nickname"];
+             $access=$row["Access"];
             }
-            //echo "歡迎.$name".'<br>'; //重點二☆
             echo '<li class="nav-item">';
             echo  '<a class="nav-link js-scroll-trigger" href="/user/profile.php">' . $Nickname . "(" . $name . ")" . '</a>';
             echo '</li>';
@@ -47,13 +58,7 @@
               echo  '<a class="nav-link js-scroll-trigger" href="/user/access.php">資料表</a>';
               echo '</li>';
             }
-          } else {
-            echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/user/register.php">註冊</a>';
-            echo '</li>';
-            echo '<li class="nav-item">';
-            echo  '<a class="nav-link js-scroll-trigger" href="/user/login.php">登入</a>';
-            echo '</li>';
+          }
           }
           ?>
         </ul>
