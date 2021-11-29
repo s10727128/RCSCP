@@ -13,42 +13,17 @@
     <?php
     include_once("../../header.php");
     ?>
-    
-
-
-    
     <link href="css/level1.css" rel=stylesheet type="text/css">
 </head>
 
 <body>  
-    <h1><b>
-
-            XSS關卡難易度
-        </b>
-    </h1>
+    <h1><b>XSS關卡難易度</b></h1>
   
-    <!--Button 1~4--->
-    <!-- <div class="box-1">
-            <div class="btn btn-one"><span><a href="../XSS game/XSS1.php?name=test">簡單</a></span></div> 
-        </div>
-        
-        <div class="box-2">
-            <div class="btn btn-two"><span><a href="../XSS game/XSS2.php?name=test">中級</a></span></div>
-        </div>
-        
-        <div class="box-3">
-            <div class="btn btn-three"><span><a href="../XSS game/XSS3.php?name=test">困難</a></span></div>
-        </div>
-
-
-        <div class="box-4">
-            <div class="btn btn-four"><span><a href="../../Teamproject/html/gameset.php">返回</a></span></div>
-        </div> -->
-
     <div class="auto">
         
     <?php   
     include_once("../XSS game/XSS summary/XSS0.php");
+    include_once("../XSS game/XSS summary/XSS_defend.php");
     ?>
          <?php
         $XSS1total=0;
@@ -154,7 +129,6 @@
             
             ?>
         </button>
-
         <button class="btn">
             <div class="item"><span><a href="../../playgame/gameset.php">返回</a></span></div>
         </button>

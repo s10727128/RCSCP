@@ -11,11 +11,26 @@
 
   <title>TIK Gammer</title>
 
+  <link href="login_request.css" rel="stylesheet" type="text/css">
   <!-- Bootstrap core CSS -->
   <?php
-  include_once("../header.php");
+  include_once("../header.php ");
   if(!isset($_SESSION['id'])) {
-    echo '<br><br><br><br><a href="../user/login.php">請先登入</a>';
+    echo'<body><br><br><br><br><br><br><br><br>';
+    echo'<button class="btn">';
+    echo'  <div class="item"><span><a href="../user/login.php">請先登入</a></span></div>';
+    echo'</button>';
+    echo'</div>';
+
+    echo'</body>';
+    //footer => for login_request
+    echo' <div class="footer">';
+    echo'<footer class="py-2 bg-dark ">';
+    echo'<div class="container">';
+    echo'  <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>';
+    echo'</div>';
+    echo'</footer>';
+    echo'</div>';
     exit();
   }
   ?>
@@ -49,6 +64,9 @@
     </button>
     
     <br>
+    <?php   
+    include_once("../playgame/XSS game/XSS summary/XSS_defend.php");
+    ?>
     <button class="btn">
       <div class="item"><span><a href="../index.php"><b>返回</b></a></span></div>
     </button>
@@ -63,13 +81,11 @@
   <br>
   <!--  Footer  -->
   <div class="footer">
-
     <footer class="py-2 bg-dark ">
       <div class="container">
         <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
       </div>
     </footer>
-
   </div>
   <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>

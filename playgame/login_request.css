@@ -2,31 +2,9 @@
    body{
     width: 100%;
     height: 100%;
-   margin-top: 5%;
-   padding: 0%;
-   text-align: center;
    background-image: linear-gradient(-25deg, #000000 0%, #96B7C4 100%);
 
 }
-
-h1{
-   margin-bottom: 100px;
-}
-/* .flex a{
-  padding: 80px;
-}
-button{     
-   margin: 20px;
-}
-.item {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   font-size: 30px;
-   border: 1px solid #000;
-} 
-*/
 .btn {    
   content: '';
   background-image: url('../photo/Btnskin/gameskin3.png');
@@ -40,7 +18,7 @@ button{
    text-align: center;
    justify-content: center;
    align-items: center;    
-       margin: 30px 30px 45px 30px;
+       margin: 50px 60px 45px 38%;
    padding: 0px 0px 45px 0px;
    border: 1px solid blue;
    transition: all 0.2s ease-out;
@@ -50,7 +28,6 @@ button{
  .btn span{
   z-index: 2; 
   display: block;
-  position: absolute;
   width: 100%;
   height: 100%;   
   }  
@@ -81,11 +58,11 @@ button{
    transition: all 0.1s ease-out;
    -webkit-transition: all 0.1s ease-out;
  }    
- .btn:active {
+ /* .btn:active {
    transform: scale(1.2, 1.5);
    -webkit-transform: scale(1.2,1.5);
    
- }
+ } */
  .btn:hover::before{
   opacity: 1;
   transform: skewX(45deg)  scale(0,1);
@@ -95,10 +72,10 @@ button{
   }
   .btn a{ 
     color: #78a4b6;
-    font-family:Impact, fantasy;
     padding: 30px 70px;
     transform:  scale(1.2,1.2);
     transition: all 1s;
+   font-size: 2em; 
   }
   .btn a:hover{
     transition: all 1s;
@@ -109,5 +86,5 @@ button{
 
 
 .footer{
-   margin-top: 300px;
+   margin-top: 18.8%;
 }
