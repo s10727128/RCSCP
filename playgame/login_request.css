@@ -5,6 +5,20 @@
    background-image: linear-gradient(-25deg, #000000 0%, #96B7C4 100%);
 
 }
+.head1{
+   margin: 10% 0px 26% 0px;
+   padding: 0px 0px 20px 0px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;    
+}
+.head1 a{
+  color: black;
+}
+.head1 a:hover{
+  color: purple;
+  text-decoration: none;
+}
 .btn {    
   content: '';
   background-image: url('../photo/Btnskin/gameskin3.png');

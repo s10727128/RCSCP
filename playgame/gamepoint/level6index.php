@@ -13,7 +13,7 @@
 
     <body>
     <h1><b>
-            Phishing關卡難易度
+            Phishing關卡選擇
         </b>
     </h1>
 

@@ -16,7 +16,7 @@
 <body>
     <h1><b>
 
-            CSRF關卡難易度
+            CSRF關卡選擇
         </b>
     </h1>
 
@@ -52,7 +52,7 @@
             {
             while($row = mysqli_fetch_assoc($result))
             {
-                $row=$row['SQL_1open'];
+                $row=$row['CSRF_1open'];
                 #修改class
                 echo '<div class="item2"><span>'.'完成時間'.(date('Y-m-d h:i:s',$row)).'</span></div>';
             }

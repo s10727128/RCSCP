@@ -16,11 +16,13 @@
   <?php
   include_once("../header.php ");
   if(!isset($_SESSION['id'])) {
-    echo'<body><br><br><br><br><br><br><br><br>';
-    echo'<button class="btn">';
-    echo'  <div class="item"><span><a href="../user/login.php">請先登入</a></span></div>';
-    echo'</button>';
-    echo'</div>';
+    echo'<br><br>';
+    echo '<div class="head1"><h1><a href="../user/login.php">請先進行登入</a></h1></div>';
+    // echo'<body><br><br><br><br><br><br><br><br>';
+    // echo'<button class="btn">';
+    // echo'  <div class="item"><span><a href="../user/login.php">登入</a></span></div>';
+    // echo'</button>';
+   // echo'</div>';
 
     echo'</body>';
     //footer => for login_request

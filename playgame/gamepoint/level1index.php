@@ -17,7 +17,7 @@
 </head>
 
 <body>  
-    <h1><b>XSS關卡難易度</b></h1>
+    <h1><b>XSS關卡選擇</b></h1>
   
     <div class="auto">
         

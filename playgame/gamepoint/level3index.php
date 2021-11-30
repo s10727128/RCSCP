@@ -16,7 +16,7 @@
 <body>
     <h1><b>
 
-            SQL Injection關卡難易度
+            SQL Injection關卡難選擇
         </b>
     </h1>
 
