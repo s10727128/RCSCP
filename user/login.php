@@ -55,8 +55,7 @@ if(isset($_POST["submit"])){
 			//session_start();
 			$_SESSION['id'] = $id;
 			$_SESSION['Username'] = $name;
-			echo '<h3 class="forok"><b>登入成功,3秒後自動返回首頁</b></h3>';
-			   echo '<meta http-equiv=REFRESH CONTENT=3;url=../index.php>';
+			header("Location: /index.php");
 			}
 			else{
 				echo'<h3 class="error"><b>登入失敗,帳號或密碼錯誤</b></h3>';

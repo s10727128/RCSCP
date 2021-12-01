@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-    include_once("../../header.php");
+    include("../../header.php");
     ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="/bird.jpg">
@@ -93,46 +93,14 @@
             #根據通關時間給分
             else
             {
-              if($totaltime<=300){//時間少於5分鐘
-                $score+=200;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=200    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                }
-              else if($totaltime>300&&$totaltime<=600){//時間在5分鐘~10分鐘間
-                $score+=180;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=180    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                }
-              else if($totaltime>600&&$totaltime<=900){//時間在10分鐘~15分鐘間
-                $score+=160;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=160    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-                }
-              else if($totaltime>900&&$totaltime<=1200){//時間在15分鐘~20分鐘間
-                $score+=140;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=140    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-              }
-              else if($totaltime>1200&&$totaltime<=1800){//時間在20分鐘~30分鐘間
-                $score+=120;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=120    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-              }
-              else if($totaltime>1800&&$totaltime<=2700){//時間在30分鐘~45分鐘間
-                $score+=100;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=100    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-              }
-              else if($totaltime>2700&&$totaltime<=3600){//時間在45分鐘~1小時間
-                $score+=75;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=75    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-              }
-              else if($totaltime>3600){//時間大於1小時
-                $score=50;
-                $result=mysqli_query($connect,"UPDATE game SET  SQL_1=50    WHERE Username='$name'");
-                $result=mysqli_query($connect,"UPDATE user SET  score=$score WHERE Username='$name'");
-              }
+              include_once("../score.php");
+              Score(0,300,200,"SQL_1");
+              Score(300,600,180,"SQL_1");
+              Score(600,900,160,"SQL_1");
+              Score(900,1200,140,"SQL_1");
+              Score(1200,1800,120,"SQL_1");
+              Score(1800,2700,100,"SQL_1");
+              Score(3600,7200,50,"SQL_1");
             }        
             echo '<div class="pass"><br>'."恭喜通關~<br>";
             echo '<a href="level3-2.php">前往下一關</a><br>';
@@ -150,16 +118,18 @@
     #3-1關卡
     if (isset($_POST["submit"])) {
         require_once('level3connect.php'); //連結level3資料庫
-
         $name = $_POST['Username']; //post獲取表單裡的name
         $password = $_POST['Password']; //post獲取表單裡的password
         
-        if(strpos($name,'drop') !== false){ 
+        if(stripos($name,'drop')!==false||stripos($name,'union')!==false){ 
+            echo "注入失敗";
             exit();//防止drop table情形
             }
-        if(strpos($password,'drop') !== false){ 
+        else if(stripos($password,'drop') !== false||stripos($password,'union')!==false){ 
+            echo "注入失敗";
             exit();//防止drop table情形
             }
+        else{
         #3-1注入程式
         $sql = "SELECT * FROM sqli_login WHERE Username = '$name ' and Password='$password '"; 
         $result = mysqli_query($connect, $sql);
@@ -175,6 +145,7 @@
                 echo "<b>注入失敗</b>" . '<br>';
                 echo '</div>';
             }
+          }
     }
     ?>
 
