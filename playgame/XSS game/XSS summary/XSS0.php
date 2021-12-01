@@ -84,7 +84,7 @@
 
 
   <!--blockx-->
-  <main v-cloak_1>
+  <main v-cloak>
     <button class="btn" @click="toggleModal()"><span><a href="#">防範</a><span></button>
       <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
 
@@ -94,7 +94,7 @@
           </button>
         </div>
 
-    <article v-cloak_1>
+    <article v-cloak>
         <section>
           <h>1111</h>
         </section>

@@ -56,3 +56,8 @@ h1{
   color: rgb(0, 0, 54);
   text-decoration: none;
 }
+.footer{
+    position: fixed;
+   top: 95%;
+   width: 100%;
+  }

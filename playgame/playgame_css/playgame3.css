@@ -135,7 +135,7 @@ display: block;
     margin: auto;
 }
 .footer{
-    position: relative;
+    position: fixed;
    top: 95%;
    width: 100%;
   }

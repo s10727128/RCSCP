@@ -2,6 +2,9 @@
   --accent: #123;
 }
 
+[v-cloak] {
+  display: none;
+}
 .boardal {
   position: fixed;
   top: 0;
