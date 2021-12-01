@@ -22,8 +22,7 @@
     <div class="auto">
         
     <?php   
-    include_once("../XSS game/XSS summary/XSS0.php");
-    include_once("../XSS game/XSS summary/XSS_defend.php");
+    include("../XSS game/XSS summary/XSS0.php");
     ?>
          <?php
         $XSS1total=0;

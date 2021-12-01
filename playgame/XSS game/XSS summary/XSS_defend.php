@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="/playgame/XSS game/XSS summary/XSS_defend.css">
+  <link rel="stylesheet" href="/playgame/XSS game/XSS summary/XSS0.css">
 
 </head>
 
@@ -30,6 +30,12 @@
         </section>
 
 
+        <section>
+          <h2>如何防範XSS</h2>
+        </section>
+        <section>
+          <h2>如何防範XSS</h2>
+        </section>
 
       </article>
 
@@ -56,7 +62,7 @@
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
-  <script src="/playgame/XSS game/XSS summary/XSS_defend.js"></script>
+  <script src="/playgame/XSS game/XSS summary/XSS0.js"></script>
 
 </body>
 

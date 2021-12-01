@@ -16,15 +16,15 @@
 
     <!--  The Modal -->
     <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
- 
-    <div class="modal-header">  
-                        <button type="button" class="close" data-dismiss="modal" @click="finish">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
 
-    <article v-cloak>
-      
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" @click="finish">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <article v-cloak>
+
         <section>
           <h2>XSS攻擊介紹</h2>
           <p>XSS跨網站腳本(Cross-Site Scripting, XSS)是一種經常出現在Web應用程式中的電腦安全性漏洞，是由於Web應用程式對使用者的輸入過濾不足而產生的。攻擊者利用網站漏洞把惡意的腳本程式碼注入到網頁之中，當使用者瀏覽這些網頁時，就會執行其中的惡意程式碼，對受害使用者可能採取Cookie資料竊取、Session(連線)劫持、釣魚欺騙等各種攻擊。</p>
@@ -58,6 +58,7 @@
       </article>
 
 
+
       <footer>
         <!-- Next Arrow -->
         <div class="forward-actions">
@@ -76,7 +77,52 @@
         </div>
       </footer>
     </boardal>
+
   </main>
+
+
+
+
+  <!--blockx-->
+  <main v-cloak_1>
+    <button class="btn" @click="toggleModal()"><span><a href="#">防範</a><span></button>
+      <boardal v-if="modal.isOpen" :has-mask="modal.hasMask" :can-click-mask="modal.canClickMask" :has-x="modal.hasX" @toggle="toggleModal">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" @click="finish">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+    <article v-cloak_1>
+        <section>
+          <h>1111</h>
+        </section>
+    </article>
+
+    <footer>
+      <!-- Next Arrow -->
+      <div class="forward-actions">
+        <button class="primary next" :disabled="isLastStep" v-show="!isLastStep" @click="skip(1)"><i class="fa fa-fw fa-lg" :class="nextIcon"></i></button>
+        <button class="accent save" :disabled="!isLastStep" v-show="isLastStep" @click="finish"><i class="fa fa-fw fa-lg fa-check"></i></button>
+      </div>
+
+      <!-- Step Dots -->
+      <div class="step-dots" v-if="hasDots">
+        <div class="step-dot" v-for="n in max" :class="{active: n == step}" @click="goToStep(n)"></div>
+      </div>
+      <div class="back-actions">
+
+        <!-- Back Arrow -->
+        <button class="secondary cancel prev" :disabled="isFirstStep" xv-show="!isFirstStep" @click="skip(-1)"><i class="fa fa-fw fa-lg" :class="backIcon"></i></button>
+      </div>
+    </footer>
+
+    </boardal>
+  </main>
+
+
+
 
   <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
@@ -85,17 +131,3 @@
 </body>
 
 </html>
-
-<!-- *************************************************************************** -->
-
-<!-- Restart form first page -->
-<!-- <p><button @click="reset()">Rewind</button></p> -->
-
-<!-- Skip to the lastest page -->
-<!--  <p><button class="primary" @click="goToStep(5)">skip to the end</button></p> -->
-
-<!-- Exit Button -->
-<!--  <p><button class="primary" @click="toggleModal">EXIT</button></p> -->
-
-<!-- Next Button -->
-<!-- <p><button class="primary" @click="skip(1)">Next...</button></p> -->

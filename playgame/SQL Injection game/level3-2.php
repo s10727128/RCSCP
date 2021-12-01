@@ -209,12 +209,11 @@
     <br>
 
     <div class="footer">
-      <footer class="py-2 bg-dark ">
-        <div class="container">
-          <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
-        </div>
-      </footer>
-
+        <footer class="py-2 bg-dark ">
+            <div class="container">
+                <p class="m-0 text-center text-light">本站所刊載之圖文內容等版權皆屬原廠商或原作者所有，非經同意請勿轉載</p>
+            </div>
+        </footer>
     </div>
   </div>
     <!-- Optional JavaScript -->
