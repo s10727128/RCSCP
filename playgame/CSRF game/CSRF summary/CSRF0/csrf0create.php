@@ -1,5 +1,6 @@
 <?php
     //載入連結SQL檔
+    include_once("../../../../../RCSCP/header.php");
     include("csrf0connMySQL.php");
     $sql_query = "SELECT * FROM csrf0 ORDER BY ID ASC";
     $result = mysqli_query($db_link,$sql_query);
@@ -8,23 +9,25 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新增會員資料</title>
-    <link rel=stylesheet href="../../../playgame_css/playgame2.css">
+    <title>遊戲</title>
+    <!-- Plugin JavaScript -->
+    <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <link rel=stylesheet href="/playgame/CSRF game/CSRF summary/CSRF0/csrf0index.css">
 </head>
 <body>
-    <a href="csrf0index.php">返回主頁</a>
+    <br><Br>
+    <h1><a href="csrf0index.php">返回上一頁</a></h1>
     <form action="" method="GET" name="formAdd" id="formAdd">
-        請輸入姓名:<input type="text" name="Username" id="Username"></br>
-        請輸入積分:<input type="text" name="Score" id="Score"></br>
+        <b>請輸入姓名：</b><input type="text" name="Username" id="Username"></br>
+        <b>請輸入積分：</b><input type="text" name="Score" id="Score"></br>
         <input type="hidden" name="action" value="add">
+        <br><br>
         <input type="submit" name="button" value="新增資料">
         <input type="reset" name="button2" value="重新填寫">
     </form>
-
     <?php
         //先檢查請求來源是否是我們上面創建的 form
         if (isset($_GET["action"])&&($_GET["action"] == "add")) {

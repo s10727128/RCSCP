@@ -28,8 +28,8 @@
   position: relative;
   width: 30px;
   max-width: 60em;
-  min-width: 30em;
-  max-height: 65vh;
+  min-width: 50em;
+  max-height: 80vh;
   background: #fff;
   color: #333;
   display: flex;

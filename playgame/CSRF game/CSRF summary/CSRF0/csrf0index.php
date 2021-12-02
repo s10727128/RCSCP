@@ -16,22 +16,24 @@
     <!-- Plugin JavaScript -->
     <script src="../../../../vendor/jquery-easing/jquery.easing.min.js"></script>
     <!--跟csrf1一樣直接拿playgame6.css-->
-    <link rel=stylesheet href="../../../playgame_css/playgame2.css">
+    <link rel=stylesheet href="/playgame/CSRF game/CSRF summary/CSRF0/csrf0index.css">
 </head>
 <body>
-    <br><br><br><h1 align = "center">會員資料總表</h1>
+    <h1 text-align = "center">會員資料總表</h1>
 
     <div class="content" style="text-align: center; color: red;">
-        <br><p>內文:管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</p>
+        <b><p>內文:管理員的身分，可以自由的新增、刪除會員的資料。<br>偷偷告訴你~可以觀察網址上有什麼變化!</p></b>
     </div><br>
 
-    <p align= "center">目前資料筆數：<?php echo $total_records;?>，<a href="csrf0create.php" target="_blank">新增資料</a></p>
+    <b><p text-align= "center">目前資料筆數：<?php echo $total_records;?></b>，<a href="csrf0create.php" target="_blank">新增資料</a></p>
 
-    <table  border="1" align= "center">
+    <div class="table_create">
+    <table>
         <tr>
             <th>ID</th>
             <th>姓名</th>
             <th>積分</th>   
+            <th>刪除鍵</th>   
         </tr>
 
 
@@ -46,6 +48,9 @@
             }
         ?>
     </table>
+        </div>
+
+        <br><br><Br><br><Br><BR><BR><br><br><Br><br><Br><BR><BR><br><br><Br><br><Br><BR><BR>
 
     <div class="footer">
         <footer class="py-2 bg-dark ">

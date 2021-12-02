@@ -108,7 +108,7 @@ if ($_SESSION["CSRF1_time"] == null) //每個關卡的SESSION名字都要改
             $resultendtate = mysqli_query($connect, "UPDATE game SET  CSRF_1open='$enddate' WHERE Username='$name'");
             $totaltime = ($enddate - $_SESSION["CSRF1_time"]);
             echo '<br>' . "結束時間:" . (date('Y-m-d H:i:s', $enddate + 7 * 3600));
-            echo '<br>' . "總共花費:" . ($enddate - $_SESSION["time"]) . "秒"; //顯示結束時間點,可不加
+            echo '<br>' . "總共花費:" . ($enddate - $_SESSION["CSRF1_time"]) . "秒"; //顯示結束時間點,可不加
             #搜尋user裡的玩家的分數
             $resultscore = mysqli_query($connect, "SELECT Score FROM user WHERE Username='$name'");
             if (mysqli_num_rows($resultscore) > 0) {
@@ -164,9 +164,10 @@ if ($_SESSION["CSRF1_time"] == null) //每個關卡的SESSION名字都要改
                 }
             }
             echo '<div class="pass"><br>' . "恭喜通關~<br>";
-            echo '<a href="../../../../RCSCP/gameset.php">返回主頁</a><br></div>';
+            echo '<a href="../../../index.php">返回主頁</a><br></div>';
         }
         ?>
+        <br><br><br>
 
         
      <div class="footer">

@@ -94,11 +94,9 @@
         $totalscore="UPDATE user SET  score=$score WHERE Username='$name'";
         $result=mysqli_query($connect,$totalscore);
       }
-      echo $totaltime;
     }       
     echo '<div class="pass"><br>'."恭喜通關~<br>";
     echo '<a href="../../../index.php">返回主頁</a><br></div>';
-    exit();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -110,6 +108,5 @@
     <title>過關</title>
 </head>
 <body>
-
 </body>
 </html>
