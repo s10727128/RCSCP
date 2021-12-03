@@ -123,7 +123,7 @@
             }
             }
             else{
-               echo '<div class="item"><span><a href="../XSS game/XSS3.php">儲存型</a></span></div>';
+               echo '<div class="item"><span><a href="../XSS game/XSS3.php">反射型(3)</a></span></div>';
             }
             
             ?>
