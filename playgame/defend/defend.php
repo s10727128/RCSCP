@@ -42,6 +42,11 @@
 
         <section>
           <h2>如何防範SQL Injection?</h2>
+          <p align="left">SQL injection發生的原因是因為程式寫入SQL語法時時沒有針對使用者輸入的字串進行過濾</p>
+          <p align="left">解決的方法如下:</p>
+          <p align="left">使用htmlspecialchars將特殊文字[例如:單引號(')、雙引號("")]轉成僅能閱讀的HTML符號</p>
+          <p align="left">使用Prepared Statement預先處理可能造成問題的字元</p>
+          <p align="left">自行將有可能會造成問題的特殊符號過濾掉</p>
         </section>
 
         <section>
