@@ -46,8 +46,8 @@
                 ini_set("display_errors", 0);
                 $ans = $_GET["input"];
                 echo '<div><form action=XSS1.php method=GET>
-        <input name=input value=""></form>
-        <input type=submit value="搜尋"></div><br>';
+                <input name=input value=""></form>
+                <input type=submit value="搜尋"></div><br>';
                 echo "Your answer is: " . $ans;
                 ?>
              <br><br>
