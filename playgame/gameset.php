@@ -67,7 +67,7 @@
     
     <br>
     <?php   
-    include_once("../playgame/XSS game/XSS summary/XSS_defend.php");
+    include_once("../playgame/defend/defend.php");
     ?>
     <button class="btn">
       <div class="item"><span><a href="../index.php"><b>返回</b></a></span></div>
