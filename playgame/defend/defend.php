@@ -46,6 +46,9 @@
 
         <section>
           <h2>如何防範CSRF?</h2>
+          <p align="left">CSRF的重點是，網站對於使用的的身分認證不嚴謹。在遊戲關卡中，我們可以知道，後端的管理員，是透過GET的方式，進行指令，刪除資料。但因為GET所接收的訊息，會直接反映在網址，所以一被惡意人士注意到，難逃被破壞的命運。有些人可能會想說，改成POST可以嗎?<br></p>
+          <p align="left">POST雖然回傳的資料不會直接反映在網址上，但若是加入了&lt;form&gt;且自帶自動submit功能，那一樣難逃法網。那到底該怎麼做呢?<br><br></p>
+          <p align="left">最常見的方法有兩種: 檢查 referer欄位或是加入驗證token。在request 的 header 裡有一個欄位 referer，可以得知request是來自哪裡，可以檢查看是否為合法的domain，若不是則可以直接拒絕。token則是可以讓sever隨機產生並存取在session中，若有任request，可以檢查這個token是否相同，以達到防禦的目的。</p>
         </section>
 
       </article>
